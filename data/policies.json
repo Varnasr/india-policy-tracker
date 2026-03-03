@@ -3632,6 +3632,61 @@
     "type": "policy"
   },
   {
+    "id": "39335f7786a8",
+    "title": "PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "description": "Government of India press release: PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235066",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "energy",
+      "labour-employment"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "b4d9437d93a4",
+    "title": "MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "description": "Government of India press release: MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234987",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "defence-security"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "9445cd365c68",
+    "title": "Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "description": "ORF Expert Speak: Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "link": "https://www.orfonline.org/expert-speak/boom-or-bane-the-dystopian-vagaries-of-ai-dominance",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "91b1a4943743",
     "title": "The Industrial Relations Code (Amendment) Bill, 2026",
     "description": "",
