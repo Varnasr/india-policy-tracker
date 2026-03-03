@@ -6,7 +6,6 @@ import path from 'node:path';
 
 const meta = getMeta();
 
-// Load feeds.json for source descriptions
 let feedsConfig: any = { sources: {} };
 try {
   const raw = fs.readFileSync(path.join(process.cwd(), 'feeds.json'), 'utf-8');
@@ -17,56 +16,30 @@ const sourceEntries = Object.entries(meta.source_counts).sort((a, b) => b[1] - a
 ---
 <Base title="Sources" description="Open data sources powering the India Policy Tracker — PIB, PRS, India Code, eGazette, NITI Aayog, data.gov.in, and more.">
   <div style="padding: var(--space-xl) 0;">
-    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-sm);">Data Sources</h2>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);">
-      This tracker aggregates open data from {sourceEntries.length} sources.
-      All data is fetched automatically every 6 hours via GitHub Actions.
+    <h2 class="page-title">Data Sources</h2>
+    <p class="page-subtitle">
+      Aggregating open data from {sourceEntries.length} sources, fetched automatically every 6 hours.
     </p>
 
     <div class="sector-grid">
       {sourceEntries.map(([shortName, count]) => {
-        // Find the full source config
         const sourceConfig = Object.values(feedsConfig.sources || {}).find((s: any) => s.short_name === shortName) as any;
         const description = sourceConfig?.description || '';
         const type = sourceConfig?.type || 'unknown';
-        const frequency = sourceConfig?.frequency || '';
-        const reliability = sourceConfig?.reliability || '';
-        const url = sourceConfig?.url || sourceConfig?.urls ? Object.values(sourceConfig?.urls || {})[0] : '';
 
         return (
           <div class="sector-card" style="cursor: default;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <span class="sector-card-name">{shortName}</span>
-              <span class={`policy-type type-${type === 'rss' ? 'announcement' : type === 'api' ? 'research' : 'policy'}`}>
+              <span class={`policy-type type-${type === 'rss' ? 'announcement' : type === 'api' ? 'research' : 'policy'}`} style="font-size: 0.5625rem;">
                 {type.toUpperCase()}
               </span>
             </div>
-            <span class="sector-card-count" style="font-size: 0.75rem;">{description}</span>
-            <div style="display: flex; gap: var(--space-md); font-size: 0.75rem; color: var(--color-text-dim);">
-              <span>{count} {count === 1 ? 'item' : 'items'}</span>
-              {frequency && <span>{frequency}</span>}
-            </div>
+            <span style="font-size: 0.8125rem; color: var(--color-text-muted);">{description}</span>
+            <span style="font-size: 0.75rem; color: var(--color-text-dim);">{count} {count === 1 ? 'item' : 'items'}</span>
           </div>
         );
       })}
-    </div>
-
-    <div style="margin-top: var(--space-2xl); padding: var(--space-lg); background: var(--color-bg-card); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-      <h3 style="font-size: 1rem; margin-bottom: var(--space-sm);">Source Types</h3>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); font-size: 0.8125rem; color: var(--color-text-muted);">
-        <div>
-          <span class="policy-type type-announcement">RSS</span>
-          <p style="margin-top: var(--space-xs);">Auto-fetched via RSS/Atom feeds. Most reliable for real-time updates.</p>
-        </div>
-        <div>
-          <span class="policy-type type-research">API</span>
-          <p style="margin-top: var(--space-xs);">Fetched via REST APIs (data.gov.in OGD 2.0, World Bank, NDAP).</p>
-        </div>
-        <div>
-          <span class="policy-type type-policy">SCRAPE</span>
-          <p style="margin-top: var(--space-xs);">Respectfully scraped from official government websites.</p>
-        </div>
-      </div>
     </div>
   </div>
 </Base>

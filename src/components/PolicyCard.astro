@@ -49,9 +49,8 @@ function getRelativeTime(dateStr: string): string {
   </div>
 
   <div class="policy-meta">
-    <span class="policy-date" title={formatDate(date)}>
-      {getRelativeTime(date)}
-    </span>
+    <span class="policy-date" title={formatDate(date)}>{getRelativeTime(date)}</span>
+    <span class="meta-dot"></span>
     <span class="policy-source">{source_short}</span>
     <span class={`policy-type type-${type}`}>{type}</span>
   </div>

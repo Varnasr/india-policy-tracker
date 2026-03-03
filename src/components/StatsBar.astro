@@ -11,7 +11,7 @@ const { totalPolicies, totalSources, totalSectors, lastUpdated } = Astro.props;
 function formatUpdated(isoStr: string): string {
   try {
     const d = new Date(isoStr);
-    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
   } catch {
     return 'Recently';
   }
@@ -20,20 +20,18 @@ function formatUpdated(isoStr: string): string {
 <div class="stats-bar">
   <div class="stat-item">
     <div class="stat-number">{totalPolicies}</div>
-    <div class="stat-label">Policies Tracked</div>
+    <div class="stat-label">Policies</div>
   </div>
   <div class="stat-item">
     <div class="stat-number">{totalSources}</div>
-    <div class="stat-label">Open Sources</div>
+    <div class="stat-label">Sources</div>
   </div>
   <div class="stat-item">
     <div class="stat-number">{totalSectors}</div>
-    <div class="stat-label">Dev Sectors</div>
+    <div class="stat-label">Sectors</div>
   </div>
   <div class="stat-item">
-    <div class="stat-number" style="font-size: 1rem; padding-top: 0.3rem;">
-      {formatUpdated(lastUpdated)}
-    </div>
+    <div class="stat-number" style="font-size: 1.125rem;">{formatUpdated(lastUpdated)}</div>
     <div class="stat-label">Last Updated</div>
   </div>
 </div>

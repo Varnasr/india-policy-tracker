@@ -21,9 +21,9 @@ const base = import.meta.env.BASE_URL;
   <div style="padding: var(--space-xl) 0;">
     <div style="margin-bottom: var(--space-xl);">
       <a href={`${base}sectors/`} style="font-size: 0.8125rem; color: var(--color-text-muted);">&larr; All Sectors</a>
-      <h2 style="font-size: 1.5rem; margin-top: var(--space-sm);">{sectorName}</h2>
-      <p style="color: var(--color-text-muted);">
-        {policies.length} {policies.length === 1 ? 'policy' : 'policies'} tracked in this sector
+      <h2 class="page-title" style="margin-top: var(--space-sm);">{sectorName}</h2>
+      <p class="page-subtitle">
+        {policies.length} {policies.length === 1 ? 'policy' : 'policies'} tracked
       </p>
     </div>
 
