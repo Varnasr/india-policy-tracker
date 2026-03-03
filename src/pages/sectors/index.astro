@@ -4,7 +4,8 @@ import { getMeta, getSectorSlug } from '../../lib/data';
 
 const meta = getMeta();
 const sectors = Object.entries(meta.sector_counts).sort((a, b) => b[1] - a[1]);
-const base = import.meta.env.BASE_URL;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
 <Base title="Sectors" description="Browse Indian development policies by sector — 22 themes covering education, health, agriculture, climate, digital, finance, and more.">
   <div style="padding: var(--space-xl) 0;">
