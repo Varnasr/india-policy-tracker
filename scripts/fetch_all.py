@@ -30,9 +30,12 @@ MAX_ITEMS_PER_SOURCE = 50
 MAX_TOTAL_ITEMS = 500
 
 
-def generate_id(title: str, source: str, date: str) -> str:
-    """Generate a deterministic unique ID for a policy item."""
-    raw = f"{source}:{title}:{date}"
+def generate_id(title: str, source: str) -> str:
+    """Generate a deterministic unique ID for a policy item.
+    Uses source + title only (not date) so the same policy always gets
+    the same ID even if its date is corrected later.
+    """
+    raw = f"{source}:{title}"
     return hashlib.sha256(raw.encode()).hexdigest()[:12]
 
 
@@ -87,13 +90,25 @@ def load_existing_policies() -> dict:
 
 
 def merge_policies(existing: dict, new_items: list[dict]) -> list[dict]:
-    """Merge new items with existing, deduplicating by ID."""
+    """Merge new items with existing, deduplicating by ID and source+title."""
     for item in new_items:
         existing[item["id"]] = item
 
+    # Deduplicate by source+title (keep the one with the best date)
+    seen: dict[tuple, dict] = {}
+    for item in existing.values():
+        key = (item.get("source_id", ""), item.get("title", ""))
+        if key in seen:
+            # Keep whichever has a more specific (non-today) date
+            old = seen[key]
+            if item.get("date", "") > old.get("date", ""):
+                seen[key] = item
+        else:
+            seen[key] = item
+
     # Sort by date (newest first) and cap total
     all_items = sorted(
-        existing.values(),
+        seen.values(),
         key=lambda x: x.get("date", "1970-01-01"),
         reverse=True
     )
@@ -194,7 +209,7 @@ def fetch_source(source_id: str, source_config: dict) -> list[dict]:
             if not date:
                 date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-            policy_id = generate_id(title, source_id, date)
+            policy_id = generate_id(title, source_id)
             sectors = classify_policy(title, description, source_sectors)
 
             items.append({

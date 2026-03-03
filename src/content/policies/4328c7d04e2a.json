@@ -1,0 +1,17 @@
+{
+  "id": "4328c7d04e2a",
+  "title": "BharatNet Servise Ready Gram Panchayat",
+  "description": "Department of Telecommunications (DOT): BharatNet Servise Ready Gram Panchayat",
+  "link": "https://data.gov.in/resource/district-wise-service-ready-gram-panchayat-31-12-2025",
+  "date": "2026-02-13",
+  "source_id": "data_gov_in",
+  "source_name": "Open Government Data Platform India",
+  "source_short": "data.gov.in",
+  "sectors": [
+    "Rural Development"
+  ],
+  "sector_slugs": [
+    "rural-development"
+  ],
+  "type": "policy"
+}
