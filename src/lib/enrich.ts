@@ -85,6 +85,30 @@ const SECTOR_AFFECTED: Record<string, string> = {
   'Science & Innovation': '~1 million researchers, R&D ecosystem',
 };
 
+const SECTOR_KEY_NUMBERS: Record<string, string[]> = {
+  'Education': ['Education budget: Rs 1.25 lakh crore (2025-26)', '1.5 million schools, 1,100+ universities', '70% gross enrollment ratio target by 2030'],
+  'Health': ['Health budget: Rs 90,958 crore (2025-26)', 'Target: 2.5% of GDP public health spending', '1.5 lakh Health & Wellness Centres planned'],
+  'Finance & Economy': ['GDP: $3.9 trillion (2025 est.)', 'Fiscal deficit target: 4.4% of GDP', 'GST collection: Rs 1.87 lakh crore/month avg'],
+  'Agriculture': ['Agri budget: Rs 1.52 lakh crore (2025-26)', 'MSP for 23 crops', 'PM-KISAN: Rs 6,000/year to 9 crore farmers'],
+  'Digital & Technology': ['Rs 15,000 crore for Digital India initiatives', 'UPI: 14 billion monthly transactions', '850 million+ Aadhaar-linked mobiles'],
+  'Defence & Security': ['Defence budget: Rs 6.21 lakh crore (2025-26)', '68% indigenous procurement target', '1.4 million active military personnel'],
+  'Climate & Environment': ['Net-zero target: 2070', '50% non-fossil fuel energy capacity by 2030', 'Green Climate Fund: $3 billion committed'],
+  'Energy': ['500 GW non-fossil fuel capacity target by 2030', 'Saubhagya: 100% household electrification', '175 GW renewable energy installed (2025)'],
+  'Labour & Employment': ['4 Labour Codes consolidating 29 laws', 'EPFO: 28 crore subscribers', 'E-Shram: 30 crore unorganised workers registered'],
+  'Social Protection': ['PM-JAY: 55 crore beneficiaries', 'MGNREGA: Rs 86,000 crore annual outlay', 'NSAP pensions: 3 crore beneficiaries'],
+  'Governance & Reform': ['20 million central + state government employees', 'Rs 3.3 lakh crore transferred via DBT', '1,500+ services on UMANG app'],
+  'Transport & Infrastructure': ['Rs 11.11 lakh crore capital expenditure (2025-26)', 'Bharatmala: 83,677 km national highways', 'Vande Bharat: 75 train sets operational'],
+  'Rural Development': ['PMAY-G: 2.95 crore houses sanctioned', 'PMGSY: 7.25 lakh km rural roads', 'SHG network: 9 crore women members'],
+  'Urban Development': ['PMAY-U: 1.18 crore houses sanctioned', 'Smart Cities Mission: 100 cities', 'Metro rail: 900+ km operational'],
+  'Trade & Commerce': ['Merchandise exports: $437 billion (2024-25)', 'FDI inflow: $71 billion (2024-25)', 'PLI scheme: Rs 1.97 lakh crore across 14 sectors'],
+  'Water & Sanitation': ['Jal Jeevan Mission: Rs 60,000 crore/year', '14.5 crore rural tap connections delivered', 'SBM 2.0: Rs 1.4 lakh crore outlay'],
+  'Housing': ['PMAY: 4.13 crore houses total sanctioned', 'Urban housing shortage: 10 million units', 'Affordable Housing Fund: Rs 25,000 crore'],
+  'Child Rights & Youth': ['ICDS: 8 crore beneficiaries under 6', '14 lakh Anganwadi centres', 'POSHAN Abhiyaan: Rs 3,000 crore annually'],
+  'Gender & Women': ['Beti Bachao Beti Padhao: 405 districts', 'Maternity benefit: Rs 5,000 under PMMVY', 'One Stop Centres: 733 across 35 states/UTs'],
+  'Tribal & Indigenous': ['Tribal budget: Rs 13,000 crore (2025-26)', 'EMRS: 740 Eklavya Model Residential Schools', 'FRA: 2.2 million titles distributed'],
+  'Science & Innovation': ['R&D spending: 0.7% of GDP', 'Gaganyaan: Rs 12,000 crore investment', 'India Innovation Index: 40th globally (2024)'],
+};
+
 // Political spectrum: sector+type → lean
 // -2 = Left, -1 = Centre-Left, 0 = Centre, 1 = Centre-Right, 2 = Right
 const SECTOR_LEAN: Record<string, number> = {
@@ -136,6 +160,7 @@ export function enrichPolicy(sectors: string[], type: string): PolicyEnrichment 
   const ministrySet = new Set<string>();
   const stakeholderSet = new Set<string>();
   const keyNumbers: string[] = [];
+  let affectedPopulation = '—';
   let leanSum = 0;
 
   for (const s of sectors) {
@@ -145,7 +170,15 @@ export function enrichPolicy(sectors: string[], type: string): PolicyEnrichment 
     const stakeholders = SECTOR_STAKEHOLDERS[s] || [];
     stakeholders.slice(0, 3).forEach(st => stakeholderSet.add(st));
 
-    if (SECTOR_AFFECTED[s]) keyNumbers.push(SECTOR_AFFECTED[s]);
+    if (affectedPopulation === '—' && SECTOR_AFFECTED[s]) {
+      affectedPopulation = SECTOR_AFFECTED[s];
+    }
+
+    // Collect distinct key numbers from all sectors
+    const nums = SECTOR_KEY_NUMBERS[s] || [];
+    for (const n of nums) {
+      if (!keyNumbers.includes(n)) keyNumbers.push(n);
+    }
 
     leanSum += SECTOR_LEAN[s] ?? 0;
   }
@@ -157,9 +190,9 @@ export function enrichPolicy(sectors: string[], type: string): PolicyEnrichment 
   return {
     ministries: Array.from(ministrySet).slice(0, 5),
     stakeholders: Array.from(stakeholderSet).slice(0, 6),
-    affectedPopulation: keyNumbers[0] || '—',
+    affectedPopulation,
     politicalLean: lean,
     politicalLabel: LEAN_LABELS[String(lean) as any] || 'Centre',
-    keyNumbers: keyNumbers.slice(0, 2),
+    keyNumbers: keyNumbers.slice(0, 4),
   };
 }
