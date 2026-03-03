@@ -1,0 +1,77 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Auto-updating tracker of Indian development policies across 20+ sectors. Open data, open source." } = Astro.props;
+const siteTitle = `${title} | India Policy Tracker`;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{siteTitle}</title>
+  <meta name="description" content={description} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={siteTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="India Policy Tracker" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="India Policy Tracker RSS" href="/policy-tracker/rss.xml" />
+
+  <style>
+    @import '../styles/global.css';
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/policy-tracker/" class="site-logo">
+        <div>
+          <h1>India Policy Tracker</h1>
+          <span class="subtitle">by ImpactMojo &mdash; auto-updated from open sources</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <a href="/policy-tracker/">Dashboard</a>
+        <a href="/policy-tracker/sectors/">Sectors</a>
+        <a href="/policy-tracker/sources/">Sources</a>
+        <a href="/policy-tracker/about/">About</a>
+        <a href="/policy-tracker/rss.xml" title="RSS Feed">RSS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://www.impactmojo.in">ImpactMojo</a>
+        <a href="/policy-tracker/about/">About This Tracker</a>
+        <a href="/policy-tracker/rss.xml">RSS Feed</a>
+        <a href="https://github.com/impactmojo/india-policy-tracker">GitHub</a>
+      </div>
+      <p>
+        Open-source policy tracker. Data sourced from PIB, PRS Legislative Research, India Code,
+        eGazette, NITI Aayog, data.gov.in, World Bank, UNDP, ORF, CPR, and more.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        Built with Astro. Auto-updated via GitHub Actions every 6 hours.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

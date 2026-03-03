@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getMeta, getSectorSlug } from '../../lib/data';
+
+const meta = getMeta();
+
+const SECTOR_ICONS: Record<string, string> = {
+  'Education': '📚',
+  'Health': '🏥',
+  'Agriculture': '🌾',
+  'Climate & Environment': '🌍',
+  'Digital & Technology': '💻',
+  'Finance & Economy': '💰',
+  'Social Protection': '🛡',
+  'Gender & Women': '♀',
+  'Urban Development': '🏙',
+  'Rural Development': '🏡',
+  'Water & Sanitation': '💧',
+  'Energy': '⚡',
+  'Governance & Reform': '⚖',
+  'Labour & Employment': '👷',
+  'Housing': '🏠',
+  'Transport & Infrastructure': '🚂',
+  'Defence & Security': '🛡',
+  'Trade & Commerce': '📦',
+  'Science & Innovation': '🔬',
+  'Tribal & Indigenous': '🌿',
+  'Disability & Inclusion': '♿',
+  'Child Rights & Youth': '👶',
+};
+
+const sectors = Object.entries(meta.sector_counts).sort((a, b) => b[1] - a[1]);
+---
+<Base title="Sectors" description="Browse Indian development policies by sector — 22 themes covering education, health, agriculture, climate, digital, finance, and more.">
+  <div style="padding: var(--space-xl) 0;">
+    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-sm);">Development Sectors</h2>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);">
+      Browse policies across {sectors.length} development themes. Click a sector to see all tracked policies.
+    </p>
+
+    <div class="sector-grid">
+      {sectors.map(([name, count]) => (
+        <a href={`/policy-tracker/sectors/${getSectorSlug(name)}/`} class="sector-card">
+          <span class="sector-card-icon">{SECTOR_ICONS[name] || '📋'}</span>
+          <span class="sector-card-name">{name}</span>
+          <span class="sector-card-count">{count} {count === 1 ? 'policy' : 'policies'} tracked</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

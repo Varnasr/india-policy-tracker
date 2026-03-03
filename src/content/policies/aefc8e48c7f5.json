@@ -1,0 +1,21 @@
+{
+  "id": "aefc8e48c7f5",
+  "title": "Ministry of Railways",
+  "description": "Gazette notification: Ministry of Railways",
+  "link": "",
+  "date": "2026-03-02",
+  "source_id": "egazette",
+  "source_name": "eGazette of India",
+  "source_short": "eGazette",
+  "sectors": [
+    "Digital & Technology",
+    "Social Protection",
+    "Transport & Infrastructure"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "social-protection",
+    "transport-infrastructure"
+  ],
+  "type": "notification"
+}

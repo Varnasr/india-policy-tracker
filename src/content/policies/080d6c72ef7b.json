@@ -1,0 +1,17 @@
+{
+  "id": "080d6c72ef7b",
+  "title": "Budget at a Glance+",
+  "description": "",
+  "link": "https://www.indiabudget.gov.in#budget",
+  "date": "2026-03-03",
+  "source_id": "mof_budget",
+  "source_name": "Ministry of Finance - Union Budget",
+  "source_short": "MoF Budget",
+  "sectors": [
+    "Finance & Economy"
+  ],
+  "sector_slugs": [
+    "finance-economy"
+  ],
+  "type": "budget"
+}

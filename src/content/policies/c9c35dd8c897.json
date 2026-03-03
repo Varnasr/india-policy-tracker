@@ -1,0 +1,17 @@
+{
+  "id": "c9c35dd8c897",
+  "title": "Bills Parliament",
+  "description": "",
+  "link": "https://prsindia.org/billtrack/field_bill_category/all",
+  "date": "2026-03-03",
+  "source_id": "prs_bills",
+  "source_name": "PRS Bill Track",
+  "source_short": "PRS Bills",
+  "sectors": [
+    "Governance & Reform"
+  ],
+  "sector_slugs": [
+    "governance-reform"
+  ],
+  "type": "legislation"
+}

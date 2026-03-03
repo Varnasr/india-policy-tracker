@@ -1,0 +1,17 @@
+{
+  "id": "1c8340e25af9",
+  "title": "Legislature Track",
+  "description": "",
+  "link": "https://prsindia.org/legislatures/states",
+  "date": "2026-03-03",
+  "source_id": "prs_legislative",
+  "source_name": "PRS Legislative Research",
+  "source_short": "PRS",
+  "sectors": [
+    "Governance & Reform"
+  ],
+  "sector_slugs": [
+    "governance-reform"
+  ],
+  "type": "policy"
+}

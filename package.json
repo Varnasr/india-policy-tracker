@@ -1,0 +1,18 @@
+{
+  "name": "india-policy-tracker",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Auto-updating Indian development policy tracker across 20+ sectors",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch": "python3 scripts/fetch_all.py",
+    "update": "python3 scripts/fetch_all.py && astro build"
+  },
+  "dependencies": {
+    "astro": "^4.16.0",
+    "@astrojs/rss": "^4.0.0"
+  }
+}

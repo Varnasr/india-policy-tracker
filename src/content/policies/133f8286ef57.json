@@ -1,0 +1,17 @@
+{
+  "id": "133f8286ef57",
+  "title": "India's Growth Story",
+  "description": "World Bank: India's Growth Story",
+  "link": "http://documents.worldbank.org/curated/en/941201538406933607",
+  "date": "2018-10-01",
+  "source_id": "world_bank_india",
+  "source_name": "World Bank - India",
+  "source_short": "World Bank",
+  "sectors": [
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "social-protection"
+  ],
+  "type": "policy"
+}

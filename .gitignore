@@ -1,0 +1,17 @@
+# Build
+dist/
+node_modules/
+.astro/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,39 @@
+---
+interface Props {
+  totalPolicies: number;
+  totalSources: number;
+  totalSectors: number;
+  lastUpdated: string;
+}
+
+const { totalPolicies, totalSources, totalSectors, lastUpdated } = Astro.props;
+
+function formatUpdated(isoStr: string): string {
+  try {
+    const d = new Date(isoStr);
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  } catch {
+    return 'Recently';
+  }
+}
+---
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-number">{totalPolicies}</div>
+    <div class="stat-label">Policies Tracked</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">{totalSources}</div>
+    <div class="stat-label">Open Sources</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">{totalSectors}</div>
+    <div class="stat-label">Dev Sectors</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number" style="font-size: 1rem; padding-top: 0.3rem;">
+      {formatUpdated(lastUpdated)}
+    </div>
+    <div class="stat-label">Last Updated</div>
+  </div>
+</div>

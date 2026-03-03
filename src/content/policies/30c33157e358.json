@@ -1,0 +1,17 @@
+{
+  "id": "30c33157e358",
+  "title": "Demands for Grants of Central Government-",
+  "description": "",
+  "link": "https://www.indiabudget.gov.in#demand",
+  "date": "2026-03-03",
+  "source_id": "mof_budget",
+  "source_name": "Ministry of Finance - Union Budget",
+  "source_short": "MoF Budget",
+  "sectors": [
+    "Finance & Economy"
+  ],
+  "sector_slugs": [
+    "finance-economy"
+  ],
+  "type": "policy"
+}

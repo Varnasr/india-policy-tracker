@@ -1,0 +1,17 @@
+{
+  "id": "2849f6fd6384",
+  "title": "Discussion Papers",
+  "description": "",
+  "link": "https://prsindia.org/policy/discussion-papers",
+  "date": "2026-03-03",
+  "source_id": "prs_bills",
+  "source_name": "PRS Bill Track",
+  "source_short": "PRS Bills",
+  "sectors": [
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "social-protection"
+  ],
+  "type": "research"
+}

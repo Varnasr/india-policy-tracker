@@ -1,0 +1,21 @@
+{
+  "id": "aa602d9d8f58",
+  "title": "Does Food Insecurity Hinder Migration ? Experimental Evidence from the Indian Public Distribution System",
+  "description": "World Bank: Does Food Insecurity Hinder Migration ? Experimental Evidence from the Indian Public Distribution System",
+  "link": "http://documents.worldbank.org/curated/en/099914408222328779",
+  "date": "2023-08-22",
+  "source_id": "world_bank_india",
+  "source_name": "World Bank - India",
+  "source_short": "World Bank",
+  "sectors": [
+    "Social Protection",
+    "Digital & Technology",
+    "Energy"
+  ],
+  "sector_slugs": [
+    "social-protection",
+    "digital-technology",
+    "energy"
+  ],
+  "type": "policy"
+}

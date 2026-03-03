@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "name": "India Policy Tracker",
+    "description": "Auto-updating tracker of Indian development policies across 20+ sectors",
+    "version": "2.0.0",
+    "update_frequency": "Every 6 hours via GitHub Actions"
+  },
+  "sectors": [
+    "Education",
+    "Health",
+    "Agriculture",
+    "Climate & Environment",
+    "Digital & Technology",
+    "Finance & Economy",
+    "Social Protection",
+    "Gender & Women",
+    "Urban Development",
+    "Rural Development",
+    "Water & Sanitation",
+    "Energy",
+    "Governance & Reform",
+    "Labour & Employment",
+    "Housing",
+    "Transport & Infrastructure",
+    "Defence & Security",
+    "Trade & Commerce",
+    "Science & Innovation",
+    "Tribal & Indigenous",
+    "Disability & Inclusion",
+    "Child Rights & Youth"
+  ],
+  "sources": {
+    "pib": {
+      "name": "Press Information Bureau",
+      "short_name": "PIB",
+      "type": "scrape",
+      "url": "https://pib.gov.in/indexd.aspx?reg=3&lang=1",
+      "rss_url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+      "frequency": "Daily (multiple times)",
+      "format": "HTML + RSS",
+      "reliability": "high",
+      "description": "Official press releases from all ministries and departments of the Government of India",
+      "covers_sectors": "all"
+    },
+    "prs_legislative": {
+      "name": "PRS Legislative Research",
+      "short_name": "PRS",
+      "type": "scrape",
+      "url": "https://prsindia.org/theprsblog",
+      "backup_urls": [
+        "https://prsindia.org/policy/monthly-policy-review/"
+      ],
+      "frequency": "Daily",
+      "format": "HTML",
+      "reliability": "high",
+      "license": "CC BY 4.0",
+      "description": "Independent legislative research - bill tracking, policy analysis, parliament updates",
+      "covers_sectors": "all"
+    },
+    "prs_bills": {
+      "name": "PRS Bill Track",
+      "short_name": "PRS Bills",
+      "type": "scrape",
+      "url": "https://prsindia.org/billtrack",
+      "frequency": "During Parliament sessions",
+      "format": "HTML",
+      "reliability": "high",
+      "license": "CC BY 4.0",
+      "description": "Tracking all bills introduced, debated, and passed in Parliament",
+      "covers_sectors": "all"
+    },
+    "india_code": {
+      "name": "India Code",
+      "short_name": "India Code",
+      "type": "scrape",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1362/browse?type=actyear",
+      "frequency": "As new acts are published",
+      "format": "HTML (DSpace repository)",
+      "reliability": "high",
+      "description": "Digital repository of all Central and State Acts — the definitive source for Indian legislation",
+      "covers_sectors": "all"
+    },
+    "egazette": {
+      "name": "eGazette of India",
+      "short_name": "eGazette",
+      "type": "scrape",
+      "url": "https://egazette.gov.in/",
+      "frequency": "Multiple times weekly",
+      "format": "HTML + PDF",
+      "reliability": "high",
+      "description": "Official Gazette notifications — rules, regulations, orders, notifications from all ministries",
+      "covers_sectors": "all"
+    },
+    "niti_aayog": {
+      "name": "NITI Aayog",
+      "short_name": "NITI",
+      "type": "scrape",
+      "urls": {
+        "reports": "https://www.niti.gov.in/documents/reports",
+        "policy_papers": "https://www.niti.gov.in/working-papers-policy-papers-and-research-papers",
+        "research_papers": "https://www.niti.gov.in/documents/research-papers"
+      },
+      "frequency": "Weekly to monthly",
+      "format": "HTML + PDF",
+      "reliability": "high",
+      "description": "Policy papers, reports, and research from India's apex policy think tank",
+      "covers_sectors": "all"
+    },
+    "data_gov_in": {
+      "name": "Open Government Data Platform India",
+      "short_name": "data.gov.in",
+      "type": "api",
+      "base_url": "https://data.gov.in/backend/dmspublic/v1/resources",
+      "api_docs": "https://data.gov.in/apis",
+      "frequency": "Continuously updated",
+      "format": "JSON API",
+      "reliability": "high",
+      "description": "India's open data platform — datasets from all ministries. OGD 2.0 with modern microservices API.",
+      "covers_sectors": "all"
+    },
+    "parliament_lok_sabha": {
+      "name": "Lok Sabha - Digital Sansad",
+      "short_name": "Lok Sabha",
+      "type": "scrape",
+      "urls": {
+        "bills": "https://sansad.in/ls/legislation/bills",
+        "questions": "https://sansad.in/ls/questions/questions-and-answers"
+      },
+      "frequency": "During sessions (3 per year)",
+      "format": "HTML",
+      "reliability": "high",
+      "description": "Bills, questions, and proceedings from the lower house of Indian Parliament",
+      "covers_sectors": "all"
+    },
+    "parliament_rajya_sabha": {
+      "name": "Rajya Sabha - Digital Sansad",
+      "short_name": "Rajya Sabha",
+      "type": "scrape",
+      "urls": {
+        "bills": "https://sansad.in/rs/legislation/bills",
+        "questions": "https://sansad.in/rs/questions/questions-and-answers"
+      },
+      "frequency": "During sessions",
+      "format": "HTML",
+      "reliability": "high",
+      "description": "Bills, questions, and proceedings from the upper house of Indian Parliament",
+      "covers_sectors": "all"
+    },
+    "mof_budget": {
+      "name": "Ministry of Finance - Union Budget",
+      "short_name": "MoF Budget",
+      "type": "scrape",
+      "url": "https://www.indiabudget.gov.in/",
+      "frequency": "Annual (February) + supplementary",
+      "format": "HTML + PDF",
+      "reliability": "high",
+      "description": "Union Budget documents, economic survey, finance bills",
+      "covers_sectors": ["Finance & Economy"]
+    },
+    "rbi": {
+      "name": "Reserve Bank of India",
+      "short_name": "RBI",
+      "type": "rss",
+      "url": "https://rbi.org.in/pressreleases_rss.xml",
+      "backup_urls": [
+        "https://rbi.org.in/notifications_rss.xml"
+      ],
+      "frequency": "Multiple times weekly",
+      "format": "RSS/XML",
+      "reliability": "high",
+      "description": "Monetary policy, banking regulations, financial circulars, press releases",
+      "covers_sectors": ["Finance & Economy"]
+    },
+    "moefcc": {
+      "name": "Ministry of Environment, Forest and Climate Change",
+      "short_name": "MoEFCC",
+      "type": "scrape",
+      "url": "https://moef.gov.in/en/rules-and-regulations/",
+      "frequency": "Regular",
+      "format": "HTML + PDF",
+      "reliability": "medium",
+      "description": "Environmental regulations, notifications, climate policies",
+      "covers_sectors": ["Climate & Environment"]
+    },
+    "meity": {
+      "name": "Ministry of Electronics and IT",
+      "short_name": "MeitY",
+      "type": "scrape",
+      "url": "https://www.meity.gov.in/recent-initiatives",
+      "frequency": "Regular",
+      "format": "HTML",
+      "reliability": "medium",
+      "description": "Digital India policies, IT regulations, data governance frameworks",
+      "covers_sectors": ["Digital & Technology"]
+    },
+    "world_bank_india": {
+      "name": "World Bank - India",
+      "short_name": "World Bank",
+      "type": "api",
+      "url": "https://search.worldbank.org/api/v3/wds?format=json&qterm=india&docty=Policy+Research+Working+Paper&rows=30",
+      "frequency": "Weekly",
+      "format": "JSON API",
+      "reliability": "high",
+      "description": "World Bank research papers, project documents, and data on India",
+      "covers_sectors": "all"
+    },
+    "undp_india": {
+      "name": "UNDP India",
+      "short_name": "UNDP",
+      "type": "scrape",
+      "url": "https://www.undp.org/india/news-centre",
+      "frequency": "Weekly",
+      "format": "HTML",
+      "reliability": "medium",
+      "description": "UNDP India publications, project updates, SDG-related policy work",
+      "covers_sectors": "all"
+    },
+    "orf": {
+      "name": "Observer Research Foundation",
+      "short_name": "ORF",
+      "type": "scrape",
+      "url": "https://www.orfonline.org/expert-speak",
+      "frequency": "Daily",
+      "format": "HTML",
+      "reliability": "high",
+      "description": "Policy research and analysis from one of India's leading think tanks",
+      "covers_sectors": "all"
+    },
+    "cprindia": {
+      "name": "Centre for Policy Research",
+      "short_name": "CPR",
+      "type": "rss",
+      "url": "https://cprindia.org/feed/",
+      "frequency": "Weekly",
+      "format": "RSS/XML",
+      "reliability": "high",
+      "description": "Policy research on urbanisation, environment, law, governance",
+      "covers_sectors": "all"
+    },
+    "livemint_policy": {
+      "name": "Livemint - Policy & Politics",
+      "short_name": "Livemint",
+      "type": "rss",
+      "url": "https://www.livemint.com/rss/politics",
+      "frequency": "Daily (multiple times)",
+      "format": "RSS/XML",
+      "reliability": "high",
+      "description": "Policy and politics news coverage from Livemint — budget, governance, legislation",
+      "covers_sectors": "all"
+    },
+    "idfc_institute": {
+      "name": "IDFC Institute",
+      "short_name": "IDFC",
+      "type": "scrape",
+      "url": "https://www.idfcinstitute.org/knowledge",
+      "frequency": "Monthly",
+      "format": "HTML",
+      "reliability": "medium",
+      "description": "Research on governance, urbanisation, political economy, and public finance",
+      "covers_sectors": ["Governance & Reform", "Urban Development", "Finance & Economy"]
+    },
+    "nipfp": {
+      "name": "National Institute of Public Finance and Policy",
+      "short_name": "NIPFP",
+      "type": "scrape",
+      "url": "https://www.nipfp.org.in/publications/working-papers/",
+      "frequency": "Monthly",
+      "format": "HTML + PDF",
+      "reliability": "medium",
+      "description": "Public finance research, tax policy, fiscal federalism",
+      "covers_sectors": ["Finance & Economy", "Governance & Reform"]
+    }
+  }
+}

@@ -1,0 +1,595 @@
+/* ── India Policy Tracker — Global Styles ─────────────────────── */
+/* Design language: matches ImpactMojo's cyan-to-indigo gradients  */
+
+:root {
+  /* Core palette */
+  --color-bg: #0f1117;
+  --color-bg-card: #1a1d2e;
+  --color-bg-card-hover: #222640;
+  --color-bg-surface: #151827;
+  --color-border: #2a2f45;
+  --color-border-light: #353b58;
+
+  /* Text */
+  --color-text: #e8eaf0;
+  --color-text-muted: #8b90a8;
+  --color-text-dim: #5c6180;
+
+  /* Accent gradient (ImpactMojo style) */
+  --gradient-primary: linear-gradient(135deg, #06b6d4, #6366f1);
+  --gradient-primary-hover: linear-gradient(135deg, #22d3ee, #818cf8);
+  --color-accent: #06b6d4;
+  --color-accent-purple: #6366f1;
+
+  /* Sector colors */
+  --sector-education: #f59e0b;
+  --sector-health: #ef4444;
+  --sector-agriculture: #22c55e;
+  --sector-climate: #10b981;
+  --sector-digital: #6366f1;
+  --sector-finance: #f97316;
+  --sector-social: #ec4899;
+  --sector-gender: #d946ef;
+  --sector-urban: #8b5cf6;
+  --sector-rural: #84cc16;
+  --sector-water: #0ea5e9;
+  --sector-energy: #eab308;
+  --sector-governance: #64748b;
+  --sector-labour: #f97316;
+  --sector-housing: #a78bfa;
+  --sector-transport: #14b8a6;
+  --sector-defence: #6b7280;
+  --sector-trade: #fb923c;
+  --sector-science: #a855f7;
+  --sector-tribal: #059669;
+  --sector-disability: #0891b2;
+  --sector-child: #fb7185;
+
+  /* Type colors */
+  --type-legislation: #ef4444;
+  --type-notification: #f59e0b;
+  --type-scheme: #22c55e;
+  --type-budget: #f97316;
+  --type-research: #6366f1;
+  --type-announcement: #06b6d4;
+  --type-policy: #8b5cf6;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 24px rgba(6, 182, 212, 0.15);
+}
+
+/* ── Reset & Base ─────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #22d3ee;
+}
+
+/* ── Layout ───────────────────────────────────────────────────── */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-xl);
+  min-height: calc(100vh - 160px);
+}
+
+@media (max-width: 900px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Header ───────────────────────────────────────────────────── */
+
+.site-header {
+  background: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-lg) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.site-logo h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-logo .subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.header-nav {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.header-nav a {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+.header-nav a:hover,
+.header-nav a.active {
+  color: var(--color-text);
+  background: var(--color-bg-card);
+}
+
+/* ── Stats Bar ────────────────────────────────────────────────── */
+
+.stats-bar {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Sidebar / Filters ────────────────────────────────────────── */
+
+.sidebar {
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: var(--space-md);
+}
+
+.filter-section {
+  margin-bottom: var(--space-xl);
+}
+
+.filter-section h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: var(--space-xs) var(--space-sm);
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+  text-align: left;
+}
+.filter-btn:hover {
+  background: var(--color-bg-card);
+  color: var(--color-text);
+}
+.filter-btn.active {
+  background: var(--color-bg-card);
+  color: var(--color-accent);
+}
+
+.filter-count {
+  margin-left: auto;
+  font-size: 0.6875rem;
+  background: var(--color-bg);
+  padding: 1px 6px;
+  border-radius: 10px;
+  color: var(--color-text-dim);
+}
+
+.filter-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Search ───────────────────────────────────────────────────── */
+
+.search-box {
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  padding-left: 2.5rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-input::placeholder {
+  color: var(--color-text-dim);
+}
+.search-input:focus {
+  border-color: var(--color-accent);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-dim);
+  font-size: 0.875rem;
+}
+
+/* ── Policy Cards ─────────────────────────────────────────────── */
+
+.policy-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.policy-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: all 0.2s;
+  position: relative;
+}
+.policy-card:hover {
+  border-color: var(--color-border-light);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-1px);
+}
+
+.policy-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.policy-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+.policy-title a {
+  color: inherit;
+}
+.policy-title a:hover {
+  color: var(--color-accent);
+}
+
+.policy-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.policy-date {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.policy-source {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.policy-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.policy-description {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-sm);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.policy-sectors {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+/* ── Sector Badges ────────────────────────────────────────────── */
+
+.sector-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  border: 1px solid;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.sector-badge:hover {
+  filter: brightness(1.2);
+}
+
+/* Type badge colors */
+.type-legislation { background: rgba(239,68,68,0.15); color: #fca5a5; border-color: rgba(239,68,68,0.3); }
+.type-notification { background: rgba(245,158,11,0.15); color: #fcd34d; border-color: rgba(245,158,11,0.3); }
+.type-scheme { background: rgba(34,197,94,0.15); color: #86efac; border-color: rgba(34,197,94,0.3); }
+.type-budget { background: rgba(249,115,22,0.15); color: #fdba74; border-color: rgba(249,115,22,0.3); }
+.type-research { background: rgba(99,102,241,0.15); color: #a5b4fc; border-color: rgba(99,102,241,0.3); }
+.type-announcement { background: rgba(6,182,212,0.15); color: #67e8f9; border-color: rgba(6,182,212,0.3); }
+.type-policy { background: rgba(139,92,246,0.15); color: #c4b5fd; border-color: rgba(139,92,246,0.3); }
+
+/* ── Sector Page Grid ─────────────────────────────────────────── */
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.sector-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: all 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.sector-card:hover {
+  border-color: var(--color-border-light);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.sector-card-icon {
+  font-size: 1.5rem;
+}
+
+.sector-card-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sector-card-count {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Footer ───────────────────────────────────────────────────── */
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-2xl);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-dim);
+}
+
+.site-footer a {
+  color: var(--color-text-muted);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* ── Utility ──────────────────────────────────────────────────── */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--color-text-muted);
+}
+
+.empty-state h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    max-height: none;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-lg);
+    padding-right: 0;
+  }
+
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    align-items: center;
+  }
+
+  .filter-section h3 {
+    width: 100%;
+  }
+
+  .filter-btn {
+    width: auto;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    font-size: 0.75rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .stats-bar {
+    gap: var(--space-md);
+  }
+
+  .stat-number {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .policy-card {
+    padding: var(--space-md);
+  }
+
+  .sector-grid {
+    grid-template-columns: 1fr;
+  }
+}

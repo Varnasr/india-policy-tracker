@@ -1,0 +1,19 @@
+{
+  "id": "420add0c216d",
+  "title": "Finance Minister's Speech-",
+  "description": "",
+  "link": "https://www.indiabudget.gov.in#collapse1",
+  "date": "2026-03-03",
+  "source_id": "mof_budget",
+  "source_name": "Ministry of Finance - Union Budget",
+  "source_short": "MoF Budget",
+  "sectors": [
+    "Finance & Economy",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "finance-economy",
+    "social-protection"
+  ],
+  "type": "policy"
+}

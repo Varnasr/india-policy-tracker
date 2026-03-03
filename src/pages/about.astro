@@ -1,0 +1,112 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="About" description="About the India Policy Tracker — an open-source, auto-updating tool for tracking Indian development policies across 22 sectors.">
+  <div style="max-width: 720px; padding: var(--space-xl) 0;">
+    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-lg);">About India Policy Tracker</h2>
+
+    <div style="display: flex; flex-direction: column; gap: var(--space-lg); color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.7;">
+      <p>
+        <strong style="color: var(--color-text);">India Policy Tracker</strong> is an open-source, auto-updating
+        dashboard that aggregates Indian government policies, legislation, notifications, and research
+        across <strong style="color: var(--color-text);">22 development sectors</strong> from
+        <strong style="color: var(--color-text);">20+ verified open sources</strong>.
+      </p>
+
+      <p>
+        Built as a complement to <a href="https://www.impactmojo.in">ImpactMojo</a>'s development economics
+        education platform, this tracker aims to make Indian policymaking more transparent and accessible
+        to researchers, students, practitioners, and citizens.
+      </p>
+
+      <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-lg);">
+        <h3 style="font-size: 1rem; color: var(--color-text); margin-bottom: var(--space-md);">How It Works</h3>
+        <ol style="padding-left: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm);">
+          <li><strong style="color: var(--color-text);">Automated Fetching:</strong> Every 6 hours, GitHub Actions runs Python scripts that pull data from RSS feeds (PIB, PRS, ORF, CPR, RBI, UNDP), APIs (data.gov.in, World Bank), and web scraping (India Code, eGazette, NITI Aayog, Parliament).</li>
+          <li><strong style="color: var(--color-text);">Smart Classification:</strong> Each policy item is automatically classified into relevant development sectors using keyword-based NLP — no manual tagging needed.</li>
+          <li><strong style="color: var(--color-text);">Static Generation:</strong> The site is rebuilt with Astro after each fetch, producing a fast, SEO-friendly static site hosted for free.</li>
+          <li><strong style="color: var(--color-text);">Zero Cost:</strong> The entire pipeline — fetching, processing, hosting — runs on free tiers (GitHub Actions + GitHub Pages / Cloudflare Pages).</li>
+        </ol>
+      </div>
+
+      <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-lg);">
+        <h3 style="font-size: 1rem; color: var(--color-text); margin-bottom: var(--space-md);">22 Development Sectors</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-xs); font-size: 0.8125rem;">
+          <span>📚 Education</span>
+          <span>🏥 Health</span>
+          <span>🌾 Agriculture</span>
+          <span>🌍 Climate & Environment</span>
+          <span>💻 Digital & Technology</span>
+          <span>💰 Finance & Economy</span>
+          <span>🛡 Social Protection</span>
+          <span>♀ Gender & Women</span>
+          <span>🏙 Urban Development</span>
+          <span>🏡 Rural Development</span>
+          <span>💧 Water & Sanitation</span>
+          <span>⚡ Energy</span>
+          <span>⚖ Governance & Reform</span>
+          <span>👷 Labour & Employment</span>
+          <span>🏠 Housing</span>
+          <span>🚂 Transport & Infrastructure</span>
+          <span>🛡 Defence & Security</span>
+          <span>📦 Trade & Commerce</span>
+          <span>🔬 Science & Innovation</span>
+          <span>🌿 Tribal & Indigenous</span>
+          <span>♿ Disability & Inclusion</span>
+          <span>👶 Child Rights & Youth</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-lg);">
+        <h3 style="font-size: 1rem; color: var(--color-text); margin-bottom: var(--space-md);">Data Sources</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); font-size: 0.8125rem;">
+          <div>
+            <h4 style="color: var(--color-text); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs);">Official Government</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 2px;">
+              <li>Press Information Bureau (PIB)</li>
+              <li>India Code (indiacode.nic.in)</li>
+              <li>eGazette of India</li>
+              <li>NITI Aayog</li>
+              <li>Digital Sansad (Parliament)</li>
+              <li>data.gov.in (OGD Platform)</li>
+              <li>NDAP (NITI Analytics)</li>
+              <li>Reserve Bank of India</li>
+              <li>Ministry of Environment</li>
+              <li>Ministry of Electronics & IT</li>
+              <li>india.gov.in Services Portal</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--color-text); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs);">Research & International</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 2px;">
+              <li>PRS Legislative Research (CC BY 4.0)</li>
+              <li>World Bank India</li>
+              <li>UNDP India</li>
+              <li>Observer Research Foundation</li>
+              <li>Centre for Policy Research</li>
+              <li>IDFC Institute</li>
+              <li>NIPFP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-lg);">
+        <h3 style="font-size: 1rem; color: var(--color-text); margin-bottom: var(--space-md);">Subscribe</h3>
+        <p>Get updates via our <a href="/policy-tracker/rss.xml">RSS feed</a> in your favourite reader. The feed includes all tracked policies with sector tags.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1rem; color: var(--color-text); margin-bottom: var(--space-sm);">Open Source</h3>
+        <p>
+          This project is fully open source. Contributions, source suggestions, and bug reports are welcome
+          on <a href="https://github.com/impactmojo/india-policy-tracker">GitHub</a>.
+        </p>
+        <p style="margin-top: var(--space-sm);">
+          Built with <a href="https://astro.build">Astro</a>, Python, and GitHub Actions.
+          Designed to complement <a href="https://www.impactmojo.in">ImpactMojo</a>'s free development economics education.
+        </p>
+      </div>
+    </div>
+  </div>
+</Base>
