@@ -215,6 +215,44 @@
     "type": "notification"
   },
   {
+    "id": "d767f5dbba2f",
+    "title": "National Zoological Park, New Delhi celebrates World Wildlife Day 2026",
+    "description": "Government of India press release: National Zoological Park, New Delhi celebrates World Wildlife Day 2026",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235131",
+    "date": "2026-06-01",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Climate & Environment"
+    ],
+    "sector_slugs": [
+      "climate-environment"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "058b3d1e0179",
+    "title": "Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadGovernment of The National Capital Territory of DelhiNotification regarding Boundaries...03-Mar-2026SG-DL-E-03032026-2706570.",
+    "description": "Gazette notification: Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadGovernment of The National Capital Territory of DelhiNotification regarding Boundaries...03-Mar-2026SG-DL-E-03032026-2706570.72 MBMinistry of Road Transport and HighwaysPublication of notification under Section 3A...03-Mar-20",
+    "link": "",
+    "date": "2026-06-01",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Transport & Infrastructure",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "notification"
+  },
+  {
     "id": "7d5604e7d60c",
     "title": "India's growth story shall be written on the canvas of\"Planned Urban Development\"",
     "description": "Gazette notification: India's growth story shall be written on the canvas of\"Planned Urban Development\"",
@@ -2641,6 +2679,274 @@
     "type": "policy"
   },
   {
+    "id": "42ca371d29f0",
+    "title": "Union Minister Shri Jyotiraditya Scindia inaugurates Bharat Pavilion at Mobile World ...",
+    "description": "Government of India press release: Union Minister Shri Jyotiraditya Scindia inaugurates Bharat Pavilion at Mobile World ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235200",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "d09b8d39697f",
+    "title": "Prime Minister emphasises strong foundation built for a truly renewed partnership bet...",
+    "description": "Government of India press release: Prime Minister emphasises strong foundation built for a truly renewed partnership bet...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235197",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "d7e18834d7df",
+    "title": "NHRC, India takes suo motu cognizance of the reported death of a boy after falling in...",
+    "description": "Government of India press release: NHRC, India takes suo motu cognizance of the reported death of a boy after falling in...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235198",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "eb9440ba1d57",
+    "title": "NHRC, India takes suo motu cognizance over the botched cataract surgery resulting in ...",
+    "description": "Government of India press release: NHRC, India takes suo motu cognizance over the botched cataract surgery resulting in ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235196",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "8a86082a07f1",
+    "title": "Ministry of Civil Aviation Operational Update – West Asia Airspace Situation",
+    "description": "Government of India press release: Ministry of Civil Aviation Operational Update – West Asia Airspace Situation",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235194",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "1f45ccd96385",
+    "title": "Provision of Rs 13000 cr for BioPharma SHAKTI & 3 Dedicated Chemical Parks is a strat...",
+    "description": "Government of India press release: Provision of Rs 13000 cr for BioPharma SHAKTI & 3 Dedicated Chemical Parks is a strat...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235160",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Health",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "health",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "6d3e5766c3c5",
+    "title": "Shipping Ministry Reviews Maritime Situation in Persian Gulf; Enhanced Monitoring to ...",
+    "description": "Government of India press release: Shipping Ministry Reviews Maritime Situation in Persian Gulf; Enhanced Monitoring to ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235128",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "bd847ed8b443",
+    "title": "Indian Railways Continues Comprehensive Festive Arrangements to Facilitate Comfortabl...",
+    "description": "Government of India press release: Indian Railways Continues Comprehensive Festive Arrangements to Facilitate Comfortabl...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235124",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "c1e2bffaa2f0",
+    "title": "Integrated Industry Capacity, Skills, and Technology Adoption Key to Railway Infrastr...",
+    "description": "Government of India press release: Integrated Industry Capacity, Skills, and Technology Adoption Key to Railway Infrastr...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235120",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Urban Development"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "urban-development"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "94b19e738234",
+    "title": "Prime Minister speaks with Amir of Qatar",
+    "description": "Government of India press release: Prime Minister speaks with Amir of Qatar",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235117",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "8aa005747d78",
+    "title": "Prime Minister speaks with Crown Prince of Kuwait",
+    "description": "Government of India press release: Prime Minister speaks with Crown Prince of Kuwait",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235114",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "d748a6326600",
+    "title": "Prime Minister speaks with His Majesty Sultan of Oman",
+    "description": "Government of India press release: Prime Minister speaks with His Majesty Sultan of Oman",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235112",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "a998786c2807",
+    "title": "Government of The National Capital Territory of Delhi",
+    "description": "Gazette notification: Government of The National Capital Territory of Delhi",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "notification"
+  },
+  {
+    "id": "5947cc36ebc3",
+    "title": "The Long Afterlife of a Regulatory Failure: India, HPV, and Vaccine Hesitancy",
+    "description": "ORF Expert Speak: The Long Afterlife of a Regulatory Failure: India, HPV, and Vaccine Hesitancy",
+    "link": "https://www.orfonline.org/expert-speak/the-long-afterlife-of-a-regulatory-failure-india-hpv-and-vaccine-hesitancy",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Health",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "health",
+      "labour-employment"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "64dd8d9a6b00",
     "title": "Processing of Applications Received Under the Citizen’s Charter – Status as on February 28, 2026",
     "description": "Analysis of the performance under the Citizen&rsquo;s Charter during the month of February 2026 has been carried out, and the summary thereof is given below &ndash; Description No. of Applications A Applications pending at the beginning of the month 2,833&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Applications received during the month 20,449&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp",
@@ -3616,7 +3922,7 @@
     "id": "5c491c4fe49e",
     "title": "Crime in India - 2023",
     "description": "National Crime Records Bureau (NCRB): Crime in India - 2023",
-    "link": "https://data.gov.in/resource/age-group-and-gender-wise-persons-arrested-under-special-and-local-laws-sll-crimes",
+    "link": "https://data.gov.in/resource/crime-head-wise-disposal-persons-arrested-under-indian-penal-code-ipc-crimes-0",
     "date": "2026-02-13",
     "source_id": "data_gov_in",
     "source_name": "Open Government Data Platform India",
