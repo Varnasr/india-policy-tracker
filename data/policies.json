@@ -173,10 +173,10 @@
     "type": "notification"
   },
   {
-    "id": "64dd8d9a6b00",
-    "title": "Processing of Applications Received Under the Citizen’s Charter – Status as on February 28, 2026",
-    "description": "Analysis of the performance under the Citizen&rsquo;s Charter during the month of February 2026 has been carried out, and the summary thereof is given below &ndash; Description No. of Applications A Applications pending at the beginning of the month 2,833&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Applications received during the month 20,449&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62321",
+    "id": "4c6083121697",
+    "title": "Day 3 of Janaushadhi Saptah 2026 Witnesses Surge in Health Camps and Public Participa...",
+    "description": "Government of India press release: Day 3 of Janaushadhi Saptah 2026 Witnesses Surge in Health Camps and Public Participa...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235074",
     "date": "2026-06-01",
     "source_id": "pib",
     "source_name": "Press Information Bureau",
@@ -194,29 +194,10 @@
     "type": "announcement"
   },
   {
-    "id": "e8f57a788848",
-    "title": "The Industrial Relations Code (Amendment) Bill, 2026",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-industrial-relations-code-amendment-bill-2026",
-    "date": "2026-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Social Protection",
-      "Labour & Employment"
-    ],
-    "sector_slugs": [
-      "social-protection",
-      "labour-employment"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "389c20b9c2a2",
-    "title": "Money Market Operations as on March 01, 2026",
-    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62313",
+    "id": "4dfe6d80f26c",
+    "title": "Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadBureau of Indian StandardsBureau of Indian Standards hereby withdraws t...03-Mar-2026CG-DL-E-03032026-2706430.49 MBMinistry o",
+    "description": "Gazette notification: Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadBureau of Indian StandardsBureau of Indian Standards hereby withdraws t...03-Mar-2026CG-DL-E-03032026-2706430.49 MBMinistry of Road Transport and HighwaysPublication of notification under Section 3A...03-Mar-2026CG-DL-E-03032",
+    "link": "",
     "date": "2026-06-01",
     "source_id": "egazette",
     "source_name": "eGazette of India",
@@ -232,61 +213,6 @@
       "social-protection"
     ],
     "type": "notification"
-  },
-  {
-    "id": "7e9baa2a706a",
-    "title": "Money Market Operations as on February 28, 2026",
-    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62312",
-    "date": "2026-06-01",
-    "source_id": "mof_budget",
-    "source_name": "Ministry of Finance - Union Budget",
-    "source_short": "MoF Budget",
-    "sectors": [
-      "Finance & Economy"
-    ],
-    "sector_slugs": [
-      "finance-economy"
-    ],
-    "type": "budget"
-  },
-  {
-    "id": "f70e88eb49f6",
-    "title": "Output Outcome Framework for Schemes 2026-2027",
-    "description": "",
-    "link": "https://www.indiabudget.gov.indoc/OutcomeBudgetE2026_2027.pdf",
-    "date": "2026-06-01",
-    "source_id": "mof_budget",
-    "source_name": "Ministry of Finance - Union Budget",
-    "source_short": "MoF Budget",
-    "sectors": [
-      "Social Protection",
-      "Tribal & Indigenous"
-    ],
-    "sector_slugs": [
-      "social-protection",
-      "tribal-indigenous"
-    ],
-    "type": "scheme"
-  },
-  {
-    "id": "3479b608d94c",
-    "title": "Nepal Elections 2026: Domestic Agendas and Foreign Policy Stakes",
-    "description": "ORF Expert Speak: Nepal Elections 2026: Domestic Agendas and Foreign Policy Stakes",
-    "link": "https://www.orfonline.org/expert-speak/nepal-elections-2026-domestic-agendas-and-foreign-policy-stakes",
-    "date": "2026-06-01",
-    "source_id": "orf",
-    "source_name": "Observer Research Foundation",
-    "source_short": "ORF",
-    "sectors": [
-      "Education",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "education",
-      "social-protection"
-    ],
-    "type": "policy"
   },
   {
     "id": "7d5604e7d60c",
@@ -2432,25 +2358,6 @@
     "type": "announcement"
   },
   {
-    "id": "63cc2c821c0e",
-    "title": "Ministry of Road Transport and Highways",
-    "description": "Gazette notification: Ministry of Road Transport and Highways",
-    "link": "",
-    "date": "2026-03-03",
-    "source_id": "egazette",
-    "source_name": "eGazette of India",
-    "source_short": "eGazette",
-    "sectors": [
-      "Transport & Infrastructure",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "transport-infrastructure",
-      "social-protection"
-    ],
-    "type": "notification"
-  },
-  {
     "id": "502c7316d9dc",
     "title": "Food Safety and Standards Authority of India",
     "description": "Gazette notification: Food Safety and Standards Authority of India",
@@ -2542,6 +2449,255 @@
       "energy"
     ],
     "type": "announcement"
+  },
+  {
+    "id": "e8edae055b1e",
+    "title": "NIFTEM-K Signs MoU with University of Saskatchewan, Canada to Strengthen Indo-Canadia...",
+    "description": "Government of India press release: NIFTEM-K Signs MoU with University of Saskatchewan, Canada to Strengthen Indo-Canadia...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235084",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Education",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "f2239813952f",
+    "title": "NHAI Awards Contract for Construction of Bhubaneswar Capital Region Ring Road Project",
+    "description": "Government of India press release: NHAI Awards Contract for Construction of Bhubaneswar Capital Region Ring Road Project",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235072",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure",
+      "Health"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure",
+      "health"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "20d37178a859",
+    "title": "PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "description": "Government of India press release: PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235066",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "energy",
+      "labour-employment"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "35bd4e3bb6a5",
+    "title": "TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "description": "Government of India press release: TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235047",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "bef10c557b5e",
+    "title": "“Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "description": "Government of India press release: “Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235044",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "6eba89799135",
+    "title": "India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "description": "Government of India press release: India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235042",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "energy",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "28be81fe456c",
+    "title": "MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "description": "Government of India press release: MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234987",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "defence-security"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "ff20c1e4aefb",
+    "title": "Bureau of Indian Standards",
+    "description": "Gazette notification: Bureau of Indian Standards",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "notification"
+  },
+  {
+    "id": "e9d514eb08ed",
+    "title": "Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "description": "ORF Expert Speak: Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "link": "https://www.orfonline.org/expert-speak/boom-or-bane-the-dystopian-vagaries-of-ai-dominance",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "7adb047e39d5",
+    "title": "From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "description": "ORF Expert Speak: From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "link": "https://www.orfonline.org/expert-speak/from-water-stress-to-water-bankruptcy-urban-india-s-new-hydrological-reality",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Urban Development"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "urban-development"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "64dd8d9a6b00",
+    "title": "Processing of Applications Received Under the Citizen’s Charter – Status as on February 28, 2026",
+    "description": "Analysis of the performance under the Citizen&rsquo;s Charter during the month of February 2026 has been carried out, and the summary thereof is given below &ndash; Description No. of Applications A Applications pending at the beginning of the month 2,833&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Applications received during the month 20,449&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62321",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "389c20b9c2a2",
+    "title": "Money Market Operations as on March 01, 2026",
+    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62313",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "7e9baa2a706a",
+    "title": "Money Market Operations as on February 28, 2026",
+    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62312",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy"
   },
   {
     "id": "da7886840774",
@@ -2639,6 +2795,109 @@
       "social-protection"
     ],
     "type": "policy"
+  },
+  {
+    "id": "c9c3ebe036bd",
+    "title": "Sources of Variation in India’s Foreign Exchange Reserves during April-December 2025",
+    "description": "Today, the Reserve Bank of India released the balance of payments (BoP) data for the third quarter (Q3), i.e., October-December of 2025-26, on its website (www.rbi.org.in). On the basis of these data, the sources of variation in foreign exchange reserves during April-December 2025 are detailed below in Table 1. Table 1: Sources of Variation in Foreign Exchange Reserves* (US$ billion) Items April-December 2024 April-December 2025 I. &nbsp; Current Account Balance -36.7 -30.2 II. &nbsp; Capital Ac",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62318",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "energy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "ee4ed922eb2b",
+    "title": "Developments in India’s Balance of Payments during the Third Quarter (October-December) of 2025-26",
+    "description": "Preliminary data on India&rsquo;s balance of payments (BoP) for the third quarter (Q3), i.e., October-December 2025-26, are presented in Statements I and II. Key Features of India&rsquo;s BoP in Q3:2025-26 India&rsquo;s current account deficit increased to US$ 13.2 billion (1.3 per cent of GDP) in Q3:2025-26 from US$ 11.3 billion (1.1 per cent of GDP) in Q3:2024-25 (Table 1).1,2 Merchandise trade deficit at US$ 93.6 billion in Q3:2025-26 was higher than US$ 79.3 billion in Q3:2024-25. Net servic",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62317",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "da85be1c523c",
+    "title": "Shashi Tharoor questions ‘triple-engine’ governance model, flags concerns over federal fairness post 2014",
+    "description": "Shashi Tharoor questions the efficiency and fairness of India's 'triple-engine' governance model, arguing that political alignment may hinder project execution and undermine competitive federalism.",
+    "link": "https://www.livemint.com/politics/news/shashi-tharoor-questions-triple-engine-governance-flags-concerns-over-federal-fairness-post-2014-11772462057232.html",
+    "date": "2026-03-02",
+    "source_id": "livemint_policy",
+    "source_name": "Livemint - Policy & Politics",
+    "source_short": "Livemint",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "962221eb0275",
+    "title": "Withdrawal of &#8377;2000 Denomination Banknotes – Status",
+    "description": "The Reserve Bank of India (RBI) had announced the withdrawal of &#8377;2000 denomination banknotes from circulation vide Press Release 2023-2024/257 dated May 19, 2023. The status of withdrawal of &#8377;2000 banknotes is periodically published by the RBI. The last press release in this regard was published on February 02, 2026. 2. The facility for deposit and / or exchange of the &#8377;2000 banknotes was available at all bank branches in the country upto October 07, 2023. 3. The facility for e",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62320",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "63cc2c821c0e",
+    "title": "Ministry of Road Transport and Highways",
+    "description": "Gazette notification: Ministry of Road Transport and Highways",
+    "link": "",
+    "date": "2026-03-01",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Transport & Infrastructure",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure",
+      "social-protection"
+    ],
+    "type": "notification"
   },
   {
     "id": "006cea155da0",
@@ -4239,213 +4498,6 @@
     "type": "budget"
   },
   {
-    "id": "c9c3ebe036bd",
-    "title": "Sources of Variation in India’s Foreign Exchange Reserves during April-December 2025",
-    "description": "Today, the Reserve Bank of India released the balance of payments (BoP) data for the third quarter (Q3), i.e., October-December of 2025-26, on its website (www.rbi.org.in). On the basis of these data, the sources of variation in foreign exchange reserves during April-December 2025 are detailed below in Table 1. Table 1: Sources of Variation in Foreign Exchange Reserves* (US$ billion) Items April-December 2024 April-December 2025 I. &nbsp; Current Account Balance -36.7 -30.2 II. &nbsp; Capital Ac",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62318",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Digital & Technology"
-    ],
-    "sector_slugs": [
-      "digital-technology"
-    ],
-    "type": "policy"
-  },
-  {
-    "id": "05c2734208c7",
-    "title": "The Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) VB – G RAM G Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-viksit-bharat-–-guarantee-for-rozgar-and-ajeevika-mission-gramin-vb-–-g-ram-g-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Digital & Technology",
-      "Rural Development",
-      "Energy"
-    ],
-    "sector_slugs": [
-      "digital-technology",
-      "rural-development",
-      "energy"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "ee4ed922eb2b",
-    "title": "Developments in India’s Balance of Payments during the Third Quarter (October-December) of 2025-26",
-    "description": "Preliminary data on India&rsquo;s balance of payments (BoP) for the third quarter (Q3), i.e., October-December 2025-26, are presented in Statements I and II. Key Features of India&rsquo;s BoP in Q3:2025-26 India&rsquo;s current account deficit increased to US$ 13.2 billion (1.3 per cent of GDP) in Q3:2025-26 from US$ 11.3 billion (1.1 per cent of GDP) in Q3:2024-25 (Table 1).1,2 Merchandise trade deficit at US$ 93.6 billion in Q3:2025-26 was higher than US$ 79.3 billion in Q3:2024-25. Net servic",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62317",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Finance & Economy"
-    ],
-    "sector_slugs": [
-      "finance-economy"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "11efc981f243",
-    "title": "The Repealing and Amending Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-repealing-and-amending-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Governance & Reform"
-    ],
-    "sector_slugs": [
-      "governance-reform"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "e8ccd77f9cd2",
-    "title": "The Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-sustainable-harnessing-and-advancementof-nuclear-energy-for-transforming-india-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Energy",
-      "Digital & Technology",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "energy",
-      "digital-technology",
-      "social-protection"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "fbc5491f4f42",
-    "title": "The Viksit Bharat Shiksha Adhishthan Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-viksit-bharat-shiksha-adhishthan-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Digital & Technology"
-    ],
-    "sector_slugs": [
-      "digital-technology"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "35075e40e683",
-    "title": "The Manipur Goods and Services Tax (Second Amendment) Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-manipur-goods-and-services-tax-second-amendment-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Finance & Economy",
-      "Transport & Infrastructure"
-    ],
-    "sector_slugs": [
-      "finance-economy",
-      "transport-infrastructure"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "69faef12afbf",
-    "title": "The Central Excise (Amendment) Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-central-excise-amendment-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Governance & Reform"
-    ],
-    "sector_slugs": [
-      "governance-reform"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "4be031e60c33",
-    "title": "The Health Security se National Security Cess Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-health-security-se-national-security-cess-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Health",
-      "Digital & Technology",
-      "Defence & Security"
-    ],
-    "sector_slugs": [
-      "health",
-      "digital-technology",
-      "defence-security"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "719d6bc32fcf",
-    "title": "The Draft Electricity (Amendment) Bill, 2025",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-draft-electricity-amendment-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Digital & Technology",
-      "Urban Development",
-      "Energy"
-    ],
-    "sector_slugs": [
-      "digital-technology",
-      "urban-development",
-      "energy"
-    ],
-    "type": "legislation"
-  },
-  {
-    "id": "7797e18c29bc",
-    "title": "The Government of Union Territories (Amendment) Bill, 2025 [Removal of Ministers upon Detention]",
-    "description": "",
-    "link": "https://prsindia.org/billtrack/the-government-of-union-territories-amendment-bill-2025",
-    "date": "2025-06-01",
-    "source_id": "prs_bills",
-    "source_name": "PRS Bill Track",
-    "source_short": "PRS Bills",
-    "sectors": [
-      "Digital & Technology",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "digital-technology",
-      "social-protection"
-    ],
-    "type": "legislation"
-  },
-  {
     "id": "cc6877ce4aff",
     "title": "The Protection of Interests in Aircraft Objects Act, 2025",
     "description": "Central Act (2025): The Protection of Interests in Aircraft Objects Act, 2025",
@@ -5307,27 +5359,6 @@
     "type": "research"
   },
   {
-    "id": "da85be1c523c",
-    "title": "Shashi Tharoor questions ‘triple-engine’ governance model, flags concerns over federal fairness post 2014",
-    "description": "Shashi Tharoor questions the efficiency and fairness of India's 'triple-engine' governance model, arguing that political alignment may hinder project execution and undermine competitive federalism.",
-    "link": "https://www.livemint.com/politics/news/shashi-tharoor-questions-triple-engine-governance-flags-concerns-over-federal-fairness-post-2014-11772462057232.html",
-    "date": "2014-06-01",
-    "source_id": "livemint_policy",
-    "source_name": "Livemint - Policy & Politics",
-    "source_short": "Livemint",
-    "sectors": [
-      "Digital & Technology",
-      "Governance & Reform",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "digital-technology",
-      "governance-reform",
-      "social-protection"
-    ],
-    "type": "policy"
-  },
-  {
     "id": "e4f9eb826575",
     "title": "The anatomy of failure : an ethnography of a randomized trial to deepen democracy in rural India",
     "description": "World Bank: The anatomy of failure : an ethnography of a randomized trial to deepen democracy in rural India",
@@ -5581,25 +5612,6 @@
     "source_id": "mof_budget",
     "source_name": "Ministry of Finance - Union Budget",
     "source_short": "MoF Budget",
-    "sectors": [
-      "Social Protection",
-      "Finance & Economy"
-    ],
-    "sector_slugs": [
-      "social-protection",
-      "finance-economy"
-    ],
-    "type": "budget"
-  },
-  {
-    "id": "962221eb0275",
-    "title": "Withdrawal of &#8377;2000 Denomination Banknotes – Status",
-    "description": "The Reserve Bank of India (RBI) had announced the withdrawal of &#8377;2000 denomination banknotes from circulation vide Press Release 2023-2024/257 dated May 19, 2023. The status of withdrawal of &#8377;2000 banknotes is periodically published by the RBI. The last press release in this regard was published on February 02, 2026. 2. The facility for deposit and / or exchange of the &#8377;2000 banknotes was available at all bank branches in the country upto October 07, 2023. 3. The facility for e",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62320",
-    "date": "2000-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
     "sectors": [
       "Social Protection",
       "Finance & Economy"
