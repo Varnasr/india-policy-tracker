@@ -3556,6 +3556,82 @@
     "type": "announcement"
   },
   {
+    "id": "b1f5b73d8547",
+    "title": "TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "description": "Government of India press release: TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235047",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "28acdf617671",
+    "title": "“Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "description": "Government of India press release: “Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235044",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "7f036964acf6",
+    "title": "India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "description": "Government of India press release: India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235042",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "energy",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "bcdb9a83c5c0",
+    "title": "From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "description": "ORF Expert Speak: From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "link": "https://www.orfonline.org/expert-speak/from-water-stress-to-water-bankruptcy-urban-india-s-new-hydrological-reality",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Urban Development"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "urban-development"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "91b1a4943743",
     "title": "The Industrial Relations Code (Amendment) Bill, 2026",
     "description": "",
@@ -6362,6 +6438,23 @@
     ],
     "sector_slugs": [
       "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "4769e31034b4",
+    "title": "The spatial development of India",
+    "description": "World Bank: The spatial development of India",
+    "link": "http://documents.worldbank.org/curated/en/768201468269112591",
+    "date": "2012-05-01",
+    "source_id": "world_bank_india",
+    "source_name": "World Bank - India",
+    "source_short": "World Bank",
+    "sectors": [
+      "Energy"
+    ],
+    "sector_slugs": [
+      "energy"
     ],
     "type": "policy"
   },

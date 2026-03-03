@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-03-03T11:24:29.470552+00:00",
-  "total_policies": 354,
+  "last_updated": "2026-03-03T11:46:27.684459+00:00",
+  "total_policies": 359,
   "total_sources": 13,
   "total_sectors": 21,
   "sector_counts": {
-    "Social Protection": 163,
+    "Social Protection": 164,
     "Labour & Employment": 15,
-    "Digital & Technology": 161,
+    "Digital & Technology": 164,
     "Rural Development": 12,
-    "Energy": 57,
-    "Finance & Economy": 60,
+    "Energy": 59,
+    "Finance & Economy": 61,
     "Governance & Reform": 66,
-    "Transport & Infrastructure": 30,
+    "Transport & Infrastructure": 31,
     "Health": 12,
     "Defence & Security": 12,
-    "Urban Development": 7,
+    "Urban Development": 8,
     "Trade & Commerce": 15,
     "Child Rights & Youth": 6,
     "Education": 13,
@@ -29,16 +29,16 @@
   "source_counts": {
     "prs_bills": 107,
     "egazette": 24,
-    "pib": 31,
+    "pib": 34,
     "prs_legislative": 48,
     "niti_aayog": 1,
     "mof_budget": 30,
     "livemint_policy": 36,
-    "orf": 11,
+    "orf": 12,
     "rbi": 10,
     "data_gov_in": 5,
     "cprindia": 10,
     "india_code": 10,
-    "world_bank_india": 31
+    "world_bank_india": 32
   }
 }
