@@ -192,60 +192,117 @@
     "type": "legislation"
   },
   {
-    "id": "4a7947c114f2",
-    "title": "Processing of Applications Received Under the Citizen’s Charter – Status as on February 28, 2026",
-    "description": "Analysis of the performance under the Citizen&rsquo;s Charter during the month of February 2026 has been carried out, and the summary thereof is given below &ndash; Description No. of Applications A Applications pending at the beginning of the month 2,833&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Applications received during the month 20,449&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62321",
+    "id": "5229a66af088",
+    "title": "Day 3 of Janaushadhi Saptah 2026 Witnesses Surge in Health Camps and Public Participa...",
+    "description": "Government of India press release: Day 3 of Janaushadhi Saptah 2026 Witnesses Surge in Health Camps and Public Participa...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235074",
     "date": "2026-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "governance-reform"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "e8f57a788848",
+    "title": "The Industrial Relations Code (Amendment) Bill, 2026",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-industrial-relations-code-amendment-bill-2026",
+    "date": "2026-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
     "sectors": [
       "Social Protection",
-      "Digital & Technology",
-      "Finance & Economy"
+      "Labour & Employment"
     ],
     "sector_slugs": [
       "social-protection",
-      "digital-technology",
-      "finance-economy"
+      "labour-employment"
     ],
-    "type": "research"
+    "type": "legislation"
   },
   {
-    "id": "5586a2db9f12",
-    "title": "Money Market Operations as on March 01, 2026",
-    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62313",
+    "id": "36de8b1e6700",
+    "title": "Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadBureau of Indian StandardsBureau of Indian Standards hereby withdraws t...03-Mar-2026CG-DL-E-03032026-2706430.49 MBMinistry o",
+    "description": "Gazette notification: Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadBureau of Indian StandardsBureau of Indian Standards hereby withdraws t...03-Mar-2026CG-DL-E-03032026-2706430.49 MBMinistry of Road Transport and HighwaysPublication of notification under Section 3A...03-Mar-2026CG-DL-E-03032",
+    "link": "",
     "date": "2026-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
     "sectors": [
-      "Finance & Economy",
+      "Transport & Infrastructure",
+      "Digital & Technology",
       "Social Protection"
     ],
     "sector_slugs": [
-      "finance-economy",
+      "transport-infrastructure",
+      "digital-technology",
       "social-protection"
     ],
-    "type": "policy"
+    "type": "notification"
   },
   {
-    "id": "b4db9581b960",
-    "title": "Money Market Operations as on February 28, 2026",
-    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62312",
+    "id": "e5bdcbf3c902",
+    "title": "Key to Budget Document, 2026",
+    "description": "",
+    "link": "https://www.indiabudget.gov.indoc/Key_to_Budget_Document_2026.pdf",
     "date": "2026-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "source_id": "mof_budget",
+    "source_name": "Ministry of Finance - Union Budget",
+    "source_short": "MoF Budget",
     "sectors": [
-      "Finance & Economy",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "budget"
+  },
+  {
+    "id": "f70e88eb49f6",
+    "title": "Output Outcome Framework for Schemes 2026-2027",
+    "description": "",
+    "link": "https://www.indiabudget.gov.indoc/OutcomeBudgetE2026_2027.pdf",
+    "date": "2026-06-01",
+    "source_id": "mof_budget",
+    "source_name": "Ministry of Finance - Union Budget",
+    "source_short": "MoF Budget",
+    "sectors": [
+      "Social Protection",
+      "Tribal & Indigenous"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "tribal-indigenous"
+    ],
+    "type": "scheme"
+  },
+  {
+    "id": "3479b608d94c",
+    "title": "Nepal Elections 2026: Domestic Agendas and Foreign Policy Stakes",
+    "description": "ORF Expert Speak: Nepal Elections 2026: Domestic Agendas and Foreign Policy Stakes",
+    "link": "https://www.orfonline.org/expert-speak/nepal-elections-2026-domestic-agendas-and-foreign-policy-stakes",
+    "date": "2026-06-01",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Education",
       "Social Protection"
     ],
     "sector_slugs": [
-      "finance-economy",
+      "education",
       "social-protection"
     ],
     "type": "policy"
@@ -2506,6 +2563,255 @@
     "type": "announcement"
   },
   {
+    "id": "1d0527958146",
+    "title": "NIFTEM-K Signs MoU with University of Saskatchewan, Canada to Strengthen Indo-Canadia...",
+    "description": "Government of India press release: NIFTEM-K Signs MoU with University of Saskatchewan, Canada to Strengthen Indo-Canadia...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235084",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Education",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "46ac163be3c6",
+    "title": "NHAI Awards Contract for Construction of Bhubaneswar Capital Region Ring Road Project",
+    "description": "Government of India press release: NHAI Awards Contract for Construction of Bhubaneswar Capital Region Ring Road Project",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235072",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure",
+      "Health"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure",
+      "health"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "39335f7786a8",
+    "title": "PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "description": "Government of India press release: PRESIDENT OF INDIA’S GREETINGS ON THE EVE OF HOLI",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235066",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "energy",
+      "labour-employment"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "b1f5b73d8547",
+    "title": "TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "description": "Government of India press release: TRAI Assesses Network Quality of Mobile Service Operators across Guna & Ashoknagar Ci...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235047",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "28acdf617671",
+    "title": "“Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "description": "Government of India press release: “Indian Telecom Services Performance Indicator Report” for the Quarter October - Dece...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235044",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "7f036964acf6",
+    "title": "India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "description": "Government of India press release: India Fully Prepared Amid Evolving Situation in the Middle East – Energy Supplies Rob...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235042",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "energy",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "b4d9437d93a4",
+    "title": "MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "description": "Government of India press release: MoD inks Rs 5,083 crore contracts for ALH Mk-III (MR) & VL-Shtil missiles",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234987",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "defence-security"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "67e0ba1702bc",
+    "title": "Bureau of Indian Standards",
+    "description": "Gazette notification: Bureau of Indian Standards",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "notification"
+  },
+  {
+    "id": "9445cd365c68",
+    "title": "Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "description": "ORF Expert Speak: Boom or Bane? The Dystopian Vagaries of AI Dominance",
+    "link": "https://www.orfonline.org/expert-speak/boom-or-bane-the-dystopian-vagaries-of-ai-dominance",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "bcdb9a83c5c0",
+    "title": "From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "description": "ORF Expert Speak: From Water Stress to Water Bankruptcy: Urban India’s New Hydrological Reality",
+    "link": "https://www.orfonline.org/expert-speak/from-water-stress-to-water-bankruptcy-urban-india-s-new-hydrological-reality",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Urban Development"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "urban-development"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "4a7947c114f2",
+    "title": "Processing of Applications Received Under the Citizen’s Charter – Status as on February 28, 2026",
+    "description": "Analysis of the performance under the Citizen&rsquo;s Charter during the month of February 2026 has been carried out, and the summary thereof is given below &ndash; Description No. of Applications A Applications pending at the beginning of the month 2,833&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Applications received during the month 20,449&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62321",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "research"
+  },
+  {
+    "id": "5586a2db9f12",
+    "title": "Money Market Operations as on March 01, 2026",
+    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62313",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "b4db9581b960",
+    "title": "Money Market Operations as on February 28, 2026",
+    "description": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS@ --> Money Markets@ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Call Money 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Triparty Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Market Repo 0.00 - - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Repo in Corporate Bond 0.00 - - B. Term Segment &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Notice Money** 0.00 - - &nbsp;&nbsp;&",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62312",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "d6849d75408e",
     "title": "India's growth story shall be written on the canvas of\"Planned Urban Development\"",
     "description": "Gazette notification: India's growth story shall be written on the canvas of\"Planned Urban Development\"",
@@ -2738,6 +3044,90 @@
       "social-protection"
     ],
     "type": "policy"
+  },
+  {
+    "id": "9a3e9d370106",
+    "title": "Sources of Variation in India’s Foreign Exchange Reserves during April-December 2025",
+    "description": "Today, the Reserve Bank of India released the balance of payments (BoP) data for the third quarter (Q3), i.e., October-December of 2025-26, on its website (www.rbi.org.in). On the basis of these data, the sources of variation in foreign exchange reserves during April-December 2025 are detailed below in Table 1. Table 1: Sources of Variation in Foreign Exchange Reserves* (US$ billion) Items April-December 2024 April-December 2025 I. &nbsp; Current Account Balance -36.7 -30.2 II. &nbsp; Capital Ac",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62318",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "energy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "7dec3c0214e0",
+    "title": "Developments in India’s Balance of Payments during the Third Quarter (October-December) of 2025-26",
+    "description": "Preliminary data on India&rsquo;s balance of payments (BoP) for the third quarter (Q3), i.e., October-December 2025-26, are presented in Statements I and II. Key Features of India&rsquo;s BoP in Q3:2025-26 India&rsquo;s current account deficit increased to US$ 13.2 billion (1.3 per cent of GDP) in Q3:2025-26 from US$ 11.3 billion (1.1 per cent of GDP) in Q3:2024-25 (Table 1).1,2 Merchandise trade deficit at US$ 93.6 billion in Q3:2025-26 was higher than US$ 79.3 billion in Q3:2024-25. Net servic",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62317",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "340748196a5d",
+    "title": "Shashi Tharoor questions ‘triple-engine’ governance model, flags concerns over federal fairness post 2014",
+    "description": "Shashi Tharoor questions the efficiency and fairness of India's 'triple-engine' governance model, arguing that political alignment may hinder project execution and undermine competitive federalism.",
+    "link": "https://www.livemint.com/politics/news/shashi-tharoor-questions-triple-engine-governance-flags-concerns-over-federal-fairness-post-2014-11772462057232.html",
+    "date": "2026-03-02",
+    "source_id": "livemint_policy",
+    "source_name": "Livemint - Policy & Politics",
+    "source_short": "Livemint",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform",
+      "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "7180470cd0ef",
+    "title": "Withdrawal of &#8377;2000 Denomination Banknotes – Status",
+    "description": "The Reserve Bank of India (RBI) had announced the withdrawal of &#8377;2000 denomination banknotes from circulation vide Press Release 2023-2024/257 dated May 19, 2023. The status of withdrawal of &#8377;2000 banknotes is periodically published by the RBI. The last press release in this regard was published on February 02, 2026. 2. The facility for deposit and / or exchange of the &#8377;2000 banknotes was available at all bank branches in the country upto October 07, 2023. 3. The facility for e",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62320",
+    "date": "2026-03-02",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "announcement"
   },
   {
     "id": "8073963baa9f",
@@ -4905,46 +5295,533 @@
     "type": "legislation"
   },
   {
-    "id": "9a3e9d370106",
-    "title": "Sources of Variation in India’s Foreign Exchange Reserves during April-December 2025",
-    "description": "Today, the Reserve Bank of India released the balance of payments (BoP) data for the third quarter (Q3), i.e., October-December of 2025-26, on its website (www.rbi.org.in). On the basis of these data, the sources of variation in foreign exchange reserves during April-December 2025 are detailed below in Table 1. Table 1: Sources of Variation in Foreign Exchange Reserves* (US$ billion) Items April-December 2024 April-December 2025 I. &nbsp; Current Account Balance -36.7 -30.2 II. &nbsp; Capital Ac",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62318",
+    "id": "a606bee9cb40",
+    "title": "The Securities Markets Code, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-securities-markets-code-2025",
     "date": "2025-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "05c2734208c7",
+    "title": "The Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) VB – G RAM G Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-viksit-bharat-–-guarantee-for-rozgar-and-ajeevika-mission-gramin-vb-–-g-ram-g-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
     "sectors": [
       "Digital & Technology",
-      "Finance & Economy",
+      "Rural Development",
       "Energy"
     ],
     "sector_slugs": [
       "digital-technology",
-      "finance-economy",
+      "rural-development",
       "energy"
     ],
     "type": "legislation"
   },
   {
-    "id": "7dec3c0214e0",
-    "title": "Developments in India’s Balance of Payments during the Third Quarter (October-December) of 2025-26",
-    "description": "Preliminary data on India&rsquo;s balance of payments (BoP) for the third quarter (Q3), i.e., October-December 2025-26, are presented in Statements I and II. Key Features of India&rsquo;s BoP in Q3:2025-26 India&rsquo;s current account deficit increased to US$ 13.2 billion (1.3 per cent of GDP) in Q3:2025-26 from US$ 11.3 billion (1.1 per cent of GDP) in Q3:2024-25 (Table 1).1,2 Merchandise trade deficit at US$ 93.6 billion in Q3:2025-26 was higher than US$ 79.3 billion in Q3:2024-25. Net servic",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62317",
+    "id": "f1e7aeadf4fb",
+    "title": "The Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-sabka-bima-sabki-raksha-amendment-of-insurance-laws-bill-2025",
     "date": "2025-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "11efc981f243",
+    "title": "The Repealing and Amending Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-repealing-and-amending-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "e8ccd77f9cd2",
+    "title": "The Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-sustainable-harnessing-and-advancementof-nuclear-energy-for-transforming-india-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Energy",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "energy",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "fbc5491f4f42",
+    "title": "The Viksit Bharat Shiksha Adhishthan Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-viksit-bharat-shiksha-adhishthan-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "35075e40e683",
+    "title": "The Manipur Goods and Services Tax (Second Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-manipur-goods-and-services-tax-second-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "69faef12afbf",
+    "title": "The Central Excise (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-central-excise-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "4be031e60c33",
+    "title": "The Health Security se National Security Cess Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-health-security-se-national-security-cess-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "defence-security"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "719d6bc32fcf",
+    "title": "The Draft Electricity (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-draft-electricity-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
     "sectors": [
       "Digital & Technology",
-      "Finance & Economy",
+      "Urban Development",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "urban-development",
+      "energy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "7797e18c29bc",
+    "title": "The Government of Union Territories (Amendment) Bill, 2025 [Removal of Ministers upon Detention]",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-government-of-union-territories-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
       "Social Protection"
     ],
     "sector_slugs": [
       "digital-technology",
-      "finance-economy",
       "social-protection"
     ],
     "type": "legislation"
+  },
+  {
+    "id": "ff1419666096",
+    "title": "The Jammu and Kashmir Reorganisation (Amendment) Bill, 2025 [Removal of Ministers upon Detention]",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-jammu-and-kashmir-reorganisation-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "5111f2fedc29",
+    "title": "The Constitution (130th Amendment) Bill, 2025 [Removal of Ministers upon Detention]",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-constitution-one-hundred-and-thirtieth-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "b52b522d2b9d",
+    "title": "The Promotion and Regulation of Online Gaming Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-promotion-and-regulation-of-online-gaming-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "da28a0afd2ad",
+    "title": "The Jan Vishwas (Amendment of Provisions) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-jan-vishwas-amendment-of-provisions-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "1807ea898a10",
+    "title": "The Indian Institutes of Management (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-indian-institutes-of-management-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Trade & Commerce"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "trade-commerce"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "d1617c80f8f2",
+    "title": "The Insolvency and Bankruptcy Code (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-insolvency-and-bankruptcy-code-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "2cfeb21495d0",
+    "title": "The Income-Tax (No.2) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-income-tax-no2-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "67738b20c2f5",
+    "title": "The Taxation Laws (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-taxation-laws-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "42d8b7f6eea5",
+    "title": "The Mines and Minerals (Development and Regulation) Amendment Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Energy"
+    ],
+    "sector_slugs": [
+      "energy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "991b1477fdde",
+    "title": "The Manipur Goods and Services Tax (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-manipur-goods-and-services-tax-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "5c474055e669",
+    "title": "The National Anti-Doping (Amendment) Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-national-anti-doping-amendment-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "2231f433724f",
+    "title": "The National Sports Governance Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-national-sports-governance-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform",
+      "Transport & Infrastructure",
+      "Child Rights & Youth"
+    ],
+    "sector_slugs": [
+      "governance-reform",
+      "transport-infrastructure",
+      "child-rights-youth"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "071f0dc869c9",
+    "title": "The Indian Ports Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-indian-ports-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "a2f01df1e00a",
+    "title": "The Immigration and Foreigners Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-immigration-and-foreigners-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "7b8ff1aad96d",
+    "title": "The Income-tax Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-income-tax-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "a59c69ee6d39",
+    "title": "The Protection of Interests in Aircraft Objects Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-protection-of-interests-in-aircraft-objects-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "f5824cf27d8f",
+    "title": "The \"Tribhuvan\" Sahkari University Bill, 2025",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-tribhuvan-sahkari-university-bill-2025",
+    "date": "2025-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Education",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "2dd4fbc06536",
+    "title": "Implementation of Budget Announcements 2025-2026",
+    "description": "",
+    "link": "https://www.indiabudget.gov.indoc/impbud2025-26.pdf",
+    "date": "2025-06-01",
+    "source_id": "mof_budget",
+    "source_name": "Ministry of Finance - Union Budget",
+    "source_short": "MoF Budget",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "budget"
   },
   {
     "id": "4497e43dcbb8",
@@ -5795,6 +6672,222 @@
     "type": "legislation"
   },
   {
+    "id": "f290207cc08d",
+    "title": "The Constitution (129th Amendment) Bill, 2024 [Simultaneous Elections/One Nation One Election]",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-constitution-one-hundred-and-twenty-ninth-amendment-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "0f7d118dc2e3",
+    "title": "The Union Territories Laws (Amendment) Bill, 2024 [Simultaneous Elections/One Nation One Election]",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-union-territories-laws-amendment-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "b6285d8d6123",
+    "title": "The Merchant Shipping Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-merchant-shipping-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "dbd01ccab508",
+    "title": "The Coastal Shipping Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-coastal-shipping-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "93f4da55a468",
+    "title": "Draft Telecom Rules on Interception, Temporary Suspension of Services, and Cyber Security 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/2024-draft-telecom-rules-on-interception-temporary-suspension-of-services-and-cyber-security",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "2deaf22b4e2f",
+    "title": "The Banking Laws (Amendment) Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-banking-laws-amendment-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "a0bea39d06fb",
+    "title": "The Bills of Lading Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-bills-of-lading-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "cbac08e764b8",
+    "title": "The Carriage of Goods by Sea Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-carriage-of-goods-by-sea-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "593757c38888",
+    "title": "The Railways (Amendment) Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-railways-amendment-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "84a2c569af1e",
+    "title": "The Boilers Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-boilers-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "332a5f40c6cc",
+    "title": "The Mussalman Wakf (Repeal) Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-mussalman-wakf-repeal-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "487891c4eb4d",
+    "title": "The Waqf (Amendment) Bill, 2024",
+    "description": "",
+    "link": "https://prsindia.org/billtrack/the-waqf-amendment-bill-2024",
+    "date": "2024-06-01",
+    "source_id": "prs_bills",
+    "source_name": "PRS Bill Track",
+    "source_short": "PRS Bills",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "legislation"
+  },
+  {
     "id": "aa602d9d8f58",
     "title": "Does Food Insecurity Hinder Migration ? Experimental Evidence from the Indian Public Distribution System",
     "description": "World Bank: Does Food Insecurity Hinder Migration ? Experimental Evidence from the Indian Public Distribution System",
@@ -5958,6 +7051,93 @@
     "type": "policy"
   },
   {
+    "id": "7a282ad31166",
+    "title": "Explained: Draft amendments to the IT Rules 2021",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/explained-draft-amendments-to-the-it-rules-2021",
+    "date": "2021-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "0185f3953d9d",
+    "title": "The Tribunal Rules, 2021 contradict the Supreme Court rulings",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/the-tribunal-rules-2021-contradict-the-supreme-court-rulings",
+    "date": "2021-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "e7b9b7712009",
+    "title": "Challenges emanating from the AERA (Amendment) Bill, 2021",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/challenges-emanating-from-the-aera-amendment-bill-2021",
+    "date": "2021-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "defence-security"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "217974ef4f5e",
+    "title": "The Tribunals Reforms Bill, 2021, in the context of the recent Supreme Court judgement",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/the-tribunals-reforms-bill-2021-in-the-context-of-the-recent-supreme-court-judgement",
+    "date": "2021-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Governance & Reform",
+      "Trade & Commerce"
+    ],
+    "sector_slugs": [
+      "governance-reform",
+      "trade-commerce"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "878588812a29",
+    "title": "Examining the Model Tenancy Act, 2021 and regulation of rental property in India",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/examining-the-model-tenancy-act-2021-and-regulation-of-rental-property-in-india",
+    "date": "2021-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Housing"
+    ],
+    "sector_slugs": [
+      "housing"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "4923527f442c",
     "title": "Land Rezoning and Structural Transformation in Rural India : Evidence from the Industrial Areas Program",
     "description": "World Bank: Land Rezoning and Structural Transformation in Rural India : Evidence from the Industrial Areas Program",
@@ -6100,6 +7280,110 @@
     "type": "policy"
   },
   {
+    "id": "f02733902182",
+    "title": "CAG Observations on Uttar Pradesh Finances in 2020-21",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/cag-observations-on-uttar-pradesh-finances-in-2020-21",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "821af53d0d0a",
+    "title": "Comparison of the 2020 central farm laws with the amendments proposed by states",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/comparison-of-the-2020-central-farm-laws-with-the-amendments-proposed-by-states",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "815f5d11359d",
+    "title": "Central government’s response to the COVID-19 pandemic (May 23 - May 29, 2020)",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/central-government’s-response-to-the-covid-19-pandemic-may-23-may-29-2020",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Health"
+    ],
+    "sector_slugs": [
+      "health"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "6dd1ab637ca7",
+    "title": "Central government’s response to the COVID-19 pandemic (May 11 – May 22, 2020)",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/central-government’s-response-to-the-covid-19-pandemic-may-11-–-may-22-2020",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Health"
+    ],
+    "sector_slugs": [
+      "health"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "a644982d038e",
+    "title": "Central government’s response to the COVID-19 pandemic (May 4 – May 11, 2020)",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/central-government’s-response-to-the-covid-19-pandemic-may-4-–-may-11-2020",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Health"
+    ],
+    "sector_slugs": [
+      "health"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "8a9d62069455",
+    "title": "Central government’s response to the COVID-19 pandemic (Apr 27 – May 4, 2020)",
+    "description": "",
+    "link": "https://prsindia.org/theprsblog/central-government’s-response-to-the-covid-19-pandemic-apr-27-–-may-4-2020",
+    "date": "2020-06-01",
+    "source_id": "prs_legislative",
+    "source_name": "PRS Legislative Research",
+    "source_short": "PRS",
+    "sectors": [
+      "Health"
+    ],
+    "sector_slugs": [
+      "health"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "44db869da9d7",
     "title": "A Multiple-Arm, Cluster-Randomized Impact Evaluation of the Clean India (Swachh Bharat) Mission Program in Rural Punjab, India",
     "description": "World Bank: A Multiple-Arm, Cluster-Randomized Impact Evaluation of the Clean India (Swachh Bharat) Mission Program in Rural Punjab, India",
@@ -6195,27 +7479,6 @@
       "rural-development"
     ],
     "type": "research"
-  },
-  {
-    "id": "340748196a5d",
-    "title": "Shashi Tharoor questions ‘triple-engine’ governance model, flags concerns over federal fairness post 2014",
-    "description": "Shashi Tharoor questions the efficiency and fairness of India's 'triple-engine' governance model, arguing that political alignment may hinder project execution and undermine competitive federalism.",
-    "link": "https://www.livemint.com/politics/news/shashi-tharoor-questions-triple-engine-governance-flags-concerns-over-federal-fairness-post-2014-11772462057232.html",
-    "date": "2014-06-01",
-    "source_id": "livemint_policy",
-    "source_name": "Livemint - Policy & Politics",
-    "source_short": "Livemint",
-    "sectors": [
-      "Digital & Technology",
-      "Governance & Reform",
-      "Social Protection"
-    ],
-    "sector_slugs": [
-      "digital-technology",
-      "governance-reform",
-      "social-protection"
-    ],
-    "type": "policy"
   },
   {
     "id": "386e11589c38",
@@ -6322,6 +7585,23 @@
     ],
     "sector_slugs": [
       "social-protection"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "4769e31034b4",
+    "title": "The spatial development of India",
+    "description": "World Bank: The spatial development of India",
+    "link": "http://documents.worldbank.org/curated/en/768201468269112591",
+    "date": "2012-05-01",
+    "source_id": "world_bank_india",
+    "source_name": "World Bank - India",
+    "source_short": "World Bank",
+    "sectors": [
+      "Energy"
+    ],
+    "sector_slugs": [
+      "energy"
     ],
     "type": "policy"
   },
@@ -6482,25 +7762,23 @@
     "type": "budget"
   },
   {
-    "id": "7180470cd0ef",
-    "title": "Withdrawal of &#8377;2000 Denomination Banknotes – Status",
-    "description": "The Reserve Bank of India (RBI) had announced the withdrawal of &#8377;2000 denomination banknotes from circulation vide Press Release 2023-2024/257 dated May 19, 2023. The status of withdrawal of &#8377;2000 banknotes is periodically published by the RBI. The last press release in this regard was published on February 02, 2026. 2. The facility for deposit and / or exchange of the &#8377;2000 banknotes was available at all bank branches in the country upto October 07, 2023. 3. The facility for e",
-    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62320",
-    "date": "2000-06-01",
-    "source_id": "rbi",
-    "source_name": "Reserve Bank of India",
-    "source_short": "RBI",
+    "id": "e1b892fdf742",
+    "title": "Statements of Fiscal Policy under the FRBM Act, 2003",
+    "description": "",
+    "link": "https://www.indiabudget.gov.indoc/frbm1.pdf",
+    "date": "2003-06-01",
+    "source_id": "mof_budget",
+    "source_name": "Ministry of Finance - Union Budget",
+    "source_short": "MoF Budget",
     "sectors": [
-      "Digital & Technology",
-      "Finance & Economy",
-      "Social Protection"
+      "Social Protection",
+      "Finance & Economy"
     ],
     "sector_slugs": [
-      "digital-technology",
-      "finance-economy",
-      "social-protection"
+      "social-protection",
+      "finance-economy"
     ],
-    "type": "announcement"
+    "type": "budget"
   },
   {
     "id": "24235eee455b",
