@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-03T12:31:27.563273+00:00",
-  "total_policies": 306,
+  "last_updated": "2026-03-03T12:35:57.796333+00:00",
+  "total_policies": 307,
   "total_sources": 13,
   "total_sectors": 21,
   "sector_counts": {
@@ -11,7 +11,7 @@
     "Finance & Economy": 53,
     "Education": 13,
     "Climate & Environment": 13,
-    "Energy": 50,
+    "Energy": 51,
     "Transport & Infrastructure": 22,
     "Health": 13,
     "Governance & Reform": 51,
@@ -39,6 +39,6 @@
     "data_gov_in": 4,
     "cprindia": 10,
     "india_code": 10,
-    "world_bank_india": 31
+    "world_bank_india": 32
   }
 }
