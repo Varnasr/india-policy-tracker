@@ -1,0 +1,19 @@
+{
+  "id": "c593d6e6c98a",
+  "title": "AI in Education",
+  "description": "Government of India press release: AI in Education",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234853",
+  "date": "2026-03-03",
+  "source_id": "pib",
+  "source_name": "Press Information Bureau",
+  "source_short": "PIB",
+  "sectors": [
+    "Education",
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "education",
+    "digital-technology"
+  ],
+  "type": "announcement"
+}

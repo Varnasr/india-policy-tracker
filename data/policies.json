@@ -3039,6 +3039,278 @@
     "type": "policy"
   },
   {
+    "id": "25a65bdcacb9",
+    "title": "World Wildlife Day 2026",
+    "description": "Government of India press release: World Wildlife Day 2026",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234951",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Climate & Environment"
+    ],
+    "sector_slugs": [
+      "climate-environment"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "75bde9157f1c",
+    "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah says let us reaffirm B...",
+    "description": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah says let us reaffirm B...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234930",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "884ac8653b54",
+    "title": "Prime Minister Shri Narendra Modi addresses Post Budget Webinar on “Sustaining and St...",
+    "description": "Government of India press release: Prime Minister Shri Narendra Modi addresses Post Budget Webinar on “Sustaining and St...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234919",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "budget"
+  },
+  {
+    "id": "7964b6289881",
+    "title": "Text of PM's address during post-budget webinar on “Sustaining and Strengthening Econ...",
+    "description": "Government of India press release: Text of PM's address during post-budget webinar on “Sustaining and Strengthening Econ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234906",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "budget"
+  },
+  {
+    "id": "8b21ee177c43",
+    "title": "CONTRACT FOR 04 X 500T SELF PROPELLED FUEL BARGES FOR INDIAN NAVY WITH M/S SHOFT SHIP...",
+    "description": "Government of India press release: CONTRACT FOR 04 X 500T SELF PROPELLED FUEL BARGES FOR INDIAN NAVY WITH M/S SHOFT SHIP...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234905",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Energy",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "energy",
+      "defence-security"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "736edb48f297",
+    "title": "Over 100,000 Schools have been saturated by UIDAI’s special drive on mandatory biomet...",
+    "description": "Government of India press release: Over 100,000 Schools have been saturated by UIDAI’s special drive on mandatory biomet...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234902",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Education",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "53b7662f39ff",
+    "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah greets people of West ...",
+    "description": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah greets people of West ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234898",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "8a93084f066b",
+    "title": "On World Wildlife Day 2026, Prime Minister reaffirms Commitment to Wildlife Conservat...",
+    "description": "Government of India press release: On World Wildlife Day 2026, Prime Minister reaffirms Commitment to Wildlife Conservat...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234894",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Climate & Environment",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "climate-environment",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "c593d6e6c98a",
+    "title": "AI in Education",
+    "description": "Government of India press release: AI in Education",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234853",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Education",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "41e9a28a5bb4",
+    "title": "Global Dance Overture: Indo–Russian Cultural Evening at Kamani Theatre Today",
+    "description": "Government of India press release: Global Dance Overture: Indo–Russian Cultural Evening at Kamani Theatre Today",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2234841",
+    "date": "2026-03-03",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Energy"
+    ],
+    "sector_slugs": [
+      "energy"
+    ],
+    "type": "announcement"
+  },
+  {
+    "id": "f8a684dfc84b",
+    "title": "Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadMinistry of PowerNotification in respect of M/s Torrent Solar ...03-Mar-2026CG-DL-E-03032026-2706310.66 MBMinistry of Commerc",
+    "description": "Gazette notification: Recent Extra Ordinary GazettesMinistrySubjectPublish DateGazette IDDownloadMinistry of PowerNotification in respect of M/s Torrent Solar ...03-Mar-2026CG-DL-E-03032026-2706310.66 MBMinistry of Commerce and IndustryFurniture Quality Control SECOND Amendment Or...03-Mar-2026CG-DL-E-03032026-2706300.59",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Energy",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "energy",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "legislation"
+  },
+  {
+    "id": "ceba4de4ddab",
+    "title": "Ministry of Power",
+    "description": "Gazette notification: Ministry of Power",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "energy"
+    ],
+    "type": "notification"
+  },
+  {
+    "id": "637055e6558a",
+    "title": "Ministry of Commerce and Industry",
+    "description": "Gazette notification: Ministry of Commerce and Industry",
+    "link": "",
+    "date": "2026-03-03",
+    "source_id": "egazette",
+    "source_name": "eGazette of India",
+    "source_short": "eGazette",
+    "sectors": [
+      "Social Protection",
+      "Trade & Commerce"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "trade-commerce"
+    ],
+    "type": "notification"
+  },
+  {
+    "id": "53d2a263796f",
+    "title": "PRAHAAR: India’s New Counter-Terror Policy in a Hybrid Threat Era",
+    "description": "ORF Expert Speak: PRAHAAR: India’s New Counter-Terror Policy in a Hybrid Threat Era",
+    "link": "https://www.orfonline.org/expert-speak/prahaar-india-s-new-counter-terror-policy-in-a-hybrid-threat-era",
+    "date": "2026-03-03",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy"
+  },
+  {
     "id": "91b1a4943743",
     "title": "The Industrial Relations Code (Amendment) Bill, 2026",
     "description": "",
