@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-03T11:07:51.646492+00:00",
-  "total_policies": 353,
+  "last_updated": "2026-03-03T11:24:29.470552+00:00",
+  "total_policies": 354,
   "total_sources": 13,
   "total_sectors": 21,
   "sector_counts": {
@@ -8,7 +8,7 @@
     "Labour & Employment": 15,
     "Digital & Technology": 161,
     "Rural Development": 12,
-    "Energy": 56,
+    "Energy": 57,
     "Finance & Economy": 60,
     "Governance & Reform": 66,
     "Transport & Infrastructure": 30,
@@ -29,7 +29,7 @@
   "source_counts": {
     "prs_bills": 107,
     "egazette": 24,
-    "pib": 30,
+    "pib": 31,
     "prs_legislative": 48,
     "niti_aayog": 1,
     "mof_budget": 30,
