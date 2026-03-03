@@ -6,8 +6,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Auto-updating tracker of Indian development policies across 20+ sectors. Open data, open source." } = Astro.props;
-const siteTitle = `${title} | India Policy Tracker`;
+const { title, description = "PolicyDhara — open-source tracker of Indian development policies across 20+ sectors. By ImpactMojo." } = Astro.props;
+const siteTitle = `${title} | PolicyDhara`;
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
@@ -22,13 +22,13 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
   <meta property="og:title" content={siteTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="India Policy Tracker" />
+  <meta property="og:site_name" content="PolicyDhara" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="alternate" type="application/rss+xml" title="India Policy Tracker RSS" href={`${base}rss.xml`} />
+  <link rel="alternate" type="application/rss+xml" title="PolicyDhara RSS" href={`${base}rss.xml`} />
 
 
 </head>
@@ -45,7 +45,7 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
           </svg>
         </div>
         <div>
-          <h1>India Policy Tracker</h1>
+          <h1>PolicyDhara</h1>
           <span class="subtitle">by ImpactMojo</span>
         </div>
       </a>
@@ -71,7 +71,7 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <strong>India Policy Tracker</strong>
+          <strong>PolicyDhara</strong>
           <span>Free, open-source policy tracking by <a href="https://www.impactmojo.in">ImpactMojo</a></span>
         </div>
         <div class="footer-links">

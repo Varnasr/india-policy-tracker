@@ -36,6 +36,41 @@ def generate_id(title: str, source: str, date: str) -> str:
     return hashlib.sha256(raw.encode()).hexdigest()[:12]
 
 
+def extract_date_from_title(title: str) -> str:
+    """
+    Extract an approximate date from a policy title when no real date is available.
+    E.g. "The Securities Markets Code, 2025" → "2025-06-01"
+         "Union Budget 2026-27" → "2026-02-01"
+    Returns empty string if no year found.
+    """
+    import re
+    text = title.strip()
+
+    # Match "Budget YYYY" → use Feb 1 of that year (budget month)
+    m = re.search(r'[Bb]udget\s+(\d{4})', text)
+    if m:
+        return f"{m.group(1)}-02-01"
+
+    # Match explicit year patterns: "Bill, 2025" or "Code, 2024" or "Act 2023" or "(2025)"
+    m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-)\].,]?\s*$', text)
+    if not m:
+        m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-–]\s*\d{2,4}', text)
+    if not m:
+        # Try anywhere in the title as last resort
+        matches = re.findall(r'(?:19|20)\d{2}', text)
+        if matches:
+            # Use the most recent year mentioned
+            year = max(int(y) for y in matches)
+            if 1990 <= year <= datetime.now(timezone.utc).year + 1:
+                return f"{year}-06-01"
+        return ""
+
+    year = int(m.group(1))
+    if 1990 <= year <= datetime.now(timezone.utc).year + 1:
+        return f"{year}-06-01"
+    return ""
+
+
 def load_existing_policies() -> dict:
     """Load already-fetched policies to avoid duplicates."""
     existing = {}
@@ -149,7 +184,15 @@ def fetch_source(source_id: str, source_config: dict) -> list[dict]:
 
             description = raw.get("description", "").strip()
             link = raw.get("link", "")
-            date = raw.get("date", datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+            date = raw.get("date", "").strip()
+
+            # If no date from source, try to extract from title
+            if not date:
+                date = extract_date_from_title(title)
+
+            # Last resort: use today's date
+            if not date:
+                date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
             policy_id = generate_id(title, source_id, date)
             sectors = classify_policy(title, description, source_sectors)

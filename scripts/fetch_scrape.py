@@ -47,14 +47,14 @@ def safe_get(url: str, headers: dict = None) -> requests.Response | None:
 def parse_date_text(text: str) -> str:
     """Try to parse a date string into YYYY-MM-DD format."""
     if not text:
-        return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        return ""
     try:
         dt = dateparser.parse(text, fuzzy=True)
         if dt:
             return dt.strftime("%Y-%m-%d")
     except (ValueError, TypeError):
         pass
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    return ""
 
 
 def parse_unix_timestamp(ts) -> str:
@@ -64,7 +64,7 @@ def parse_unix_timestamp(ts) -> str:
         dt = datetime.fromtimestamp(val, tz=timezone.utc)
         return dt.strftime("%Y-%m-%d")
     except (ValueError, TypeError, OSError):
-        return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        return ""
 
 
 # ── Source-specific parsers ──────────────────────────────────────────
@@ -98,7 +98,7 @@ def scrape_pib(config: dict) -> list[dict]:
             "title": title[:200],
             "description": f"Government of India press release: {title[:300]}",
             "link": href,
-            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "date": "",
         })
 
     # Deduplicate by PRID
@@ -279,15 +279,12 @@ def scrape_parliament(config: dict) -> list[dict]:
                     if link and not link.startswith("http"):
                         link = f"https://sansad.in{link}"
 
-            if not date:
-                date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
             if title and len(title) > 3:
                 items.append({
                     "title": title,
                     "description": f"Parliament {category}: {title}",
                     "link": link,
-                    "date": date,
+                    "date": date or "",
                 })
 
     return items
@@ -372,7 +369,7 @@ def scrape_data_gov_api(config: dict) -> list[dict]:
             link = f"https://data.gov.in{node_alias}" if node_alias else "https://data.gov.in"
 
             # Parse Unix timestamp
-            date = parse_unix_timestamp(published or created) if (published or created) else datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            date = parse_unix_timestamp(published or created) if (published or created) else ""
 
             desc = f"Open Government Data: {title}"
             if ministry:
@@ -513,7 +510,7 @@ def scrape_orf(config: dict) -> list[dict]:
             "title": title[:200],
             "description": f"ORF Expert Speak: {title[:300]}",
             "link": href,
-            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "date": "",
         })
 
     return items

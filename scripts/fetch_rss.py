@@ -30,14 +30,14 @@ TIMEOUT = 30
 def parse_date(text: str) -> str:
     """Parse date string into YYYY-MM-DD."""
     if not text:
-        return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        return ""
     try:
         dt = dateparser.parse(text, fuzzy=True)
         if dt:
             return dt.strftime("%Y-%m-%d")
     except (ValueError, TypeError):
         pass
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    return ""
 
 
 def clean_html(text: str) -> str:

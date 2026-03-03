@@ -6,7 +6,7 @@ export function GET(context: APIContext) {
   const policies = getAllPolicies();
 
   return rss({
-    title: 'India Policy Tracker',
+    title: 'PolicyDhara',
     description: 'Auto-updating tracker of Indian development policies across 22 sectors — by ImpactMojo',
     site: context.site?.toString() || 'https://varnasr.github.io/india-policy-tracker',
     items: policies.slice(0, 100).map(p => ({

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "name": "India Policy Tracker",
-    "description": "Auto-updating tracker of Indian development policies across 20+ sectors",
+    "name": "PolicyDhara",
+    "description": "Open-source tracker of Indian development policies across 20+ sectors — by ImpactMojo",
     "version": "2.0.0",
     "update_frequency": "Every 6 hours via GitHub Actions"
   },
