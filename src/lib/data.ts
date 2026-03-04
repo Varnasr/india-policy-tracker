@@ -224,6 +224,64 @@ export function getEraDistribution(): { era: string; party: string; count: numbe
   }));
 }
 
+/** State government data */
+export interface StateGovInfo {
+  name: string;
+  abbr: string;
+  party: string;
+  cm?: string;
+  lg?: string;
+  lean: number;
+  label: string;
+  since?: string;
+  type: 'state' | 'ut';
+}
+
+export function getStateGovernments(): StateGovInfo[] {
+  const data = readJson<any>('state_governments.json', { states: {}, union_territories: {} });
+  const result: StateGovInfo[] = [];
+  for (const [name, info] of Object.entries(data.states || {})) {
+    const s = info as any;
+    result.push({ name, abbr: s.abbr, party: s.party, cm: s.cm, lean: s.lean, label: s.label, since: s.since, type: 'state' });
+  }
+  for (const [name, info] of Object.entries(data.union_territories || {})) {
+    const s = info as any;
+    result.push({ name, abbr: s.abbr, party: s.party, cm: s.cm, lg: s.lg, lean: s.lean, label: s.label, type: 'ut' });
+  }
+  return result;
+}
+
+export function getStateSlug(name: string): string {
+  return name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+}
+
+export function getPoliciesByState(stateName: string): PolicyItem[] {
+  return getAllPolicies().filter(p => p.state === stateName);
+}
+
+export function getStatePolicySummary(): { name: string; slug: string; count: number; party: string; label: string; abbr: string; type: 'state' | 'ut' }[] {
+  const govs = getStateGovernments();
+  const policies = getAllPolicies();
+
+  // Count policies by state
+  const stateCounts: Record<string, number> = {};
+  for (const p of policies) {
+    if (p.state) {
+      stateCounts[p.state] = (stateCounts[p.state] || 0) + 1;
+    }
+  }
+
+  return govs.map(g => ({
+    name: g.name,
+    slug: getStateSlug(g.name),
+    count: stateCounts[g.name] || 0,
+    party: g.party,
+    label: g.label,
+    abbr: g.abbr,
+    type: g.type,
+  }));
+}
+
 /** Returns sectors x types matrix for landscape view */
 export function getSectorTypeMatrix(): {
   sectors: string[];

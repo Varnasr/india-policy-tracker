@@ -1,0 +1,379 @@
+---
+import Base from '../../layouts/Base.astro';
+import PolicyCard from '../../components/PolicyCard.astro';
+import { getStateGovernments, getStateSlug, getAllPolicies } from '../../lib/data';
+
+export function getStaticPaths() {
+  const govs = getStateGovernments();
+  return govs.map(g => ({
+    params: { state: getStateSlug(g.name) },
+    props: { gov: g }
+  }));
+}
+
+const { state } = Astro.params;
+const { gov } = Astro.props;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+
+// Get policies for this state (tagged with state field)
+const statePolicies = getAllPolicies().filter(p => p.state === gov.name);
+
+// Also get central policies — those that apply nationwide
+const centralPolicies = getAllPolicies().filter(p => !p.state && !p.level || p.level === 'central');
+
+// Sector breakdown for this state's policies
+const sectorCounts: Record<string, number> = {};
+for (const p of statePolicies) {
+  for (const s of p.sectors) {
+    sectorCounts[s] = (sectorCounts[s] || 0) + 1;
+  }
+}
+const topSectors = Object.entries(sectorCounts).sort(([,a], [,b]) => b - a).slice(0, 6);
+const maxSectorCount = Math.max(...topSectors.map(([,c]) => c), 1);
+
+// Type breakdown
+const typeCounts: Record<string, number> = {};
+for (const p of statePolicies) {
+  typeCounts[p.type] = (typeCounts[p.type] || 0) + 1;
+}
+const typeBreakdown = Object.entries(typeCounts).sort(([,a], [,b]) => b - a);
+
+const TYPE_COLORS: Record<string, string> = {
+  legislation: '#dc2626', notification: '#d97706', scheme: '#16a34a',
+  budget: '#ea580c', research: '#7c3aed', announcement: '#2563eb', policy: '#9333ea',
+};
+
+const LEAN_COLORS: Record<string, string> = {
+  'Left': '#dc2626',
+  'Centre-Left': '#f97316',
+  'Centre': '#737373',
+  'Centre-Right': '#3b82f6',
+  'Right': '#1d4ed8',
+};
+
+const spectrumPct = ((gov.lean + 2) / 4) * 100;
+const leader = gov.cm || gov.lg || 'Administrator';
+const leaderTitle = gov.cm ? 'Chief Minister' : gov.lg ? 'Lt. Governor' : 'Administrator';
+---
+<Base title={gov.name} description={`State policy tracker for ${gov.name} — governed by ${gov.party}. Part of PolicyDhara by ImpactMojo.`}>
+  <div style="padding: var(--space-xl) 0;">
+    <div style="margin-bottom: var(--space-lg);">
+      <a href={`${base}states/`} class="btn btn-secondary" style="margin-bottom: var(--space-md); display: inline-flex;">&larr; All States</a>
+      <h2 class="page-title">{gov.name}</h2>
+      <p class="page-subtitle">{gov.type === 'ut' ? 'Union Territory' : 'State'}</p>
+    </div>
+
+    {/* Government info panel */}
+    <div class="gov-panel">
+      <div class="gov-panel-grid">
+        {/* Key facts */}
+        <div class="gov-facts">
+          <div class="gov-fact">
+            <span class="gov-fact-label">{leaderTitle}</span>
+            <span class="gov-fact-value">{leader}</span>
+          </div>
+          <div class="gov-fact">
+            <span class="gov-fact-label">Ruling Party</span>
+            <span class="gov-fact-value">{gov.party}</span>
+          </div>
+          {gov.since && (
+            <div class="gov-fact">
+              <span class="gov-fact-label">In Power Since</span>
+              <span class="gov-fact-value">{gov.since}</span>
+            </div>
+          )}
+        </div>
+
+        {/* Political alignment */}
+        <div class="gov-alignment">
+          <h4>Political Alignment</h4>
+          <div class="gov-lean-badge" style={`background: ${LEAN_COLORS[gov.label] || '#888'}20; border-color: ${LEAN_COLORS[gov.label] || '#888'};`}>
+            <span class="gov-lean-dot" style={`background: ${LEAN_COLORS[gov.label] || '#888'};`}></span>
+            {gov.label}
+          </div>
+          <div class="spectrum">
+            <div class="spectrum-bar">
+              <div class="spectrum-marker" style={`left: ${spectrumPct}%;`}>
+                <span class="spectrum-dot" style={`background: ${LEAN_COLORS[gov.label] || '#888'};`}></span>
+              </div>
+            </div>
+            <div class="spectrum-labels">
+              <span>Left</span>
+              <span>Centre</span>
+              <span>Right</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Policy stats */}
+        <div class="gov-stats">
+          <div class="gov-stat-box">
+            <span class="gov-stat-num">{statePolicies.length}</span>
+            <span class="gov-stat-label">State Policies</span>
+          </div>
+          <div class="gov-stat-box">
+            <span class="gov-stat-num">{Object.keys(sectorCounts).length}</span>
+            <span class="gov-stat-label">Sectors</span>
+          </div>
+          <div class="gov-stat-box">
+            <span class="gov-stat-num">{Object.keys(typeCounts).length}</span>
+            <span class="gov-stat-label">Policy Types</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Sector breakdown if policies exist */}
+    {topSectors.length > 0 && (
+      <div class="breakdown-panel">
+        <div class="breakdown-grid">
+          <div class="breakdown-section">
+            <h4>Top Sectors</h4>
+            <div class="breakdown-bars">
+              {topSectors.map(([sector, count]) => (
+                <div class="bd-bar-row">
+                  <span class="bd-bar-label">{sector}</span>
+                  <div class="bd-bar-track">
+                    <div class="bd-bar-fill" style={`width: ${(count / maxSectorCount) * 100}%;`}></div>
+                  </div>
+                  <span class="bd-bar-count">{count}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="breakdown-section">
+            <h4>Policy Types</h4>
+            <div class="breakdown-bars">
+              {typeBreakdown.map(([type, count]) => (
+                <div class="bd-bar-row">
+                  <span class="bd-bar-dot" style={`background: ${TYPE_COLORS[type] || '#888'};`}></span>
+                  <span class="bd-bar-label">{type}</span>
+                  <span class="bd-bar-count">{count}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Policies feed */}
+    <div class="section-header" style="margin-top: var(--space-xl);">
+      <h3>{statePolicies.length > 0 ? 'State Policies' : 'No State Policies Yet'}</h3>
+    </div>
+
+    {statePolicies.length === 0 ? (
+      <div class="empty-state">
+        <p>No state-level policies tracked for {gov.name} yet. State policy sources are being added progressively.</p>
+        <p style="font-size: 0.8125rem; color: var(--color-text-dim); margin-top: var(--space-sm);">
+          Central government policies that affect {gov.name} are tracked on the <a href={base}>main dashboard</a>.
+        </p>
+      </div>
+    ) : (
+      <div class="policy-feed">
+        {statePolicies.map(p => (
+          <PolicyCard
+            id={p.id} title={p.title} description={p.description} link={p.link}
+            date={p.date} source_short={p.source_short} sectors={p.sectors} type={p.type}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+</Base>
+
+<style>
+  .gov-panel {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-lg);
+  }
+  .gov-panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .gov-facts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  .gov-fact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .gov-fact-label {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-dim);
+    font-weight: 600;
+  }
+  .gov-fact-value {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .gov-alignment h4 {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+  }
+  .gov-lean-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+  .gov-lean-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .spectrum { margin-top: var(--space-sm); }
+  .spectrum-bar {
+    height: 6px;
+    background: linear-gradient(to right, #dc2626, #f97316, #a3a3a3, #3b82f6, #1d4ed8);
+    border-radius: 3px;
+    position: relative;
+  }
+  .spectrum-marker {
+    position: absolute;
+    top: -5px;
+    transform: translateX(-50%);
+  }
+  .spectrum-dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .spectrum-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5625rem;
+    color: var(--color-text-dim);
+    margin-top: 6px;
+  }
+
+  .gov-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: center;
+    justify-content: center;
+  }
+  .gov-stat-box { text-align: center; }
+  .gov-stat-num {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    display: block;
+    line-height: 1;
+  }
+  .gov-stat-label {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-dim);
+    font-weight: 600;
+  }
+
+  .breakdown-panel {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-lg);
+  }
+  .breakdown-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+  .breakdown-section h4 {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+  }
+  .breakdown-bars { display: flex; flex-direction: column; gap: 6px; }
+  .bd-bar-row { display: flex; align-items: center; gap: 8px; }
+  .bd-bar-dot { width: 6px; height: 6px; border-radius: 2px; flex-shrink: 0; }
+  .bd-bar-label {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    text-transform: capitalize;
+    flex-shrink: 0;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bd-bar-track {
+    flex: 1;
+    height: 6px;
+    background: var(--color-bg-alt);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .bd-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--color-accent);
+  }
+  .bd-bar-count {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    width: 22px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .section-header h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+
+  .empty-state {
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    color: var(--color-text-muted);
+  }
+  .empty-state a { color: var(--color-accent); }
+
+  @media (max-width: 768px) {
+    .gov-panel-grid { grid-template-columns: 1fr; }
+    .breakdown-grid { grid-template-columns: 1fr; }
+    .bd-bar-label { width: 90px; }
+  }
+</style>

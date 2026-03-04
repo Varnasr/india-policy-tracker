@@ -1,5 +1,5 @@
 ---
-import { getTypeDistribution, getTopSectors, getWeeklyTrends, getMeta, getAllPolicies, getSectorSlug, getEraDistribution } from '../lib/data';
+import { getTypeDistribution, getTopSectors, getWeeklyTrends, getMeta, getAllPolicies, getSectorSlug, getEraDistribution, getStateGovernments } from '../lib/data';
 
 const typeDist = getTypeDistribution();
 const topSectors = getTopSectors(8);
@@ -40,6 +40,19 @@ const prev7 = policies.filter(p => {
 }).length;
 const trendPct = prev7 > 0 ? Math.round(((last7 - prev7) / prev7) * 100) : (last7 > 0 ? 100 : 0);
 const trendUp = trendPct >= 0;
+
+// State governance summary
+const stateGovs = getStateGovernments().filter(g => g.type === 'state');
+const govPartyGroups: Record<string, number> = {};
+for (const g of stateGovs) {
+  const key = g.party.includes('BJP') ? 'BJP/NDA' : g.party.includes('Congress') ? 'Congress/UPA' : 'Others';
+  govPartyGroups[key] = (govPartyGroups[key] || 0) + 1;
+}
+const GOV_PARTY_COLORS: Record<string, string> = {
+  'BJP/NDA': '#1d4ed8',
+  'Congress/UPA': '#f97316',
+  'Others': '#737373',
+};
 ---
 <div class="insights-grid">
   {/* Quick stats row */}
@@ -133,6 +146,26 @@ const trendUp = trendPct >= 0;
       </div>
     </div>
   )}
+
+  {/* State governance overview */}
+  <div class="insight-card insight-governance">
+    <h4><a href={`${base}states/`} class="insight-link">State Governance</a></h4>
+    <div class="gov-bars">
+      {Object.entries(govPartyGroups).sort(([,a], [,b]) => b - a).map(([party, count]) => (
+        <div class="gov-bar-row">
+          <span class="gov-bar-label">{party}</span>
+          <div class="gov-bar-track">
+            <div class="gov-bar-fill" style={`width: ${(count / stateGovs.length) * 100}%; background: ${GOV_PARTY_COLORS[party] || '#888'};`}></div>
+          </div>
+          <span class="gov-bar-count">{count}</span>
+        </div>
+      ))}
+    </div>
+    <div class="gov-total">
+      <span>{stateGovs.length} states tracked</span>
+      <a href={`${base}states/`} class="gov-view-link">View all &rarr;</a>
+    </div>
+  </div>
 </div>
 
 <style>
@@ -320,6 +353,58 @@ const trendUp = trendPct >= 0;
     font-size: 0.625rem; color: var(--color-text-muted);
   }
   .era-dot { width: 8px; height: 8px; border-radius: 2px; }
+
+  /* State governance card */
+  .insight-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .insight-link:hover { color: var(--color-accent); }
+  .gov-bars { display: flex; flex-direction: column; gap: 8px; }
+  .gov-bar-row { display: flex; align-items: center; gap: 8px; }
+  .gov-bar-label {
+    width: 100px;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    flex-shrink: 0;
+  }
+  .gov-bar-track {
+    flex: 1;
+    height: 8px;
+    background: var(--color-bg-alt);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .gov-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+  }
+  .gov-bar-count {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    width: 22px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .gov-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.625rem;
+    color: var(--color-text-dim);
+  }
+  .gov-view-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.6875rem;
+  }
+  .gov-view-link:hover { text-decoration: underline; }
 
   @media (max-width: 768px) {
     .insights-grid { grid-template-columns: 1fr; }

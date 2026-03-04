@@ -1,0 +1,232 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getStateGovernments, getStatePolicySummary, getStateSlug } from '../../lib/data';
+
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+
+const summary = getStatePolicySummary();
+const states = summary.filter(s => s.type === 'state').sort((a, b) => a.name.localeCompare(b.name));
+const uts = summary.filter(s => s.type === 'ut').sort((a, b) => a.name.localeCompare(b.name));
+
+// Political lean color mapping
+const LEAN_COLORS: Record<string, string> = {
+  'Left': '#dc2626',
+  'Centre-Left': '#f97316',
+  'Centre': '#737373',
+  'Centre-Right': '#3b82f6',
+  'Right': '#1d4ed8',
+};
+
+// Party alignment counts
+const partyCounts: Record<string, number> = {};
+for (const s of states) {
+  const key = s.party.includes('BJP') ? 'BJP/NDA' : s.party.includes('Congress') ? 'Congress/UPA' : 'Others';
+  partyCounts[key] = (partyCounts[key] || 0) + 1;
+}
+---
+<Base title="States & UTs" description="Track state-level government policies across India — 28 states and 8 union territories with ruling parties and political alignment.">
+  <div style="padding: var(--space-xl) 0;">
+    <h2 class="page-title">States & Union Territories</h2>
+    <p class="page-subtitle">
+      Tracking governance across {states.length} states and {uts.length} union territories.
+    </p>
+
+    {/* Quick overview panel */}
+    <div class="gov-overview">
+      <div class="gov-overview-stat">
+        <span class="gov-stat-num">{partyCounts['BJP/NDA'] || 0}</span>
+        <span class="gov-stat-label">BJP/NDA States</span>
+        <span class="gov-stat-dot" style="background: #1d4ed8;"></span>
+      </div>
+      <div class="gov-overview-stat">
+        <span class="gov-stat-num">{partyCounts['Congress/UPA'] || 0}</span>
+        <span class="gov-stat-label">Congress/UPA States</span>
+        <span class="gov-stat-dot" style="background: #f97316;"></span>
+      </div>
+      <div class="gov-overview-stat">
+        <span class="gov-stat-num">{partyCounts['Others'] || 0}</span>
+        <span class="gov-stat-label">Regional/Other</span>
+        <span class="gov-stat-dot" style="background: #737373;"></span>
+      </div>
+    </div>
+
+    {/* Spectrum legend */}
+    <div class="spectrum-legend">
+      {Object.entries(LEAN_COLORS).map(([label, color]) => (
+        <span class="spectrum-legend-item">
+          <span class="spectrum-legend-dot" style={`background: ${color};`}></span>
+          {label}
+        </span>
+      ))}
+    </div>
+
+    {/* States grid */}
+    <h3 class="section-title">States ({states.length})</h3>
+    <div class="state-grid">
+      {states.map(s => (
+        <a href={`${base}states/${s.slug}/`} class="state-card">
+          <div class="state-card-header">
+            <span class="state-abbr">{s.abbr}</span>
+            <span class="state-lean-dot" style={`background: ${LEAN_COLORS[s.label] || '#888'};`} title={s.label}></span>
+          </div>
+          <span class="state-card-name">{s.name}</span>
+          <span class="state-card-party">{s.party}</span>
+          {s.count > 0 && (
+            <span class="state-card-count">{s.count} {s.count === 1 ? 'policy' : 'policies'}</span>
+          )}
+        </a>
+      ))}
+    </div>
+
+    {/* Union Territories */}
+    <h3 class="section-title" style="margin-top: var(--space-xl);">Union Territories ({uts.length})</h3>
+    <div class="state-grid">
+      {uts.map(s => (
+        <a href={`${base}states/${s.slug}/`} class="state-card state-card-ut">
+          <div class="state-card-header">
+            <span class="state-abbr">{s.abbr}</span>
+            <span class="state-lean-dot" style={`background: ${LEAN_COLORS[s.label] || '#888'};`} title={s.label}></span>
+          </div>
+          <span class="state-card-name">{s.name}</span>
+          <span class="state-card-party">{s.party}</span>
+          {s.count > 0 && (
+            <span class="state-card-count">{s.count} {s.count === 1 ? 'policy' : 'policies'}</span>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .gov-overview {
+    display: flex;
+    gap: var(--space-lg);
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-md);
+  }
+  .gov-overview-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+  }
+  .gov-stat-num {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1;
+  }
+  .gov-stat-label {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+  .gov-stat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+
+  .spectrum-legend {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+  }
+  .spectrum-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+  .spectrum-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .section-title {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+
+  .state-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .state-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .state-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-card);
+  }
+  .state-card-ut {
+    border-style: dashed;
+  }
+
+  .state-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .state-abbr {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: var(--color-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .state-lean-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .state-card-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.2;
+  }
+  .state-card-party {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+  .state-card-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-top: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .gov-overview { flex-direction: column; gap: var(--space-md); }
+    .state-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  }
+</style>
