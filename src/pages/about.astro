@@ -221,8 +221,8 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 <style>
   /* Caveat box */
   .caveat-box {
-    background: #fef3c7;
-    border: 2px solid #f59e0b;
+    background: var(--color-bg-alt);
+    border: 2px solid var(--color-border);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     margin-bottom: var(--space-xl);
@@ -231,12 +231,12 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     font-family: 'Newsreader', Georgia, serif;
     font-size: 1.125rem;
     font-weight: 700;
-    color: #92400e;
+    color: var(--color-text);
     margin-bottom: var(--space-sm);
   }
   .caveat-box p {
     font-size: 0.8125rem;
-    color: #78350f;
+    color: var(--color-text-secondary);
     line-height: 1.7;
     margin-bottom: var(--space-sm);
   }
@@ -254,11 +254,11 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     font-family: 'Newsreader', Georgia, serif;
     font-size: 1.75rem;
     font-weight: 700;
-    color: #92400e;
+    color: var(--color-text);
   }
   .caveat-label {
     font-size: 0.6875rem;
-    color: #a16207;
+    color: var(--color-text-muted);
     font-weight: 600;
   }
 

@@ -28,10 +28,10 @@ const SDG_NAMES: Record<number, string> = {
 };
 
 const IMPL_COLORS: Record<string, { bg: string; text: string; label: string }> = {
-  announced: { bg: '#f3f4f6', text: '#6b7280', label: 'Announced' },
-  early: { bg: '#fefce8', text: '#854d0e', label: 'Early Stage' },
-  partial: { bg: '#fff7ed', text: '#c2410c', label: 'Partially Implemented' },
-  operational: { bg: '#dcfce7', text: '#166534', label: 'Operational' },
+  announced: { bg: 'var(--color-bg-alt)', text: 'var(--color-text-muted)', label: 'Announced' },
+  early: { bg: 'var(--type-notification-bg)', text: 'var(--type-notification)', label: 'Early Stage' },
+  partial: { bg: 'var(--type-budget-bg)', text: 'var(--type-budget)', label: 'Partially Implemented' },
+  operational: { bg: 'var(--type-scheme-bg)', text: 'var(--type-scheme)', label: 'Operational' },
 };
 
 function formatDate(dateStr: string): string {
@@ -396,7 +396,7 @@ const spectrumPct = ((enrichment.politicalLean + 2) / 4) * 100; // maps -2..+2 t
     font-size: 0.6875rem; font-weight: 500;
   }
   .authority-tag {
-    background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe;
+    background: var(--type-announcement-bg); color: var(--type-announcement); border: 1px solid var(--type-announcement-border);
   }
   .stakeholder-tag {
     background: var(--color-bg-alt); color: var(--color-text-secondary);
@@ -663,11 +663,11 @@ const spectrumPct = ((enrichment.politicalLean + 2) / 4) * 100; // maps -2..+2 t
     align-items: center;
     gap: 4px;
     padding: 3px 10px;
-    background: #eff6ff;
-    border: 1px solid #bfdbfe;
+    background: var(--type-announcement-bg);
+    border: 1px solid var(--type-announcement-border);
     border-radius: var(--radius-pill);
     font-size: 0.6875rem;
-    color: #1d4ed8;
+    color: var(--type-announcement);
     font-weight: 500;
   }
   .sdg-num {

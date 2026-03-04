@@ -21,11 +21,11 @@ const SESSION_COLORS: Record<string, string> = {
 };
 
 const STATUS_COLORS: Record<string, { bg: string; text: string }> = {
-  'Referred to JPC': { bg: '#fef3c7', text: '#92400e' },
-  'Referred to Standing Committee': { bg: '#fef3c7', text: '#92400e' },
-  'Pending in Lok Sabha': { bg: '#f3f4f6', text: '#6b7280' },
-  'Passed in Lok Sabha': { bg: '#dcfce7', text: '#166534' },
-  'Enacted': { bg: '#dbeafe', text: '#1d4ed8' },
+  'Referred to JPC': { bg: 'var(--type-notification-bg)', text: 'var(--type-notification)' },
+  'Referred to Standing Committee': { bg: 'var(--type-notification-bg)', text: 'var(--type-notification)' },
+  'Pending in Lok Sabha': { bg: 'var(--color-bg-alt)', text: 'var(--color-text-muted)' },
+  'Passed in Lok Sabha': { bg: 'var(--type-scheme-bg)', text: 'var(--type-scheme)' },
+  'Enacted': { bg: 'var(--type-announcement-bg)', text: 'var(--type-announcement)' },
 };
 ---
 <Base title="Parliament Tracker" description="Track Indian Parliament sessions, bills, and legislative productivity — Lok Sabha and Rajya Sabha.">

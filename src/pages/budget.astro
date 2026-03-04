@@ -93,7 +93,7 @@ const years = fiscal.map(f => f.year);
       <div class="fiscal-card">
         <span class="fc-label">Capex as % of Total</span>
         <span class="fc-value">{(latestFiscal.capital_expenditure / latestFiscal.total_expenditure * 100).toFixed(1)}%</span>
-        <span class="fc-change" style="color: #737373;">
+        <span class="fc-change" style="color: var(--color-text-muted);">
           {(prevFiscal.capital_expenditure / prevFiscal.total_expenditure * 100).toFixed(1)}% in {prevFiscal.year}
         </span>
       </div>

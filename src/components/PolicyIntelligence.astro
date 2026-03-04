@@ -57,17 +57,17 @@ const topMomentum = brief.momentum.slice(0, 6);
       <p class="intel-card-sub">{brief.pipeline.interpretation}</p>
       <div class="pipeline-stats">
         <div class="pipeline-stat">
-          <span class="pipeline-num" style="color: #dc2626;">{brief.pipeline.recentBills}</span>
+          <span class="pipeline-num" style="color: var(--type-legislation);">{brief.pipeline.recentBills}</span>
           <span class="pipeline-label">Bills</span>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-stat">
-          <span class="pipeline-num" style="color: #d97706;">{brief.pipeline.recentNotifications}</span>
+          <span class="pipeline-num" style="color: var(--type-notification);">{brief.pipeline.recentNotifications}</span>
           <span class="pipeline-label">Notifications</span>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-stat">
-          <span class="pipeline-num" style="color: #16a34a;">{brief.pipeline.recentSchemes}</span>
+          <span class="pipeline-num" style="color: var(--type-scheme);">{brief.pipeline.recentSchemes}</span>
           <span class="pipeline-label">Schemes</span>
         </div>
       </div>
@@ -366,9 +366,9 @@ const topMomentum = brief.momentum.slice(0, 6);
     border-radius: var(--radius-pill);
     letter-spacing: 0.03em;
   }
-  .corr-strong { background: #dbeafe; color: #1d4ed8; }
-  .corr-moderate { background: #fef3c7; color: #92400e; }
-  .corr-weak { background: #f3f4f6; color: #6b7280; }
+  .corr-strong { background: var(--type-announcement-bg); color: var(--type-announcement); }
+  .corr-moderate { background: var(--type-notification-bg); color: var(--type-notification); }
+  .corr-weak { background: var(--color-bg-alt); color: var(--color-text-muted); }
 
   @media (max-width: 768px) {
     .intel-grid { grid-template-columns: 1fr; }
