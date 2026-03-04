@@ -421,6 +421,50 @@ export function getAllImpacts(): Record<string, PolicyImpact> {
   return data.impacts || {};
 }
 
+/** Parliament session data */
+export interface ParliamentSession {
+  name: string;
+  type: string;
+  start: string;
+  end: string;
+  days_sat: number;
+  days_scheduled: number;
+  bills_introduced: number;
+  bills_passed: number;
+  key_events: string[];
+  productivity_pct: number;
+}
+
+export interface PendingBill {
+  name: string;
+  introduced: string;
+  status: string;
+  sector: string;
+}
+
+export interface HistoricalProductivity {
+  lok_sabha: number;
+  term: string;
+  bills_passed: number;
+  avg_productivity: number;
+}
+
+export interface ParliamentData {
+  lok_sabha: { current: number; term_start: string; speaker: string };
+  sessions: ParliamentSession[];
+  bills_tracker: { total_pending: number; referred_to_committee: number; passed_lok_sabha_only: number; key_pending_bills: PendingBill[] };
+  historical_productivity: HistoricalProductivity[];
+}
+
+export function getParliamentData(): ParliamentData {
+  return readJson<ParliamentData>('parliament_sessions.json', {
+    lok_sabha: { current: 18, term_start: '', speaker: '' },
+    sessions: [],
+    bills_tracker: { total_pending: 0, referred_to_committee: 0, passed_lok_sabha_only: 0, key_pending_bills: [] },
+    historical_productivity: [],
+  });
+}
+
 /** Returns sectors x types matrix for landscape view */
 export function getSectorTypeMatrix(): {
   sectors: string[];

@@ -1,0 +1,450 @@
+---
+import Base from '../layouts/Base.astro';
+import { getParliamentData } from '../lib/data';
+
+const parl = getParliamentData();
+const sessions = parl.sessions;
+const bills = parl.bills_tracker;
+const history = parl.historical_productivity;
+
+const totalBillsPassed = sessions.reduce((s, sess) => s + sess.bills_passed, 0);
+const totalDaysSat = sessions.reduce((s, sess) => s + sess.days_sat, 0);
+const avgProductivity = sessions.length > 0 ? Math.round(sessions.reduce((s, sess) => s + sess.productivity_pct, 0) / sessions.length) : 0;
+
+const maxHistBills = Math.max(...history.map(h => h.bills_passed), 1);
+
+const SESSION_COLORS: Record<string, string> = {
+  'Budget Session': '#16a34a',
+  'Monsoon Session': '#2563eb',
+  'Winter Session': '#d97706',
+  'Special Session': '#7c3aed',
+};
+
+const STATUS_COLORS: Record<string, { bg: string; text: string }> = {
+  'Referred to JPC': { bg: '#fef3c7', text: '#92400e' },
+  'Referred to Standing Committee': { bg: '#fef3c7', text: '#92400e' },
+  'Pending in Lok Sabha': { bg: '#f3f4f6', text: '#6b7280' },
+  'Passed in Lok Sabha': { bg: '#dcfce7', text: '#166534' },
+  'Enacted': { bg: '#dbeafe', text: '#1d4ed8' },
+};
+---
+<Base title="Parliament Tracker" description="Track Indian Parliament sessions, bills, and legislative productivity — Lok Sabha and Rajya Sabha.">
+  <div style="padding: var(--space-xl) 0;">
+    <h2 class="page-title">Parliament Tracker</h2>
+    <p class="page-subtitle">
+      {parl.lok_sabha.current}th Lok Sabha — Speaker: {parl.lok_sabha.speaker} — Since {new Date(parl.lok_sabha.term_start).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}
+    </p>
+
+    {/* Overview stats */}
+    <div class="parl-stats">
+      <div class="parl-stat-card">
+        <span class="parl-stat-num">{totalBillsPassed}</span>
+        <span class="parl-stat-label">Bills Passed</span>
+        <span class="parl-stat-sub">18th Lok Sabha</span>
+      </div>
+      <div class="parl-stat-card">
+        <span class="parl-stat-num">{totalDaysSat}</span>
+        <span class="parl-stat-label">Days Sat</span>
+        <span class="parl-stat-sub">{sessions.length} sessions</span>
+      </div>
+      <div class="parl-stat-card">
+        <span class="parl-stat-num">{avgProductivity}%</span>
+        <span class="parl-stat-label">Avg Productivity</span>
+        <span class="parl-stat-sub">Time utilised</span>
+      </div>
+      <div class="parl-stat-card">
+        <span class="parl-stat-num">{bills.total_pending}</span>
+        <span class="parl-stat-label">Bills Pending</span>
+        <span class="parl-stat-sub">{bills.referred_to_committee} in committee</span>
+      </div>
+    </div>
+
+    {/* Session cards */}
+    <div class="parl-section">
+      <h3>Sessions</h3>
+      <div class="session-grid">
+        {sessions.slice().reverse().map(sess => (
+          <div class="session-card">
+            <div class="session-header">
+              <span class="session-type-badge" style={`background: ${(SESSION_COLORS[sess.type] || '#888')}15; color: ${SESSION_COLORS[sess.type] || '#888'}; border: 1px solid ${(SESSION_COLORS[sess.type] || '#888')}30;`}>
+                {sess.type}
+              </span>
+              <span class="session-dates">
+                {new Date(sess.start).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })} – {new Date(sess.end).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+              </span>
+            </div>
+            <h4 class="session-name">{sess.name}</h4>
+
+            <div class="session-stats-row">
+              <div class="session-mini-stat">
+                <span class="session-mini-num">{sess.days_sat}/{sess.days_scheduled}</span>
+                <span class="session-mini-label">Days Sat</span>
+              </div>
+              <div class="session-mini-stat">
+                <span class="session-mini-num">{sess.bills_introduced}</span>
+                <span class="session-mini-label">Bills Intro</span>
+              </div>
+              <div class="session-mini-stat">
+                <span class="session-mini-num">{sess.bills_passed}</span>
+                <span class="session-mini-label">Bills Passed</span>
+              </div>
+              <div class="session-mini-stat">
+                <div class="session-prod-ring" style={`background: conic-gradient(${sess.productivity_pct >= 70 ? '#16a34a' : sess.productivity_pct >= 50 ? '#d97706' : '#dc2626'} ${sess.productivity_pct}%, var(--color-bg-alt) 0);`}>
+                  <span class="session-prod-num">{sess.productivity_pct}%</span>
+                </div>
+                <span class="session-mini-label">Productivity</span>
+              </div>
+            </div>
+
+            <div class="session-events">
+              {sess.key_events.map(evt => (
+                <span class="session-event">{evt}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Key pending bills */}
+    <div class="parl-section">
+      <h3>Key Pending Bills</h3>
+      <div class="bills-table">
+        <div class="bills-header-row">
+          <span class="bills-col-name">Bill</span>
+          <span class="bills-col-date">Introduced</span>
+          <span class="bills-col-sector">Sector</span>
+          <span class="bills-col-status">Status</span>
+        </div>
+        {bills.key_pending_bills.map(bill => (
+          <div class="bills-row">
+            <span class="bills-col-name">{bill.name}</span>
+            <span class="bills-col-date">{new Date(bill.introduced).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+            <span class="bills-col-sector">{bill.sector}</span>
+            <span class="bills-col-status">
+              <span class="bill-status-badge" style={`background: ${(STATUS_COLORS[bill.status] || STATUS_COLORS['Pending in Lok Sabha']).bg}; color: ${(STATUS_COLORS[bill.status] || STATUS_COLORS['Pending in Lok Sabha']).text};`}>
+                {bill.status}
+              </span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Historical comparison */}
+    <div class="parl-section">
+      <h3>Legislative Productivity Across Lok Sabhas</h3>
+      <div class="hist-chart">
+        {history.map(h => (
+          <div class="hist-row">
+            <div class="hist-meta">
+              <span class="hist-ls">{h.lok_sabha}th LS</span>
+              <span class="hist-term">{h.term}</span>
+            </div>
+            <div class="hist-bar-group">
+              <div class="hist-bar-track">
+                <div class="hist-bar-fill" style={`width: ${(h.bills_passed / maxHistBills) * 100}%; background: ${h.lok_sabha === parl.lok_sabha.current ? 'var(--color-accent)' : '#94a3b8'};`}></div>
+              </div>
+              <span class="hist-bills-count">{h.bills_passed} bills</span>
+            </div>
+            <div class="hist-prod">
+              <span class="hist-prod-num" style={`color: ${h.avg_productivity >= 70 ? '#16a34a' : h.avg_productivity >= 50 ? '#d97706' : '#dc2626'};`}>{h.avg_productivity}%</span>
+              <span class="hist-prod-label">productivity</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  /* Stats */
+  .parl-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: var(--space-xl);
+  }
+  .parl-stat-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+  }
+  .parl-stat-num {
+    display: block;
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1;
+  }
+  .parl-stat-label {
+    display: block;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .parl-stat-sub {
+    display: block;
+    font-size: 0.625rem;
+    color: var(--color-text-dim);
+    margin-top: 2px;
+  }
+
+  /* Sections */
+  .parl-section {
+    margin-bottom: var(--space-xl);
+  }
+  .parl-section h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+
+  /* Session grid */
+  .session-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .session-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+  }
+  .session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .session-type-badge {
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+  }
+  .session-dates {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+  }
+  .session-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    line-height: 1.3;
+  }
+  .session-stats-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: var(--space-md);
+  }
+  .session-mini-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+  }
+  .session-mini-num {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .session-mini-label {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-dim);
+    font-weight: 600;
+  }
+  .session-prod-ring {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .session-prod-ring::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color-bg-white);
+  }
+  .session-prod-num {
+    font-size: 0.5625rem;
+    font-weight: 700;
+    z-index: 1;
+    color: var(--color-text);
+  }
+  .session-events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .session-event {
+    font-size: 0.625rem;
+    padding: 2px 8px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-muted);
+  }
+
+  /* Bills table */
+  .bills-table {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+  .bills-header-row {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--color-bg-alt);
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+  }
+  .bills-row {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid var(--color-border-light);
+    align-items: center;
+  }
+  .bills-row:hover {
+    background: var(--color-bg-alt);
+  }
+  .bills-col-name {
+    flex: 2;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  .bills-col-date {
+    flex: 1;
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+  }
+  .bills-col-sector {
+    flex: 1;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-text-muted);
+  }
+  .bills-col-status {
+    flex: 1;
+  }
+  .bill-status-badge {
+    display: inline-block;
+    font-size: 0.5625rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+  }
+
+  /* Historical chart */
+  .hist-chart {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hist-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hist-meta {
+    width: 100px;
+    flex-shrink: 0;
+  }
+  .hist-ls {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .hist-term {
+    font-size: 0.625rem;
+    color: var(--color-text-dim);
+  }
+  .hist-bar-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hist-bar-track {
+    flex: 1;
+    height: 12px;
+    background: var(--color-bg-alt);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .hist-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s;
+  }
+  .hist-bills-count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    width: 60px;
+    flex-shrink: 0;
+  }
+  .hist-prod {
+    width: 80px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .hist-prod-num {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .hist-prod-label {
+    display: block;
+    font-size: 0.5rem;
+    color: var(--color-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .parl-stats { grid-template-columns: repeat(2, 1fr); }
+    .session-grid { grid-template-columns: 1fr; }
+    .bills-col-date, .bills-col-sector { display: none; }
+    .bills-col-name { flex: 3; }
+    .hist-meta { width: 70px; }
+    .hist-prod { width: 60px; }
+  }
+</style>

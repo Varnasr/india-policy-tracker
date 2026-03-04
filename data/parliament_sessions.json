@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "description": "Indian Parliament session data — Lok Sabha and Rajya Sabha sessions, bills, and legislative productivity",
+    "last_updated": "2026-03-04"
+  },
+  "lok_sabha": {
+    "current": 18,
+    "term_start": "2024-06-24",
+    "speaker": "Om Birla"
+  },
+  "sessions": [
+    {
+      "name": "18th Lok Sabha — 1st Session",
+      "type": "Special Session",
+      "start": "2024-06-24",
+      "end": "2024-07-03",
+      "days_sat": 7,
+      "days_scheduled": 7,
+      "bills_introduced": 0,
+      "bills_passed": 0,
+      "key_events": ["Election of Speaker Om Birla", "President's Address", "Members sworn in"],
+      "productivity_pct": 100
+    },
+    {
+      "name": "18th Lok Sabha — Budget Session 2024",
+      "type": "Budget Session",
+      "start": "2024-07-22",
+      "end": "2024-08-09",
+      "days_sat": 14,
+      "days_scheduled": 15,
+      "bills_introduced": 8,
+      "bills_passed": 5,
+      "key_events": ["Union Budget 2024-25 presented", "Finance Bill passed", "Waqf Amendment Bill introduced"],
+      "productivity_pct": 57
+    },
+    {
+      "name": "18th Lok Sabha — Winter Session 2024",
+      "type": "Winter Session",
+      "start": "2024-11-25",
+      "end": "2024-12-20",
+      "days_sat": 17,
+      "days_scheduled": 20,
+      "bills_introduced": 12,
+      "bills_passed": 4,
+      "key_events": ["One Nation One Election Bill tabled", "Waqf Bill referred to JPC", "Constitution Day celebrated"],
+      "productivity_pct": 40
+    },
+    {
+      "name": "18th Lok Sabha — Budget Session 2025 (Part I)",
+      "type": "Budget Session",
+      "start": "2025-01-31",
+      "end": "2025-02-13",
+      "days_sat": 10,
+      "days_scheduled": 10,
+      "bills_introduced": 3,
+      "bills_passed": 2,
+      "key_events": ["Economic Survey tabled", "Union Budget 2025-26 presented", "Railway Budget integrated"],
+      "productivity_pct": 78
+    },
+    {
+      "name": "18th Lok Sabha — Budget Session 2025 (Part II)",
+      "type": "Budget Session",
+      "start": "2025-03-10",
+      "end": "2025-04-04",
+      "days_sat": 18,
+      "days_scheduled": 20,
+      "bills_introduced": 7,
+      "bills_passed": 8,
+      "key_events": ["Finance Bill 2025 passed", "Demands for Grants debated", "DPDP Rules discussion"],
+      "productivity_pct": 65
+    },
+    {
+      "name": "18th Lok Sabha — Monsoon Session 2025",
+      "type": "Monsoon Session",
+      "start": "2025-07-21",
+      "end": "2025-08-15",
+      "days_sat": 19,
+      "days_scheduled": 20,
+      "bills_introduced": 11,
+      "bills_passed": 9,
+      "key_events": ["Semiconductor Policy Bill", "One Nation One Election Bill debated", "Labour Code implementation update"],
+      "productivity_pct": 72
+    },
+    {
+      "name": "18th Lok Sabha — Winter Session 2025",
+      "type": "Winter Session",
+      "start": "2025-11-24",
+      "end": "2025-12-19",
+      "days_sat": 16,
+      "days_scheduled": 20,
+      "bills_introduced": 9,
+      "bills_passed": 6,
+      "key_events": ["Data Protection Board operational status", "Climate Action Plan 2030 tabled", "Minimum Support Price Bill"],
+      "productivity_pct": 55
+    },
+    {
+      "name": "18th Lok Sabha — Budget Session 2026 (Part I)",
+      "type": "Budget Session",
+      "start": "2026-01-30",
+      "end": "2026-02-14",
+      "days_sat": 12,
+      "days_scheduled": 12,
+      "bills_introduced": 4,
+      "bills_passed": 2,
+      "key_events": ["Economic Survey 2025-26", "Union Budget 2026-27 presented", "Fiscal deficit target 4.4%"],
+      "productivity_pct": 82
+    }
+  ],
+  "bills_tracker": {
+    "total_pending": 42,
+    "referred_to_committee": 8,
+    "passed_lok_sabha_only": 5,
+    "key_pending_bills": [
+      { "name": "One Nation One Election Bill", "introduced": "2024-12-17", "status": "Referred to JPC", "sector": "Governance & Reform" },
+      { "name": "Waqf (Amendment) Bill, 2024", "introduced": "2024-08-08", "status": "Referred to JPC", "sector": "Governance & Reform" },
+      { "name": "Minimum Support Price Guarantee Bill", "introduced": "2025-12-03", "status": "Pending in Lok Sabha", "sector": "Agriculture" },
+      { "name": "Industrial Relations Code (Amendment)", "introduced": "2026-01-15", "status": "Pending in Lok Sabha", "sector": "Labour & Employment" },
+      { "name": "Coastal Shipping Promotion Bill", "introduced": "2025-08-01", "status": "Passed in Lok Sabha", "sector": "Transport & Infrastructure" },
+      { "name": "Digital Competition Bill", "introduced": "2025-07-28", "status": "Referred to Standing Committee", "sector": "Digital & Technology" }
+    ]
+  },
+  "historical_productivity": [
+    { "lok_sabha": 14, "term": "2004-2009", "bills_passed": 248, "avg_productivity": 73 },
+    { "lok_sabha": 15, "term": "2009-2014", "bills_passed": 181, "avg_productivity": 62 },
+    { "lok_sabha": 16, "term": "2014-2019", "bills_passed": 205, "avg_productivity": 77 },
+    { "lok_sabha": 17, "term": "2019-2024", "bills_passed": 150, "avg_productivity": 58 },
+    { "lok_sabha": 18, "term": "2024-present", "bills_passed": 36, "avg_productivity": 69 }
+  ]
+}
