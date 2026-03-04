@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PolicyCard from '../../components/PolicyCard.astro';
-import { getStateGovernments, getStateSlug, getAllPolicies } from '../../lib/data';
+import { getStateGovernments, getStateSlug, getAllPolicies, getStateProfile } from '../../lib/data';
 
 export function getStaticPaths() {
   const govs = getStateGovernments();
@@ -55,6 +55,15 @@ const LEAN_COLORS: Record<string, string> = {
 const spectrumPct = ((gov.lean + 2) / 4) * 100;
 const leader = gov.cm || gov.lg || 'Administrator';
 const leaderTitle = gov.cm ? 'Chief Minister' : gov.lg ? 'Lt. Governor' : 'Administrator';
+
+// Curated state profile data
+const profile = getStateProfile(gov.name);
+
+const STATUS_COLORS: Record<string, { bg: string; text: string }> = {
+  active: { bg: '#dcfce7', text: '#166534' },
+  discontinued: { bg: '#fef2f2', text: '#991b1b' },
+  proposed: { bg: '#fefce8', text: '#854d0e' },
+};
 ---
 <Base title={gov.name} description={`State policy tracker for ${gov.name} — governed by ${gov.party}. Part of PolicyDhara by ImpactMojo.`}>
   <div style="padding: var(--space-xl) 0;">
@@ -123,6 +132,79 @@ const leaderTitle = gov.cm ? 'Chief Minister' : gov.lg ? 'Lt. Governor' : 'Admin
         </div>
       </div>
     </div>
+
+    {/* Development Indicators */}
+    {profile && (
+      <div class="indicators-panel">
+        <h4>Development Indicators</h4>
+        <div class="indicators-grid">
+          <div class="indicator-card">
+            <span class="indicator-value">{profile.gsdp_lakh_crore}L Cr</span>
+            <span class="indicator-label">GSDP</span>
+            <span class="indicator-rank">Rank #{profile.gsdp_rank}</span>
+          </div>
+          <div class="indicator-card">
+            <span class="indicator-value">{profile.population_crore} Cr</span>
+            <span class="indicator-label">Population</span>
+          </div>
+          <div class="indicator-card">
+            <span class="indicator-value">{profile.hdi}</span>
+            <span class="indicator-label">HDI</span>
+            <span class="indicator-rank">{profile.hdi >= 0.7 ? 'High' : profile.hdi >= 0.65 ? 'Medium-High' : profile.hdi >= 0.6 ? 'Medium' : 'Low'}</span>
+          </div>
+          <div class="indicator-card">
+            <span class="indicator-value">{(profile.gsdp_lakh_crore / profile.population_crore).toFixed(1)}L Cr</span>
+            <span class="indicator-label">Per Capita GSDP</span>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Flagship Schemes */}
+    {profile && profile.flagship_schemes.length > 0 && (
+      <div class="schemes-panel">
+        <div class="schemes-header">
+          <h4>Flagship Schemes</h4>
+          <p class="schemes-sub">State government's major policy programmes</p>
+        </div>
+        <div class="schemes-grid">
+          {profile.flagship_schemes.map(scheme => (
+            <div class="scheme-card">
+              <div class="scheme-top">
+                <span class="scheme-name">{scheme.name}</span>
+                <span class={`scheme-status`} style={`background: ${(STATUS_COLORS[scheme.status] || STATUS_COLORS.active).bg}; color: ${(STATUS_COLORS[scheme.status] || STATUS_COLORS.active).text};`}>
+                  {scheme.status}
+                </span>
+              </div>
+              <p class="scheme-desc">{scheme.description}</p>
+              <div class="scheme-meta">
+                <span class="scheme-sector">{scheme.sector}</span>
+                <span class="scheme-year">Since {scheme.year}</span>
+                {scheme.allocation_crore > 0 && (
+                  <span class="scheme-alloc">Rs {scheme.allocation_crore >= 1000 ? (scheme.allocation_crore / 1000).toFixed(1) + 'K' : scheme.allocation_crore} Cr</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* Key Policy Actions */}
+    {profile && profile.key_policies.length > 0 && (
+      <div class="key-policies-panel">
+        <h4>Key Policy Actions</h4>
+        <div class="key-policies-list">
+          {profile.key_policies.map(kp => (
+            <div class="kp-row">
+              <span class="kp-date">{kp.date}</span>
+              <span class="kp-title">{kp.title}</span>
+              <span class="kp-sector">{kp.sector}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
 
     {/* Sector breakdown if policies exist */}
     {topSectors.length > 0 && (
@@ -371,9 +453,212 @@ const leaderTitle = gov.cm ? 'Chief Minister' : gov.lg ? 'Lt. Governor' : 'Admin
   }
   .empty-state a { color: var(--color-accent); }
 
+  /* Development Indicators */
+  .indicators-panel {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-lg);
+  }
+  .indicators-panel h4 {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+  }
+  .indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+  }
+  .indicator-card {
+    text-align: center;
+    padding: var(--space-md);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+  }
+  .indicator-value {
+    display: block;
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+  }
+  .indicator-label {
+    display: block;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-dim);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .indicator-rank {
+    display: block;
+    font-size: 0.625rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  /* Flagship Schemes */
+  .schemes-panel {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-lg);
+  }
+  .schemes-header { margin-bottom: var(--space-md); }
+  .schemes-header h4 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 2px;
+  }
+  .schemes-sub {
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+  }
+  .schemes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .scheme-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    transition: box-shadow 0.15s;
+  }
+  .scheme-card:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  .scheme-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .scheme-name {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    line-height: 1.3;
+  }
+  .scheme-status {
+    font-size: 0.5625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+  }
+  .scheme-desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .scheme-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .scheme-sector {
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 2px 8px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-muted);
+  }
+  .scheme-year {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+  }
+  .scheme-alloc {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+
+  /* Key Policy Actions */
+  .key-policies-panel {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-lg);
+  }
+  .key-policies-panel h4 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+  .key-policies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .kp-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+  }
+  .kp-date {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-text-dim);
+    font-family: 'SF Mono', 'Consolas', monospace;
+    width: 60px;
+    flex-shrink: 0;
+  }
+  .kp-title {
+    flex: 1;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+  }
+  .kp-sector {
+    font-size: 0.5625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 2px 8px;
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
   @media (max-width: 768px) {
     .gov-panel-grid { grid-template-columns: 1fr; }
     .breakdown-grid { grid-template-columns: 1fr; }
     .bd-bar-label { width: 90px; }
+    .indicators-grid { grid-template-columns: repeat(2, 1fr); }
+    .schemes-grid { grid-template-columns: 1fr; }
+    .kp-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .kp-date { width: auto; }
   }
 </style>

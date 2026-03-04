@@ -354,6 +354,41 @@ export function getBudgetData(): BudgetData {
   };
 }
 
+/** State-level curated policy data */
+export interface StateFlagshipScheme {
+  name: string;
+  sector: string;
+  year: number;
+  allocation_crore: number;
+  description: string;
+  status: 'active' | 'discontinued' | 'proposed';
+}
+
+export interface StateKeyPolicy {
+  title: string;
+  date: string;
+  sector: string;
+}
+
+export interface StateProfileData {
+  gsdp_lakh_crore: number;
+  gsdp_rank: number;
+  population_crore: number;
+  hdi: number;
+  flagship_schemes: StateFlagshipScheme[];
+  key_policies: StateKeyPolicy[];
+}
+
+export function getStateProfile(stateName: string): StateProfileData | null {
+  const data = readJson<any>('state_policies.json', { states: {} });
+  return data.states?.[stateName] || null;
+}
+
+export function getAllStateProfiles(): Record<string, StateProfileData> {
+  const data = readJson<any>('state_policies.json', { states: {} });
+  return data.states || {};
+}
+
 /** Returns sectors x types matrix for landscape view */
 export function getSectorTypeMatrix(): {
   sectors: string[];

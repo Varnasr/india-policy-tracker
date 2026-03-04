@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "description": "Curated state-level flagship schemes, development indicators, and key policy actions",
+    "last_updated": "2026-03-04"
+  },
+  "states": {
+    "Maharashtra": {
+      "gsdp_lakh_crore": 40.4,
+      "gsdp_rank": 1,
+      "population_crore": 12.5,
+      "hdi": 0.696,
+      "flagship_schemes": [
+        { "name": "Ladki Bahin Yojana", "sector": "Gender & Women", "year": 2024, "allocation_crore": 46000, "description": "Rs 1,500/month cash transfer to women aged 21-65 with income below Rs 2.5 lakh", "status": "active" },
+        { "name": "Mukhyamantri Majhi Ladki Bahin", "sector": "Social Protection", "year": 2024, "allocation_crore": 46000, "description": "Women's empowerment scheme — financial assistance, skilling, entrepreneurship support", "status": "active" },
+        { "name": "Jalyukt Shivar Abhiyan 2.0", "sector": "Water & Sanitation", "year": 2024, "allocation_crore": 1500, "description": "Watershed development and water conservation in drought-prone districts", "status": "active" },
+        { "name": "Mumbai-Nagpur Samruddhi Mahamarg", "sector": "Transport & Infrastructure", "year": 2018, "allocation_crore": 55335, "description": "701 km expressway connecting Mumbai and Nagpur via Nashik, Aurangabad, Amravati", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Maharashtra Right to Services Act extended to 400+ services", "date": "2025-06", "sector": "Governance & Reform" },
+        { "title": "Industrial policy 2024: Target $1 trillion state economy by 2028", "date": "2024-08", "sector": "Trade & Commerce" },
+        { "title": "Maharashtra EV Policy — 25% subsidy on EVs, charging infra mandate", "date": "2024-03", "sector": "Climate & Environment" }
+      ]
+    },
+    "Tamil Nadu": {
+      "gsdp_lakh_crore": 25.5,
+      "gsdp_rank": 2,
+      "population_crore": 7.7,
+      "hdi": 0.708,
+      "flagship_schemes": [
+        { "name": "Kalaignar Magalir Urimai Thogai", "sector": "Gender & Women", "year": 2023, "allocation_crore": 7000, "description": "Rs 1,000/month to women heads of households — 1.06 crore beneficiaries", "status": "active" },
+        { "name": "Chief Minister's Breakfast Scheme", "sector": "Education", "year": 2022, "allocation_crore": 500, "description": "Free breakfast for government primary school students (Classes 1-5)", "status": "active" },
+        { "name": "Tamil Nadu Climate Change Mission", "sector": "Climate & Environment", "year": 2023, "allocation_crore": 3000, "description": "Green Tamil Nadu Mission — coastal resilience, urban flooding, renewable energy targets", "status": "active" },
+        { "name": "SIPCOT Industrial Parks Expansion", "sector": "Trade & Commerce", "year": 2024, "allocation_crore": 10000, "description": "5 new industrial parks for electronics, EV, and semiconductor manufacturing", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Tamil Nadu Startup Policy 2.0 — TIDCO fund of Rs 500 crore", "date": "2024-09", "sector": "Digital & Technology" },
+        { "title": "Universal health coverage via CMCHIS — expanded to all residents", "date": "2024-04", "sector": "Health" },
+        { "title": "Free bus travel for women extended to town buses", "date": "2024-01", "sector": "Gender & Women" }
+      ]
+    },
+    "Karnataka": {
+      "gsdp_lakh_crore": 22.4,
+      "gsdp_rank": 3,
+      "population_crore": 6.7,
+      "hdi": 0.682,
+      "flagship_schemes": [
+        { "name": "Gruha Lakshmi", "sector": "Gender & Women", "year": 2023, "allocation_crore": 17500, "description": "Rs 2,000/month to women heads of BPL/APL households — 1.2 crore beneficiaries", "status": "active" },
+        { "name": "Shakti (Free Bus Travel for Women)", "sector": "Gender & Women", "year": 2023, "allocation_crore": 4000, "description": "Free travel on KSRTC and BMTC buses for all women", "status": "active" },
+        { "name": "Anna Bhagya (10 kg Free Rice)", "sector": "Social Protection", "year": 2023, "allocation_crore": 7500, "description": "10 kg free rice per BPL household per month, expanded from 7 kg", "status": "active" },
+        { "name": "Yuva Nidhi", "sector": "Labour & Employment", "year": 2023, "allocation_crore": 3000, "description": "Rs 3,000-5,000/month to unemployed graduates for 2 years while job-seeking", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Karnataka Semiconductor Policy — 50% subsidy on land, stamp duty waiver", "date": "2024-11", "sector": "Digital & Technology" },
+        { "title": "Bengaluru Suburban Rail Project — Rs 15,767 crore approved", "date": "2024-06", "sector": "Transport & Infrastructure" },
+        { "title": "Farm loan waiver up to Rs 2 lakh for 50 lakh farmers", "date": "2023-06", "sector": "Agriculture" }
+      ]
+    },
+    "Uttar Pradesh": {
+      "gsdp_lakh_crore": 21.7,
+      "gsdp_rank": 4,
+      "population_crore": 23.2,
+      "hdi": 0.596,
+      "flagship_schemes": [
+        { "name": "Mukhyamantri Kisan Sarvhit Bima Yojana", "sector": "Agriculture", "year": 2019, "allocation_crore": 2000, "description": "Accident and disability insurance for farmers — Rs 5 lakh coverage", "status": "active" },
+        { "name": "UP Defence Corridor", "sector": "Defence & Security", "year": 2018, "allocation_crore": 20000, "description": "6-node defence manufacturing corridor: Aligarh-Agra-Jhansi-Chitrakoot-Kanpur-Lucknow", "status": "active" },
+        { "name": "Kanya Sumangala Yojana", "sector": "Gender & Women", "year": 2019, "allocation_crore": 1200, "description": "Rs 15,000 in 6 instalments from birth to graduation for girl children", "status": "active" },
+        { "name": "UP Expressway Industrial Development Authority", "sector": "Transport & Infrastructure", "year": 2020, "allocation_crore": 36000, "description": "Ganga Expressway (594 km), Bundelkhand Expressway (296 km) — connecting Tier 2/3 cities", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "UP IT & Startup Policy 2.0 — incentives for data centres, AI labs", "date": "2024-10", "sector": "Digital & Technology" },
+        { "title": "One District One Product scheme expanded to 75 districts", "date": "2024-05", "sector": "Trade & Commerce" },
+        { "title": "UP Solar Energy Policy — 10 GW solar target by 2027", "date": "2024-02", "sector": "Energy" }
+      ]
+    },
+    "Gujarat": {
+      "gsdp_lakh_crore": 22.2,
+      "gsdp_rank": 5,
+      "population_crore": 6.4,
+      "hdi": 0.672,
+      "flagship_schemes": [
+        { "name": "GIFT City IFSC Expansion", "sector": "Finance & Economy", "year": 2020, "allocation_crore": 50000, "description": "International Financial Services Centre — 300+ entities, IFSCA regulatory framework", "status": "active" },
+        { "name": "Dholera Smart City SIR", "sector": "Urban Development", "year": 2014, "allocation_crore": 28000, "description": "920 sq km Special Investment Region — India's first greenfield smart city", "status": "active" },
+        { "name": "Gujarat Semiconductor Policy", "sector": "Digital & Technology", "year": 2022, "allocation_crore": 8000, "description": "Capital subsidy + land + power incentives for semiconductor fabs (Vedanta-Foxconn, Micron)", "status": "active" },
+        { "name": "Mukhyamantri Mahila Utkarsh Yojana", "sector": "Gender & Women", "year": 2020, "allocation_crore": 1000, "description": "Interest-free loans up to Rs 1 lakh for women SHGs", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Gujarat Green Hydrogen Hub — Kutch, 30 GW electrolysis target", "date": "2025-01", "sector": "Energy" },
+        { "title": "New Gujarat Industrial Policy 2025 — PLI-style state incentives", "date": "2024-12", "sector": "Trade & Commerce" },
+        { "title": "Gujarat Maritime Cluster at GIFT City for blue economy", "date": "2024-07", "sector": "Trade & Commerce" }
+      ]
+    },
+    "West Bengal": {
+      "gsdp_lakh_crore": 17.1,
+      "gsdp_rank": 6,
+      "population_crore": 10.1,
+      "hdi": 0.637,
+      "flagship_schemes": [
+        { "name": "Lakshmir Bhandar", "sector": "Gender & Women", "year": 2021, "allocation_crore": 12000, "description": "Rs 500-1,000/month to women heads of households — 2.1 crore beneficiaries. Largest state DBT scheme.", "status": "active" },
+        { "name": "Kanyashree Prakalpa", "sector": "Education", "year": 2013, "allocation_crore": 1500, "description": "Conditional cash transfer for girls' education (UN award-winning) — Rs 750/year + Rs 25,000 at 18", "status": "active" },
+        { "name": "Swasthya Sathi", "sector": "Health", "year": 2016, "allocation_crore": 2000, "description": "Universal health insurance — Rs 5 lakh/family/year. Covers 10 crore beneficiaries. Replaced PM-JAY in WB.", "status": "active" },
+        { "name": "Duare Sarkar (Government at Doorstep)", "sector": "Governance & Reform", "year": 2020, "allocation_crore": 300, "description": "Mobile camps delivering 12+ government services at ward/village level — 6 crore applications processed", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Bengal Silicon Valley Hub at New Town — IT/ITES incentive package", "date": "2024-08", "sector": "Digital & Technology" },
+        { "title": "Krishak Bandhu — Rs 10,000/year income support to farmers", "date": "2024-01", "sector": "Agriculture" },
+        { "title": "Student Credit Card — interest-free education loans up to Rs 10 lakh", "date": "2023-06", "sector": "Education" }
+      ]
+    },
+    "Rajasthan": {
+      "gsdp_lakh_crore": 13.5,
+      "gsdp_rank": 7,
+      "population_crore": 7.9,
+      "hdi": 0.629,
+      "flagship_schemes": [
+        { "name": "Chiranjeevi Health Insurance", "sector": "Health", "year": 2021, "allocation_crore": 3500, "description": "Universal health insurance — Rs 25 lakh/family/year. Free for all families. Among India's most generous.", "status": "active" },
+        { "name": "Rising Rajasthan Investment Summit Commitments", "sector": "Trade & Commerce", "year": 2024, "allocation_crore": 1000, "description": "Rs 35 lakh crore MoU signed at Rising Rajasthan 2024 across 24 sectors", "status": "active" },
+        { "name": "Rajasthan Renewable Energy Policy", "sector": "Energy", "year": 2023, "allocation_crore": 5000, "description": "Target: 90 GW renewable energy by 2030. India's largest solar park belt in Jaisalmer-Barmer.", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Rajasthan Platform-Based Gig Workers Act — India's first gig worker law", "date": "2023-07", "sector": "Labour & Employment" },
+        { "title": "Rajasthan Right to Health Act — universal healthcare as right", "date": "2023-03", "sector": "Health" },
+        { "title": "Eastern Rajasthan Canal Project (ERCP) — Rs 40,000 crore", "date": "2024-06", "sector": "Water & Sanitation" }
+      ]
+    },
+    "Kerala": {
+      "gsdp_lakh_crore": 10.8,
+      "gsdp_rank": 10,
+      "population_crore": 3.5,
+      "hdi": 0.779,
+      "flagship_schemes": [
+        { "name": "LIFE Mission (Livelihood Inclusion Financial Empowerment)", "sector": "Housing", "year": 2016, "allocation_crore": 8000, "description": "Houses for all homeless and landless — 3.27 lakh houses completed", "status": "active" },
+        { "name": "Kerala Fibre Optic Network (KFON)", "sector": "Digital & Technology", "year": 2021, "allocation_crore": 1500, "description": "Free internet as right — 20 lakh BPL families get free broadband. 30,000 km fibre laid.", "status": "active" },
+        { "name": "Kerala Startup Mission (KSUM)", "sector": "Science & Innovation", "year": 2014, "allocation_crore": 500, "description": "India's first state startup policy. 4,000+ startups, 65,000+ jobs. 7 technology parks.", "status": "active" },
+        { "name": "SilverLine Semi-High-Speed Rail", "sector": "Transport & Infrastructure", "year": 2021, "allocation_crore": 63940, "description": "Thiruvananthapuram-Kasaragod 530 km semi-high-speed corridor — currently in planning/approval phase", "status": "planned" }
+      ],
+      "key_policies": [
+        { "title": "Kerala Migrant Workers Welfare Scheme — Apna Ghar hostels, health cover", "date": "2024-05", "sector": "Labour & Employment" },
+        { "title": "Kerala Climate Change Adaptation Mission — resilience after 2018/2024 floods", "date": "2024-09", "sector": "Climate & Environment" },
+        { "title": "Social Security Pension — Rs 1,600/month to 60 lakh elderly/disabled/widowed", "date": "2024-02", "sector": "Social Protection" }
+      ]
+    },
+    "Madhya Pradesh": {
+      "gsdp_lakh_crore": 13.2,
+      "gsdp_rank": 8,
+      "population_crore": 8.5,
+      "hdi": 0.606,
+      "flagship_schemes": [
+        { "name": "Ladli Behna Yojana", "sector": "Gender & Women", "year": 2023, "allocation_crore": 18000, "description": "Rs 1,250/month to women aged 23-60 — 1.3 crore beneficiaries. Pioneer of state DBT-to-women model.", "status": "active" },
+        { "name": "Mukhyamantri Seekho Kamao Yojana", "sector": "Labour & Employment", "year": 2023, "allocation_crore": 1000, "description": "Stipend-based apprenticeship for youth — Rs 8,000-10,000/month during on-the-job training", "status": "active" },
+        { "name": "Mukhyamantri Jan Kalyan Sambal Yojana", "sector": "Social Protection", "year": 2018, "allocation_crore": 2000, "description": "Free electricity (100 units), insurance, pension for unorganised workers", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "MP Global Investors Summit 2025 — Rs 27 lakh crore MoUs signed", "date": "2025-02", "sector": "Trade & Commerce" },
+        { "title": "Narmada Basin water harvesting — 10 lakh structures target", "date": "2024-08", "sector": "Water & Sanitation" },
+        { "title": "MP Ethanol Production Policy — sugarcane belt incentives", "date": "2024-04", "sector": "Agriculture" }
+      ]
+    },
+    "Telangana": {
+      "gsdp_lakh_crore": 14.2,
+      "gsdp_rank": 9,
+      "population_crore": 3.9,
+      "hdi": 0.669,
+      "flagship_schemes": [
+        { "name": "Rythu Bharosa (formerly Rythu Bandhu)", "sector": "Agriculture", "year": 2024, "allocation_crore": 15000, "description": "Restructured farm income support — Rs 10,000/acre/year for landholding farmers. Inspired PM-KISAN.", "status": "active" },
+        { "name": "Rajiv Arogyasri (Health Insurance)", "sector": "Health", "year": 2024, "allocation_crore": 3000, "description": "Rs 10 lakh/family/year health insurance — one of India's most generous state health schemes", "status": "active" },
+        { "name": "Hyderabad Metro Rail Phase II", "sector": "Transport & Infrastructure", "year": 2024, "allocation_crore": 24269, "description": "76.4 km extension across 3 corridors — Airport, Old City, IT corridor connectivity", "status": "active" },
+        { "name": "Musi Riverfront Development", "sector": "Urban Development", "year": 2024, "allocation_crore": 30000, "description": "Comprehensive river restoration — sewage treatment, rehabilitation, waterfront development", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Telangana AI Mission (AI City at Hyderabad)", "date": "2024-11", "sector": "Digital & Technology" },
+        { "title": "Young India Skills University — first of its kind", "date": "2024-09", "sector": "Education" },
+        { "title": "Farm loan waiver up to Rs 2 lakh — 22 lakh farmers", "date": "2024-03", "sector": "Agriculture" }
+      ]
+    },
+    "Punjab": {
+      "gsdp_lakh_crore": 7.6,
+      "gsdp_rank": 15,
+      "population_crore": 3.0,
+      "hdi": 0.723,
+      "flagship_schemes": [
+        { "name": "Aam Aadmi Clinic", "sector": "Health", "year": 2022, "allocation_crore": 400, "description": "850+ mohalla clinics providing free primary healthcare — OPD, diagnostics, 100+ medicines", "status": "active" },
+        { "name": "300 Units Free Electricity", "sector": "Energy", "year": 2022, "allocation_crore": 3500, "description": "300 units free electricity per household per month — universal, not income-targeted", "status": "active" },
+        { "name": "Schools of Eminence", "sector": "Education", "year": 2022, "allocation_crore": 1000, "description": "117 government schools upgraded to international standards — English medium, smart classrooms", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Punjab Doorstep Delivery of Services — 43 services at home", "date": "2024-06", "sector": "Governance & Reform" },
+        { "title": "Stubble burning reduction — 30% decline via ex-situ management incentive", "date": "2024-11", "sector": "Climate & Environment" },
+        { "title": "Industrial & Business Development Policy 2022 — focus on MSMEs", "date": "2023-03", "sector": "Trade & Commerce" }
+      ]
+    },
+    "Bihar": {
+      "gsdp_lakh_crore": 8.4,
+      "gsdp_rank": 14,
+      "population_crore": 12.4,
+      "hdi": 0.576,
+      "flagship_schemes": [
+        { "name": "Bihar Special Status Demand", "sector": "Governance & Reform", "year": 2024, "allocation_crore": 0, "description": "Persistent demand for Special Category Status — central grants for infrastructure, industry", "status": "ongoing" },
+        { "name": "Mukhyamantri Kanya Utthan Yojana", "sector": "Gender & Women", "year": 2018, "allocation_crore": 2500, "description": "Rs 54,100 total from birth to graduation for girls — incentivising education, delaying marriage", "status": "active" },
+        { "name": "Bihar Student Credit Card", "sector": "Education", "year": 2016, "allocation_crore": 3000, "description": "Rs 4 lakh education loans at 4% interest for higher education — 4.5 lakh beneficiaries", "status": "active" },
+        { "name": "Jal Jeevan Hariyali Abhiyan", "sector": "Climate & Environment", "year": 2019, "allocation_crore": 24524, "description": "Tree planting, pond rejuvenation, water harvesting — Bihar's flagship environment programme", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Bihar caste census — first comprehensive socio-economic survey", "date": "2023-10", "sector": "Social Protection" },
+        { "title": "75% reservation in private jobs for Bihar domiciles", "date": "2024-07", "sector": "Labour & Employment" },
+        { "title": "Bihar Liquor Prohibition — full ban since 2016, upheld by Supreme Court", "date": "2016-04", "sector": "Health" }
+      ]
+    },
+    "Assam": {
+      "gsdp_lakh_crore": 5.1,
+      "gsdp_rank": 18,
+      "population_crore": 3.5,
+      "hdi": 0.614,
+      "flagship_schemes": [
+        { "name": "Orunodoi Scheme", "sector": "Gender & Women", "year": 2020, "allocation_crore": 4500, "description": "Rs 1,250/month to women in BPL families — 37 lakh beneficiaries", "status": "active" },
+        { "name": "Assam Micro Finance Loan Waiver", "sector": "Finance & Economy", "year": 2021, "allocation_crore": 1200, "description": "Waiver of microfinance loans up to Rs 25,000 for 26 lakh women borrowers", "status": "completed" },
+        { "name": "Mission Basundhara", "sector": "Governance & Reform", "year": 2021, "allocation_crore": 200, "description": "Land rights — digitised 2.5 crore land records, distributed 3 lakh land pattas to indigenous communities", "status": "active" }
+      ],
+      "key_policies": [
+        { "title": "Assam Accord implementation — updated NRC, Clause 6 committee recommendations", "date": "2024-12", "sector": "Governance & Reform" },
+        { "title": "Assam Cancer Care Foundation — 17 cancer hospitals being built", "date": "2024-03", "sector": "Health" },
+        { "title": "Kaziranga Landscape Conservation Plan", "date": "2024-08", "sector": "Climate & Environment" }
+      ]
+    }
+  }
+}
