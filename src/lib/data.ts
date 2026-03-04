@@ -282,6 +282,29 @@ export function getStatePolicySummary(): { name: string; slug: string; count: nu
   }));
 }
 
+/** Policy continuity chain data */
+export interface ContinuityStep {
+  name: string;
+  era: string;
+  year: number;
+  party: string;
+  status: 'active' | 'superseded';
+  description: string;
+}
+
+export interface PolicyChain {
+  id: string;
+  theme: string;
+  sector: string;
+  timeline: ContinuityStep[];
+  analysis: string;
+}
+
+export function getPolicyContinuityChains(): PolicyChain[] {
+  const data = readJson<any>('policy_continuity.json', { chains: [] });
+  return data.chains || [];
+}
+
 /** Returns sectors x types matrix for landscape view */
 export function getSectorTypeMatrix(): {
   sectors: string[];

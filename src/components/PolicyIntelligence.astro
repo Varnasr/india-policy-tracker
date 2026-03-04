@@ -1,0 +1,378 @@
+---
+import { generateIntelligenceBrief } from '../lib/analytics';
+
+const brief = generateIntelligenceBrief();
+
+const TREND_ICONS: Record<string, string> = {
+  surging: '\u25B2\u25B2', rising: '\u25B2', stable: '\u25CF', cooling: '\u25BC', declining: '\u25BC\u25BC',
+};
+const TREND_COLORS: Record<string, string> = {
+  surging: '#16a34a', rising: '#22c55e', stable: '#737373', cooling: '#f97316', declining: '#dc2626',
+};
+
+const topCorrelations = brief.correlations.slice(0, 5);
+const topMomentum = brief.momentum.slice(0, 6);
+---
+
+<div class="intel-section">
+  <div class="intel-header">
+    <h3>Policy Intelligence Brief</h3>
+    <span class="intel-timestamp">Generated {new Date(brief.generatedAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+  </div>
+
+  {/* Headlines */}
+  <div class="intel-headlines">
+    {brief.headlines.map(h => (
+      <div class="intel-headline">
+        <span class="intel-bullet"></span>
+        <span>{h}</span>
+      </div>
+    ))}
+  </div>
+
+  <div class="intel-grid">
+    {/* Sector Momentum */}
+    <div class="intel-card">
+      <h4>Sector Momentum</h4>
+      <p class="intel-card-sub">Activity velocity: last 30 days vs prior 30 days</p>
+      <div class="momentum-list">
+        {topMomentum.map(m => (
+          <div class="momentum-row">
+            <span class="momentum-trend" style={`color: ${TREND_COLORS[m.trend]};`}>
+              {TREND_ICONS[m.trend]}
+            </span>
+            <span class="momentum-sector">{m.sector}</span>
+            <span class="momentum-counts">{m.last30} / {m.prev30}</span>
+            <span class="momentum-label" style={`background: ${TREND_COLORS[m.trend]}20; color: ${TREND_COLORS[m.trend]};`}>
+              {m.trend}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Legislative Pipeline */}
+    <div class="intel-card">
+      <h4>Legislative Pipeline (90 days)</h4>
+      <p class="intel-card-sub">{brief.pipeline.interpretation}</p>
+      <div class="pipeline-stats">
+        <div class="pipeline-stat">
+          <span class="pipeline-num" style="color: #dc2626;">{brief.pipeline.recentBills}</span>
+          <span class="pipeline-label">Bills</span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-stat">
+          <span class="pipeline-num" style="color: #d97706;">{brief.pipeline.recentNotifications}</span>
+          <span class="pipeline-label">Notifications</span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-stat">
+          <span class="pipeline-num" style="color: #16a34a;">{brief.pipeline.recentSchemes}</span>
+          <span class="pipeline-label">Schemes</span>
+        </div>
+      </div>
+      {brief.pipeline.billToNotificationRatio > 0 && brief.pipeline.billToNotificationRatio < Infinity && (
+        <div class="pipeline-ratio">
+          <span class="pipeline-ratio-label">Notification-to-Bill ratio:</span>
+          <span class="pipeline-ratio-value">{brief.pipeline.billToNotificationRatio}x</span>
+        </div>
+      )}
+    </div>
+
+    {/* Policy Concentration */}
+    <div class="intel-card">
+      <h4>Policy Concentration</h4>
+      <p class="intel-card-sub">{brief.concentration.interpretation}</p>
+      <div class="concentration-meter">
+        <div class="conc-track">
+          <div class="conc-fill" style={`width: ${Math.min(brief.concentration.hhi / 50, 100)}%;`}></div>
+        </div>
+        <div class="conc-labels">
+          <span>Diverse</span>
+          <span>Moderate</span>
+          <span>Concentrated</span>
+        </div>
+      </div>
+      <div class="conc-detail">
+        HHI: {brief.concentration.hhi} | Top sector: {brief.concentration.topSector} ({brief.concentration.topSectorShare}%)
+      </div>
+    </div>
+
+    {/* Source Diversity */}
+    <div class="intel-card">
+      <h4>Source Diversity</h4>
+      <p class="intel-card-sub">{brief.sourceDiversity.interpretation}</p>
+      <div class="source-stats">
+        <div class="source-stat-row">
+          <span class="source-stat-label">Total sources</span>
+          <span class="source-stat-val">{brief.sourceDiversity.totalSources}</span>
+        </div>
+        <div class="source-stat-row">
+          <span class="source-stat-label">Active (30 days)</span>
+          <span class="source-stat-val">{brief.sourceDiversity.activeLast30}</span>
+        </div>
+        <div class="source-stat-row">
+          <span class="source-stat-label">Shannon entropy</span>
+          <span class="source-stat-val">{brief.sourceDiversity.shannonEntropy} bits</span>
+        </div>
+        <div class="source-stat-row">
+          <span class="source-stat-label">Dominant source</span>
+          <span class="source-stat-val">{brief.sourceDiversity.dominantSource} ({brief.sourceDiversity.dominantShare}%)</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Cross-Sector Correlations */}
+    {topCorrelations.length > 0 && (
+      <div class="intel-card intel-card-wide">
+        <h4>Cross-Sector Policy Nexus</h4>
+        <p class="intel-card-sub">Sectors that frequently co-occur in the same policies (Jaccard similarity)</p>
+        <div class="corr-list">
+          {topCorrelations.map(c => (
+            <div class="corr-row">
+              <span class="corr-pair">{c.sectorA} + {c.sectorB}</span>
+              <div class="corr-bar-track">
+                <div class="corr-bar-fill" style={`width: ${c.strength * 100}%;`}></div>
+              </div>
+              <span class="corr-strength">{Math.round(c.strength * 100)}%</span>
+              <span class={`corr-label corr-${c.label}`}>{c.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</div>
+
+<style>
+  .intel-section {
+    margin-bottom: var(--space-2xl);
+  }
+  .intel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--space-lg);
+  }
+  .intel-header h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .intel-timestamp {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+  }
+
+  /* Headlines */
+  .intel-headlines {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .intel-headline {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+  .intel-bullet {
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+
+  /* Grid */
+  .intel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .intel-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+  }
+  .intel-card-wide {
+    grid-column: 1 / -1;
+  }
+  .intel-card h4 {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .intel-card-sub {
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+    margin-bottom: var(--space-md);
+    line-height: 1.4;
+  }
+
+  /* Momentum */
+  .momentum-list { display: flex; flex-direction: column; gap: 6px; }
+  .momentum-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8125rem;
+  }
+  .momentum-trend { font-size: 0.625rem; width: 20px; text-align: center; flex-shrink: 0; }
+  .momentum-sector { flex: 1; color: var(--color-text-secondary); }
+  .momentum-counts {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+    font-family: 'SF Mono', 'Consolas', monospace;
+  }
+  .momentum-label {
+    font-size: 0.5625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.03em;
+  }
+
+  /* Pipeline */
+  .pipeline-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: var(--space-md) 0;
+  }
+  .pipeline-stat { text-align: center; }
+  .pipeline-num {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+  }
+  .pipeline-label {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+  .pipeline-arrow {
+    font-size: 1.25rem;
+    color: var(--color-text-dim);
+  }
+  .pipeline-ratio {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+    padding-top: 8px;
+    border-top: 1px solid var(--color-border-light);
+  }
+  .pipeline-ratio-value {
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  /* Concentration */
+  .concentration-meter { margin: var(--space-md) 0; }
+  .conc-track {
+    height: 8px;
+    background: var(--color-bg-alt);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .conc-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #16a34a, #d97706, #dc2626);
+    transition: width 0.3s;
+  }
+  .conc-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5625rem;
+    color: var(--color-text-dim);
+    margin-top: 4px;
+  }
+  .conc-detail {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+    margin-top: 8px;
+    font-family: 'SF Mono', 'Consolas', monospace;
+  }
+
+  /* Source stats */
+  .source-stats { display: flex; flex-direction: column; gap: 6px; }
+  .source-stat-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8125rem;
+  }
+  .source-stat-label { color: var(--color-text-dim); }
+  .source-stat-val { font-weight: 600; color: var(--color-text-secondary); }
+
+  /* Correlations */
+  .corr-list { display: flex; flex-direction: column; gap: 8px; }
+  .corr-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8125rem;
+  }
+  .corr-pair {
+    width: 240px;
+    flex-shrink: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+  }
+  .corr-bar-track {
+    flex: 1;
+    height: 6px;
+    background: var(--color-bg-alt);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .corr-bar-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 3px;
+  }
+  .corr-strength {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    width: 35px;
+    text-align: right;
+  }
+  .corr-label {
+    font-size: 0.5625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.03em;
+  }
+  .corr-strong { background: #dbeafe; color: #1d4ed8; }
+  .corr-moderate { background: #fef3c7; color: #92400e; }
+  .corr-weak { background: #f3f4f6; color: #6b7280; }
+
+  @media (max-width: 768px) {
+    .intel-grid { grid-template-columns: 1fr; }
+    .corr-pair { width: 150px; font-size: 0.6875rem; }
+    .pipeline-num { font-size: 1.5rem; }
+  }
+</style>
