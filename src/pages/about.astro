@@ -1,78 +1,359 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL;
+import { getAllPolicies, getEraDistribution } from '../lib/data';
+
+const policies = getAllPolicies();
+const eras = getEraDistribution();
+
+// Compute coverage stats
+const yearCounts: Record<number, number> = {};
+for (const p of policies) {
+  const y = parseInt(p.date.slice(0, 4));
+  yearCounts[y] = (yearCounts[y] || 0) + 1;
+}
+const years = Object.keys(yearCounts).map(Number).sort();
+
+const pre2014 = policies.filter(p => p.date < '2014-05-26').length;
+const post2014 = policies.filter(p => p.date >= '2014-05-26').length;
+const pre2014Pct = Math.round((pre2014 / policies.length) * 100);
+const post2014Pct = Math.round((post2014 / policies.length) * 100);
+
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
-<Base title="About" description="About the PolicyDhara — an open-source, auto-updating tool for tracking Indian development policies across 22 sectors.">
-  <div style="max-width: 680px; padding: var(--space-xl) 0;">
-    <h2 class="page-title">About</h2>
+<Base title="About & Methodology" description="How PolicyDhara collects data, known coverage gaps, and limitations to be aware of when interpreting the data.">
+  <div style="padding: var(--space-xl) 0; max-width: 780px;">
+    <h2 class="page-title">About & Methodology</h2>
+    <p class="page-subtitle">How this data is collected, what it covers, and what it doesn't</p>
 
-    <div style="display: flex; flex-direction: column; gap: var(--space-lg); color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.8;">
+    {/* Important caveat — data bias */}
+    <div class="caveat-box">
+      <h3>Important: Data Coverage Is Not Uniform</h3>
       <p>
-        <strong style="color: var(--color-text);">PolicyDhara</strong> is an open-source, auto-updating
-        dashboard that aggregates Indian government policies, legislation, notifications, and research
-        across <strong style="color: var(--color-text);">22 development sectors</strong> from
-        <strong style="color: var(--color-text);">20+ verified open sources</strong>.
+        PolicyDhara's dataset is <strong>not a complete or balanced record</strong> of Indian policymaking.
+        The number of policies shown for any government era reflects <strong>what our sources have digitally available</strong>,
+        not the actual volume of policymaking during that period.
       </p>
-
-      <p>
-        A project by <a href="https://www.impactmojo.in">ImpactMojo</a>, which provides free and
-        highest quality development sector know-how. This tracker aims to make Indian policymaking
-        more transparent and accessible to researchers, students, practitioners, and citizens.
-      </p>
-
-      <div style="background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: var(--shadow-card);">
-        <h3 style="font-family: 'Newsreader', Georgia, serif; font-size: 1.125rem; color: var(--color-text); margin-bottom: var(--space-md);">How It Works</h3>
-        <ol style="padding-left: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm);">
-          <li><strong style="color: var(--color-text);">Automated Fetching:</strong> Every 6 hours, GitHub Actions runs Python scripts that pull data from RSS feeds, APIs, and web scraping.</li>
-          <li><strong style="color: var(--color-text);">Smart Classification:</strong> Each policy item is classified into relevant development sectors using keyword-based NLP.</li>
-          <li><strong style="color: var(--color-text);">Static Generation:</strong> The site is rebuilt with Astro after each fetch, producing a fast static site.</li>
-          <li><strong style="color: var(--color-text);">Zero Cost:</strong> The entire pipeline runs on free tiers (GitHub Actions + GitHub Pages).</li>
-        </ol>
+      <div class="caveat-stats">
+        <div class="caveat-stat">
+          <span class="caveat-num">{pre2014}</span>
+          <span class="caveat-label">policies tracked pre-2014 ({pre2014Pct}%)</span>
+        </div>
+        <div class="caveat-stat">
+          <span class="caveat-num">{post2014}</span>
+          <span class="caveat-label">policies tracked 2014 onwards ({post2014Pct}%)</span>
+        </div>
       </div>
+      <p>
+        This imbalance exists because most government digital portals (PIB, India Code, ministry websites) have significantly
+        better archives for recent years. Older UPA-era and pre-UPA policies are <strong>underrepresented</strong> — not because
+        fewer policies were made, but because fewer are available in machine-readable formats online.
+      </p>
+      <p>
+        <strong>Do not interpret higher counts in recent eras as evidence of more policy activity.</strong>
+        India has always been an active legislating democracy. The difference is in digital data availability, not governance output.
+      </p>
+    </div>
 
-      <div style="background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: var(--shadow-card);">
-        <h3 style="font-family: 'Newsreader', Georgia, serif; font-size: 1.125rem; color: var(--color-text); margin-bottom: var(--space-md);">Data Sources</h3>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); font-size: 0.8125rem;">
+    {/* What is PolicyDhara */}
+    <div class="about-section">
+      <h3>What is PolicyDhara?</h3>
+      <p>
+        PolicyDhara is an open-source platform that tracks Indian development policies across sectors, states, and time.
+        It aggregates legislation, government schemes, budget announcements, notifications, and policy research from official
+        sources into a single searchable database.
+      </p>
+      <p>
+        The name "Dhara" (meaning "flow" or "stream" in Hindi/Sanskrit) reflects the continuous flow of policy actions
+        that shape India's development trajectory. A project by <a href="https://www.impactmojo.in">ImpactMojo</a>,
+        which provides free and highest quality development sector know-how.
+      </p>
+    </div>
+
+    {/* Data sources */}
+    <div class="about-section">
+      <h3>Data Sources</h3>
+      <p>PolicyDhara collects from the following official and quasi-official sources:</p>
+      <div class="source-list">
+        <div class="source-item">
+          <strong>Press Information Bureau (PIB)</strong>
+          <span>Central government press releases and policy announcements</span>
+        </div>
+        <div class="source-item">
+          <strong>India Code (Legislative Department)</strong>
+          <span>Acts of Parliament and legislative texts</span>
+        </div>
+        <div class="source-item">
+          <strong>PRS Legislative Research</strong>
+          <span>Bill analyses, legislative briefs, and parliamentary data</span>
+        </div>
+        <div class="source-item">
+          <strong>NITI Aayog</strong>
+          <span>Policy papers, reports, and development research</span>
+        </div>
+        <div class="source-item">
+          <strong>Reserve Bank of India (RBI)</strong>
+          <span>Monetary policy, financial regulation, and economic data</span>
+        </div>
+        <div class="source-item">
+          <strong>Ministry of Finance / Budget Division</strong>
+          <span>Union Budget documents and fiscal policy</span>
+        </div>
+        <div class="source-item">
+          <strong>State PIB Offices</strong>
+          <span>State-level policy announcements (coverage varies by state)</span>
+        </div>
+        <div class="source-item">
+          <strong>Gazette of India / eGazette</strong>
+          <span>Official notifications and statutory orders</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Known biases */}
+    <div class="about-section">
+      <h3>Known Biases & Limitations</h3>
+      <p>Users should be aware of the following when interpreting this data:</p>
+      <div class="bias-list">
+        <div class="bias-item">
+          <span class="bias-icon">1</span>
           <div>
-            <h4 style="color: var(--color-text); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs); font-weight: 700;">Official Government</h4>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 3px; color: var(--color-text-muted);">
-              <li>Press Information Bureau</li>
-              <li>India Code</li>
-              <li>eGazette of India</li>
-              <li>NITI Aayog</li>
-              <li>Digital Sansad</li>
-              <li>data.gov.in</li>
-              <li>Reserve Bank of India</li>
-            </ul>
+            <strong>Recency bias in digital archives</strong>
+            <p>Digital archives are far more complete for 2014-present than for earlier periods.
+            Government websites frequently restructure, and older content is often lost or inaccessible.
+            The PIB digital archive before ~2012 is particularly sparse. This means UPA-era policy counts
+            are artificially low compared to NDA-era counts.</p>
           </div>
+        </div>
+        <div class="bias-item">
+          <span class="bias-icon">2</span>
           <div>
-            <h4 style="color: var(--color-text); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs); font-weight: 700;">Research & International</h4>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 3px; color: var(--color-text-muted);">
-              <li>PRS Legislative Research</li>
-              <li>World Bank India</li>
-              <li>Observer Research Foundation</li>
-              <li>Centre for Policy Research</li>
-            </ul>
+            <strong>Central government overrepresentation</strong>
+            <p>State-level policy coverage is limited to states with accessible digital portals.
+            Many state governments publish in regional languages or in formats that are harder to aggregate.
+            Central government actions are overrepresented relative to state actions.</p>
+          </div>
+        </div>
+        <div class="bias-item">
+          <span class="bias-icon">3</span>
+          <div>
+            <strong>Announcement vs. implementation gap</strong>
+            <p>Most entries capture policy announcements and official statements. Whether a policy was
+            actually implemented, funded, or had its intended impact may differ significantly from the announcement.
+            Our impact annotations are best-effort estimates, not rigorous evaluations.</p>
+          </div>
+        </div>
+        <div class="bias-item">
+          <span class="bias-icon">4</span>
+          <div>
+            <strong>Automated sector classification</strong>
+            <p>Policies are classified into sectors using keyword matching. Some policies may be
+            miscategorized or missing from relevant sectors. Cross-cutting policies (e.g., Digital India affects
+            multiple sectors) may not appear in all relevant categories.</p>
+          </div>
+        </div>
+        <div class="bias-item">
+          <span class="bias-icon">5</span>
+          <div>
+            <strong>English language bias</strong>
+            <p>The pipeline primarily processes English-language sources. Policies published only in Hindi
+            or regional languages may be underrepresented or missing entirely.</p>
+          </div>
+        </div>
+        <div class="bias-item">
+          <span class="bias-icon">6</span>
+          <div>
+            <strong>PIB as primary source</strong>
+            <p>The PIB is by far the largest source in the dataset. PIB releases tend to present government
+            actions positively. Policies that were withdrawn, failed, or were controversial may receive
+            less coverage in PIB compared to successful initiatives.</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div style="background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: var(--shadow-card);">
-        <h3 style="font-family: 'Newsreader', Georgia, serif; font-size: 1.125rem; color: var(--color-text); margin-bottom: var(--space-sm);">Subscribe</h3>
-        <p>Get updates via our <a href={`${base}rss.xml`}>RSS feed</a> in your favourite reader.</p>
-      </div>
+    {/* How data is collected */}
+    <div class="about-section">
+      <h3>Collection Methodology</h3>
+      <p>
+        A Python-based pipeline runs every 6 hours via GitHub Actions. It scrapes and parses content from
+        official government websites, classifies policies by sector and type using keyword matching,
+        deduplicates entries, and stores results as JSON files. The Astro static site then builds pages from this data.
+      </p>
+      <p>
+        The pipeline is fully open-source and auditable. Anyone can inspect the scraping logic, classification rules,
+        and raw data on the <a href="https://github.com/Varnasr/india-policy-tracker">GitHub repository</a>.
+      </p>
+    </div>
 
-      <div>
-        <h3 style="font-family: 'Newsreader', Georgia, serif; font-size: 1.125rem; color: var(--color-text); margin-bottom: var(--space-sm);">Open Source</h3>
-        <p>
-          Contributions and bug reports are welcome
-          on <a href="https://github.com/Varnasr/india-policy-tracker">GitHub</a>.
-        </p>
-        <p style="margin-top: var(--space-sm);">
-          Built with <a href="https://astro.build">Astro</a>, Python, and GitHub Actions.
-          By <a href="https://www.impactmojo.in">ImpactMojo</a> — free, highest quality development sector know-how.
-        </p>
-      </div>
+    {/* How to help */}
+    <div class="about-section">
+      <h3>Help Improve Coverage</h3>
+      <p>
+        If you notice missing policies, incorrect classifications, or have access to historical policy data —
+        especially for UPA-era or pre-2004 policies — contributions are welcome:
+      </p>
+      <ul class="help-list">
+        <li>Submit issues or pull requests on the GitHub repository</li>
+        <li>Suggest new data sources, especially for state-level and historical policies</li>
+        <li>Help digitise older policy documents that exist only in PDF or physical form</li>
+        <li>Report misclassifications or incorrect dates</li>
+      </ul>
+    </div>
+
+    {/* Subscribe + Open Source */}
+    <div class="about-section">
+      <h3>Subscribe & Contribute</h3>
+      <p>
+        Get updates via the <a href={`${base}rss.xml`}>RSS feed</a>.
+        Download data from the <a href={`${base}api/`}>API & Data Export</a> page.
+        Contributions and bug reports are welcome on <a href="https://github.com/Varnasr/india-policy-tracker">GitHub</a>.
+      </p>
+      <p>
+        Built with <a href="https://astro.build">Astro</a>, Python, and GitHub Actions.
+        By <a href="https://www.impactmojo.in">ImpactMojo</a> — free, highest quality development sector know-how.
+        This project is non-partisan and does not receive funding from any political party or government body.
+      </p>
     </div>
   </div>
 </Base>
+
+<style>
+  /* Caveat box */
+  .caveat-box {
+    background: #fef3c7;
+    border: 2px solid #f59e0b;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+  }
+  .caveat-box h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #92400e;
+    margin-bottom: var(--space-sm);
+  }
+  .caveat-box p {
+    font-size: 0.8125rem;
+    color: #78350f;
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+  }
+  .caveat-box p:last-child { margin-bottom: 0; }
+  .caveat-stats {
+    display: flex;
+    gap: 24px;
+    margin: var(--space-md) 0;
+  }
+  .caveat-stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .caveat-num {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #92400e;
+  }
+  .caveat-label {
+    font-size: 0.6875rem;
+    color: #a16207;
+    font-weight: 600;
+  }
+
+  /* Sections */
+  .about-section {
+    margin-bottom: var(--space-xl);
+  }
+  .about-section h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+  .about-section p {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+  }
+  .about-section a {
+    color: var(--color-accent);
+  }
+
+  /* Source list */
+  .source-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: var(--space-md);
+  }
+  .source-item {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+  }
+  .source-item strong {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+  }
+  .source-item span {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+  }
+
+  /* Bias list */
+  .bias-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: var(--space-md);
+  }
+  .bias-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .bias-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .bias-item strong {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+    margin-bottom: 2px;
+  }
+  .bias-item p {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 640px;
+  }
+
+  .help-list {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .source-list { grid-template-columns: 1fr; }
+    .caveat-stats { flex-direction: column; gap: 8px; }
+  }
+</style>

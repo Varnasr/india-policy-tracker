@@ -26,6 +26,10 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
         like the Press Information Bureau, gazette notifications, and ministry portals — making it possible to track
         what the government is doing, across sectors and over time.
       </p>
+      <p class="hero-caveat">
+        Coverage note: Digital government archives are more complete for recent years. Earlier eras (UPA and before) are underrepresented
+        in this dataset due to limited online archival, not due to less policymaking. <a href={`${base}about/`}>Read methodology</a>
+      </p>
       <div class="hero-features">
         <div class="hero-feature">
           <span class="hero-feature-icon">&#9670;</span>
@@ -166,6 +170,20 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     line-height: 1.7;
     max-width: 720px;
     margin-bottom: var(--space-lg);
+  }
+  .hero-caveat {
+    font-size: 0.75rem;
+    color: #92400e;
+    background: #fefce8;
+    border: 1px solid #fde68a;
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    margin-bottom: var(--space-md);
+    line-height: 1.5;
+  }
+  .hero-caveat a {
+    color: #b45309;
+    font-weight: 600;
   }
   .hero-features {
     display: grid;

@@ -117,6 +117,9 @@ const erasCovered = ERAS.filter(e => years.some(y => y >= e.start && y < e.end))
       </span>
     ))}
   </div>
+  <div class="timeline-caveat">
+    Note: Bar heights reflect data available in digital archives, not actual policy volume. Pre-2014 policies are significantly underrepresented due to limited online archival. <a href={`${Astro.url.pathname.includes('/india-policy-tracker') ? '/india-policy-tracker' : ''}/about/`}>Read methodology</a>
+  </div>
 </div>
 
 <style>
@@ -279,6 +282,21 @@ const erasCovered = ERAS.filter(e => years.some(y => y >= e.start && y < e.end))
     width: 6px;
     height: 6px;
     border-radius: 2px;
+  }
+
+  .timeline-caveat {
+    font-size: 0.6875rem;
+    color: #92400e;
+    background: #fefce8;
+    border: 1px solid #fde68a;
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    margin-top: var(--space-md);
+    line-height: 1.5;
+  }
+  .timeline-caveat a {
+    color: #b45309;
+    font-weight: 600;
   }
 
   @media (max-width: 768px) {

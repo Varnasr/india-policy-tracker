@@ -95,7 +95,7 @@ const GOV_PARTY_COLORS: Record<string, string> = {
       ))}
     </div>
     <div class="coverage-note">
-      Covers UPA and NDA governments from 2004 onwards
+      Coverage is uneven — recent eras have better digital archival than earlier eras
     </div>
   </div>
 
@@ -152,6 +152,9 @@ const GOV_PARTY_COLORS: Record<string, string> = {
       <div class="era-legend">
         <span class="era-legend-item"><span class="era-dot" style="background:#f97316;"></span>UPA (Congress-led)</span>
         <span class="era-legend-item"><span class="era-dot" style="background:#2563eb;"></span>NDA (BJP-led)</span>
+      </div>
+      <div class="era-caveat">
+        Counts reflect digital archive availability, not actual policy volume. Earlier eras are underrepresented.
       </div>
     </div>
   )}
@@ -369,6 +372,15 @@ const GOV_PARTY_COLORS: Record<string, string> = {
     font-size: 0.625rem; color: var(--color-text-muted);
   }
   .era-dot { width: 8px; height: 8px; border-radius: 2px; }
+  .era-caveat {
+    font-size: 0.5625rem;
+    color: #92400e;
+    background: #fefce8;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
 
   /* State governance card */
   .insight-link {
