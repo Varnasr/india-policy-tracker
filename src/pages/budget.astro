@@ -1,0 +1,489 @@
+---
+import Base from '../layouts/Base.astro';
+import { getBudgetData } from '../lib/data';
+
+const budget = getBudgetData();
+const fiscal = budget.fiscal_summary;
+const ministries = budget.ministry_allocations;
+const schemes = budget.major_schemes;
+
+// Helper: format crore amounts
+function fmt(n: number): string {
+  if (n >= 100000) return `${(n / 100000).toFixed(2)}L Cr`;
+  return `${n.toLocaleString('en-IN')} Cr`;
+}
+
+// Helper: YoY change
+function yoyPct(curr: number, prev: number): string {
+  if (!prev) return '—';
+  const pct = ((curr - prev) / prev) * 100;
+  return `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`;
+}
+
+function yoyColor(curr: number, prev: number): string {
+  if (!prev) return '#737373';
+  return curr >= prev ? '#16a34a' : '#dc2626';
+}
+
+// Fiscal summary — latest two years for comparison
+const latestFiscal = fiscal[fiscal.length - 1];
+const prevFiscal = fiscal[fiscal.length - 2];
+
+// Sort ministries by latest allocation (descending)
+const sortedMinistries = [...ministries].sort((a, b) => {
+  const aLatest = a.allocations[a.allocations.length - 1]?.amount || 0;
+  const bLatest = b.allocations[b.allocations.length - 1]?.amount || 0;
+  return bLatest - aLatest;
+});
+const maxMinistryAlloc = sortedMinistries[0]?.allocations[sortedMinistries[0].allocations.length - 1]?.amount || 1;
+
+// Sort schemes by latest allocation (descending)
+const sortedSchemes = [...schemes].sort((a, b) => {
+  const aLatest = a.allocations[a.allocations.length - 1]?.amount || 0;
+  const bLatest = b.allocations[b.allocations.length - 1]?.amount || 0;
+  return bLatest - aLatest;
+});
+const maxSchemeAlloc = sortedSchemes[0]?.allocations[sortedSchemes[0].allocations.length - 1]?.amount || 1;
+
+// Aggregate by sector
+const sectorTotals: Record<string, { latest: number; prev: number }> = {};
+for (const m of ministries) {
+  const latest = m.allocations[m.allocations.length - 1]?.amount || 0;
+  const prev = m.allocations[m.allocations.length - 2]?.amount || 0;
+  if (!sectorTotals[m.sector]) sectorTotals[m.sector] = { latest: 0, prev: 0 };
+  sectorTotals[m.sector].latest += latest;
+  sectorTotals[m.sector].prev += prev;
+}
+const sortedSectors = Object.entries(sectorTotals).sort(([, a], [, b]) => b.latest - a.latest);
+const maxSectorAlloc = sortedSectors[0]?.[1]?.latest || 1;
+
+// Years for table headers
+const years = fiscal.map(f => f.year);
+---
+<Base title="Budget Tracker">
+  <div class="budget-page">
+    <div class="budget-header">
+      <h2>Union Budget Tracker</h2>
+      <p>Ministry-wise and scheme-wise allocation tracking across Union Budgets. All figures in Rs crore.</p>
+    </div>
+
+    {/* ── Fiscal Overview Cards ─────────────────────── */}
+    <div class="fiscal-cards">
+      <div class="fiscal-card">
+        <span class="fc-label">Total Expenditure</span>
+        <span class="fc-value">{fmt(latestFiscal.total_expenditure)}</span>
+        <span class="fc-change" style={`color: ${yoyColor(latestFiscal.total_expenditure, prevFiscal.total_expenditure)};`}>
+          {yoyPct(latestFiscal.total_expenditure, prevFiscal.total_expenditure)} vs {prevFiscal.year}
+        </span>
+      </div>
+      <div class="fiscal-card">
+        <span class="fc-label">Capital Expenditure</span>
+        <span class="fc-value">{fmt(latestFiscal.capital_expenditure)}</span>
+        <span class="fc-change" style={`color: ${yoyColor(latestFiscal.capital_expenditure, prevFiscal.capital_expenditure)};`}>
+          {yoyPct(latestFiscal.capital_expenditure, prevFiscal.capital_expenditure)} vs {prevFiscal.year}
+        </span>
+      </div>
+      <div class="fiscal-card">
+        <span class="fc-label">Fiscal Deficit</span>
+        <span class="fc-value">{latestFiscal.fiscal_deficit_pct_gdp}% of GDP</span>
+        <span class="fc-change" style={`color: ${latestFiscal.fiscal_deficit_pct_gdp <= prevFiscal.fiscal_deficit_pct_gdp ? '#16a34a' : '#dc2626'};`}>
+          {prevFiscal.fiscal_deficit_pct_gdp}% in {prevFiscal.year}
+        </span>
+      </div>
+      <div class="fiscal-card">
+        <span class="fc-label">Capex as % of Total</span>
+        <span class="fc-value">{(latestFiscal.capital_expenditure / latestFiscal.total_expenditure * 100).toFixed(1)}%</span>
+        <span class="fc-change" style="color: #737373;">
+          {(prevFiscal.capital_expenditure / prevFiscal.total_expenditure * 100).toFixed(1)}% in {prevFiscal.year}
+        </span>
+      </div>
+    </div>
+
+    {/* ── Fiscal Trend Table ──────────────────────────── */}
+    <div class="budget-section">
+      <h3>Fiscal Trajectory</h3>
+      <div class="table-wrap">
+        <table class="budget-table">
+          <thead>
+            <tr>
+              <th></th>
+              {fiscal.map(f => <th>{f.year}<br/><span class="th-type">({f.type})</span></th>)}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">Total Expenditure</td>
+              {fiscal.map(f => <td>{fmt(f.total_expenditure)}</td>)}
+            </tr>
+            <tr>
+              <td class="row-label">Revenue Expenditure</td>
+              {fiscal.map(f => <td>{fmt(f.revenue_expenditure)}</td>)}
+            </tr>
+            <tr>
+              <td class="row-label">Capital Expenditure</td>
+              {fiscal.map(f => <td class="highlight">{fmt(f.capital_expenditure)}</td>)}
+            </tr>
+            <tr>
+              <td class="row-label">Fiscal Deficit (% GDP)</td>
+              {fiscal.map(f => <td>{f.fiscal_deficit_pct_gdp}%</td>)}
+            </tr>
+            <tr>
+              <td class="row-label">GDP Estimate</td>
+              {fiscal.map(f => <td>{fmt(f.gdp_estimate)}</td>)}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    {/* ── Sector Allocation Bars ──────────────────────── */}
+    <div class="budget-section">
+      <h3>Allocations by Sector</h3>
+      <p class="section-sub">Combined ministry allocations mapped to policy sectors ({latestFiscal.year} BE)</p>
+      <div class="alloc-bars">
+        {sortedSectors.map(([sector, totals]) => (
+          <div class="alloc-row">
+            <span class="alloc-label">{sector}</span>
+            <div class="alloc-bar-track">
+              <div class="alloc-bar-fill" style={`width: ${(totals.latest / maxSectorAlloc) * 100}%;`}></div>
+            </div>
+            <span class="alloc-amount">{fmt(totals.latest)}</span>
+            <span class="alloc-change" style={`color: ${yoyColor(totals.latest, totals.prev)};`}>
+              {yoyPct(totals.latest, totals.prev)}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* ── Ministry Breakdown ──────────────────────────── */}
+    <div class="budget-section">
+      <h3>Ministry-wise Allocations</h3>
+      <p class="section-sub">Top 20 ministries by {latestFiscal.year} Budget Estimate</p>
+      <div class="table-wrap">
+        <table class="budget-table ministry-table">
+          <thead>
+            <tr>
+              <th>Ministry</th>
+              <th>Sector</th>
+              {sortedMinistries[0]?.allocations.map(a => <th>{a.year}</th>)}
+              <th>YoY</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedMinistries.map(m => {
+              const latest = m.allocations[m.allocations.length - 1]?.amount || 0;
+              const prev = m.allocations[m.allocations.length - 2]?.amount || 0;
+              return (
+                <tr>
+                  <td class="row-label">{m.ministry.replace('Ministry of ', '')}</td>
+                  <td class="row-sector">{m.sector}</td>
+                  {m.allocations.map(a => <td>{fmt(a.amount)}</td>)}
+                  <td style={`color: ${yoyColor(latest, prev)}; font-weight: 700;`}>
+                    {yoyPct(latest, prev)}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    {/* ── Major Schemes ──────────────────────────────── */}
+    <div class="budget-section">
+      <h3>Flagship Scheme Allocations</h3>
+      <p class="section-sub">Year-over-year tracking of India's largest government schemes</p>
+      <div class="scheme-grid">
+        {sortedSchemes.map(s => {
+          const latest = s.allocations[s.allocations.length - 1];
+          const prev = s.allocations[s.allocations.length - 2];
+          const maxInScheme = Math.max(...s.allocations.map(a => a.amount));
+          return (
+            <div class="scheme-card">
+              <div class="scheme-header">
+                <span class="scheme-name">{s.scheme}</span>
+                <span class="scheme-amount">{fmt(latest.amount)}</span>
+              </div>
+              <div class="scheme-meta">
+                <span class="scheme-sector">{s.sector}</span>
+                <span class="scheme-change" style={`color: ${yoyColor(latest.amount, prev?.amount || 0)};`}>
+                  {yoyPct(latest.amount, prev?.amount || 0)}
+                </span>
+              </div>
+              <div class="scheme-sparkline">
+                {s.allocations.map(a => (
+                  <div class="scheme-spark-wrap" title={`${a.year}: ${fmt(a.amount)}`}>
+                    <div class="scheme-spark-bar" style={`height: ${Math.max((a.amount / maxInScheme) * 100, 4)}%;`}></div>
+                    <span class="scheme-spark-year">{a.year.split('-')[0]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <div class="budget-footnote">
+      <p>Source: Union Budget documents, indiabudget.gov.in. BE = Budget Estimate, RE = Revised Estimate, AE = Actual Expenditure.
+      All figures in Rs crore (1 crore = 10 million). "L Cr" = lakh crore (1 lakh crore = 1 trillion).</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .budget-page { max-width: 1100px; margin: 0 auto; }
+  .budget-header { margin-bottom: var(--space-xl); }
+  .budget-header h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 4px;
+  }
+  .budget-header p {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Fiscal cards */
+  .fiscal-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: var(--space-2xl);
+  }
+  .fiscal-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .fc-label {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+  .fc-value {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+  }
+  .fc-change {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  /* Sections */
+  .budget-section {
+    margin-bottom: var(--space-2xl);
+  }
+  .budget-section h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 4px;
+  }
+  .section-sub {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Tables */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+  .budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8125rem;
+  }
+  .budget-table th {
+    background: var(--color-bg-alt);
+    padding: 10px 14px;
+    text-align: right;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .budget-table th:first-child { text-align: left; }
+  .th-type { font-weight: 400; font-size: 0.5625rem; color: var(--color-text-dim); text-transform: none; }
+  .budget-table td {
+    padding: 10px 14px;
+    text-align: right;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border-light);
+    white-space: nowrap;
+  }
+  .budget-table td.row-label {
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text);
+    min-width: 180px;
+  }
+  .budget-table td.row-sector {
+    text-align: left;
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+  }
+  .budget-table td.highlight {
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+  .budget-table tbody tr:hover {
+    background: var(--color-bg-alt);
+  }
+
+  /* Allocation bars */
+  .alloc-bars { display: flex; flex-direction: column; gap: 10px; }
+  .alloc-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .alloc-label {
+    width: 180px;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .alloc-bar-track {
+    flex: 1;
+    height: 10px;
+    background: var(--color-bg-alt);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .alloc-bar-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 5px;
+    transition: width 0.3s;
+  }
+  .alloc-amount {
+    width: 80px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .alloc-change {
+    width: 55px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  /* Scheme cards */
+  .scheme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .scheme-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    box-shadow: var(--shadow-card);
+  }
+  .scheme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .scheme-name {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--color-text);
+  }
+  .scheme-amount {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+  .scheme-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .scheme-sector {
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-text-dim);
+  }
+  .scheme-change {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .scheme-sparkline {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 50px;
+  }
+  .scheme-spark-wrap {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3px;
+  }
+  .scheme-spark-bar {
+    width: 100%;
+    background: var(--color-accent);
+    border-radius: 2px 2px 0 0;
+    min-height: 2px;
+  }
+  .scheme-spark-year {
+    font-size: 0.5rem;
+    color: var(--color-text-dim);
+  }
+
+  /* Footnote */
+  .budget-footnote {
+    padding: 16px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-xl);
+  }
+  .budget-footnote p {
+    font-size: 0.6875rem;
+    color: var(--color-text-dim);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .fiscal-cards { grid-template-columns: repeat(2, 1fr); }
+    .fc-value { font-size: 1.25rem; }
+    .alloc-label { width: 100px; font-size: 0.75rem; }
+    .scheme-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -305,6 +305,55 @@ export function getPolicyContinuityChains(): PolicyChain[] {
   return data.chains || [];
 }
 
+/** Budget allocation data */
+export interface FiscalSummary {
+  year: string;
+  total_expenditure: number;
+  revenue_expenditure: number;
+  capital_expenditure: number;
+  fiscal_deficit_pct_gdp: number;
+  gdp_estimate: number;
+  type: string;
+}
+
+export interface AllocationEntry {
+  year: string;
+  amount: number;
+  type: string;
+}
+
+export interface MinistryAllocation {
+  ministry: string;
+  sector: string;
+  allocations: AllocationEntry[];
+}
+
+export interface SchemeAllocation {
+  scheme: string;
+  ministry: string;
+  sector: string;
+  allocations: AllocationEntry[];
+}
+
+export interface BudgetData {
+  fiscal_summary: FiscalSummary[];
+  ministry_allocations: MinistryAllocation[];
+  major_schemes: SchemeAllocation[];
+}
+
+export function getBudgetData(): BudgetData {
+  const data = readJson<any>('budget_allocations.json', {
+    fiscal_summary: [],
+    ministry_allocations: [],
+    major_schemes: [],
+  });
+  return {
+    fiscal_summary: data.fiscal_summary || [],
+    ministry_allocations: data.ministry_allocations || [],
+    major_schemes: data.major_schemes || [],
+  };
+}
+
 /** Returns sectors x types matrix for landscape view */
 export function getSectorTypeMatrix(): {
   sectors: string[];
