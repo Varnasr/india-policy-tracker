@@ -13,5 +13,7 @@
   "sector_slugs": [
     "governance-reform"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

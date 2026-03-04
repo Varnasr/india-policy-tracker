@@ -15,7 +15,7 @@ const { policy } = Astro.props;
 const related = getRelatedPolicies(policy, 4);
 const base = (import.meta.env.BASE_URL).replace(/\/?$/, '/');
 const meta = getMeta();
-const enrichment = enrichPolicy(policy.sectors, policy.type);
+const enrichment = enrichPolicy(policy.sectors, policy.type, policy.date);
 
 function formatDate(dateStr: string): string {
   try {
@@ -142,18 +142,24 @@ const spectrumPct = ((enrichment.politicalLean + 2) / 4) * 100; // maps -2..+2 t
         </div>
 
         <div class="fact-card">
-          <h3>Political Spectrum</h3>
-          <div class="spectrum">
-            <div class="spectrum-bar">
-              <div class="spectrum-marker" style={`left: ${spectrumPct}%;`}>
-                <span class="spectrum-dot"></span>
-                <span class="spectrum-label-float">{enrichment.politicalLabel}</span>
-              </div>
+          <h3>Government Context</h3>
+          <div class="gov-context">
+            <div class="gov-era-badge">
+              <span class="gov-era-name">{enrichment.governmentEra}</span>
+              <span class="gov-party">{enrichment.governingParty}</span>
             </div>
-            <div class="spectrum-labels">
-              <span>Left</span>
-              <span>Centre</span>
-              <span>Right</span>
+            <div class="spectrum">
+              <div class="spectrum-bar">
+                <div class="spectrum-marker" style={`left: ${spectrumPct}%;`}>
+                  <span class="spectrum-dot"></span>
+                  <span class="spectrum-label-float">{enrichment.politicalLabel}</span>
+                </div>
+              </div>
+              <div class="spectrum-labels">
+                <span>Left</span>
+                <span>Centre</span>
+                <span>Right</span>
+              </div>
             </div>
           </div>
         </div>
@@ -298,6 +304,20 @@ const spectrumPct = ((enrichment.politicalLean + 2) / 4) * 100; // maps -2..+2 t
   .stakeholder-tag {
     background: var(--color-bg-alt); color: var(--color-text-secondary);
     border: 1px solid var(--color-border-light);
+  }
+
+  /* Government Context */
+  .gov-context { display: flex; flex-direction: column; gap: 10px; }
+  .gov-era-badge {
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 8px 10px; background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+  }
+  .gov-era-name {
+    font-size: 0.875rem; font-weight: 700; color: var(--color-text);
+  }
+  .gov-party {
+    font-size: 0.6875rem; color: var(--color-text-muted);
   }
 
   /* Political Spectrum */

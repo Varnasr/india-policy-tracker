@@ -15,5 +15,7 @@
     "governance-reform",
     "trade-commerce"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

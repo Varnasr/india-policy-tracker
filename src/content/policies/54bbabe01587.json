@@ -15,5 +15,7 @@
     "agriculture",
     "finance-economy"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

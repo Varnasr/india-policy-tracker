@@ -15,5 +15,7 @@
     "social-protection",
     "finance-economy"
   ],
-  "type": "budget"
+  "type": "budget",
+  "level": "central",
+  "state": ""
 }

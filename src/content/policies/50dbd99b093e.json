@@ -15,5 +15,7 @@
     "digital-technology",
     "finance-economy"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

@@ -8,8 +8,10 @@ export interface PolicyEnrichment {
   ministries: string[];
   stakeholders: string[];
   affectedPopulation: string;
-  politicalLean: number; // -3 (far left) to +3 (far right), 0 = centre
+  politicalLean: number; // -2 (Left) to +2 (Right), 0 = Centre
   politicalLabel: string;
+  governmentEra: string;
+  governingParty: string;
   keyNumbers: string[];
 }
 
@@ -109,59 +111,48 @@ const SECTOR_KEY_NUMBERS: Record<string, string[]> = {
   'Science & Innovation': ['R&D spending: 0.7% of GDP', 'Gaganyaan: Rs 12,000 crore investment', 'India Innovation Index: 40th globally (2024)'],
 };
 
-// Political spectrum: sector+type → lean
-// -2 = Left, -1 = Centre-Left, 0 = Centre, 1 = Centre-Right, 2 = Right
-const SECTOR_LEAN: Record<string, number> = {
-  'Social Protection': -1,
-  'Labour & Employment': -1,
-  'Gender & Women': -1,
-  'Tribal & Indigenous': -1,
-  'Child Rights & Youth': -1,
-  'Rural Development': -1,
-  'Climate & Environment': -1,
-  'Water & Sanitation': 0,
-  'Education': 0,
-  'Health': 0,
-  'Housing': 0,
-  'Urban Development': 0,
-  'Governance & Reform': 0,
-  'Science & Innovation': 0,
-  'Energy': 0,
-  'Agriculture': 0,
-  'Finance & Economy': 1,
-  'Trade & Commerce': 1,
-  'Digital & Technology': 1,
-  'Transport & Infrastructure': 0,
-  'Defence & Security': 1,
-};
+/**
+ * Government eras — political lean is based on the governing coalition,
+ * not the policy sector. India's central government trajectory:
+ *
+ * UPA I  (May 2004 – May 2009):  Congress-led + Left allies  → Centre-Left
+ * UPA II (May 2009 – May 2014):  Congress-led                → Centre to Centre-Left
+ * NDA I  (May 2014 – May 2019):  BJP majority                → Centre-Right to Right
+ * NDA II (May 2019 – Jun 2024):  BJP strong majority          → Right
+ * NDA III (Jun 2024 – present):  BJP-led coalition            → Centre-Right to Right
+ */
+interface GovEra {
+  name: string;
+  party: string;
+  lean: number;  // -2 to +2
+  label: string;
+  start: string; // YYYY-MM-DD
+  end: string;   // YYYY-MM-DD or '9999-12-31' for current
+}
 
-const TYPE_LEAN_MOD: Record<string, number> = {
-  'scheme': -1,      // welfare programmes lean left
-  'legislation': 0,  // neutral — depends on content
-  'notification': 0,
-  'budget': 0,
-  'research': 0,
-  'announcement': 0,
-  'policy': 0,
-};
+const GOV_ERAS: GovEra[] = [
+  { name: 'UPA I',   party: 'Congress-led UPA',  lean: -1, label: 'Centre-Left',  start: '2004-05-22', end: '2009-05-21' },
+  { name: 'UPA II',  party: 'Congress-led UPA',  lean: -1, label: 'Centre-Left',  start: '2009-05-22', end: '2014-05-25' },
+  { name: 'NDA I',   party: 'BJP-led NDA',       lean: 1,  label: 'Centre-Right', start: '2014-05-26', end: '2019-05-29' },
+  { name: 'NDA II',  party: 'BJP-led NDA',       lean: 2,  label: 'Right',        start: '2019-05-30', end: '2024-06-08' },
+  { name: 'NDA III', party: 'BJP-led NDA',       lean: 1,  label: 'Centre-Right', start: '2024-06-09', end: '9999-12-31' },
+];
 
-const LEAN_LABELS: Record<number, string> = {
-  '-3': 'Left',
-  '-2': 'Left',
-  '-1': 'Centre-Left',
-  '0': 'Centre',
-  '1': 'Centre-Right',
-  '2': 'Right',
-  '3': 'Right',
-};
+function getGovernmentEra(date: string): GovEra {
+  const d = date || '2025-01-01';
+  for (const era of GOV_ERAS) {
+    if (d >= era.start && d <= era.end) return era;
+  }
+  // Default to current era for undated policies
+  return GOV_ERAS[GOV_ERAS.length - 1];
+}
 
-export function enrichPolicy(sectors: string[], type: string): PolicyEnrichment {
+export function enrichPolicy(sectors: string[], type: string, date?: string): PolicyEnrichment {
   // Aggregate ministries and stakeholders from all sectors
   const ministrySet = new Set<string>();
   const stakeholderSet = new Set<string>();
   const keyNumbers: string[] = [];
   let affectedPopulation = '—';
-  let leanSum = 0;
 
   for (const s of sectors) {
     const ministries = SECTOR_MINISTRIES[s] || [];
@@ -179,20 +170,19 @@ export function enrichPolicy(sectors: string[], type: string): PolicyEnrichment 
     for (const n of nums) {
       if (!keyNumbers.includes(n)) keyNumbers.push(n);
     }
-
-    leanSum += SECTOR_LEAN[s] ?? 0;
   }
 
-  // Average lean across sectors + type modifier
-  let lean = Math.round(leanSum / Math.max(sectors.length, 1)) + (TYPE_LEAN_MOD[type] ?? 0);
-  lean = Math.max(-2, Math.min(2, lean));
+  // Political lean is based on the governing coalition at the time
+  const era = getGovernmentEra(date || '');
 
   return {
     ministries: Array.from(ministrySet).slice(0, 5),
     stakeholders: Array.from(stakeholderSet).slice(0, 6),
     affectedPopulation,
-    politicalLean: lean,
-    politicalLabel: LEAN_LABELS[String(lean) as any] || 'Centre',
+    politicalLean: era.lean,
+    politicalLabel: era.label,
+    governmentEra: era.name,
+    governingParty: era.party,
     keyNumbers: keyNumbers.slice(0, 4),
   };
 }

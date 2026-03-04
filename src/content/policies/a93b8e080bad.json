@@ -17,5 +17,7 @@
     "education",
     "finance-economy"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

@@ -17,5 +17,7 @@
     "energy",
     "labour-employment"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

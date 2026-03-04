@@ -27,7 +27,8 @@ FEEDS_CONFIG = PROJECT_ROOT / "feeds.json"
 DATA_DIR = PROJECT_ROOT / "data"
 POLICIES_DIR = PROJECT_ROOT / "src" / "content" / "policies"
 MAX_ITEMS_PER_SOURCE = 50
-MAX_TOTAL_ITEMS = 500
+MAX_TOTAL_ITEMS = 2000
+HISTORICAL_SEED = PROJECT_ROOT / "data" / "historical_seed.json"
 
 
 def generate_id(title: str, source: str) -> str:
@@ -72,6 +73,43 @@ def extract_date_from_title(title: str) -> str:
     if 1990 <= year <= datetime.now(timezone.utc).year + 1:
         return f"{year}-06-01"
     return ""
+
+
+def load_historical_seed() -> list[dict]:
+    """Load curated historical policy data (UPA I onwards)."""
+    if not HISTORICAL_SEED.exists():
+        return []
+    try:
+        with open(HISTORICAL_SEED) as f:
+            raw_items = json.load(f)
+        items = []
+        for raw in raw_items:
+            title = raw.get("title", "").strip()
+            if not title:
+                continue
+            source_id = raw.get("source_id", "historical")
+            policy_id = generate_id(title, source_id)
+            sectors = raw.get("sectors", [])
+            items.append({
+                "id": policy_id,
+                "title": title,
+                "description": raw.get("description", ""),
+                "link": raw.get("link", ""),
+                "date": raw.get("date", ""),
+                "source_id": source_id,
+                "source_name": raw.get("source_name", "Historical Record"),
+                "source_short": raw.get("source_short", "Archive"),
+                "sectors": sectors,
+                "sector_slugs": [get_sector_slug(s) for s in sectors],
+                "type": raw.get("type", "policy"),
+                "level": raw.get("level", "central"),
+                "state": raw.get("state", ""),
+            })
+        print(f"  Loaded {len(items)} historical seed policies")
+        return items
+    except Exception as e:
+        print(f"  Warning: could not load historical seed: {e}")
+        return []
 
 
 def load_existing_policies() -> dict:
@@ -224,6 +262,8 @@ def fetch_source(source_id: str, source_config: dict) -> list[dict]:
                 "sectors": sectors,
                 "sector_slugs": [get_sector_slug(s) for s in sectors],
                 "type": categorize_item_type(title, description),
+                "level": "central",
+                "state": "",
             })
 
         print(f"  Fetched {len(items)} items")
@@ -270,8 +310,11 @@ def main():
     existing = load_existing_policies()
     print(f"Existing policies: {len(existing)}")
 
+    # Load historical seed data (UPA I onwards)
+    seed = load_historical_seed()
+
     # Fetch from all sources
-    all_new = []
+    all_new = list(seed)
     errors = []
 
     for source_id, source_config in sources.items():
@@ -285,7 +328,7 @@ def main():
             print(f"  FAILED: {source_id} — {e}")
 
     print(f"\n{'=' * 60}")
-    print(f"Total new items fetched: {len(all_new)}")
+    print(f"Total new items fetched: {len(all_new)} ({len(seed)} seed + {len(all_new) - len(seed)} live)")
 
     # Merge and deduplicate
     merged = merge_policies(existing, all_new)

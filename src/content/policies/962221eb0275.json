@@ -17,5 +17,7 @@
     "finance-economy",
     "social-protection"
   ],
-  "type": "announcement"
+  "type": "announcement",
+  "level": "central",
+  "state": ""
 }

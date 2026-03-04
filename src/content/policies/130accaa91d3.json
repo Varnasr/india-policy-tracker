@@ -17,5 +17,7 @@
     "gender-women",
     "rural-development"
   ],
-  "type": "research"
+  "type": "research",
+  "level": "central",
+  "state": ""
 }

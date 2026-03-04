@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "description": "Indian state and UT governments with ruling parties and political lean",
+    "last_updated": "2026-03-01",
+    "note": "Political lean: -2=Left, -1=Centre-Left, 0=Centre, 1=Centre-Right, 2=Right"
+  },
+  "states": {
+    "Andhra Pradesh":     { "abbr": "AP",  "party": "TDP-led NDA",         "cm": "N. Chandrababu Naidu", "lean": 1,  "label": "Centre-Right", "since": "2024-06" },
+    "Arunachal Pradesh":  { "abbr": "AR",  "party": "BJP",                 "cm": "Pema Khandu",          "lean": 2,  "label": "Right",        "since": "2024-06" },
+    "Assam":              { "abbr": "AS",  "party": "BJP",                 "cm": "Himanta Biswa Sarma",  "lean": 2,  "label": "Right",        "since": "2021-05" },
+    "Bihar":              { "abbr": "BR",  "party": "NDA (JDU-BJP)",       "cm": "Nitish Kumar",         "lean": 1,  "label": "Centre-Right", "since": "2024-01" },
+    "Chhattisgarh":       { "abbr": "CG",  "party": "BJP",                 "cm": "Vishnu Deo Sai",       "lean": 2,  "label": "Right",        "since": "2023-12" },
+    "Goa":                { "abbr": "GA",  "party": "BJP",                 "cm": "Pramod Sawant",        "lean": 1,  "label": "Centre-Right", "since": "2022-03" },
+    "Gujarat":            { "abbr": "GJ",  "party": "BJP",                 "cm": "Bhupendra Patel",      "lean": 2,  "label": "Right",        "since": "2022-12" },
+    "Haryana":            { "abbr": "HR",  "party": "BJP",                 "cm": "Nayab Singh Saini",    "lean": 2,  "label": "Right",        "since": "2024-10" },
+    "Himachal Pradesh":   { "abbr": "HP",  "party": "Congress",            "cm": "Sukhvinder Singh Sukhu","lean": -1, "label": "Centre-Left",  "since": "2022-12" },
+    "Jharkhand":          { "abbr": "JH",  "party": "JMM-Congress-RJD",    "cm": "Hemant Soren",         "lean": -1, "label": "Centre-Left",  "since": "2024-11" },
+    "Karnataka":          { "abbr": "KA",  "party": "Congress",            "cm": "Siddaramaiah",         "lean": -1, "label": "Centre-Left",  "since": "2023-05" },
+    "Kerala":             { "abbr": "KL",  "party": "LDF (CPI-M led)",     "cm": "Pinarayi Vijayan",     "lean": -2, "label": "Left",         "since": "2021-05" },
+    "Madhya Pradesh":     { "abbr": "MP",  "party": "BJP",                 "cm": "Mohan Yadav",          "lean": 2,  "label": "Right",        "since": "2023-12" },
+    "Maharashtra":        { "abbr": "MH",  "party": "Mahayuti (BJP-SS-NCP)","cm": "Devendra Fadnavis",   "lean": 1,  "label": "Centre-Right", "since": "2024-12" },
+    "Manipur":            { "abbr": "MN",  "party": "BJP",                 "cm": "N. Biren Singh",       "lean": 2,  "label": "Right",        "since": "2022-03" },
+    "Meghalaya":          { "abbr": "ML",  "party": "NPP-led",             "cm": "Conrad Sangma",        "lean": 0,  "label": "Centre",       "since": "2023-03" },
+    "Mizoram":            { "abbr": "MZ",  "party": "ZPM",                 "cm": "Lalduhoma",            "lean": 0,  "label": "Centre",       "since": "2023-12" },
+    "Nagaland":           { "abbr": "NL",  "party": "NDPP-BJP",            "cm": "Neiphiu Rio",          "lean": 1,  "label": "Centre-Right", "since": "2023-03" },
+    "Odisha":             { "abbr": "OD",  "party": "BJP",                 "cm": "Mohan Charan Majhi",   "lean": 2,  "label": "Right",        "since": "2024-06" },
+    "Punjab":             { "abbr": "PB",  "party": "AAP",                 "cm": "Bhagwant Mann",        "lean": -1, "label": "Centre-Left",  "since": "2022-03" },
+    "Rajasthan":          { "abbr": "RJ",  "party": "BJP",                 "cm": "Bhajan Lal Sharma",    "lean": 2,  "label": "Right",        "since": "2023-12" },
+    "Sikkim":             { "abbr": "SK",  "party": "SKM",                 "cm": "Prem Singh Tamang",    "lean": 0,  "label": "Centre",       "since": "2024-06" },
+    "Tamil Nadu":         { "abbr": "TN",  "party": "DMK",                 "cm": "M.K. Stalin",          "lean": -1, "label": "Centre-Left",  "since": "2021-05" },
+    "Telangana":          { "abbr": "TS",  "party": "Congress",            "cm": "A. Revanth Reddy",     "lean": -1, "label": "Centre-Left",  "since": "2023-12" },
+    "Tripura":            { "abbr": "TR",  "party": "BJP",                 "cm": "Manik Saha",           "lean": 2,  "label": "Right",        "since": "2023-03" },
+    "Uttar Pradesh":      { "abbr": "UP",  "party": "BJP",                 "cm": "Yogi Adityanath",      "lean": 2,  "label": "Right",        "since": "2022-03" },
+    "Uttarakhand":        { "abbr": "UK",  "party": "BJP",                 "cm": "Pushkar Singh Dhami",  "lean": 2,  "label": "Right",        "since": "2022-03" },
+    "West Bengal":        { "abbr": "WB",  "party": "TMC",                 "cm": "Mamata Banerjee",      "lean": -1, "label": "Centre-Left",  "since": "2021-05" }
+  },
+  "union_territories": {
+    "Delhi":                          { "abbr": "DL",  "party": "BJP",     "lg": "V.K. Saxena",     "lean": 2,  "label": "Right" },
+    "Jammu & Kashmir":                { "abbr": "JK",  "party": "NC-Congress", "cm": "Omar Abdullah", "lean": -1, "label": "Centre-Left" },
+    "Puducherry":                     { "abbr": "PY",  "party": "NDA (NR Congress)", "cm": "N. Rangasamy", "lean": 1, "label": "Centre-Right" },
+    "Chandigarh":                     { "abbr": "CH",  "party": "UT Administration", "lean": 0, "label": "Centre" },
+    "Andaman & Nicobar Islands":      { "abbr": "AN",  "party": "UT Administration", "lean": 0, "label": "Centre" },
+    "Dadra Nagar Haveli & Daman Diu": { "abbr": "DD",  "party": "UT Administration", "lean": 0, "label": "Centre" },
+    "Lakshadweep":                    { "abbr": "LD",  "party": "UT Administration", "lean": 0, "label": "Centre" },
+    "Ladakh":                         { "abbr": "LA",  "party": "UT Administration", "lean": 0, "label": "Centre" }
+  }
+}

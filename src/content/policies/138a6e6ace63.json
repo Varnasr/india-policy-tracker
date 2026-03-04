@@ -15,5 +15,7 @@
     "education",
     "digital-technology"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

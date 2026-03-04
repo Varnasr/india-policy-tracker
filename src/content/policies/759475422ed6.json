@@ -17,5 +17,7 @@
     "digital-technology",
     "defence-security"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

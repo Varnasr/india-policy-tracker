@@ -1,13 +1,21 @@
 ---
-import { getTypeDistribution, getTopSectors, getWeeklyTrends, getMeta, getAllPolicies, getSectorSlug } from '../lib/data';
+import { getTypeDistribution, getTopSectors, getWeeklyTrends, getMeta, getAllPolicies, getSectorSlug, getEraDistribution } from '../lib/data';
 
 const typeDist = getTypeDistribution();
 const topSectors = getTopSectors(8);
 const weeklyTrends = getWeeklyTrends();
+const eraDist = getEraDistribution();
 const meta = getMeta();
 const policies = getAllPolicies();
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+
+// Era bar widths
+const maxEraCount = Math.max(...eraDist.map(e => e.count), 1);
+const ERA_COLORS: Record<string, string> = {
+  'UPA I': '#f97316', 'UPA II': '#ea580c',
+  'NDA I': '#3b82f6', 'NDA II': '#1d4ed8', 'NDA III': '#2563eb',
+};
 
 // Weekly trend sparkline data (last 12 weeks)
 const recentWeeks = weeklyTrends.slice(-12);
@@ -100,6 +108,31 @@ const trendUp = trendPct >= 0;
       ))}
     </div>
   </div>
+
+  {/* Government era distribution */}
+  {eraDist.some(e => e.count > 0) && (
+    <div class="insight-card insight-eras">
+      <h4>Policy by Government Era</h4>
+      <div class="era-bars">
+        {eraDist.map(e => (
+          <div class="era-bar-row">
+            <div class="era-bar-meta">
+              <span class="era-bar-name">{e.era}</span>
+              <span class="era-bar-party">{e.party}</span>
+            </div>
+            <div class="era-bar-track">
+              <div class="era-bar-fill" style={`width: ${(e.count / maxEraCount) * 100}%; background: ${ERA_COLORS[e.era] || '#888'};`}></div>
+            </div>
+            <span class="era-bar-count">{e.count}</span>
+          </div>
+        ))}
+      </div>
+      <div class="era-legend">
+        <span class="era-legend-item"><span class="era-dot" style="background:#f97316;"></span>UPA (Congress-led)</span>
+        <span class="era-legend-item"><span class="era-dot" style="background:#2563eb;"></span>NDA (BJP-led)</span>
+      </div>
+    </div>
+  )}
 </div>
 
 <style>
@@ -260,9 +293,38 @@ const trendUp = trendPct >= 0;
     flex-shrink: 0;
   }
 
+  /* Government era bars */
+  .era-bars { display: flex; flex-direction: column; gap: 10px; }
+  .era-bar-row { display: flex; align-items: center; gap: 8px; }
+  .era-bar-meta {
+    width: 130px; flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 1px;
+  }
+  .era-bar-name { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); }
+  .era-bar-party { font-size: 0.5625rem; color: var(--color-text-dim); }
+  .era-bar-track {
+    flex: 1; height: 10px;
+    background: var(--color-bg-alt); border-radius: 5px; overflow: hidden;
+  }
+  .era-bar-fill { height: 100%; border-radius: 5px; transition: width 0.3s; }
+  .era-bar-count {
+    font-size: 0.75rem; font-weight: 700;
+    color: var(--color-text-muted); width: 28px; text-align: right; flex-shrink: 0;
+  }
+  .era-legend {
+    display: flex; gap: 16px; margin-top: 10px; padding-top: 8px;
+    border-top: 1px solid var(--color-border-light);
+  }
+  .era-legend-item {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.625rem; color: var(--color-text-muted);
+  }
+  .era-dot { width: 8px; height: 8px; border-radius: 2px; }
+
   @media (max-width: 768px) {
     .insights-grid { grid-template-columns: 1fr; }
     .sector-bar-label { width: 100px; }
     .type-bar-label { width: 70px; }
+    .era-bar-meta { width: 90px; }
   }
 </style>

@@ -13,5 +13,7 @@
   "sector_slugs": [
     "digital-technology"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

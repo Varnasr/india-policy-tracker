@@ -17,5 +17,7 @@
     "social-protection",
     "energy"
   ],
-  "type": "research"
+  "type": "research",
+  "level": "central",
+  "state": ""
 }

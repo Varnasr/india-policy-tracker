@@ -13,5 +13,7 @@
   "sector_slugs": [
     "energy"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

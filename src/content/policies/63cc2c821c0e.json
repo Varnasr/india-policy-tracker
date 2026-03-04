@@ -15,5 +15,7 @@
     "transport-infrastructure",
     "social-protection"
   ],
-  "type": "notification"
+  "type": "notification",
+  "level": "central",
+  "state": ""
 }

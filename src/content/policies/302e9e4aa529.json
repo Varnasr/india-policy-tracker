@@ -15,5 +15,7 @@
     "finance-economy",
     "transport-infrastructure"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

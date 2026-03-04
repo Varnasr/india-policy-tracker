@@ -15,5 +15,7 @@
     "social-protection",
     "rural-development"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

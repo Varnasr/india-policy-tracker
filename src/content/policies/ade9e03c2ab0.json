@@ -17,5 +17,7 @@
     "energy",
     "social-protection"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

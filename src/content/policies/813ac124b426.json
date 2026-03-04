@@ -17,5 +17,7 @@
     "education",
     "climate-environment"
   ],
-  "type": "research"
+  "type": "research",
+  "level": "central",
+  "state": ""
 }

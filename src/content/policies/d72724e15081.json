@@ -13,5 +13,7 @@
   "sector_slugs": [
     "social-protection"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

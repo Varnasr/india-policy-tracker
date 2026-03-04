@@ -15,5 +15,7 @@
     "social-protection",
     "labour-employment"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

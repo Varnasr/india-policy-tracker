@@ -15,5 +15,7 @@
     "digital-technology",
     "transport-infrastructure"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

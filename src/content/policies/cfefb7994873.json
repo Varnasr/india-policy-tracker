@@ -17,5 +17,7 @@
     "social-protection",
     "defence-security"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

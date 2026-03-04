@@ -17,5 +17,7 @@
     "social-protection",
     "science-innovation"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

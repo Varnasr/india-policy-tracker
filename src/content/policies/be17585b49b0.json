@@ -13,5 +13,7 @@
   "sector_slugs": [
     "health"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

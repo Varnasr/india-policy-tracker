@@ -20,6 +20,8 @@ export interface PolicyItem {
   sectors: string[];
   sector_slugs: string[];
   type: string;
+  level?: string;  // 'central' or 'state'
+  state?: string;  // state name if level === 'state'
 }
 
 export interface MetaData {
@@ -202,6 +204,24 @@ export function getSectorInsight(sectorName: string): SectorInsight {
     latestPolicy: policies[0] || null,
     relatedSectors,
   };
+}
+
+/** Returns policy count by government era */
+export function getEraDistribution(): { era: string; party: string; count: number; dateRange: string }[] {
+  const eras = [
+    { name: 'UPA I',   party: 'Congress-led UPA',  start: '2004-05-22', end: '2009-05-21' },
+    { name: 'UPA II',  party: 'Congress-led UPA',  start: '2009-05-22', end: '2014-05-25' },
+    { name: 'NDA I',   party: 'BJP-led NDA',       start: '2014-05-26', end: '2019-05-29' },
+    { name: 'NDA II',  party: 'BJP-led NDA',       start: '2019-05-30', end: '2024-06-08' },
+    { name: 'NDA III', party: 'BJP-led NDA',       start: '2024-06-09', end: '9999-12-31' },
+  ];
+  const all = getAllPolicies();
+  return eras.map(era => ({
+    era: era.name,
+    party: era.party,
+    count: all.filter(p => p.date >= era.start && p.date <= era.end).length,
+    dateRange: `${era.start.slice(0,4)}–${era.end === '9999-12-31' ? 'Present' : era.end.slice(0,4)}`,
+  }));
 }
 
 /** Returns sectors x types matrix for landscape view */

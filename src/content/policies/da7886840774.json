@@ -13,5 +13,7 @@
   "sector_slugs": [
     "digital-technology"
   ],
-  "type": "notification"
+  "type": "notification",
+  "level": "central",
+  "state": ""
 }

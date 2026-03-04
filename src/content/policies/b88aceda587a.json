@@ -17,5 +17,7 @@
     "education",
     "health"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

@@ -15,5 +15,7 @@
     "digital-technology",
     "energy"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

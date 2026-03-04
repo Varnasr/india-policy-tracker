@@ -17,5 +17,7 @@
     "digital-technology",
     "rural-development"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

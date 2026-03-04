@@ -17,5 +17,7 @@
     "social-protection",
     "water-sanitation"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

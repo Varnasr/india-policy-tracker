@@ -17,5 +17,7 @@
     "finance-economy",
     "energy"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

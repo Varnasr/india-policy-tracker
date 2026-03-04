@@ -17,5 +17,7 @@
     "transport-infrastructure",
     "child-rights-youth"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

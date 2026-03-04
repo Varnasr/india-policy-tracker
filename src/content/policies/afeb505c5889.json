@@ -17,5 +17,7 @@
     "social-protection",
     "governance-reform"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

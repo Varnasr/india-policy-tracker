@@ -13,5 +13,7 @@
   "sector_slugs": [
     "defence-security"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

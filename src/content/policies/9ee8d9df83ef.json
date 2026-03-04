@@ -17,5 +17,7 @@
     "social-protection",
     "labour-employment"
   ],
-  "type": "research"
+  "type": "research",
+  "level": "central",
+  "state": ""
 }

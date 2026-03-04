@@ -15,5 +15,7 @@
     "digital-technology",
     "social-protection"
   ],
-  "type": "notification"
+  "type": "notification",
+  "level": "central",
+  "state": ""
 }

@@ -15,5 +15,7 @@
     "education",
     "social-protection"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

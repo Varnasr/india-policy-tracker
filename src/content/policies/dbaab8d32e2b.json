@@ -17,5 +17,7 @@
     "energy",
     "social-protection"
   ],
-  "type": "scheme"
+  "type": "scheme",
+  "level": "central",
+  "state": ""
 }

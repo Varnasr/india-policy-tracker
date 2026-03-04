@@ -17,5 +17,7 @@
     "urban-development",
     "energy"
   ],
-  "type": "legislation"
+  "type": "legislation",
+  "level": "central",
+  "state": ""
 }

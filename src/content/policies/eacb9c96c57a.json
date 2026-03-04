@@ -17,5 +17,7 @@
     "social-protection",
     "digital-technology"
   ],
-  "type": "policy"
+  "type": "policy",
+  "level": "central",
+  "state": ""
 }

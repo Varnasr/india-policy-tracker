@@ -17,5 +17,7 @@
     "energy",
     "trade-commerce"
   ],
-  "type": "announcement"
+  "type": "announcement",
+  "level": "central",
+  "state": ""
 }
