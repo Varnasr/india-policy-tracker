@@ -754,13 +754,45 @@ a:hover { color: var(--color-accent-hover); }
 }
 .footer-links a:hover { color: var(--color-text); }
 
-.footer-bottom {
+.footer-legal {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+.footer-legal-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
   font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+.footer-legal-row a {
+  color: var(--color-text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-legal-row a:hover { color: var(--color-accent); }
+.footer-legal-sep {
+  margin: 0 6px;
+  color: var(--color-text-dim);
+}
+.footer-compliance {
+  font-size: 0.6875rem;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+  margin-top: var(--space-sm);
+}
+.footer-compliance a { color: var(--color-text-muted); }
+.footer-bottom {
+  font-size: 0.6875rem;
   color: var(--color-text-dim);
   line-height: 1.7;
-  border-top: 1px solid var(--color-border);
-  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border-light);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-sm);
 }
+.footer-bottom a { color: var(--color-text-muted); }
 
 /* ── Page headings ───────────────────────────────────────────── */
 

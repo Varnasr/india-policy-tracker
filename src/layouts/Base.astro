@@ -236,21 +236,31 @@ const canonicalUrl = Astro.url.href;
       <div class="footer-inner">
         <div class="footer-brand">
           <strong>PolicyDhara</strong>
-          <span>Free, open-source policy tracking by <a href="https://www.impactmojo.in">ImpactMojo</a></span>
+          <span>An <a href="https://www.impactmojo.in">ImpactMojo</a> product &middot; Free &amp; open-source under <a href="https://github.com/Varnasr/india-policy-tracker/blob/master/LICENSE">MIT License</a></span>
         </div>
         <div class="footer-links">
-          <a href={`${base}about/`}>About</a>
-          <a href={`${base}search/`}>Search</a>
-          <a href={`${base}sectors/`}>Sectors</a>
-          <a href={`${base}states/`}>States</a>
           <a href={`${base}api/`}>API</a>
           <a href={`${base}rss.xml`}>RSS</a>
           <a href="https://github.com/Varnasr/india-policy-tracker">GitHub</a>
         </div>
       </div>
+      <div class="footer-legal">
+        <div class="footer-legal-row">
+          <span>&copy; {new Date().getFullYear()} <a href="https://www.impactmojo.in">ImpactMojo</a>. All rights reserved.</span>
+          <span class="footer-legal-sep">&middot;</span>
+          <a href="https://www.impactmojo.in/terms">Terms of Use</a>
+          <span class="footer-legal-sep">&middot;</span>
+          <a href="https://www.impactmojo.in/privacy">Privacy Policy</a>
+        </div>
+        <p class="footer-compliance">
+          Compliant with the Information Technology Act, 2000 and Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.
+          This platform aggregates publicly available government data for informational purposes only and does not constitute legal advice.
+          For grievances, contact: <a href="mailto:hello@impactmojo.in">hello@impactmojo.in</a>
+        </p>
+      </div>
       <div class="footer-bottom">
-        Data from PIB, PRS Legislative Research, India Code, eGazette, NITI Aayog, data.gov.in, RBI, World Bank, ORF, and more.
-        Auto-updated every 6 hours.
+        Data sourced from 300+ official sources including PIB, PRS Legislative Research, India Code, eGazette, NITI Aayog, data.gov.in, RBI, and more.
+        Auto-updated every 6 hours via <a href="https://github.com/Varnasr/india-policy-tracker">open-source pipeline</a>.
       </div>
     </div>
   </footer>

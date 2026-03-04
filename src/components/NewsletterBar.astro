@@ -5,8 +5,8 @@
     <h4>PolicyDhara Daily Brief</h4>
     <p>Get the day's policy actions delivered to your inbox every morning.</p>
   </div>
-  <form class="newsletter-form" id="newsletter-form" action="#" method="post">
-    <input type="email" class="newsletter-input" placeholder="your@email.com" required id="newsletter-email" />
+  <form class="newsletter-form" id="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/policydhara" method="post" target="popupwindow">
+    <input type="email" name="email" class="newsletter-input" placeholder="your@email.com" required id="newsletter-email" />
     <button type="submit" class="newsletter-submit" id="newsletter-btn">Subscribe</button>
   </form>
 </div>
@@ -18,33 +18,26 @@
     const input = document.getElementById('newsletter-email') as HTMLInputElement;
 
     if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = input?.value;
-        if (!email) return;
-
-        // Store locally (replace with real API integration)
-        const subs = JSON.parse(localStorage.getItem('pd-newsletter-subs') || '[]');
-        if (!subs.includes(email)) {
-          subs.push(email);
-          localStorage.setItem('pd-newsletter-subs', JSON.stringify(subs));
-        }
-
-        if (btn) {
-          btn.textContent = 'Subscribed!';
-          btn.style.background = '#16a34a';
-          input.value = '';
-          input.disabled = true;
-          btn.disabled = true;
-        }
+      form.addEventListener('submit', () => {
+        // Buttondown handles the actual subscription via form action.
+        // We just update the UI optimistically.
+        setTimeout(() => {
+          if (btn && input) {
+            btn.textContent = 'Subscribed!';
+            btn.style.background = '#16a34a';
+            input.disabled = true;
+            btn.disabled = true;
+            localStorage.setItem('pd-newsletter-sub', input.value);
+          }
+        }, 300);
       });
 
       // Check if already subscribed
-      const subs = JSON.parse(localStorage.getItem('pd-newsletter-subs') || '[]');
-      if (subs.length > 0 && btn && input) {
+      const sub = localStorage.getItem('pd-newsletter-sub');
+      if (sub && btn && input) {
         btn.textContent = 'Subscribed';
         btn.style.background = '#16a34a';
-        input.value = subs[subs.length - 1];
+        input.value = sub;
         input.disabled = true;
         btn.disabled = true;
       }
