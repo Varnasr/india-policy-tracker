@@ -43,6 +43,21 @@ function readJson<T>(filename: string, fallback: T): T {
   }
 }
 
+// Civil Liberties auto-tagging keywords
+const CIVIL_LIBERTIES_KEYWORDS = /\b(uapa|sedition|rti|right to information|habeas corpus|custodial death|internet shutdown|press freedom|free speech|fundamental right|civil libert|human rights|nhrc|detention|undertrial|bail|remand|fir|arrest|censorship|surveillance|privacy|personal data protection|digital personal data|aadhaar|free expression|protest|assembly|dissent|section 144|nsa |national security act|psa |public safety act|afspa|armed forces special|defamation|contempt of court|encounter|extrajudicial|minority rights|religious freedom|caste atrocit|sc.st.*prevention|bonded labour|child labour|trafficking|forced disappearance|press council|media regulation)\b/i;
+
+function tagCivilLiberties(policies: PolicyItem[]): PolicyItem[] {
+  for (const p of policies) {
+    if (p.sectors.includes('Civil Liberties')) continue;
+    const text = `${p.title} ${p.description || ''}`;
+    if (CIVIL_LIBERTIES_KEYWORDS.test(text)) {
+      p.sectors = [...p.sectors, 'Civil Liberties'];
+      p.sector_slugs = [...(p.sector_slugs || []), 'civil-liberties'];
+    }
+  }
+  return policies;
+}
+
 export function getAllPolicies(): PolicyItem[] {
   const scraped = readJson<PolicyItem[]>('policies.json', getSamplePolicies());
   const historical = readJson<PolicyItem[]>('historical_policies.json', []);
@@ -53,7 +68,8 @@ export function getAllPolicies(): PolicyItem[] {
   for (const p of historical) {
     if (!byId.has(p.id)) byId.set(p.id, p);
   }
-  return Array.from(byId.values()).sort((a, b) => b.date.localeCompare(a.date));
+  const merged = Array.from(byId.values()).sort((a, b) => b.date.localeCompare(a.date));
+  return tagCivilLiberties(merged);
 }
 
 export function getMeta(): MetaData {

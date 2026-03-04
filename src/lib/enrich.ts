@@ -37,6 +37,7 @@ const SECTOR_MINISTRIES: Record<string, string[]> = {
   'Gender & Women': ['Ministry of Women & Child Development', 'NCW'],
   'Tribal & Indigenous': ['Ministry of Tribal Affairs', 'NCST'],
   'Science & Innovation': ['Ministry of Science & Technology', 'DST', 'CSIR', 'ISRO'],
+  'Civil Liberties': ['Ministry of Home Affairs', 'Ministry of Law & Justice', 'NHRC', 'Supreme Court of India', 'State Human Rights Commissions'],
 };
 
 const SECTOR_STAKEHOLDERS: Record<string, string[]> = {
@@ -61,6 +62,7 @@ const SECTOR_STAKEHOLDERS: Record<string, string[]> = {
   'Gender & Women': ['Women', 'SHGs', 'Women Entrepreneurs', 'Domestic Workers', 'Gender Minorities'],
   'Tribal & Indigenous': ['Scheduled Tribes', 'Forest Dwellers', 'Tribal Cooperatives', 'Fifth Schedule Areas'],
   'Science & Innovation': ['Researchers', 'R&D Institutions', 'Startups', 'Patent Holders', 'Universities'],
+  'Civil Liberties': ['Citizens', 'Human Rights Defenders', 'Media & Press', 'Minorities', 'Prisoners & Detainees', 'Protestors', 'Legal Aid Recipients'],
 };
 
 const SECTOR_AFFECTED: Record<string, string> = {
@@ -85,6 +87,7 @@ const SECTOR_AFFECTED: Record<string, string> = {
   'Gender & Women': '~700 million women, 432 million in workforce gap',
   'Tribal & Indigenous': '~104 million tribal population, 8.6% of India',
   'Science & Innovation': '~1 million researchers, R&D ecosystem',
+  'Civil Liberties': '1.4 billion citizens, minorities, undertrials, press freedom',
 };
 
 const SECTOR_KEY_NUMBERS: Record<string, string[]> = {
@@ -109,6 +112,7 @@ const SECTOR_KEY_NUMBERS: Record<string, string[]> = {
   'Gender & Women': ['Beti Bachao Beti Padhao: 405 districts', 'Maternity benefit: Rs 5,000 under PMMVY', 'One Stop Centres: 733 across 35 states/UTs'],
   'Tribal & Indigenous': ['Tribal budget: Rs 13,000 crore (2025-26)', 'EMRS: 740 Eklavya Model Residential Schools', 'FRA: 2.2 million titles distributed'],
   'Science & Innovation': ['R&D spending: 0.7% of GDP', 'Gaganyaan: Rs 12,000 crore investment', 'India Innovation Index: 40th globally (2024)'],
+  'Civil Liberties': ['UAPA cases: 5,000+ pending', 'Undertrials: 75% of prison population', 'Internet shutdowns: India leads globally since 2018'],
 };
 
 /**

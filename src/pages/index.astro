@@ -112,7 +112,19 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
         sourceCounts={meta.source_counts}
       />
       <section>
-        <div id="feed-status" class="visually-hidden" aria-live="polite"></div>
+        <div class="feed-toolbar">
+          <div id="feed-status" aria-live="polite" style="font-size:0.75rem; color:var(--color-text-muted);"></div>
+          <div class="feed-toolbar-actions">
+            <button class="btn btn-secondary btn-sm" id="export-csv" title="Export visible policies as CSV">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              CSV
+            </button>
+            <button class="btn btn-secondary btn-sm" id="export-json" title="Export visible policies as JSON">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              JSON
+            </button>
+          </div>
+        </div>
         <div class="policy-feed" id="policy-feed">
           {policies.length === 0 ? (
             <div class="empty-state">
@@ -270,6 +282,26 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     color: var(--color-text-muted);
   }
 
+  .feed-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+    padding: 8px 12px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-light);
+  }
+  .feed-toolbar-actions {
+    display: flex;
+    gap: 6px;
+  }
+  .btn-sm {
+    padding: 6px 12px !important;
+    font-size: 0.6875rem !important;
+    gap: 4px !important;
+  }
+
   .policy-card-wrap { display: contents; }
   .hidden-card > .policy-card { display: none; }
 
@@ -408,5 +440,53 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     }
 
     applyFilters();
+
+    // ── Export ──
+    function getVisiblePolicies() {
+      const visible = [];
+      for (let i = 0; i < cards.length; i++) {
+        const card = cards[i];
+        if (!card || card.style.display === 'none') continue;
+        visible.push({
+          id: card.dataset.id || '',
+          title: card.querySelector('.policy-title')?.textContent?.trim() || '',
+          type: card.dataset.type || '',
+          source: card.dataset.source || '',
+          date: card.dataset.date || '',
+          sectors: JSON.parse(card.dataset.sectors || '[]'),
+          description: card.querySelector('.policy-description')?.textContent?.trim() || '',
+        });
+      }
+      return visible;
+    }
+
+    function downloadFile(content, filename, mimeType) {
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('export-csv')?.addEventListener('click', () => {
+      const rows = getVisiblePolicies();
+      if (rows.length === 0) return;
+      const headers = ['id', 'title', 'type', 'source', 'date', 'sectors', 'description'];
+      const csv = [headers.join(',')].concat(
+        rows.map(r => headers.map(h => {
+          let v = h === 'sectors' ? r[h].join('; ') : r[h];
+          return '"' + String(v).replace(/"/g, '""') + '"';
+        }).join(','))
+      ).join('\n');
+      downloadFile(csv, `policydhara-export-${new Date().toISOString().slice(0,10)}.csv`, 'text/csv');
+    });
+
+    document.getElementById('export-json')?.addEventListener('click', () => {
+      const rows = getVisiblePolicies();
+      if (rows.length === 0) return;
+      downloadFile(JSON.stringify(rows, null, 2), `policydhara-export-${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+    });
   });
 </script>

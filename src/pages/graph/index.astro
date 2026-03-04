@@ -1,0 +1,487 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllPolicies, getMeta } from '../../lib/data';
+
+const policies = getAllPolicies();
+const meta = getMeta();
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+
+// Build graph data: nodes (sectors + sources + types) and edges (co-occurrence)
+const sectorNodes: { id: string; label: string; count: number; type: 'sector' }[] = [];
+const sourceNodes: { id: string; label: string; count: number; type: 'source' }[] = [];
+const typeNodes: { id: string; label: string; count: number; type: 'ptype' }[] = [];
+
+const sectorMap = new Map<string, number>();
+const sourceMap = new Map<string, number>();
+const typeMap = new Map<string, number>();
+const edges = new Map<string, number>();
+
+for (const p of policies) {
+  // Count nodes
+  for (const s of p.sectors) sectorMap.set(s, (sectorMap.get(s) || 0) + 1);
+  sourceMap.set(p.source_short, (sourceMap.get(p.source_short) || 0) + 1);
+  typeMap.set(p.type, (typeMap.get(p.type) || 0) + 1);
+
+  // Sector-sector edges
+  for (let i = 0; i < p.sectors.length; i++) {
+    for (let j = i + 1; j < p.sectors.length; j++) {
+      const key = [p.sectors[i], p.sectors[j]].sort().join('|||');
+      edges.set(key, (edges.get(key) || 0) + 1);
+    }
+    // Sector-source edges
+    const ssKey = `${p.sectors[i]}|||${p.source_short}`;
+    edges.set(ssKey, (edges.get(ssKey) || 0) + 1);
+  }
+}
+
+for (const [name, count] of sectorMap) sectorNodes.push({ id: `s:${name}`, label: name, count, type: 'sector' });
+for (const [name, count] of sourceMap) sourceNodes.push({ id: `src:${name}`, label: name, count, type: 'source' });
+for (const [name, count] of typeMap) typeNodes.push({ id: `t:${name}`, label: name, count, type: 'ptype' });
+
+const allNodes = [...sectorNodes, ...sourceNodes, ...typeNodes];
+
+// Build edge list (only strong connections)
+const edgeList: { from: string; to: string; weight: number }[] = [];
+for (const [key, weight] of edges) {
+  if (weight < 3) continue;
+  const [a, b] = key.split('|||');
+  const fromId = sectorMap.has(a) ? `s:${a}` : sourceMap.has(a) ? `src:${a}` : `t:${a}`;
+  const toId = sectorMap.has(b) ? `s:${b}` : sourceMap.has(b) ? `src:${b}` : `t:${b}`;
+  edgeList.push({ from: fromId, to: toId, weight });
+}
+
+// Serialize for client
+const graphData = JSON.stringify({ nodes: allNodes, edges: edgeList.sort((a, b) => b.weight - a.weight).slice(0, 120) });
+
+// Sector co-occurrence matrix for the heatmap (top 12 sectors)
+const topSectors = [...sectorMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12).map(e => e[0]);
+const coMatrix: number[][] = [];
+for (let i = 0; i < topSectors.length; i++) {
+  coMatrix[i] = [];
+  for (let j = 0; j < topSectors.length; j++) {
+    if (i === j) {
+      coMatrix[i][j] = sectorMap.get(topSectors[i]) || 0;
+    } else {
+      const key = [topSectors[i], topSectors[j]].sort().join('|||');
+      coMatrix[i][j] = edges.get(key) || 0;
+    }
+  }
+}
+---
+<Base title="Knowledge Graph" description="Visual map of connections between policy sectors, sources, and themes across India's policy landscape.">
+  <div style="margin-top: var(--space-xl);">
+    <div class="section-header">
+      <h2 class="page-title">Knowledge Graph</h2>
+      <p class="page-subtitle">How sectors, sources, and themes connect across India's policy landscape.
+        Node size = volume. Edge thickness = co-occurrence strength.</p>
+    </div>
+
+    {/* ── Graph Visualization ── */}
+    <div class="graph-container" id="graph-container">
+      <canvas id="graph-canvas" width="1100" height="600"></canvas>
+      <div class="graph-legend">
+        <span class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span>Sector</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span>Source</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#9333ea;"></span>Type</span>
+      </div>
+      <div class="graph-controls">
+        <button class="btn btn-secondary btn-sm" id="graph-reset">Reset View</button>
+        <label style="font-size:0.75rem; color:var(--color-text-muted); display:flex; align-items:center; gap:4px;">
+          <input type="checkbox" id="graph-labels" checked /> Labels
+        </label>
+      </div>
+    </div>
+
+    {/* ── Sector Co-occurrence Heatmap ── */}
+    <div class="section-header" style="margin-top: var(--space-2xl);">
+      <h3>Sector Co-occurrence Matrix</h3>
+      <p>How often sectors appear together on the same policy. Darker = stronger connection.</p>
+    </div>
+    <div class="heatmap-wrap">
+      <table class="heatmap-table">
+        <thead>
+          <tr>
+            <th></th>
+            {topSectors.map(s => <th class="heatmap-col-header"><span>{s.length > 12 ? s.slice(0, 10) + '..' : s}</span></th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {topSectors.map((row, i) => (
+            <tr>
+              <td class="heatmap-row-header">{row}</td>
+              {topSectors.map((_, j) => {
+                const val = coMatrix[i][j];
+                const max = Math.max(...coMatrix.flat().filter((_, idx) => Math.floor(idx / topSectors.length) !== idx % topSectors.length));
+                const intensity = i === j ? 0.15 : (val / (max || 1));
+                const bg = i === j
+                  ? `rgba(22,163,74,0.15)`
+                  : `rgba(37,99,235,${Math.min(0.9, intensity * 0.8 + 0.05)})`;
+                return (
+                  <td class="heatmap-cell" style={`background:${bg};`} title={`${row} + ${topSectors[j]}: ${val}`}>
+                    {val > 0 ? val : ''}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {/* ── Top Connections List ── */}
+    <div class="section-header" style="margin-top: var(--space-2xl);">
+      <h3>Strongest Connections</h3>
+      <p>Top sector pairs that most frequently appear together</p>
+    </div>
+    <div class="connections-grid">
+      {edgeList
+        .filter(e => e.from.startsWith('s:') && e.to.startsWith('s:'))
+        .sort((a, b) => b.weight - a.weight)
+        .slice(0, 12)
+        .map(e => (
+          <div class="connection-card">
+            <div class="connection-pair">
+              <span class="connection-node">{e.from.replace('s:', '')}</span>
+              <span class="connection-arrow">↔</span>
+              <span class="connection-node">{e.to.replace('s:', '')}</span>
+            </div>
+            <div class="connection-bar-wrap">
+              <div class="connection-bar" style={`width: ${Math.max(8, (e.weight / edgeList[0].weight) * 100)}%`}></div>
+            </div>
+            <span class="connection-count">{e.weight} policies</span>
+          </div>
+        ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .graph-container {
+    position: relative;
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--space-xl);
+    box-shadow: var(--shadow-card);
+  }
+  #graph-canvas {
+    width: 100%;
+    height: 600px;
+    cursor: grab;
+  }
+  #graph-canvas:active { cursor: grabbing; }
+  .graph-legend {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 12px;
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 6px 12px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    box-shadow: var(--shadow-sm);
+  }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .graph-controls {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .heatmap-wrap {
+    overflow-x: auto;
+    margin-bottom: var(--space-xl);
+  }
+  .heatmap-table {
+    border-collapse: collapse;
+    font-size: 0.6875rem;
+    min-width: 600px;
+  }
+  .heatmap-table th, .heatmap-table td {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid var(--color-border-light);
+  }
+  .heatmap-col-header {
+    height: 80px;
+    white-space: nowrap;
+  }
+  .heatmap-col-header span {
+    display: inline-block;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    width: 1.5em;
+  }
+  .heatmap-row-header {
+    text-align: right !important;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    padding-right: 8px !important;
+  }
+  .heatmap-cell {
+    width: 36px;
+    height: 36px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: white;
+    cursor: default;
+  }
+  .heatmap-cell:empty { color: transparent; }
+
+  .connections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: var(--space-2xl);
+  }
+  .connection-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .connection-pair {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+  }
+  .connection-node {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  .connection-arrow {
+    color: var(--color-text-dim);
+    font-size: 0.875rem;
+  }
+  .connection-bar-wrap {
+    height: 4px;
+    background: var(--color-bg-alt);
+    border-radius: 2px;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  .connection-bar {
+    height: 100%;
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+  .connection-count {
+    font-size: 0.625rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    #graph-canvas { height: 400px; }
+    .connections-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .connections-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script define:vars={{ graphData }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const data = JSON.parse(graphData);
+    const canvas = document.getElementById('graph-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // HiDPI
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    const W = rect.width;
+    const H = rect.height;
+
+    const NODE_COLORS = { sector: '#16a34a', source: '#2563eb', ptype: '#9333ea' };
+
+    // Initialize positions using force-directed layout
+    const nodes = data.nodes.map((n, i) => {
+      const angle = (i / data.nodes.length) * Math.PI * 2;
+      const radius = n.type === 'sector' ? 180 : n.type === 'source' ? 280 : 120;
+      return {
+        ...n,
+        x: W / 2 + Math.cos(angle) * radius + (Math.random() - 0.5) * 40,
+        y: H / 2 + Math.sin(angle) * radius + (Math.random() - 0.5) * 40,
+        vx: 0,
+        vy: 0,
+        r: Math.max(4, Math.min(24, Math.sqrt(n.count) * 2.5)),
+      };
+    });
+
+    const nodeMap = {};
+    nodes.forEach(n => nodeMap[n.id] = n);
+
+    const edges = data.edges.filter(e => nodeMap[e.from] && nodeMap[e.to]);
+
+    let showLabels = true;
+    let animFrame;
+
+    function simulate() {
+      // Force simulation
+      for (let iter = 0; iter < 3; iter++) {
+        // Repulsion
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            let dx = nodes[j].x - nodes[i].x;
+            let dy = nodes[j].y - nodes[i].y;
+            let dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            let force = 800 / (dist * dist);
+            let fx = (dx / dist) * force;
+            let fy = (dy / dist) * force;
+            nodes[i].vx -= fx;
+            nodes[i].vy -= fy;
+            nodes[j].vx += fx;
+            nodes[j].vy += fy;
+          }
+        }
+
+        // Attraction (edges)
+        for (const e of edges) {
+          const a = nodeMap[e.from];
+          const b = nodeMap[e.to];
+          if (!a || !b) continue;
+          let dx = b.x - a.x;
+          let dy = b.y - a.y;
+          let dist = Math.sqrt(dx * dx + dy * dy) || 1;
+          let force = (dist - 100) * 0.005 * Math.min(e.weight, 10);
+          let fx = (dx / dist) * force;
+          let fy = (dy / dist) * force;
+          a.vx += fx;
+          a.vy += fy;
+          b.vx -= fx;
+          b.vy -= fy;
+        }
+
+        // Center gravity
+        for (const n of nodes) {
+          n.vx += (W / 2 - n.x) * 0.001;
+          n.vy += (H / 2 - n.y) * 0.001;
+        }
+
+        // Apply velocity with damping
+        for (const n of nodes) {
+          n.vx *= 0.85;
+          n.vy *= 0.85;
+          n.x += n.vx;
+          n.y += n.vy;
+          n.x = Math.max(n.r + 10, Math.min(W - n.r - 10, n.x));
+          n.y = Math.max(n.r + 10, Math.min(H - n.r - 10, n.y));
+        }
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+
+      // Draw edges
+      for (const e of edges) {
+        const a = nodeMap[e.from];
+        const b = nodeMap[e.to];
+        if (!a || !b) continue;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.strokeStyle = `rgba(150,150,150,${Math.min(0.4, e.weight * 0.02)})`;
+        ctx.lineWidth = Math.max(0.5, Math.min(3, e.weight * 0.15));
+        ctx.stroke();
+      }
+
+      // Draw nodes
+      for (const n of nodes) {
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = NODE_COLORS[n.type] || '#888';
+        ctx.globalAlpha = 0.85;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = 'rgba(255,255,255,0.8)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        // Label
+        if (showLabels && n.r > 5) {
+          ctx.font = `${Math.max(8, Math.min(12, n.r * 0.7))}px "DM Sans", sans-serif`;
+          ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--color-text') || '#1a1a18';
+          ctx.textAlign = 'center';
+          ctx.fillText(n.label, n.x, n.y + n.r + 12);
+        }
+      }
+    }
+
+    let frame = 0;
+    function animate() {
+      simulate();
+      draw();
+      frame++;
+      if (frame < 200) {
+        animFrame = requestAnimationFrame(animate);
+      }
+    }
+    animate();
+
+    // Controls
+    document.getElementById('graph-reset')?.addEventListener('click', () => {
+      nodes.forEach((n, i) => {
+        const angle = (i / nodes.length) * Math.PI * 2;
+        const radius = n.type === 'sector' ? 180 : n.type === 'source' ? 280 : 120;
+        n.x = W / 2 + Math.cos(angle) * radius;
+        n.y = H / 2 + Math.sin(angle) * radius;
+        n.vx = 0;
+        n.vy = 0;
+      });
+      frame = 0;
+      cancelAnimationFrame(animFrame);
+      animate();
+    });
+
+    document.getElementById('graph-labels')?.addEventListener('change', (e) => {
+      showLabels = (e.target as HTMLInputElement).checked;
+      draw();
+    });
+
+    // Drag interaction
+    let dragNode = null;
+    canvas.addEventListener('mousedown', (e) => {
+      const mx = e.offsetX;
+      const my = e.offsetY;
+      for (const n of nodes) {
+        const dx = mx - n.x;
+        const dy = my - n.y;
+        if (dx * dx + dy * dy < (n.r + 5) * (n.r + 5)) {
+          dragNode = n;
+          break;
+        }
+      }
+    });
+    canvas.addEventListener('mousemove', (e) => {
+      if (dragNode) {
+        dragNode.x = e.offsetX;
+        dragNode.y = e.offsetY;
+        dragNode.vx = 0;
+        dragNode.vy = 0;
+        draw();
+      }
+    });
+    canvas.addEventListener('mouseup', () => { dragNode = null; });
+    canvas.addEventListener('mouseleave', () => { dragNode = null; });
+  });
+</script>
