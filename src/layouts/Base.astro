@@ -10,6 +10,7 @@ const { title, description = "PolicyDhara — open-source tracker of Indian deve
 const siteTitle = `${title} | PolicyDhara`;
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+const canonicalUrl = Astro.url.href;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +19,26 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{siteTitle}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
 
+  {/* Open Graph */}
   <meta property="og:title" content={siteTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PolicyDhara" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:locale" content="en_IN" />
+
+  {/* Twitter / X Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={siteTitle} />
+  <meta name="twitter:description" content={description} />
+
+  {/* Additional SEO */}
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="author" content="ImpactMojo" />
+  <meta name="keywords" content="India policy tracker, Indian government policies, development policy, PIB, legislation, schemes, budget, parliament, open data, policy analysis" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +46,24 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 
   <link rel="alternate" type="application/rss+xml" title="PolicyDhara RSS" href={`${base}rss.xml`} />
 
-
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PolicyDhara",
+    "description": "Open-source tracker of Indian development policies across 20+ sectors",
+    "url": canonicalUrl,
+    "publisher": {
+      "@type": "Organization",
+      "name": "ImpactMojo",
+      "url": "https://www.impactmojo.in"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${base}search/?q={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
+  })} />
 </head>
 <body>
   <header class="site-header">
@@ -83,8 +116,10 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
         </div>
         <div class="footer-links">
           <a href={`${base}about/`}>About</a>
+          <a href={`${base}search/`}>Search</a>
           <a href={`${base}sectors/`}>Sectors</a>
           <a href={`${base}states/`}>States</a>
+          <a href={`${base}api/`}>API</a>
           <a href={`${base}rss.xml`}>RSS</a>
           <a href="https://github.com/Varnasr/india-policy-tracker">GitHub</a>
         </div>

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PolicyCard from '../../components/PolicyCard.astro';
+import ShareBar from '../../components/ShareBar.astro';
 import { getAllPolicies, getRelatedPolicies, getMeta, getImpactForPolicy } from '../../lib/data';
 import { enrichPolicy } from '../../lib/enrich';
 
@@ -84,6 +85,8 @@ const spectrumPct = ((enrichment.politicalLean + 2) / 4) * 100; // maps -2..+2 t
       </div>
 
       <h1 class="detail-title">{policy.title}</h1>
+
+      <ShareBar title={policy.title} description={policy.description} />
 
       <div class="detail-context-card">
         <p>{TYPE_CONTEXT[policy.type] || TYPE_CONTEXT['policy']}</p>

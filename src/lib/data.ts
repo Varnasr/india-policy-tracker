@@ -44,7 +44,16 @@ function readJson<T>(filename: string, fallback: T): T {
 }
 
 export function getAllPolicies(): PolicyItem[] {
-  return readJson<PolicyItem[]>('policies.json', getSamplePolicies());
+  const scraped = readJson<PolicyItem[]>('policies.json', getSamplePolicies());
+  const historical = readJson<PolicyItem[]>('historical_policies.json', []);
+
+  // Merge, deduplicate by id, sort by date descending
+  const byId = new Map<string, PolicyItem>();
+  for (const p of scraped) byId.set(p.id, p);
+  for (const p of historical) {
+    if (!byId.has(p.id)) byId.set(p.id, p);
+  }
+  return Array.from(byId.values()).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function getMeta(): MetaData {
