@@ -79,7 +79,7 @@ for (let i = 0; i < topSectors.length; i++) {
 
     {/* ── Graph Visualization ── */}
     <div class="graph-container" id="graph-container">
-      <canvas id="graph-canvas" width="1100" height="600"></canvas>
+      <canvas id="graph-canvas"></canvas>
       <div class="graph-legend">
         <span class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span>Sector</span>
         <span class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span>Source</span>
@@ -286,11 +286,28 @@ for (let i = 0; i < topSectors.length; i++) {
   }
 
   @media (max-width: 768px) {
-    #graph-canvas { height: 400px; }
+    #graph-canvas { height: 350px; }
     .connections-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 480px) {
+    #graph-canvas { height: 280px; }
     .connections-grid { grid-template-columns: 1fr; }
+    .graph-legend {
+      position: static;
+      margin: 8px;
+      justify-content: center;
+      box-shadow: none;
+      border: none;
+    }
+    .graph-controls {
+      position: static;
+      margin: 4px 8px 8px;
+      justify-content: center;
+    }
+    .graph-container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 </style>
 
@@ -325,7 +342,7 @@ for (let i = 0; i < topSectors.length; i++) {
     // Initialize positions using force-directed layout
     const nodes = data.nodes.map((n, i) => {
       const angle = (i / data.nodes.length) * Math.PI * 2;
-      const radius = n.type === 'sector' ? 180 : n.type === 'source' ? 280 : 120;
+      const radius = n.type === 'sector' ? W * 0.16 : n.type === 'source' ? W * 0.25 : W * 0.11;
       return {
         ...n,
         x: W / 2 + Math.cos(angle) * radius + (Math.random() - 0.5) * 40,
@@ -451,7 +468,7 @@ for (let i = 0; i < topSectors.length; i++) {
     document.getElementById('graph-reset')?.addEventListener('click', () => {
       nodes.forEach((n, i) => {
         const angle = (i / nodes.length) * Math.PI * 2;
-        const radius = n.type === 'sector' ? 180 : n.type === 'source' ? 280 : 120;
+        const radius = n.type === 'sector' ? W * 0.16 : n.type === 'source' ? W * 0.25 : W * 0.11;
         n.x = W / 2 + Math.cos(angle) * radius;
         n.y = H / 2 + Math.sin(angle) * radius;
         n.vx = 0;
@@ -492,5 +509,35 @@ for (let i = 0; i < topSectors.length; i++) {
     });
     canvas.addEventListener('mouseup', () => { dragNode = null; });
     canvas.addEventListener('mouseleave', () => { dragNode = null; });
+
+    // Touch support for mobile
+    canvas.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const rect = canvas.getBoundingClientRect();
+      const mx = touch.clientX - rect.left;
+      const my = touch.clientY - rect.top;
+      for (const n of nodes) {
+        const dx = mx - n.x;
+        const dy = my - n.y;
+        if (dx * dx + dy * dy < (n.r + 10) * (n.r + 10)) {
+          dragNode = n;
+          e.preventDefault();
+          break;
+        }
+      }
+    });
+    canvas.addEventListener('touchmove', (e) => {
+      if (dragNode) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        dragNode.x = touch.clientX - rect.left;
+        dragNode.y = touch.clientY - rect.top;
+        dragNode.vx = 0;
+        dragNode.vy = 0;
+        draw();
+      }
+    });
+    canvas.addEventListener('touchend', () => { dragNode = null; });
   });
 </script>

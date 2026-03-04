@@ -205,7 +205,6 @@ const canonicalUrl = Astro.url.href;
         </button>
       </nav>
     </div>
-    </div>
     {/* Mobile navigation overlay */}
     <div class="mobile-nav" id="mobile-nav">
       <a href={base}>Home</a>
@@ -372,6 +371,7 @@ const canonicalUrl = Astro.url.href;
 
       hamburger?.addEventListener('click', () => {
         mobileNav?.classList.toggle('open');
+        document.body.classList.toggle('mobile-nav-open');
       });
 
       // ── Keyboard Shortcuts ──
