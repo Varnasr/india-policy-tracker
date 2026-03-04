@@ -1,8 +1,8 @@
 {
-  "name": "india-policy-tracker",
+  "name": "policydhara",
   "type": "module",
   "version": "1.0.0",
-  "description": "Auto-updating Indian development policy tracker across 20+ sectors",
+  "description": "Auto-updating Indian development policy tracker across 22 sectors",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

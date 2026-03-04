@@ -34,6 +34,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r scripts/requirements.txt
 
+      - name: Snapshot policy IDs (pre-fetch)
+        run: python3 scripts/send_newsletter.py --snapshot-only
+
       - name: Fetch policy data from all sources
         run: python3 scripts/fetch_all.py
         env:
@@ -50,6 +53,12 @@ jobs:
 
       - name: Build Astro site
         run: npm run build
+
+      - name: Send newsletter if new policies found
+        if: env.BUTTONDOWN_API_KEY != ''
+        run: python3 scripts/send_newsletter.py --draft
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
 
       - name: Commit updated data
         run: |

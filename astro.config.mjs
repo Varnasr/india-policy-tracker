@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://varnasr.github.io',
-  base: '/india-policy-tracker',
+  base: '/PolicyDhara',
   build: {
     format: 'directory'
   },

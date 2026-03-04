@@ -8,6 +8,9 @@ __pycache__/
 *.pyc
 .venv/
 
+# Newsletter snapshot (used by CI only)
+data/.policy_ids_snapshot.json
+
 # OS
 .DS_Store
 Thumbs.db
