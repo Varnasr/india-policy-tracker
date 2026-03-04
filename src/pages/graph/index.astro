@@ -302,6 +302,15 @@ for (let i = 0; i < topSectors.length; i++) {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
+    // If no data, show empty state
+    if (!data.nodes || data.nodes.length === 0) {
+      ctx.font = '16px "DM Sans", sans-serif';
+      ctx.fillStyle = '#888';
+      ctx.textAlign = 'center';
+      ctx.fillText('No policy data available yet. Run the pipeline to populate the graph.', canvas.getBoundingClientRect().width / 2, 300);
+      return;
+    }
+
     // HiDPI
     const dpr = window.devicePixelRatio || 1;
     const rect = canvas.getBoundingClientRect();
@@ -454,7 +463,7 @@ for (let i = 0; i < topSectors.length; i++) {
     });
 
     document.getElementById('graph-labels')?.addEventListener('change', (e) => {
-      showLabels = (e.target as HTMLInputElement).checked;
+      showLabels = e.target.checked;
       draw();
     });
 

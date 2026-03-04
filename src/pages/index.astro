@@ -38,7 +38,7 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
           <span class="hero-feature-icon">&#9670;</span>
           <div>
             <strong>Automated Collection</strong>
-            <span>Pipeline fetches from 10+ official sources every 6 hours via GitHub Actions</span>
+            <span>Pipeline fetches from 100+ official sources every 6 hours via GitHub Actions</span>
           </div>
         </div>
         <div class="hero-feature">
@@ -92,12 +92,53 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
       <h3>Recent Highlights</h3>
       <p>Latest policy actions across all sectors</p>
     </div>
-    <div class="policy-feed">
-      {policies.slice(0, 6).map(p => (
-        <PolicyCard id={p.id} title={p.title} description={p.description} link={p.link}
-          date={p.date} source_short={p.source_short} sectors={p.sectors} type={p.type} />
-      ))}
-    </div>
+
+    {/* Featured hero card */}
+    {policies.length > 0 && (
+      <div class="hero-card-wrap">
+        <article class="hero-policy-card" data-type={policies[0].type}>
+          <div class="hero-card-accent"></div>
+          <div class="hero-card-body">
+            <div class="hero-card-top">
+              <span class={`policy-type type-${policies[0].type}`}>{policies[0].type}</span>
+              <span class="policy-date">{new Date(policies[0].date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+              <span class="policy-source">{policies[0].source_short}</span>
+            </div>
+            <h3 class="hero-card-title">
+              <a href={`${base}policies/${policies[0].id}/`}>{policies[0].title}</a>
+            </h3>
+            {policies[0].description && (
+              <p class="hero-card-desc">{policies[0].description}</p>
+            )}
+            <div class="policy-sectors">
+              {policies[0].sectors.map(s => (
+                <a href={`${base}sectors/${s.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/`} class="sector-badge">{s}</a>
+              ))}
+            </div>
+          </div>
+        </article>
+      </div>
+    )}
+
+    {/* Secondary cards — 2 medium */}
+    {policies.length > 2 && (
+      <div class="highlight-duo">
+        {policies.slice(1, 3).map(p => (
+          <PolicyCard id={p.id} title={p.title} description={p.description} link={p.link}
+            date={p.date} source_short={p.source_short} sectors={p.sectors} type={p.type} />
+        ))}
+      </div>
+    )}
+
+    {/* Remaining cards — 3 column compact grid */}
+    {policies.length > 5 && (
+      <div class="highlight-trio">
+        {policies.slice(3, 6).map(p => (
+          <PolicyCard id={p.id} title={p.title} description={p.description} link={p.link}
+            date={p.date} source_short={p.source_short} sectors={p.sectors} type={p.type} />
+        ))}
+      </div>
+    )}
     <NewsletterBar />
     <div style="text-align:center; padding: var(--space-lg) 0;">
       <button class="btn btn-secondary" id="goto-browse">View All Policies &rarr;</button>
@@ -280,6 +321,98 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
   .section-header p {
     font-size: 0.8125rem;
     color: var(--color-text-muted);
+  }
+
+  /* ── Hero Card (featured first policy) ── */
+  .hero-card-wrap {
+    margin-bottom: 16px;
+  }
+  .hero-policy-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  .hero-policy-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+  }
+  .hero-card-accent {
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--type-legislation) 50%, var(--type-scheme) 100%);
+  }
+  .hero-card-body {
+    padding: 28px 32px;
+  }
+  .hero-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+  }
+  .hero-card-title {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text);
+    margin-bottom: 10px;
+  }
+  .hero-card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .hero-card-title a:hover {
+    color: var(--color-accent);
+  }
+  .hero-card-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    margin-bottom: 14px;
+    max-width: 800px;
+  }
+
+  /* ── Highlight duo (2-col medium cards) ── */
+  .highlight-duo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .highlight-duo .policy-card {
+    padding: 20px;
+  }
+  .highlight-duo .policy-title {
+    font-size: 1rem;
+  }
+
+  /* ── Highlight trio (3-col compact cards) ── */
+  .highlight-trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: var(--space-xl);
+  }
+  .highlight-trio .policy-card {
+    padding: 16px;
+  }
+  .highlight-trio .policy-title {
+    font-size: 0.8125rem;
+  }
+  .highlight-trio .policy-description {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .highlight-duo { grid-template-columns: 1fr; }
+    .highlight-trio { grid-template-columns: 1fr; }
+    .hero-card-body { padding: 20px; }
+    .hero-card-title { font-size: 1.125rem; }
   }
 
   .feed-toolbar {
