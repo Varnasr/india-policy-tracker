@@ -662,17 +662,51 @@ function getSamplePolicies(): PolicyItem[] {
 /* ── Source Type Classification ─────────────────────────────── */
 
 const SOURCE_TYPE_MAP: Record<string, string> = {
-  'PIB': 'government',
-  'India Code': 'legal',
-  'eGazette': 'legal',
-  'PRS Bills': 'think_tank',
-  'PRS': 'think_tank',
-  'NITI': 'government',
-  'RBI': 'government',
-  'Data.gov': 'government',
-  'World Bank': 'international',
-  'ORF': 'think_tank',
-  'Historical': 'government',
+  // Government
+  'PIB': 'government', 'PIB MH': 'government', 'PIB TN': 'government', 'PIB KA': 'government',
+  'PIB WB': 'government', 'PIB UP': 'government', 'PIB GJ': 'government', 'PIB KL': 'government',
+  'PIB MP': 'government', 'PIB RJ': 'government', 'PIB TS': 'government', 'PIB PB': 'government',
+  'PIB NE': 'government', 'PIB BR': 'government',
+  'NITI': 'government', 'NITI SDG': 'government', 'RBI': 'government', 'Data.gov': 'government',
+  'MoHFW': 'government', 'MoE': 'government', 'MoRD': 'government', 'MoHUA': 'government',
+  'MoLE': 'government', 'Jal Shakti': 'government', 'MNRE': 'government', 'MCA': 'government',
+  'MoTA': 'government', 'MWCD': 'government', 'MSJE': 'government', 'MEA': 'government',
+  'DoJ': 'government', 'MoSPI': 'government', 'MoAgri': 'government', 'DoT': 'government',
+  'Railways': 'government', 'DST': 'government', 'MoF Budget': 'government', 'MeitY': 'government',
+  'MoEFCC': 'government', 'DGE': 'government', 'DPIIT': 'government', 'StartupIndia': 'government',
+  'ECI': 'government', 'Historical': 'government',
+  // Legal
+  'India Code': 'legal', 'eGazette': 'legal', 'SCI': 'legal', 'Law Comm': 'legal',
+  'LiveLaw': 'legal', 'Bar&Bench': 'legal', 'SCO': 'legal', 'NLSIU': 'legal',
+  'Lok Sabha': 'legal', 'Rajya Sabha': 'legal',
+  // Regulatory
+  'SEBI': 'government', 'TRAI': 'government', 'IRDAI': 'government', 'CCI': 'government',
+  'CERC': 'government', 'CPCB': 'government', 'FSSAI': 'government', 'DGFT': 'government',
+  'CBIC': 'government', 'CBDT': 'government', 'IBBI': 'government', 'CAG': 'government',
+  'NABARD': 'government', 'SIDBI': 'government', 'NHA': 'government', 'NHB': 'government',
+  'ISRO': 'government', 'NFHS': 'government',
+  // Think tanks
+  'PRS Bills': 'think_tank', 'PRS': 'think_tank', 'ORF': 'think_tank', 'CPR': 'think_tank',
+  'ICRIER': 'think_tank', 'Brookings': 'think_tank', 'Carnegie': 'think_tank',
+  'CSDS': 'think_tank', 'EPW': 'think_tank', 'CEEW': 'think_tank', 'TERI': 'think_tank',
+  'Vidhi': 'think_tank', 'CPPR': 'think_tank', 'CUTS': 'think_tank', 'IIMB': 'think_tank',
+  'Takshashila': 'think_tank', 'CSE': 'think_tank', 'CBGA': 'think_tank',
+  'IWWAGE': 'think_tank', 'J-PAL': 'think_tank', 'NCAER': 'think_tank',
+  'IDFC': 'think_tank', 'NIPFP': 'think_tank', 'IndiaSpend': 'think_tank',
+  'NASSCOM': 'think_tank', 'FICCI': 'think_tank', 'CII': 'think_tank',
+  // Media
+  'The Hindu': 'media', 'The Hindu Biz': 'media', 'IE': 'media', 'IE Biz': 'media',
+  'ET': 'media', 'ET Infra': 'media', 'NDTV': 'media', 'The Wire': 'media',
+  'Scroll': 'media', 'DH': 'media', 'HT': 'media', 'BS': 'media', 'BL': 'media',
+  'Firstpost': 'media', 'News18': 'media', 'ThePrint': 'media', 'Quint': 'media',
+  'DTE': 'media', 'Mint Op': 'media', 'Livemint': 'media',
+  // International
+  'World Bank': 'international', 'UNDP': 'international', 'IMF': 'international',
+  'ADB': 'international', 'UNICEF': 'international', 'WHO': 'international',
+  'ILO': 'international', 'FAO': 'international',
+  // State
+  'MH Govt': 'government', 'KA Govt': 'government', 'TN Govt': 'government',
+  'KL Govt': 'government', 'Delhi Govt': 'government',
 };
 
 export function getSourceType(sourceShort: string): string {
@@ -681,7 +715,7 @@ export function getSourceType(sourceShort: string): string {
 
 export function getSourceTypeCounts(): Record<string, number> {
   const policies = getAllPolicies();
-  const counts: Record<string, number> = { government: 0, legal: 0, think_tank: 0, international: 0 };
+  const counts: Record<string, number> = { government: 0, legal: 0, think_tank: 0, international: 0, media: 0 };
   for (const p of policies) {
     const t = getSourceType(p.source_short);
     counts[t] = (counts[t] || 0) + 1;

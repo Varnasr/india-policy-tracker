@@ -84,32 +84,146 @@ const canonicalUrl = Astro.url.href;
         </div>
       </a>
       <nav class="header-nav">
-        <a href={base}>Home</a>
-        <a href={`${base}search/`}>Search</a>
-        <a href={`${base}budget/`}>Budget</a>
-        <a href={`${base}parliament/`}>Parliament</a>
-        <a href={`${base}intelligence/`}>Intelligence</a>
-        <a href={`${base}graph/`}>Graph</a>
-        <a href={`${base}continuity/`}>Continuity</a>
-        <a href={`${base}sectors/`}>Sectors</a>
-        <a href={`${base}states/`}>States</a>
-        <a href={`${base}digest/`}>Digest</a>
-        <a href={`${base}compare/`}>Compare</a>
-        <a href={`${base}bookmarks/`} title="Reading List">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
-        </a>
-        <a href={`${base}sources/`}>Sources</a>
-        <a href={`${base}api/`}>API</a>
-        <a href={`${base}about/`}>About</a>
-        <a href={`${base}rss.xml`} class="nav-rss" title="RSS Feed">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
-          RSS
-        </a>
-        <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode (D)">
-          <svg id="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg id="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <div class="nav-primary">
+          <a href={base}>Home</a>
+          <a href={`${base}search/`}>Search</a>
+          <a href={`${base}sectors/`}>Sectors</a>
+          <div class="nav-dropdown" id="nav-explore">
+            <button class="nav-dropdown-trigger">
+              Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href={`${base}budget/`}>
+                <span class="nav-menu-icon">$</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Budget</span>
+                  <span class="nav-menu-desc">Union budget tracking and fiscal analysis</span>
+                </span>
+              </a>
+              <a href={`${base}parliament/`}>
+                <span class="nav-menu-icon">P</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Parliament</span>
+                  <span class="nav-menu-desc">Bills, debates, and legislative activity</span>
+                </span>
+              </a>
+              <a href={`${base}intelligence/`}>
+                <span class="nav-menu-icon">I</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Intelligence</span>
+                  <span class="nav-menu-desc">AI-powered policy insights and trends</span>
+                </span>
+              </a>
+              <a href={`${base}graph/`}>
+                <span class="nav-menu-icon">G</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Knowledge Graph</span>
+                  <span class="nav-menu-desc">Visual map of policy connections across sectors</span>
+                </span>
+              </a>
+              <a href={`${base}continuity/`}>
+                <span class="nav-menu-icon">C</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Continuity</span>
+                  <span class="nav-menu-desc">Policy evolution across governments</span>
+                </span>
+              </a>
+              <a href={`${base}compare/`}>
+                <span class="nav-menu-icon">~</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Compare</span>
+                  <span class="nav-menu-desc">Side-by-side policy comparison tool</span>
+                </span>
+              </a>
+              <a href={`${base}digest/`}>
+                <span class="nav-menu-icon">D</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Daily Digest</span>
+                  <span class="nav-menu-desc">Daily summary of policy activity</span>
+                </span>
+              </a>
+              <div class="nav-dropdown-divider"></div>
+              <a href={`${base}states/`}>
+                <span class="nav-menu-icon">S</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">States</span>
+                  <span class="nav-menu-desc">State-level policy tracker</span>
+                </span>
+              </a>
+              <a href={`${base}bookmarks/`}>
+                <span class="nav-menu-icon">B</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Reading List</span>
+                  <span class="nav-menu-desc">Your bookmarked policies</span>
+                </span>
+              </a>
+              <a href={`${base}sources/`}>
+                <span class="nav-menu-icon">#</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">Sources</span>
+                  <span class="nav-menu-desc">100+ government, media, and research sources</span>
+                </span>
+              </a>
+              <a href={`${base}api/`}>
+                <span class="nav-menu-icon">/</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">API</span>
+                  <span class="nav-menu-desc">Open data API for developers</span>
+                </span>
+              </a>
+              <a href={`${base}about/`}>
+                <span class="nav-menu-icon">?</span>
+                <span class="nav-menu-text">
+                  <span class="nav-menu-label">About</span>
+                  <span class="nav-menu-desc">About PolicyDhara and ImpactMojo</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <a href={`${base}rss.xml`} class="nav-rss" title="RSS Feed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+          </a>
+        </div>
+
+        {/* Three-mode theme toggle: System / Light / Dark */}
+        <div class="theme-toggle" id="theme-toggle">
+          <button class="theme-opt" id="theme-system" title="System preference" data-theme-mode="system">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </button>
+          <button class="theme-opt" id="theme-light" title="Light mode" data-theme-mode="light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <button class="theme-opt" id="theme-dark" title="Dark mode" data-theme-mode="dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </button>
+        </div>
+
+        {/* Mobile hamburger */}
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </nav>
+    </div>
+    </div>
+    {/* Mobile navigation overlay */}
+    <div class="mobile-nav" id="mobile-nav">
+      <a href={base}>Home</a>
+      <a href={`${base}search/`}>Search</a>
+      <a href={`${base}sectors/`}>Sectors</a>
+      <a href={`${base}budget/`}>Budget</a>
+      <a href={`${base}parliament/`}>Parliament</a>
+      <a href={`${base}intelligence/`}>Intelligence</a>
+      <a href={`${base}graph/`}>Knowledge Graph</a>
+      <a href={`${base}continuity/`}>Continuity</a>
+      <a href={`${base}compare/`}>Compare</a>
+      <a href={`${base}digest/`}>Digest</a>
+      <a href={`${base}states/`}>States</a>
+      <a href={`${base}bookmarks/`}>Reading List</a>
+      <a href={`${base}sources/`}>Sources</a>
+      <a href={`${base}api/`}>API</a>
+      <a href={`${base}about/`}>About</a>
+      <a href={`${base}rss.xml`}>RSS Feed</a>
     </div>
   </header>
   <NewsTicker />
@@ -149,7 +263,7 @@ const canonicalUrl = Astro.url.href;
       <div class="kbd-row"><span>Navigate between policies</span><span><kbd>J</kbd> / <kbd>K</kbd></span></div>
       <div class="kbd-row"><span>Open focused policy</span><kbd>Enter</kbd></div>
       <div class="kbd-row"><span>Focus search</span><kbd>/</kbd></div>
-      <div class="kbd-row"><span>Toggle dark mode</span><kbd>D</kbd></div>
+      <div class="kbd-row"><span>Toggle light/dark</span><kbd>D</kbd></div>
       <div class="kbd-row"><span>Bookmark focused policy</span><kbd>B</kbd></div>
       <div class="kbd-row"><span>Go home</span><kbd>H</kbd></div>
       <div class="kbd-row"><span>Show this help</span><kbd>?</kbd></div>
@@ -159,11 +273,18 @@ const canonicalUrl = Astro.url.href;
 
   {/* ── Global Scripts: Dark Mode + Keyboard Shortcuts + Bookmarks + New-Since-Visit ─── */}
   <script>
-    // ── Dark Mode ──
+    // ── Theme: apply saved or system preference before paint ──
     (function() {
       const saved = localStorage.getItem('pd-theme');
-      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      if (saved === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
+      } else if (saved === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        // System preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
       }
     })();
   </script>
@@ -171,31 +292,87 @@ const canonicalUrl = Astro.url.href;
     document.addEventListener('DOMContentLoaded', () => {
       const base = document.querySelector('meta[name="base-url"]')?.getAttribute('content') || '/';
 
-      // ── Dark mode toggle ──
-      const toggle = document.getElementById('theme-toggle');
-      const iconLight = document.getElementById('theme-icon-light');
-      const iconDark = document.getElementById('theme-icon-dark');
+      // ── Three-mode theme toggle ──
+      const themeBtns = {
+        system: document.getElementById('theme-system'),
+        light: document.getElementById('theme-light'),
+        dark: document.getElementById('theme-dark'),
+      };
 
-      function updateThemeIcons() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        if (iconLight) iconLight.style.display = isDark ? 'none' : '';
-        if (iconDark) iconDark.style.display = isDark ? '' : 'none';
+      function getActiveThemeMode(): string {
+        return localStorage.getItem('pd-theme') || 'system';
       }
 
-      function toggleTheme() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        if (isDark) {
-          document.documentElement.removeAttribute('data-theme');
-          localStorage.setItem('pd-theme', 'light');
-        } else {
+      function applyTheme(mode: string) {
+        // Remove active from all
+        Object.values(themeBtns).forEach(btn => btn?.classList.remove('active'));
+
+        if (mode === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           localStorage.setItem('pd-theme', 'dark');
+          themeBtns.dark?.classList.add('active');
+        } else if (mode === 'light') {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('pd-theme', 'light');
+          themeBtns.light?.classList.add('active');
+        } else {
+          // System
+          localStorage.removeItem('pd-theme');
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+          }
+          themeBtns.system?.classList.add('active');
         }
-        updateThemeIcons();
       }
 
-      if (toggle) toggle.addEventListener('click', toggleTheme);
-      updateThemeIcons();
+      // Initialize active state
+      applyTheme(getActiveThemeMode());
+
+      // Listen for system preference changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if (!localStorage.getItem('pd-theme')) applyTheme('system');
+      });
+
+      // Bind click handlers
+      Object.entries(themeBtns).forEach(([mode, btn]) => {
+        btn?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          applyTheme(mode);
+        });
+      });
+
+      function toggleTheme() {
+        const current = getActiveThemeMode();
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        applyTheme(isDark ? 'light' : 'dark');
+      }
+
+      // ── Navigation dropdown ──
+      const navDropdown = document.getElementById('nav-explore');
+      const dropdownTrigger = navDropdown?.querySelector('.nav-dropdown-trigger');
+
+      dropdownTrigger?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navDropdown?.classList.toggle('open');
+      });
+
+      document.addEventListener('click', () => {
+        navDropdown?.classList.remove('open');
+      });
+
+      navDropdown?.querySelector('.nav-dropdown-menu')?.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+
+      // ── Mobile hamburger ──
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+
+      hamburger?.addEventListener('click', () => {
+        mobileNav?.classList.toggle('open');
+      });
 
       // ── Keyboard Shortcuts ──
       const kbdHelp = document.getElementById('kbd-help');
