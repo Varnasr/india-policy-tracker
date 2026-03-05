@@ -28,6 +28,7 @@ const last7d = policies.filter(p => now - new Date(p.date).getTime() < 7 * DAY).
     <div class="dash-hero-left">
       <h1 class="dash-title">PolicyDhara</h1>
       <p class="dash-subtitle">Tracking Indian development policy — from gazette to ground</p>
+      <p class="dash-intro">An open-source platform by <a href="https://www.impactmojo.in">ImpactMojo</a> that aggregates legislation, government schemes, budget announcements, and policy research from official sources into a single searchable database.</p>
     </div>
     <div class="dash-hero-stats">
       <div class="dash-stat">
@@ -225,6 +226,17 @@ const last7d = policies.filter(p => now - new Date(p.date).getTime() < 7 * DAY).
     font-size: 0.8125rem;
     color: var(--color-text-muted);
     margin-top: 4px;
+  }
+  .dash-intro {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-top: 8px;
+    max-width: 520px;
+  }
+  .dash-intro a {
+    color: var(--color-accent);
+    font-weight: 600;
   }
   .dash-hero-stats {
     display: flex;
