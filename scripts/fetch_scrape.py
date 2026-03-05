@@ -26,20 +26,20 @@ HEADERS = {
     "Upgrade-Insecure-Requests": "1",
 }
 
-TIMEOUT = 30
+TIMEOUT = 10
 
 
 def safe_get(url: str, headers: dict = None) -> requests.Response | None:
-    """Make a safe HTTP GET request with retries."""
+    """Make a safe HTTP GET request with retries (max 2 attempts)."""
     hdrs = headers or HEADERS
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             resp = requests.get(url, headers=hdrs, timeout=TIMEOUT, verify=True, allow_redirects=True)
             resp.raise_for_status()
             return resp
         except requests.RequestException as e:
             print(f"  Attempt {attempt + 1} failed for {url}: {e}")
-            if attempt == 2:
+            if attempt == 1:
                 return None
     return None
 

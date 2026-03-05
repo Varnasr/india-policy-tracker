@@ -11,6 +11,7 @@ import hashlib
 import html
 import os
 import re
+import signal
 import sys
 import time
 import traceback
@@ -30,7 +31,17 @@ DATA_DIR = PROJECT_ROOT / "data"
 POLICIES_DIR = PROJECT_ROOT / "src" / "content" / "policies"
 MAX_ITEMS_PER_SOURCE = 50
 MAX_TOTAL_ITEMS = 2000
+MAX_SOURCE_SECONDS = 30  # Per-source time limit (kills stuck fetches)
+MAX_PIPELINE_SECONDS = 720  # 12 minutes total (leave 3 min for build/deploy)
 HISTORICAL_SEED = PROJECT_ROOT / "data" / "historical_seed.json"
+
+
+class SourceTimeout(Exception):
+    pass
+
+
+def _source_timeout_handler(signum, frame):
+    raise SourceTimeout("Source fetch exceeded time limit")
 
 
 def generate_id(title: str, source: str) -> str:
@@ -456,13 +467,32 @@ def main():
     # Fetch from all sources
     all_new = list(seed)
     errors = []
+    skipped = 0
+    pipeline_start = time.monotonic()
 
     for source_id, source_config in sources.items():
+        # Check pipeline-level time limit
+        elapsed = time.monotonic() - pipeline_start
+        if elapsed > MAX_PIPELINE_SECONDS:
+            remaining = len(sources) - (skipped + len(all_new) - len(seed) + len(errors))
+            print(f"\n  Pipeline time limit reached ({int(elapsed)}s). Skipping remaining sources.")
+            break
+
         try:
-            items = fetch_source(source_id, source_config)
-            all_new.extend(items)
+            # Set per-source timeout via SIGALRM
+            old_handler = signal.signal(signal.SIGALRM, _source_timeout_handler)
+            signal.alarm(MAX_SOURCE_SECONDS)
+            try:
+                items = fetch_source(source_id, source_config)
+                all_new.extend(items)
+            finally:
+                signal.alarm(0)  # Cancel alarm
+                signal.signal(signal.SIGALRM, old_handler)
             # Rate limit between sources
-            time.sleep(1)
+            time.sleep(0.5)
+        except SourceTimeout:
+            errors.append(f"{source_id}: timed out after {MAX_SOURCE_SECONDS}s")
+            print(f"  TIMED OUT: {source_id} (>{MAX_SOURCE_SECONDS}s)")
         except Exception as e:
             errors.append(f"{source_id}: {e}")
             print(f"  FAILED: {source_id} — {e}")

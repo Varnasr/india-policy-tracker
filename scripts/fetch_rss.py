@@ -24,7 +24,7 @@ HEADERS = {
     "Connection": "keep-alive",
 }
 
-TIMEOUT = 30
+TIMEOUT = 10
 
 
 def parse_date(text: str) -> str:
