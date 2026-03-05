@@ -10,7 +10,7 @@ from policydhara.models import Policy
 from policydhara.classifier import PolicyClassifier
 from policydhara.store import PolicyStore
 from policydhara.fetchers.rss import parse_rss_xml
-from policydhara.fetchers.base import _categorize_type, _extract_date_from_title
+from policydhara.fetchers.base import _categorize_type, _extract_date_from_title, _is_valid_title
 
 
 # ── Models ───────────────────────────────────────────────────────────
@@ -294,6 +294,40 @@ class TestExtractDate:
 
     def test_no_year(self):
         assert _extract_date_from_title("Some policy without year") == ""
+
+    def test_no_future_dates(self):
+        result = _extract_date_from_title("World Wildlife Day 2026")
+        assert result != ""
+        assert result <= "2026-03-05"
+
+    def test_past_year_ok(self):
+        result = _extract_date_from_title("Some Act, 2020")
+        assert result == "2020-06-01"
+
+
+class TestTitleValidation:
+    def test_valid_title(self):
+        assert _is_valid_title("National Education Policy 2020") is True
+
+    def test_empty_title(self):
+        assert _is_valid_title("") is False
+
+    def test_short_title(self):
+        assert _is_valid_title("Hi") is False
+
+    def test_gazette_junk(self):
+        assert _is_valid_title("Recent Extra Ordinary GazettesMinistrySubject") is False
+
+    def test_nav_junk(self):
+        assert _is_valid_title("Parliament") is False
+        assert _is_valid_title("Session Track") is False
+
+    def test_garbled_long_title(self):
+        assert _is_valid_title("A" * 100) is False
+
+    def test_long_valid_title(self):
+        title = "This is a very long but perfectly valid policy title about something important " * 2
+        assert _is_valid_title(title) is True
 
 
 class TestRssParser:

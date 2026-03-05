@@ -9,6 +9,7 @@ Run: python3 scripts/fetch_all.py
 import json
 import hashlib
 import os
+import re
 import sys
 import time
 import traceback
@@ -46,14 +47,20 @@ def extract_date_from_title(title: str) -> str:
     E.g. "The Securities Markets Code, 2025" → "2025-06-01"
          "Union Budget 2026-27" → "2026-02-01"
     Returns empty string if no year found.
+    Never returns a date in the future.
     """
     import re
     text = title.strip()
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    current_year = datetime.now(timezone.utc).year
+
+    def _cap_to_today(candidate: str) -> str:
+        return candidate if candidate <= today else today
 
     # Match "Budget YYYY" → use Feb 1 of that year (budget month)
     m = re.search(r'[Bb]udget\s+(\d{4})', text)
     if m:
-        return f"{m.group(1)}-02-01"
+        return _cap_to_today(f"{m.group(1)}-02-01")
 
     # Match explicit year patterns: "Bill, 2025" or "Code, 2024" or "Act 2023" or "(2025)"
     m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-)\].,]?\s*$', text)
@@ -63,16 +70,39 @@ def extract_date_from_title(title: str) -> str:
         # Try anywhere in the title as last resort
         matches = re.findall(r'(?:19|20)\d{2}', text)
         if matches:
-            # Use the most recent year mentioned
             year = max(int(y) for y in matches)
-            if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-                return f"{year}-06-01"
+            if 1990 <= year <= current_year:
+                return _cap_to_today(f"{year}-06-01")
         return ""
 
     year = int(m.group(1))
-    if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-        return f"{year}-06-01"
+    if 1990 <= year <= current_year:
+        return _cap_to_today(f"{year}-06-01")
     return ""
+
+
+# Titles that are navigation junk, page headers, or too generic to be policies
+_JUNK_TITLE_PATTERNS = [
+    r'^Recent (Extra Ordinary |Weekly )?Gazettes',
+    r'^Gazettes on Demand',
+    r'^(Parliament|Session\s*Track|Legislature Track|Bills Parliament)$',
+    r'^(Discussion Papers|About the .+ Fellowship|Careers|Press Releases?)$',
+    r'^(Home|Login|Register|Contact Us|Sitemap|Disclaimer|FAQ)$',
+    r'^(Skip to |Jump to )',
+]
+_JUNK_RE = re.compile('|'.join(_JUNK_TITLE_PATTERNS), re.IGNORECASE)
+
+
+def is_valid_title(title: str) -> bool:
+    """Reject navigation junk, page headers, and garbled scraper output."""
+    if not title or len(title) < 5:
+        return False
+    if _JUNK_RE.search(title):
+        return False
+    # Reject garbled scrapes (very long with barely any spaces)
+    if len(title) > 80 and title.count(' ') < len(title) / 20:
+        return False
+    return True
 
 
 def load_historical_seed() -> list[dict]:
@@ -128,25 +158,43 @@ def load_existing_policies() -> dict:
 
 
 def merge_policies(existing: dict, new_items: list[dict]) -> list[dict]:
-    """Merge new items with existing, deduplicating by ID and source+title."""
+    """Merge new items with existing, deduplicating by ID, source+title, and title across sources."""
     for item in new_items:
         existing[item["id"]] = item
 
-    # Deduplicate by source+title (keep the one with the best date)
+    # First pass: deduplicate by source+title (keep the one with the best date)
     seen: dict[tuple, dict] = {}
     for item in existing.values():
         key = (item.get("source_id", ""), item.get("title", ""))
         if key in seen:
-            # Keep whichever has a more specific (non-today) date
             old = seen[key]
             if item.get("date", "") > old.get("date", ""):
                 seen[key] = item
         else:
             seen[key] = item
 
+    # Second pass: deduplicate by title alone across sources
+    # When the same article appears from multiple PIB regional offices or
+    # similar sources, keep the one from the most authoritative source.
+    SOURCE_PRIORITY = {"pib": 0, "egazette": 1, "india_code": 2}
+    by_title: dict[str, dict] = {}
+    for item in seen.values():
+        title = item.get("title", "").strip()
+        if title in by_title:
+            old = by_title[title]
+            old_prio = SOURCE_PRIORITY.get(old.get("source_id", ""), 99)
+            new_prio = SOURCE_PRIORITY.get(item.get("source_id", ""), 99)
+            # Keep: higher priority source, or better date, or central over state
+            if new_prio < old_prio:
+                by_title[title] = item
+            elif new_prio == old_prio and item.get("level", "") == "central" and old.get("level", "") != "central":
+                by_title[title] = item
+        else:
+            by_title[title] = item
+
     # Sort by date (newest first) and cap total
     all_items = sorted(
-        seen.values(),
+        by_title.values(),
         key=lambda x: x.get("date", "1970-01-01"),
         reverse=True
     )
@@ -232,7 +280,7 @@ def fetch_source(source_id: str, source_config: dict) -> list[dict]:
 
         for raw in raw_items[:MAX_ITEMS_PER_SOURCE]:
             title = raw.get("title", "").strip()
-            if not title:
+            if not is_valid_title(title):
                 continue
 
             description = raw.get("description", "").strip()

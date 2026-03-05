@@ -16,6 +16,29 @@ _classifier = PolicyClassifier()
 
 MAX_ITEMS_PER_SOURCE = 50
 
+# Titles that are navigation junk, page headers, or too generic to be policies
+_JUNK_TITLE_PATTERNS = [
+    r'^Recent (Extra Ordinary |Weekly )?Gazettes',
+    r'^Gazettes on Demand',
+    r'^(Parliament|Session\s*Track|Legislature Track|Bills Parliament)$',
+    r'^(Discussion Papers|About the .+ Fellowship|Careers|Press Releases?)$',
+    r'^(Home|Login|Register|Contact Us|Sitemap|Disclaimer|FAQ)$',
+    r'^(Skip to |Jump to )',
+]
+_JUNK_RE = re.compile('|'.join(_JUNK_TITLE_PATTERNS), re.IGNORECASE)
+
+
+def _is_valid_title(title: str) -> bool:
+    """Reject navigation junk, page headers, and garbled scraper output."""
+    if not title or len(title) < 5:
+        return False
+    if _JUNK_RE.search(title):
+        return False
+    # Reject garbled scrapes (very long with barely any spaces)
+    if len(title) > 80 and title.count(' ') < len(title) / 20:
+        return False
+    return True
+
 
 def _categorize_type(title: str, description: str) -> str:
     """Categorize the type of policy item from its text."""
@@ -36,12 +59,17 @@ def _categorize_type(title: str, description: str) -> str:
 
 
 def _extract_date_from_title(title: str) -> str:
-    """Extract an approximate date from a policy title when no real date is available."""
+    """Extract an approximate date from a policy title. Never returns a future date."""
     text = title.strip()
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    current_year = datetime.now(timezone.utc).year
+
+    def _cap(candidate: str) -> str:
+        return candidate if candidate <= today else today
 
     m = re.search(r'[Bb]udget\s+(\d{4})', text)
     if m:
-        return f"{m.group(1)}-02-01"
+        return _cap(f"{m.group(1)}-02-01")
 
     m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-)\].,]?\s*$', text)
     if not m:
@@ -50,13 +78,13 @@ def _extract_date_from_title(title: str) -> str:
         matches = re.findall(r'(?:19|20)\d{2}', text)
         if matches:
             year = max(int(y) for y in matches)
-            if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-                return f"{year}-06-01"
+            if 1990 <= year <= current_year:
+                return _cap(f"{year}-06-01")
         return ""
 
     year = int(m.group(1))
-    if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-        return f"{year}-06-01"
+    if 1990 <= year <= current_year:
+        return _cap(f"{year}-06-01")
     return ""
 
 
@@ -93,7 +121,7 @@ def fetch_source(
     policies: list[Policy] = []
     for raw in raw_items[:MAX_ITEMS_PER_SOURCE]:
         title = raw.get("title", "").strip()
-        if not title:
+        if not _is_valid_title(title):
             continue
 
         description = raw.get("description", "").strip()
