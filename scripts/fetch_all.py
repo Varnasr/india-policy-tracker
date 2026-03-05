@@ -8,7 +8,10 @@ Run: python3 scripts/fetch_all.py
 
 import json
 import hashlib
+import html
 import os
+import re
+import signal
 import sys
 import time
 import traceback
@@ -28,7 +31,17 @@ DATA_DIR = PROJECT_ROOT / "data"
 POLICIES_DIR = PROJECT_ROOT / "src" / "content" / "policies"
 MAX_ITEMS_PER_SOURCE = 50
 MAX_TOTAL_ITEMS = 2000
+MAX_SOURCE_SECONDS = 30  # Per-source time limit (kills stuck fetches)
+MAX_PIPELINE_SECONDS = 720  # 12 minutes total (leave 3 min for build/deploy)
 HISTORICAL_SEED = PROJECT_ROOT / "data" / "historical_seed.json"
+
+
+class SourceTimeout(Exception):
+    pass
+
+
+def _source_timeout_handler(signum, frame):
+    raise SourceTimeout("Source fetch exceeded time limit")
 
 
 def generate_id(title: str, source: str) -> str:
@@ -40,39 +53,158 @@ def generate_id(title: str, source: str) -> str:
     return hashlib.sha256(raw.encode()).hexdigest()[:12]
 
 
+_KNOWN_EVENTS: dict[str, tuple[int, int]] = {
+    "republic day": (1, 26),
+    "army day": (1, 15),
+    "national voters day": (1, 25),
+    "national girl child day": (1, 24),
+    "martyrs day": (1, 30),
+    "world cancer day": (2, 4),
+    "international women": (3, 8),
+    "world wildlife day": (3, 3),
+    "national science day": (2, 28),
+    "world water day": (3, 22),
+    "world health day": (4, 7),
+    "ambedkar jayanti": (4, 14),
+    "earth day": (4, 22),
+    "labour day": (5, 1),
+    "may day": (5, 1),
+    "world environment day": (6, 5),
+    "international yoga day": (6, 21),
+    "world population day": (7, 11),
+    "kargil vijay diwas": (7, 26),
+    "independence day": (8, 15),
+    "national sports day": (8, 29),
+    "teachers day": (9, 5),
+    "hindi diwas": (9, 14),
+    "gandhi jayanti": (10, 2),
+    "mahatma gandhi jayanti": (10, 2),
+    "world food day": (10, 16),
+    "national unity day": (10, 31),
+    "rashtriya ekta diwas": (10, 31),
+    "children's day": (11, 14),
+    "childrens day": (11, 14),
+    "national constitution day": (11, 26),
+    "constitution day": (11, 26),
+    "navy day": (12, 4),
+    "armed forces flag day": (12, 7),
+    "human rights day": (12, 10),
+    "national energy conservation day": (12, 14),
+    "good governance day": (12, 25),
+    "vijay diwas": (12, 16),
+}
+
+_MONTH_MAP = {
+    "january": 1, "february": 2, "march": 3, "april": 4,
+    "may": 5, "june": 6, "july": 7, "august": 8,
+    "september": 9, "october": 10, "november": 11, "december": 12,
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4,
+    "jun": 6, "jul": 7, "aug": 8, "sep": 9, "sept": 9,
+    "oct": 10, "nov": 11, "dec": 12,
+}
+
+_MONTH_NAMES = "|".join(_MONTH_MAP.keys())
+_DATE_IN_TITLE_RE = re.compile(
+    rf'(?:({_MONTH_NAMES})\s+(\d{{1,2}})\s*,?\s*((?:19|20)\d{{2}})'
+    rf'|(\d{{1,2}})\s+({_MONTH_NAMES})\s*,?\s*((?:19|20)\d{{2}}))',
+    re.IGNORECASE,
+)
+
+
 def extract_date_from_title(title: str) -> str:
     """
     Extract an approximate date from a policy title when no real date is available.
-    E.g. "The Securities Markets Code, 2025" → "2025-06-01"
-         "Union Budget 2026-27" → "2026-02-01"
-    Returns empty string if no year found.
+    Never returns a date in the future.
+
+    Strategy (in order):
+    1. Budget/fiscal documents → Feb 1 of that year
+    2. Explicit date in title ("March 3, 2026") → exact date
+    3. Known annual events (Republic Day, etc.) → fixed date
+    4. Year in title ("Act, 2025") → June 1 approximation
     """
-    import re
     text = title.strip()
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    current_year = datetime.now(timezone.utc).year
 
-    # Match "Budget YYYY" → use Feb 1 of that year (budget month)
-    m = re.search(r'[Bb]udget\s+(\d{4})', text)
+    def _cap(candidate: str) -> str:
+        return candidate if candidate <= today else today
+
+    # 1. Budget-related documents → Feb 1
+    m = re.search(r'[Bb]udget\s+(?:Document[s]?\s*[,.]?\s*)?(\d{4})', text)
+    if not m:
+        text_lower = text.lower()
+        if 'budget' in text_lower or 'fiscal' in text_lower or 'outcome framework' in text_lower:
+            m = re.search(r'(\d{4})\s*[-–]\s*\d{2,4}', text)
     if m:
-        return f"{m.group(1)}-02-01"
+        return _cap(f"{m.group(1)}-02-01")
 
-    # Match explicit year patterns: "Bill, 2025" or "Code, 2024" or "Act 2023" or "(2025)"
+    # 2. Explicit date in title: "March 3, 2026" or "3 March 2026"
+    dm = _DATE_IN_TITLE_RE.search(text)
+    if dm:
+        if dm.group(1):  # "March 3, 2026" form
+            month = _MONTH_MAP.get(dm.group(1).lower())
+            day = int(dm.group(2))
+            year = int(dm.group(3))
+        else:  # "3 March 2026" form
+            day = int(dm.group(4))
+            month = _MONTH_MAP.get(dm.group(5).lower())
+            year = int(dm.group(6))
+        if month and 1 <= day <= 31 and 1990 <= year <= current_year:
+            return _cap(f"{year}-{month:02d}-{day:02d}")
+
+    # 3. Known annual events with fixed dates
+    text_lower = text.lower()
+    year_match = re.search(r'(20\d{2})', text)
+    if year_match:
+        year_str = year_match.group(1)
+        year_int = int(year_str)
+        if 1990 <= year_int <= current_year:
+            for keyword, (month, day) in _KNOWN_EVENTS.items():
+                if keyword in text_lower:
+                    return _cap(f"{year_str}-{month:02d}-{day:02d}")
+
+    # 4. Year in title as last resort → June 1 approximation
     m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-)\].,]?\s*$', text)
     if not m:
         m = re.search(r'[\s,(\[]\s*((?:19|20)\d{2})\s*[-–]\s*\d{2,4}', text)
     if not m:
-        # Try anywhere in the title as last resort
         matches = re.findall(r'(?:19|20)\d{2}', text)
         if matches:
-            # Use the most recent year mentioned
             year = max(int(y) for y in matches)
-            if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-                return f"{year}-06-01"
+            if 1990 <= year <= current_year:
+                return _cap(f"{year}-06-01")
         return ""
 
     year = int(m.group(1))
-    if 1990 <= year <= datetime.now(timezone.utc).year + 1:
-        return f"{year}-06-01"
+    if 1990 <= year <= current_year:
+        return _cap(f"{year}-06-01")
     return ""
+
+
+# Titles that are navigation junk, page headers, or too generic to be policies
+_JUNK_TITLE_PATTERNS = [
+    r'^Recent (Extra Ordinary |Weekly )?Gazettes',
+    r'^Gazettes on Demand',
+    r'^(Parliament|Session\s*Track|Legislature Track|Bills Parliament)$',
+    r'^(Discussion Papers|About the .+ Fellowship|Careers|Press Releases?)$',
+    r'^(Home|Login|Register|Contact Us|Sitemap|Disclaimer|FAQ)$',
+    r'^(Skip to |Jump to )',
+    r'^Money Market Operations',
+    r'^Statement\s*\n',
+]
+_JUNK_RE = re.compile('|'.join(_JUNK_TITLE_PATTERNS), re.IGNORECASE)
+
+
+def is_valid_title(title: str) -> bool:
+    """Reject navigation junk, page headers, and garbled scraper output."""
+    if not title or len(title) < 5:
+        return False
+    if _JUNK_RE.search(title):
+        return False
+    # Reject garbled scrapes (very long with barely any spaces)
+    if len(title) > 80 and title.count(' ') < len(title) / 20:
+        return False
+    return True
 
 
 def load_historical_seed() -> list[dict]:
@@ -128,25 +260,43 @@ def load_existing_policies() -> dict:
 
 
 def merge_policies(existing: dict, new_items: list[dict]) -> list[dict]:
-    """Merge new items with existing, deduplicating by ID and source+title."""
+    """Merge new items with existing, deduplicating by ID, source+title, and title across sources."""
     for item in new_items:
         existing[item["id"]] = item
 
-    # Deduplicate by source+title (keep the one with the best date)
+    # First pass: deduplicate by source+title (keep the one with the best date)
     seen: dict[tuple, dict] = {}
     for item in existing.values():
         key = (item.get("source_id", ""), item.get("title", ""))
         if key in seen:
-            # Keep whichever has a more specific (non-today) date
             old = seen[key]
             if item.get("date", "") > old.get("date", ""):
                 seen[key] = item
         else:
             seen[key] = item
 
+    # Second pass: deduplicate by title alone across sources
+    # When the same article appears from multiple PIB regional offices or
+    # similar sources, keep the one from the most authoritative source.
+    SOURCE_PRIORITY = {"pib": 0, "egazette": 1, "india_code": 2}
+    by_title: dict[str, dict] = {}
+    for item in seen.values():
+        title = item.get("title", "").strip()
+        if title in by_title:
+            old = by_title[title]
+            old_prio = SOURCE_PRIORITY.get(old.get("source_id", ""), 99)
+            new_prio = SOURCE_PRIORITY.get(item.get("source_id", ""), 99)
+            # Keep: higher priority source, or better date, or central over state
+            if new_prio < old_prio:
+                by_title[title] = item
+            elif new_prio == old_prio and item.get("level", "") == "central" and old.get("level", "") != "central":
+                by_title[title] = item
+        else:
+            by_title[title] = item
+
     # Sort by date (newest first) and cap total
     all_items = sorted(
-        seen.values(),
+        by_title.values(),
         key=lambda x: x.get("date", "1970-01-01"),
         reverse=True
     )
@@ -231,11 +381,12 @@ def fetch_source(source_id: str, source_config: dict) -> list[dict]:
             return []
 
         for raw in raw_items[:MAX_ITEMS_PER_SOURCE]:
-            title = raw.get("title", "").strip()
-            if not title:
+            title = html.unescape(raw.get("title", "")).strip()
+            title = re.sub(r'\s+', ' ', title)  # collapse whitespace
+            if not is_valid_title(title):
                 continue
 
-            description = raw.get("description", "").strip()
+            description = html.unescape(raw.get("description", "")).strip()
             link = raw.get("link", "")
             date = raw.get("date", "").strip()
 
@@ -316,13 +467,32 @@ def main():
     # Fetch from all sources
     all_new = list(seed)
     errors = []
+    skipped = 0
+    pipeline_start = time.monotonic()
 
     for source_id, source_config in sources.items():
+        # Check pipeline-level time limit
+        elapsed = time.monotonic() - pipeline_start
+        if elapsed > MAX_PIPELINE_SECONDS:
+            remaining = len(sources) - (skipped + len(all_new) - len(seed) + len(errors))
+            print(f"\n  Pipeline time limit reached ({int(elapsed)}s). Skipping remaining sources.")
+            break
+
         try:
-            items = fetch_source(source_id, source_config)
-            all_new.extend(items)
+            # Set per-source timeout via SIGALRM
+            old_handler = signal.signal(signal.SIGALRM, _source_timeout_handler)
+            signal.alarm(MAX_SOURCE_SECONDS)
+            try:
+                items = fetch_source(source_id, source_config)
+                all_new.extend(items)
+            finally:
+                signal.alarm(0)  # Cancel alarm
+                signal.signal(signal.SIGALRM, old_handler)
             # Rate limit between sources
-            time.sleep(1)
+            time.sleep(0.5)
+        except SourceTimeout:
+            errors.append(f"{source_id}: timed out after {MAX_SOURCE_SECONDS}s")
+            print(f"  TIMED OUT: {source_id} (>{MAX_SOURCE_SECONDS}s)")
         except Exception as e:
             errors.append(f"{source_id}: {e}")
             print(f"  FAILED: {source_id} — {e}")
