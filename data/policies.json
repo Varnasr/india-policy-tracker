@@ -9264,7 +9264,7 @@
   {
     "id": "7085cbb72465",
     "title": "Opinion: Opinion | How 12 'Insurers' Sitting In London Paralysed Hormuz - All With A Phone Call",
-    "description": "By March 3, maritime tracking platforms recorded zero active tanker transits inside the strait. Simply because the 'underwriter' in London hung up.",
+    "description": "By March 3, there were zero active tanker transits inside the Hormuz Strait. Not because of Iran, or Trump. But simply because an 'underwriter' in London picked up the telephone.",
     "link": "https://www.ndtv.com/opinion/iran-israel-war-how-a-club-of-insurance-firms-sitting-in-london-brought-hormuz-to-a-halt-11171536#publisher=newsstand",
     "date": "2026-03-05",
     "source_id": "ndtv_india",
@@ -11541,7 +11541,7 @@
     "id": "87725d26322d",
     "title": "Accessible Version :",
     "description": "",
-    "link": "https://cdnbbsr.s3waas.gov.in/s395192c98732387165bf8e396c0f2dad2/uploads/2026/03/202603021864589540.pdf",
+    "link": "https://cdnbbsr.s3waas.gov.in/s395192c98732387165bf8e396c0f2dad2/uploads/2026/03/20260302390449839.pdf",
     "date": "2026-03-05",
     "source_id": "ladakh_govt",
     "source_name": "Ladakh UT Administration",
@@ -13339,21 +13339,23 @@
   {
     "id": "a1548bdc4278",
     "title": "Announcements",
-    "description": "NABH Mitra Empanelment Programme (MEP)",
-    "link": "https://nabh-portal-live.s3.ap-south-1.amazonaws.com/wp-content/uploads/2026/03/02114627/Announcement-Concept-note-MITRA-MEP.pdf",
+    "description": "Notification for Rationalised Fee for Ayush Entry Level Certification program",
+    "link": "https://nabh-portal-live.s3.ap-south-1.amazonaws.com/wp-content/uploads/2026/03/05172310/Notification-Rationalised-Fee-for-Ayush-Entry-Level-Certification-program.pdf",
     "date": "2026-03-05",
     "source_id": "nabh",
     "source_name": "NABH",
     "source_short": "NABH",
     "sectors": [
-      "Digital & Technology",
+      "Health",
+      "Social Protection",
       "Rural Development"
     ],
     "sector_slugs": [
-      "digital-technology",
+      "health",
+      "social-protection",
       "rural-development"
     ],
-    "type": "scheme",
+    "type": "notification",
     "level": "central",
     "state": ""
   },
@@ -13465,16 +13467,18 @@
   {
     "id": "c6a123d57f86",
     "title": "Download PDF",
-    "description": "Delhi - Friday List for 06/03/2026Download PDF1,751.763 kb",
-    "link": "https://itat.gov.inpublic/files/upload/1772701014-vargK9CD-CMS.pdf",
+    "description": "Lucknow- Constitution and Cause List for 06.03.2026.Download PDF369.814 kb",
+    "link": "https://itat.gov.inpublic/files/upload/1772703034-dVsjP4ej-CMS.pdf",
     "date": "2026-03-05",
     "source_id": "itat",
     "source_name": "ITAT",
     "source_short": "ITAT",
     "sectors": [
+      "Digital & Technology",
       "Social Protection"
     ],
     "sector_slugs": [
+      "digital-technology",
       "social-protection"
     ],
     "type": "policy",
@@ -13503,7 +13507,7 @@
   {
     "id": "e383619f3aea",
     "title": "Avalanche Warning Bulletin",
-    "description": "Avalanche Warning Bulletin- 04 March 2026",
+    "description": "Avalanche Warning Bulletin- 05 March 2026",
     "link": "",
     "date": "2026-03-05",
     "source_id": "drdo",
@@ -19027,6 +19031,3460 @@
     ],
     "sector_slugs": [
       "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "de11fb1d7690",
+    "title": "Parliamentary Delegation from Portugal calls on Shri Harivansh, Hon'ble Deputy Chairm...",
+    "description": "Government of India press release: Parliamentary Delegation from Portugal calls on Shri Harivansh, Hon'ble Deputy Chairm...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235646",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ab82a1aed3b9",
+    "title": "Union Minister of Youth Affairs and Sports, Dr Mansukh Mandaviya unveils the logo of ...",
+    "description": "Government of India press release: Union Minister of Youth Affairs and Sports, Dr Mansukh Mandaviya unveils the logo of ...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235618",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Child Rights & Youth",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "child-rights-youth",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "fc1d99a284ac",
+    "title": "India and Finland renew MoU on Environmental Cooperation",
+    "description": "Government of India press release: India and Finland renew MoU on Environmental Cooperation",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235602",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Climate & Environment",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "climate-environment",
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "76cf249eff81",
+    "title": "List of Outcomes: Visit of President of Finland",
+    "description": "Government of India press release: List of Outcomes: Visit of President of Finland",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235586",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "labour-employment"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "da5367cf9a0e",
+    "title": "CHANGE OF GUARD CEREMONY TO TAKE PLACE FROM 0800 AM TO 0900 AM FROM THIS SATURDAY",
+    "description": "Government of India press release: CHANGE OF GUARD CEREMONY TO TAKE PLACE FROM 0800 AM TO 0900 AM FROM THIS SATURDAY",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235576",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "7052ed8f05c5",
+    "title": "India’s First Riverine Lighthouses to Come Up on Brahmaputra (NW-2) as Sarbananda Son...",
+    "description": "Government of India press release: India’s First Riverine Lighthouses to Come Up on Brahmaputra (NW-2) as Sarbananda Son...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235574",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d35117863946",
+    "title": "Moving Beyond Extraction: India’s First National Workshop on Mine Closure & Repurposi...",
+    "description": "Government of India press release: Moving Beyond Extraction: India’s First National Workshop on Mine Closure & Repurposi...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235573",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d972b3200a09",
+    "title": "New Milestone in Food Grain Supply Chain in Mizoram: 25,900 Quintals of Rice Reach Sa...",
+    "description": "Government of India press release: New Milestone in Food Grain Supply Chain in Mizoram: 25,900 Quintals of Rice Reach Sa...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235560",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Agriculture",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "agriculture",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "84ac6903a8cb",
+    "title": "Union Minister Dr. Mansukh Mandaviya and MoS Smt. Raksha Nikhil Khadse to Grace MY Bh...",
+    "description": "Government of India press release: Union Minister Dr. Mansukh Mandaviya and MoS Smt. Raksha Nikhil Khadse to Grace MY Bh...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235553",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "90594e5c5f81",
+    "title": "Amrit Peedhi Engages with Union Budget: Record Breaking Nearly 47,000 Essay Submissio...",
+    "description": "Government of India press release: Amrit Peedhi Engages with Union Budget: Record Breaking Nearly 47,000 Essay Submissio...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235552",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "budget",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "cb496e7f8e79",
+    "title": "English Translation of Prime Minister's Press Statement during the Joint Press Statem...",
+    "description": "Government of India press release: English Translation of Prime Minister's Press Statement during the Joint Press Statem...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235498",
+    "date": "2026-03-05",
+    "source_id": "pib",
+    "source_name": "Press Information Bureau",
+    "source_short": "PIB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ba9e9b137707",
+    "title": "RBI imposes monetary penalty on Samruddhi Sahakari Bank Ltd., Nandgaon, Nashik, Maharashtra",
+    "description": "The Reserve Bank of India (RBI) has, by an order dated February 27, 2026, imposed a monetary penalty of ₹10,000/- (Rupees Ten Thousand only) on Samruddhi Sahakari Bank Ltd., Nandgaon, Nashik, Maharashtra (the bank), for non-compliance with certain directions issued by RBI on ‘Submission of Data by Credit Institutions’. This penalty has been imposed in exercise of powers conferred on RBI under the provisions of Section 25 of the Credit Information Companies (Regulation) Act, 200",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62333",
+    "date": "2026-03-05",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy",
+      "Digital & Technology",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "digital-technology",
+      "energy"
+    ],
+    "type": "notification",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1243b09e0727",
+    "title": "Foreign Exchange Turnover Data: December 15, 2025 – December 19, 2025",
+    "description": "The Reserve Bank of India today released the data showing daily merchant and Inter-Bank transactions in foreign exchange for the period December 15, 2025 – December 19, 2025. All Figures are in USD Millions Position Date MERCHANT INTER BANK FCY / INR FCY / FCY FCY / INR FCY / FCY Spot Forward Forward Cancel Spot Forward Forward Cancel Spot Swap Forward Spot Swap Forward Purchases 15-12-2025 6,294 2,245 1,618 403 430 273 18,729 26,112 3,304 5,060 3,124 158 16-12-2025 12,439 1,789 2,136 653",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62332",
+    "date": "2026-03-05",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "01bd698c3d35",
+    "title": "Foreign Exchange Turnover Data: December 22, 2025 – December 26, 2025",
+    "description": "The Reserve Bank of India today released the data showing daily merchant and Inter-Bank transactions in foreign exchange for the period December 22, 2025 – December 26, 2025. All Figures are in USD Millions Position Date MERCHANT INTER BANK FCY / INR FCY / FCY FCY / INR FCY / FCY Spot Forward Forward Cancel Spot Forward Forward Cancel Spot Swap Forward Spot Swap Forward Purchases 22-12-2025 6,790 1,734 1,668 445 309 160 18,697 26,691 1,375 4,737 2,658 344 23-12-2025 5,582 2,134 1,994 385 5",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62331",
+    "date": "2026-03-05",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "efba6e23279d",
+    "title": "Foreign Exchange Turnover Data: December 08, 2025 – December 12, 2025",
+    "description": "",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62330",
+    "date": "2026-03-05",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d4cac967a174",
+    "title": "Foreign Exchange Turnover Data: December 01, 2025 – December 05, 2025",
+    "description": "The Reserve Bank of India today released the data showing daily merchant and Inter-Bank transactions in foreign exchange for the period December 01, 2025 – December 05, 2025. All Figures are in USD Millions Position Date MERCHANT INTER BANK FCY / INR FCY / FCY FCY / INR FCY / FCY Spot Forward Forward Cancel Spot Forward Forward Cancel Spot Swap Forward Spot Swap Forward Purchases 01-12-2025 4,733 1,669 1,320 323 345 241 17,675 31,137 2,246 6,143 2,508 304 02-12-2025 3,903 1,821 1,730 507 2",
+    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62329",
+    "date": "2026-03-05",
+    "source_id": "rbi",
+    "source_name": "Reserve Bank of India",
+    "source_short": "RBI",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1283ba1edcf6",
+    "title": "Shifting Dynamics and Emerging Openings for Peace in the Middle East",
+    "description": "ORF Expert Speak: Shifting Dynamics and Emerging Openings for Peace in the Middle East",
+    "link": "https://www.orfonline.org/expert-speak/shifting-dynamics-and-emerging-openings-for-peace-in-the-middle-east",
+    "date": "2026-03-05",
+    "source_id": "orf",
+    "source_name": "Observer Research Foundation",
+    "source_short": "ORF",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "dda1cfecfddb",
+    "title": "Central Silk Board’s CSGRC, Hosur, to host National Seminar on ‘Seri-Genetic Resource...",
+    "description": "Government of India press release: Central Silk Board’s CSGRC, Hosur, to host National Seminar on ‘Seri-Genetic Resource...",
+    "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2235611",
+    "date": "2026-03-05",
+    "source_id": "state_pib_punjab",
+    "source_name": "PIB Chandigarh (Punjab & Haryana)",
+    "source_short": "PIB PB",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "announcement",
+    "level": "state",
+    "state": "Punjab"
+  },
+  {
+    "id": "3f262a03b032",
+    "title": "How a library became a popular learning spot in a Chengalpattu village",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/how-a-library-became-a-popular-learning-spot-in-a-chengalpattu-village/article70704602.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Education",
+      "Rural Development"
+    ],
+    "sector_slugs": [
+      "education",
+      "rural-development"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d1bcbe2fca9d",
+    "title": "India offers condolences over Khamenei's killing; Foreign Secretary Vikram Misri visits Iran Embassy",
+    "description": "The signing of the condolence book assumes significance as the Union government had come under attack from Opposition parties for its silence on Khamenei’s killing",
+    "link": "https://www.thehindu.com/news/national/india-foreign-secretary-vikram-misri-visits-iran-embassy-condolences-khamenei-killing/article70707248.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "034e8d3b6346",
+    "title": "Kerala Minister M.B. Rajesh inaugurates K-DISC Innovation Day",
+    "description": "State-level distribution of specialised assistive, adaptive, and cognitive devices held",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-minister-mb-rajesh-inaugurates-k-disc-innovation-day/article70704656.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "94b2bd3aebf6",
+    "title": "SIO demands Telangana govt to allocate 20% of 2026-27 budget to education sector",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/telangana/sio-demands-telangana-govt-to-allocate-20-of-2026-27-budget-to-education-sector/article70707028.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Education",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "education",
+      "finance-economy"
+    ],
+    "type": "budget",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "f9d1712d2d06",
+    "title": "Raisina Dialogue 2026: U.S. foreign policy is to advance our national interests, says Christopher Landau",
+    "description": "Deputy Secretary of State Christopher Landau emphasises the U.S. commitment to its national interests while advocating for a collaborative partnership with India",
+    "link": "https://www.thehindu.com/news/international/raisina-dialogue-2026-us-foreign-policy-is-to-advance-our-national-interests-says-christopher-landau/article70707124.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "labour-employment"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "af80cd03ef3b",
+    "title": "ED files prosecution complaints in Lakshadweep sea cucumber poaching cases",
+    "description": "Plaints filed against four persons in two separate cases relating to the alleged illegal hunting, possession, and attempted trade of protected sea cucumbers in 2018 and 2020",
+    "link": "https://www.thehindu.com/news/national/kerala/ed-files-prosecution-complaints-in-lakshadweep-sea-cucumber-poaching-cases/article70706366.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "89c00dd0ae53",
+    "title": "Watch: Nitish Kumar to Rajya Sabha: End of an era in Bihar",
+    "description": "",
+    "link": "https://www.thehindu.com/shorts/watch-nitish-kumar-to-rajya-sabha-end-of-an-era-in-bihar/article70707183.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "bf13bc11c8c0",
+    "title": "Focus on flood prevention, providing irrigation to last acre in Godavari Delta, says Minister Nimmala",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/focus-on-flood-prevention-providing-irrigation-to-last-acre-in-godavari-delta-says-minister-nimmala/article70706806.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Agriculture",
+      "Social Protection",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "agriculture",
+      "social-protection",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "182976fdd172",
+    "title": "BJP’s earning accounted for 85% of total income of national parties in 2024-25: ADR Report",
+    "description": "According to the report analysing the declarations made by political parties to the Election Commission, six national parties (BJP, INC, CPI(M), AAP, BSP and NPEP) declared a total income of ₹7960.09 crore in 2024-25, and the BJP accounted for 85.03% of it",
+    "link": "https://www.thehindu.com/news/national/bjps-earning-accounted-for-85-of-total-income-of-national-parties-in-2024-25-adr-report/article70707062.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Governance & Reform",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "governance-reform",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "scheme",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "045d986eaad0",
+    "title": "Alternate livelihood to families involved in illicit liquor trade in Nandyal district",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/alternate-livelihood-to-families-involved-in-illicit-liquor-trade-in-nandyal-district/article70706983.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Trade & Commerce"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "trade-commerce"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c2a4d0562704",
+    "title": "West Asia conflict: Dubai’s Emirates announces partial resumption of flights",
+    "description": "Over 100 flights will depart from Dubai and return on March 5 and 6, the airlines said",
+    "link": "https://www.thehindu.com/news/national/west-asia-conflict-dubais-emirates-announces-partial-resumption-of-flights/article70707036.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "396144d83f84",
+    "title": "India-Canada uranium deal and India’s nuclear programme | Explained",
+    "description": "India has increasingly relied on imported uranium, which currently meets nearly three-fourths of the civilian need",
+    "link": "https://www.thehindu.com/sci-tech/science/india-canada-uranium-deal-and-indias-nuclear-programme-explained/article70707026.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Rural Development",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "rural-development",
+      "energy"
+    ],
+    "type": "scheme",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1521b07fb6a1",
+    "title": "Preliminary audit flags discrepancies in accounts of Kochi Corporation’s Samridhi eatery; Indira Canteen pilot to open shortly",
+    "description": "Kochi Corporation Mayor refrains from disclosing specifics citing that the audit was yet to be completed and adds that the audited report will be placed before the council for approval",
+    "link": "https://www.thehindu.com/news/national/kerala/preliminary-audit-flags-discrepancies-in-accounts-of-kochi-corporations-samridhi-eatery-indira-canteen-pilot-to-open-shortly/article70706529.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5cf91c1f010d",
+    "title": "Conflict in West Asia hits Umrah pilgrims from Tiruchi district",
+    "description": "Demand for Umrah bookings is high during the month of Ramzan (which began on February 19, 2026), with prices of 15-day pilgrimage packages ranging from ₹75,000 to ₹2 lakh per person",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/conflict-in-west-asia-hits-umrah-pilgrims-from-tiruchi-district/article70706838.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "405ea663a30e",
+    "title": "Amit Shah unveils mascots, soft launches four digital tools to power Census 2027",
+    "description": "The mascots — 'Pragati' (female) and 'Vikas' (male) — symbolise equal participation of women and men in fulfilling the resolve to make India a developed nation by 2047, a govt. statement said",
+    "link": "https://www.thehindu.com/news/national/census-2027-digital-tools-launch-mascot-unveiling-amit-shah/article70706976.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Gender & Women"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "gender-women"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "a374e6812e76",
+    "title": "Baramati plane crash: Maharashtra CID questions VSR Ventures owner",
+    "description": "NCP (SP) MLA Rohit Pawar had alleged on March 4 that someone was trying to save VSR Ventures, and claimed that a preliminary probe by the AAIB vindicated the doubts earlier raised by him",
+    "link": "https://www.thehindu.com/news/national/maharashtra/baramati-plane-crash-maharashtra-cid-questions-vsr-ventures-owner/article70706923.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "24e1c7a3b9fc",
+    "title": "MV Tax Amendment Bill passed for imposing 10% road safety cess",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/mv-tax-amendment-bill-passed-for-imposing-10-road-safety-cess/article70706793.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Finance & Economy",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "finance-economy",
+      "transport-infrastructure"
+    ],
+    "type": "legislation",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "05af8dac2911",
+    "title": "CPI(M) expels P.K. Sasi",
+    "description": "",
+    "link": "https://www.thehindu.com/news/national/kerala/cpim-expels-pk-sasi/article70706682.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "90a9424a23d8",
+    "title": "Government investing ₹6,000 crore in substations to meet future power demand in Andhra: Minister Gottipati",
+    "description": "The Minister said specifically in Vizianagaram district, two 220 kV power projects worth about ₹46 crore were presently under implementation",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/government-investing-6000-crore-in-substations-to-meet-future-power-demand-in-andhra-minister-gottipati/article70706460.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "7c8bdd69cdfc",
+    "title": "Revenue Department staff strike hits students, farmers: Anbumani",
+    "description": "In a statement, he said around 42,000 officials and staff of the Revenue Department had been on strike since February 24, and that the government had not taken steps to resolve the issue",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/revenue-department-staff-strike-hits-students-farmers-anbumani/article70706887.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Energy",
+      "Education"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "energy",
+      "education"
+    ],
+    "type": "announcement",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "47246113bff0",
+    "title": "Nine out of 10 demands raised by anganwadi workers have already been addressed, says Minister Sandhya Rani",
+    "description": "The 2025 budget has also allocated ₹20 crore to resolve their long-pending issues, the Minister told the Legislative Assembly",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/nine-out-of-10-demands-raised-by-anganwadi-workers-have-already-been-addressed-says-minister-sandhya-rani/article70706723.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "budget",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "231db0a3746c",
+    "title": "CJI Surya Kant meets Bhutan king in Thimphu, offers support in digitalisation of judicial processes",
+    "description": "Both exchanged views to further enhance and strengthen bilateral ties between India and Bhutan",
+    "link": "https://www.thehindu.com/news/national/cji-surya-kant-meets-bhutan-king-in-thimphu-offers-support-in-digitalisation-of-judicial-processes/article70706938.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Health",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "health",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "482e1cf44846",
+    "title": "Union govt. trying to mislead people of T.N. over Tamil: Udhayanidhi Stalin",
+    "description": "He said that in the past decade, the Union government had allocated ₹147 crore for the promotion of the Tamil language, compared to the ₹2,500 crore allocated for Sanskrit during the same period",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/union-govt-trying-to-mislead-people-of-tn-over-tamil-udhayanidhi-stalin/article70706689.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "48c4ce0992c1",
+    "title": "PM Modi calls for swift end to West Asia, Ukraine conflicts",
+    "description": "Mr. Modi made the remarks after holding wide-ranging talks with Finnish President Alexander Stubb, who is on a four-day visit to India",
+    "link": "https://www.thehindu.com/news/national/no-issue-can-be-resolved-through-military-conflict-pm-modi/article70706687.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Health",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "health",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1d7d5c21d066",
+    "title": "Karnataka ready to implement third phase of Upper Krishna irrigation project but BJP MPs are scared of approaching PM, says Minister M. B. Patil",
+    "description": "Minister says BJP MPs from Karnataka are afraid to approach Prime Minister Narendra Modi with a request to issue a gazette notification to enable the State Government to go ahead with the work",
+    "link": "https://www.thehindu.com/news/national/karnataka/karnataka-ready-to-implement-third-phase-of-upper-krishna-irrigation-project-but-bjp-mps-are-scared-of-pm-says-minister-m-b-patil/article70706586.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Agriculture"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "agriculture"
+    ],
+    "type": "notification",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1f60a37eb348",
+    "title": "With exit of ‘forever CM’ Nitish Kumar, an era ends in Bihar",
+    "description": "Nitish Kumar is part of a generation that ushered in the heydays of socialist politics in Bihar; with his exit as CM, the JD(U) is staring at a future in which it will be a junior parter to the BJP in the State",
+    "link": "https://www.thehindu.com/news/national/with-exit-of-its-forever-cm-nitish-kumar-its-an-end-of-an-era-in-bihar/article70706305.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1dfeb9af2770",
+    "title": "Rajya Sabha election: DMK, AIADMK, Congress, PMK, DMDK candidates from Tamil Nadu file nominations",
+    "description": "DMK’s Tiruchi Siva and J. Constandine Ravindran submitted their nomination papers",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/rajya-sabha-election-dmk-aiadmk-congress-pmk-dmdk-candidates-from-tamil-nadu-file-nominations/article70706167.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_policy",
+    "source_name": "The Hindu - National",
+    "source_short": "The Hindu",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "a4e654c34300",
+    "title": "Rupee rebounds from lowest level to settle 45 paise higher at 91.60 against U.S. dollar",
+    "description": "Rupee opened at 92.16 and touched an intraday high of 91.30 against the dollar",
+    "link": "https://www.thehindu.com/business/markets/rupee-rebounds-from-lowest-level-to-settle-45-paise-higher-at-9160-against-us-dollar/article70707078.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_business",
+    "source_name": "The Hindu - Business",
+    "source_short": "The Hindu Biz",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "3b349a0e5009",
+    "title": "Stock markets rebound tracking rally in global peers; Sensex rallies 899 points",
+    "description": "The 50-share NSE Nifty climbed 285.40 points or 1.17% to end at 24,765.90, ending its three-day falling streak",
+    "link": "https://www.thehindu.com/business/markets/stock-markets-rebound-tracking-rally-in-global-peers-sensex-rallies-899-points/article70707003.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_business",
+    "source_name": "The Hindu - Business",
+    "source_short": "The Hindu Biz",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "79dfc2ce7aad",
+    "title": "Sebi issues guidelines for custodians",
+    "description": "The regulator also allowed custodians to share manpower, infrastructure and systems across financial service activities, provided adequate safeguards such as Chinese walls and conflict-of-interest controls are maintained",
+    "link": "https://www.thehindu.com/business/sebi-issues-guidelines-for-custodians/article70706950.ece",
+    "date": "2026-03-05",
+    "source_id": "the_hindu_business",
+    "source_name": "The Hindu - Business",
+    "source_short": "The Hindu Biz",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5670b8ae5657",
+    "title": "Iran-Israel war 2026: IndiGo cancels 112 international flights on March 6 – Full list",
+    "description": "",
+    "link": "https://indianexpress.com/article/india/iran-israel-war-2026-indigo-cancels-112-international-flights-on-march-6-full-list-10565935/",
+    "date": "2026-03-05",
+    "source_id": "indian_express_policy",
+    "source_name": "Indian Express - India",
+    "source_short": "IE",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "4934f0c8efd9",
+    "title": "Andhra Pradesh to give Rs 25,000 for second, third child as Chandrababu Naidu pushes ‘population boost’",
+    "description": "",
+    "link": "https://indianexpress.com/article/india/andhra-pradesh-second-third-child-naidu-population-policy-10566126/",
+    "date": "2026-03-05",
+    "source_id": "indian_express_policy",
+    "source_name": "Indian Express - India",
+    "source_short": "IE",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Child Rights & Youth"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "child-rights-youth"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "79b07fea2fa9",
+    "title": "India offers condolences over Khamenei’s death, Foreign Secretary Misri reaches Iran embassy",
+    "description": "",
+    "link": "https://indianexpress.com/article/india/india-condolences-khamenei-death-foreign-secretary-misri-iran-embassy-10566055/",
+    "date": "2026-03-05",
+    "source_id": "indian_express_policy",
+    "source_name": "Indian Express - India",
+    "source_short": "IE",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "aac3f5a61338",
+    "title": "Army foils terror infiltration attempt along LoC in J&K’s Rajouri",
+    "description": "",
+    "link": "https://indianexpress.com/article/india/army-terror-infiltration-attempt-loc-in-jammu-kashmir-rajouri-10565982/",
+    "date": "2026-03-05",
+    "source_id": "indian_express_policy",
+    "source_name": "Indian Express - India",
+    "source_short": "IE",
+    "sectors": [
+      "Social Protection",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "412f68e7f732",
+    "title": "Women borrowers rise at 14.2% CAGR, emerging as key growth drivers for lenders: Report",
+    "description": "",
+    "link": "https://indianexpress.com/article/business/women-borrowers-cagr-key-growth-drivers-report-10566100/",
+    "date": "2026-03-05",
+    "source_id": "indian_express_business",
+    "source_name": "Indian Express - Business",
+    "source_short": "IE Biz",
+    "sectors": [
+      "Gender & Women",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "gender-women",
+      "transport-infrastructure"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "b9c0cff6d97c",
+    "title": "India Condoles Khamenei's Death, Foreign Secretary Meets Iran Ambassador",
+    "description": "India has sent its condolences to Iran on the death of its Supreme Leader Ayatollah Ali Khamenei. Foreign Secretary Vikram Misri met the Iran ambassador in Delhi today, and signed a condolence message for Khamenei.",
+    "link": "https://www.ndtv.com/india-news/india-condoles-khameneis-death-foreign-secretary-meets-iran-ambassador-11172176#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5fda6fb5fe98",
+    "title": "Woman Gang-Raped In Front Of Her Children, Cheek Bitten Off In Odisha Shocker",
+    "description": "Two men have been arrested in Odisha's Keonjhar district after a woman was allegedly gang-raped in front of her child, police said.",
+    "link": "https://www.ndtv.com/india-news/woman-gang-raped-in-front-of-her-children-cheek-bitten-off-in-odisha-shocker-11172509#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Digital & Technology",
+      "Child Rights & Youth",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "child-rights-youth",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "95c5379e05a1",
+    "title": "Opinion: Opinion | A Dark Truth: Why Iran, Ukraine Get Bombed, But Pak, Israel, N Korea Don't",
+    "description": "With the Iran blitz, the message to smaller and military states is shaping up to be this: 'build the damn bomb - if not legally, then the way Pakistan did in the 1970s'.",
+    "link": "https://www.ndtv.com/opinion/us-iran-israel-war-did-trump-attack-iran-because-it-had-nuclear-weapons-or-because-it-didnt-11172170#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "9531714e3355",
+    "title": "SSC GD Exam 2026 Postponed: Check New Date, Admit Card Release Updates",
+    "description": "The Staff Selection Commission has postponed the Assam Rifles 2026 Constable GD exam originally set for February 23; new dates will be announced soon.",
+    "link": "https://www.ndtv.com/education/ssc-gd-exam-2026-postponed-check-new-date-admit-card-release-updates-11172332#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "governance-reform"
+    ],
+    "type": "scheme",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d80df3898256",
+    "title": "23,000 Indian Sailors Stranded Near Strait Of Hormuz Amid Iran War: Sources",
+    "description": "As the Middle East conflict disrupts maritime routes, about 23,000 Indians are estimated to be stranded across the Gulf region, sources have told NDTV Profit, indicating a worsening crisis that has skyrocketed crude prices.",
+    "link": "https://www.ndtv.com/india-news/iran-israel-war-news-23-000-indian-seafarers-stranded-near-strait-of-hormuz-amid-iran-war-11172200#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "aa57acf7bf56",
+    "title": "How Congress Fell In Line And DMK Got its Way Again In Tamil Nadu",
+    "description": "As the Congress and the DMK end their haggling and sign a seat-sharing arrangement for 2026, much like in 2021, a lot went on behind the scenes before the party eventually fell in line.",
+    "link": "https://www.ndtv.com/india-news/how-congress-fell-in-line-and-dmk-got-its-way-again-in-tamil-nadu-11172171#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "10587edf4b86",
+    "title": "Stock Markets Close In Green: Sensex Up 899 Points, Nifty Gains 285 Points",
+    "description": "Stock Market Highlights: Sensex was at 79,443, up 327 points or 0.41%. Nifty rallied 100 points at the open.",
+    "link": "https://www.ndtv.com/india-news/sensex-today-stock-market-live-updates-traders-hope-for-sensex-nifty-recovery-after-wall-street-gains-11170011#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Climate & Environment",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "climate-environment",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1938a6843d36",
+    "title": "CBSE Class 12 Psychology Exam 2026: Check Paper Analysis And Student Reactions",
+    "description": "The CBSE Class 12 Psychology exam held on March 22 was well-balanced, covering theoretical and applied concepts, with difficulty ranging from easy to moderate, as per educators and students.",
+    "link": "https://www.ndtv.com/education/cbse-class-12-psychology-exam-2026-check-paper-analysis-and-student-reactions-11171948#publisher=newsstand",
+    "date": "2026-03-05",
+    "source_id": "ndtv_india",
+    "source_name": "NDTV - India",
+    "source_short": "NDTV",
+    "sectors": [
+      "Education",
+      "Digital & Technology",
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "education",
+      "digital-technology",
+      "finance-economy"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "e95b34e32d40",
+    "title": "'Modi govt's reckless abdication of India's strategic interests': Kharge slams PM",
+    "description": "Congress leader Mallikarjun Kharge criticized PM Modi for his handling of the Middle East crisis, accusing him of undermining India's strategic interests.",
+    "link": "https://www.hindustantimes.com/india-news/modi-govts-reckless-abdication-of-indias-strategic-interests-kharge-slams-pm-101772709684071.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "52ec37b30236",
+    "title": "Paddy procurement centre in-charge killed by elephant in Chhattisgarh's Korba district",
+    "description": "Paddy procurement centre in-charge killed by elephant in Chhattisgarh's Korba district",
+    "link": "https://www.hindustantimes.com/india-news/paddy-procurement-centre-in-charge-killed-by-elephant-in-chhattisgarh-s-korba-district-101772709989982.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8d4a9d0dc377",
+    "title": "Air India flew over restricted airspace in Middle East? Airline clarifies",
+    "description": "Air India on Thursday addressed claims circulating on social media that it was flew aircraft over restricted airspace in the Middle East amid US-Iran war.",
+    "link": "https://www.hindustantimes.com/india-news/air-india-flew-over-restricted-airspace-in-middle-east-airline-clarifies-101772709221612.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0a24ef963f36",
+    "title": "Shah to inaugurate exhibition on criminal laws in Bhubaneswar on March 6",
+    "description": "Shah to inaugurate exhibition on criminal laws in Bhubaneswar on March 6",
+    "link": "https://www.hindustantimes.com/india-news/shah-to-inaugurate-exhibition-on-criminal-laws-in-bhubaneswar-on-march-6-101772709678523.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ad13f702a4fe",
+    "title": "Amit Shah hails Nitish Kumar as Bihar chief minister files Rajya Sabha nomination",
+    "description": "Amit Shah said Nitish Kumar lived by the principles of socialist leader Jai Prakash Narayan, as a product of the JP Movement, with a clean record",
+    "link": "https://www.hindustantimes.com/india-news/amit-shah-hails-nitish-kumar-as-bihar-chief-minister-files-rajya-sabha-nomination-101772709193995.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ff89a6774984",
+    "title": "India offers condolences on Khamenei's death, Foreign Secretary Vikram Misri signs condolence book",
+    "description": "Iranian Supreme Leader Ayatollah Ali Khamenei was killed in a joint US-Israeli airstrike on February 28, plunging the West Asian region into a war.",
+    "link": "https://www.hindustantimes.com/india-news/india-offers-condolences-on-khameneis-death-foreign-secretary-vikram-misri-signs-condolence-book-101772707747455.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "22fa402bc3f8",
+    "title": "Sonowal lays foundation for India's first river lighthouses in Assam",
+    "description": "Sonowal lays foundation for India's first river lighthouses in Assam",
+    "link": "https://www.hindustantimes.com/india-news/sonowal-lays-foundation-for-india-s-first-river-lighthouses-in-assam-101772707859958.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "59224a86340d",
+    "title": "Chhattisgarh: Farmers in Korea district earmark 5% land for water recharge system",
+    "description": "Chhattisgarh: Farmers in Korea district earmark 5% land for water recharge system",
+    "link": "https://www.hindustantimes.com/india-news/chhattisgarh-farmers-in-korea-district-earmark-5-land-for-water-recharge-system-101772706623362.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Agriculture",
+      "Social Protection",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "agriculture",
+      "social-protection",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "e9757a4aa463",
+    "title": "CJI Surya Kant meets Bhutan king in Thimphu, offers support to digitalise judicial processes",
+    "description": "CJI Surya Kant meets Bhutan king in Thimphu, offers support to digitalise judicial processes",
+    "link": "https://www.hindustantimes.com/india-news/cji-surya-kant-meets-bhutan-king-in-thimphu-offers-support-to-digitalise-judicial-processes-101772706314164.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ee729f1a0469",
+    "title": "Maritime exercise on Feb 16, attack on March 4: Timeline of IRIS Dena, hit by US torpedo",
+    "description": "The Indian Navy welcomed Iranian vessel IRIS Dena on February 16 after it arrived in the country for the multilateral naval exercise, Milan 2026.",
+    "link": "https://www.hindustantimes.com/india-news/maritime-exercise-on-feb-16-attack-on-march-4-timeline-of-iris-dena-hit-by-us-torpedo-101772700545823.html",
+    "date": "2026-03-05",
+    "source_id": "hindustan_times",
+    "source_name": "Hindustan Times - India",
+    "source_short": "HT",
+    "sectors": [
+      "Digital & Technology",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "4ab891f81fe1",
+    "title": "'Managed To Say Don't Worry': Uttarkhand Man's Half-Minute Call With Daughter In Iran Amid War",
+    "description": "Families in India, including Zakir Hussain and Ayub Khan, anxiously await news from relatives stranded in conflict-hit Iran.",
+    "link": "https://www.news18.com/india/managed-to-say-dont-worry-uttarkhand-mans-half-minute-call-with-daughter-in-iran-amid-war-ws-el-9944222.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d0b5c324ce64",
+    "title": "Jaishankar Speaks With Iranian FM Again, Second Phone Call In 6 Days As West Asia War Escalates",
+    "description": "India has now twice reached out to Tehran- once at the outbreak of hostilities and again on Day 6 as the conflict widens.",
+    "link": "https://www.news18.com/india/jaishankar-speaks-with-iranian-fm-again-second-telecon-in-6-days-as-west-asia-war-escalates-9944281.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "f1b608911e2d",
+    "title": "'Nothing Is Safer Than India': Travellers Returning From Dubai, Abu Dhabi Speak Of Relief | Photos",
+    "description": "With flight operations returning to normal at Delhi Airport, passengers arriving looked visibly exhausted after disrupted travel plans, yet the overriding emotion was relief",
+    "link": "https://www.news18.com/photogallery/cities/new-delhi-news/nothing-is-safer-than-india-travellers-returning-from-dubai-abu-dhabi-speak-of-relief-photos-ws-kl-9943968.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "cb4a7db4b702",
+    "title": "Decoding Khamenei’s ‘Fail-Safe’ Contingency: The Four-Layered Plan For Iranian Regime's Survival | Exclusive",
+    "description": "Indian intelligence reports exclusively accessed by CNN-News18 reveal Ayatollah Ali Khamenei’s clandestine 'succession and survival' plan",
+    "link": "https://www.news18.com/world/decoding-khameneis-fail-safe-contingency-the-four-layered-plan-for-iranian-regimes-survival-exclusive-9944164.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "6522de7e527c",
+    "title": "Support To Pregnant Women, Subsidised IVF & Rs 25K Cash: How Andhra Plans To Boost Fertility Rate",
+    "description": "Andhra Pradesh's government introduced a new policy to tackle declining fertility rates and ageing population. CM Naidu proposes childbirth incentives",
+    "link": "https://www.news18.com/india/support-to-pregnant-women-subsidised-ivf-rs-25k-cash-how-andhra-plans-to-boost-fertility-rate-ws-l-9944136.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Gender & Women"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "gender-women"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "251b8b0d0e63",
+    "title": "India Offers Condolences On Khamenei's Death, FS Vikram Misri Visits Iranian Embassy",
+    "description": "Foreign secretary Vikram Misri also met Iranian deputy foreign minister Saeed Khatibzadeh, who visited the embassy to sign the condolence book",
+    "link": "https://www.news18.com/india/vikram-misri-signs-khamenei-death-condolence-book-iran-embassy-west-asia-crisis-ws-l-9944112.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "f0f49d47bafa",
+    "title": "25 Days Of Crude Oil Available: Sources Say India Is In Comfortable Spot As Iran War Disrupts Supply",
+    "description": "India has 25 days of energy products amid Middle East war. The government is in touch with Canada, Australia, OPEC, IAEA for LPG and LNG supplies.",
+    "link": "https://www.news18.com/india/25-days-of-crude-oil-available-sources-say-india-is-in-comfortable-spot-as-iran-war-disrupts-supply-ws-l-9943900.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c9f5ef225943",
+    "title": "Your Taps Could Run Dry: Municipal Workers Warn Of Indefinite Statewide Strike In Karnataka",
+    "description": "If the workers proceed with their plan, water supply would be suspended in City Corporations, City Municipal Councils, Town Municipal Councils, and Town Panchayats state-wide.",
+    "link": "https://www.news18.com/india/your-taps-could-run-dry-municipal-workers-warn-of-indefinite-statewide-strike-skn-ws-l-9943909.html",
+    "date": "2026-03-05",
+    "source_id": "news18_india",
+    "source_name": "News18 - India",
+    "source_short": "News18",
+    "sectors": [
+      "Social Protection",
+      "Urban Development",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "urban-development",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5a458fadb73b",
+    "title": "Trade pacts enhance market access for exports",
+    "description": "",
+    "link": "https://icrier.org/trade-pacts-enhance-market-access-for-exports/?utm_source=rss&utm_medium=rss&utm_campaign=trade-pacts-enhance-market-access-for-exports",
+    "date": "2026-03-05",
+    "source_id": "icrier",
+    "source_name": "ICRIER",
+    "source_short": "ICRIER",
+    "sectors": [
+      "Trade & Commerce",
+      "Health",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "trade-commerce",
+      "health",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "3768b9aafbd9",
+    "title": "Security comes first: Bombay High Court dismisses plea to restore space near airport for namaz",
+    "description": "The Bombay High Court on Thursday dismissed a plea by a taxi driver's body seeking seeking temporary space at Mumbai’s domestic airport to offer prayers during the month of Ramzan [Taxi-Rickshaw Ola-Uber Association v. Adani Airport Ltd & Ors.]The plea by Taxi-Rickshaw Ola-Uber Association had sought restoration of a demolished prayer shed near Terminal 1 of the airport or an alternative space measuring 1,500 square feet for namaz during the holy month.However, the State opposed the plea cit",
+    "link": "https://www.barandbench.com/news/security-comes-first-bombay-high-court-dismisses-plea-to-restore-space-near-airport-for-namaz",
+    "date": "2026-03-05",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "32e4e0517dfb",
+    "title": "Global Ayyappa Sangamam: Kerala High Court asks auditor of TDB to suggest safeguards against financial irregularities",
+    "description": "The Kerala High Court on Thursday directed Travancore Devaswom Board (TDB)'s auditor to suggest measures that could help identify and rectify the financial inconsistencies in the board's accounts with respect to the 'Global Ayyappa Sangamam' event. [Suo Motu v State of Kerala & anr]A Division Bench of Justices Raja Vijayaraghavan V and KV Jayakumar examined the audit report placed before it by the Sabarimala Special Commissioner in relation to the Agola Ayyappa Sangamam or the Global Co",
+    "link": "https://www.barandbench.com/news/global-ayyappa-sangamam-kerala-high-court-asks-auditor-of-tdb-to-suggest-safeguards-against-financial-irregularities",
+    "date": "2026-03-05",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "scheme",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "b74b1bb2e88f",
+    "title": "J&K High Court warns clerks, judges of action if litigants illegally access court files",
+    "description": "The High Court of Jammu and Kashmir and Ladakh has expressed serious concern over the practice of litigants producing photostat copies of case documents directly from court records instead of obtaining certified copies of the same [Fayaz Ahmed Sheikh vs Qamar Un Nisa].Justice Rahul Bharti observed that the Court has been coming across such practices in both civil and criminal cases, where annexures attached to a petition are photocopies of the trial court's file, rather than certified copies obt",
+    "link": "https://www.barandbench.com/news/jk-high-court-warns-clerks-judges-of-action-if-litigants-illegally-access-court-files",
+    "date": "2026-03-05",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Governance & Reform",
+      "Climate & Environment"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "governance-reform",
+      "climate-environment"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "19538b1fb41b",
+    "title": "Identity theft: Supreme Court seals the business name loophole in G4S trademarks ruling",
+    "description": "Can a company use someone else’s registered trademark (or a deceptively similar mark) as part of its own business name, and then use that as a backdoor to claim trademark rights with respect to identical goods or services, catering to the same set of customers? This question recently went up all the way to the Supreme Court, in a case involving a globally-known brand with worldwide presence, and an Indian company operating domestically. BackgroundThe plaintiff, G4S Limited, an integrated se",
+    "link": "https://www.barandbench.com/view-point/identity-theft-supreme-court-seals-the-business-name-loophole-in-g4s-trademarks-ruling",
+    "date": "2026-03-05",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c2d0c93b56d6",
+    "title": "Central government clears appointment of Justice SA Dharmadhikari as Chief Justice of Madras High Court",
+    "description": "The Central government on Thursday approved the appointment of Justice Sushrut Arvind Dharmadhikari as the Chief Justice of the Madras High Court.Union Minister in charge of Law and Justice Arjun Ram Meghwal took to X (formerly Twitter) to confirm the appointment. In exercise of the power conferred by the Constitution of India, the President of India, after consultation with the Chief Justice of India, is pleased to appoint Shri Justice Sushrut Arvind Dharmadhikari, Judge of the High Court of Ke",
+    "link": "https://www.barandbench.com/news/law-policy/central-government-clears-appointment-of-justice-sa-dharmadhikari-as-chief-justice-of-madras-high-court",
+    "date": "2026-03-05",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "93ae98454f06",
+    "title": "OFFICE ORDER",
+    "description": "",
+    "link": "https://www.odisha.gov.in/sites/default/files/2026-03/5853.pdf",
+    "date": "2026-03-05",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "notification",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d53ef738fbd1",
+    "title": "ବିଭିନ୍ନ ବିଭାଗ ମୁଖ୍ୟରେ କାର୍ଯ୍ୟରତ ଓଡ଼ିଶା ବିଭାଗ ମୁଖ୍ୟ ସାଧାରଣ କ୍ୟାଡର (ଗ୍ରୁପ-ବି)ର…",
+    "description": "",
+    "link": "https://www.odisha.gov.in/sites/default/files/2026-02/HOME-CC-GRDN-0010-2021-7349_1.pdf",
+    "date": "2026-03-05",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "16ca511e0e06",
+    "title": "ଦାନ କରନ୍ତୁ",
+    "description": "ଡବ୍ଲୁ ଡବ୍ଲୁ ଡବ୍ଲୁ.ସିଏମଆରଏଫଓଡିଶା.ଗଭ.ଇନ/",
+    "link": "https://cmrfodisha.gov.in/donation/onlinedonation.php",
+    "date": "2026-03-05",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "88c6e46d1629",
+    "title": "www.eci.gov.in/",
+    "description": "www.eci.gov.in/",
+    "link": "https://eci.gov.in/",
+    "date": "2026-03-05",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "76468ecadab0",
+    "title": "ଓଡ଼ିଶାର ସଂକ୍ଷିପ୍ତ ବୃତ୍ତାନ୍ତ",
+    "description": "",
+    "link": "https://district.odisha.gov.in/",
+    "date": "2026-03-05",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "489cfba1aeeb",
+    "title": "Chanaki Mallikarachchi, Director of ICT, Ministry of Digital Economy, Sri Lanka",
+    "description": "",
+    "link": "https://govinsider.asia/intl-en/article/chanaki-mallikarachchi-director-ict-ministry-of-digital-economy-sri-lanka",
+    "date": "2026-03-05",
+    "source_id": "govinsider",
+    "source_name": "GovInsider Asia",
+    "source_short": "GovInsider",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "77d3dcbb30da",
+    "title": "Jaishankar speaks with Iranian counterpart Abbas Araghchi amid Middle East crisis",
+    "description": "External Affairs Minister S. Jaishankar said he held a telephonic conversation with Iranian FM Seyed Abbas Araghchi this afternoon.",
+    "link": "https://www.hindustantimes.com/india-news/jaishankar-speaks-with-iranian-counterpart-abbas-araghchi-amid-middle-east-crisis-101772711390762.html",
+    "date": "2026-03-05",
+    "source_id": "ht_rss",
+    "source_name": "Hindustan Times India News (RSS)",
+    "source_short": "HT RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1d447d3615bd",
+    "title": "Coffee table book featuring foods of Adivasi communities in The Nilgiris released",
+    "description": "",
+    "link": "https://www.thehindu.com/news/cities/Coimbatore/coffee-table-book-featuring-foods-of-adivasi-communities-in-the-nilgiris-released/article70707125.ece",
+    "date": "2026-03-05",
+    "source_id": "thehindu_rss",
+    "source_name": "The Hindu National (RSS)",
+    "source_short": "Hindu RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Tribal & Indigenous"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "tribal-indigenous"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "595816f0a68e",
+    "title": "Two workers killed after falling from under-construction building in Tolichowki",
+    "description": "",
+    "link": "https://www.thehindu.com/news/cities/Hyderabad/two-workers-killed-after-falling-from-under-construction-building-in-tolichowki/article70707334.ece",
+    "date": "2026-03-05",
+    "source_id": "thehindu_rss",
+    "source_name": "The Hindu National (RSS)",
+    "source_short": "Hindu RSS",
+    "sectors": [
+      "Social Protection",
+      "Energy",
+      "Housing"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "energy",
+      "housing"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "9f4bd3f3972b",
+    "title": "Rs 25,000 to have a second child? Andhra considers incentive for parents",
+    "description": "Rs 25,000 to have a second child? Andhra considers incentive for parents",
+    "link": "https://www.indiatoday.in/india/story/andhra-pradesh-cm-chandrababu-naidu-mulls-rupees-25000-incentive-second-child-2877798-2026-03-05?utm_source=rss",
+    "date": "2026-03-05",
+    "source_id": "indiatoday_rss",
+    "source_name": "India Today (RSS)",
+    "source_short": "IT RSS",
+    "sectors": [
+      "Housing",
+      "Child Rights & Youth"
+    ],
+    "sector_slugs": [
+      "housing",
+      "child-rights-youth"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "66c04bf43ec9",
+    "title": "India condoles Ayatollah Ali Khamenei's death",
+    "description": "India condoles Ayatollah Ali Khamenei's death",
+    "link": "https://www.indiatoday.in/india/video/india-condoles-ayatollah-ali-khameneis-death-2877823-2026-03-05?utm_source=rss",
+    "date": "2026-03-05",
+    "source_id": "indiatoday_rss",
+    "source_name": "India Today (RSS)",
+    "source_short": "IT RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "376c3834a0e2",
+    "title": "Hijack, betrayal, conspiracy: Opposition after Nitish Kumar's Rajya Sabha bid",
+    "description": "Hijack, betrayal, conspiracy: Opposition after Nitish Kumar's Rajya Sabha bid",
+    "link": "https://www.indiatoday.in/india/bihar/story/nitish-kumar-resigns-new-bihar-chief-minister-rajya-sabha-nomination-elections-2026-bjp-pm-modi-amit-shah-opposition-slam-reaction-2877794-2026-03-05?utm_source=rss",
+    "date": "2026-03-05",
+    "source_id": "indiatoday_rss",
+    "source_name": "India Today (RSS)",
+    "source_short": "IT RSS",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "9a986878a34f",
+    "title": "India condoles Khamenei's death, Foreign Secretary meets Iranian envoy",
+    "description": "India condoles Khamenei's death, Foreign Secretary meets Iranian envoy",
+    "link": "https://www.indiatoday.in/india/story/foreign-secretary-vikram-misri-signs-condolence-book-for-slain-ayatollah-khamenei-at-iran-embassy-2877786-2026-03-05?utm_source=rss",
+    "date": "2026-03-05",
+    "source_id": "indiatoday_rss",
+    "source_name": "India Today (RSS)",
+    "source_short": "IT RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "46bc93a1c449",
+    "title": "Time, Tide & Tamil Part 30 | 'Maximum' Guarantee Ramachandran: The Matinee Meteor",
+    "description": "Time, Tide & Tamil Part 30 | 'Maximum' Guarantee Ramachandran: The Matinee Meteor",
+    "link": "https://www.indiatoday.in/india/story/time-tide-and-tamil-part-30-maximum-guarantee-ramachandran-the-matinee-meteor-2877767-2026-03-05?utm_source=rss",
+    "date": "2026-03-05",
+    "source_id": "indiatoday_rss",
+    "source_name": "India Today (RSS)",
+    "source_short": "IT RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "bde37878509c",
+    "title": "Gukesh Held By Maghsoodloo In Prague International",
+    "description": "With just two rounds remaining, Gukesh sits on the last spot with two points",
+    "link": "https://www.deccanchronicle.com/sports/gukesh-held-by-maghsoodloo-in-prague-international-1941701",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8cde3eafe913",
+    "title": "Three Workers Killed After Falling from Under-Construction Building in Tolichowki",
+    "description": "Two others injured in accident at Tolichowki construction site",
+    "link": "https://www.deccanchronicle.com/southern-states/telangana/three-workers-killed-after-falling-from-under-construction-building-in-tolichowki-1941700",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "98226d13d140",
+    "title": "Charter Flight Arranged For West Indies Team To Return Home",
+    "description": "The development came few hours after West Indies coach Daren Sammy voiced his frustration on social media",
+    "link": "https://www.deccanchronicle.com/sports/charter-flight-arranged-for-west-indies-team-to-return-home-1941699",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d676d6eed40a",
+    "title": "Three Congress MLAs Join BJP Ahead Of Assembly Polls In Assam",
+    "description": "The development comes soon after former Assam Congress president Bhupen Borah joined the saffron party",
+    "link": "https://www.deccanchronicle.com/news/politics/three-congress-mlas-join-bjp-ahead-of-assembly-polls-in-assam-1941698",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Energy",
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "energy",
+      "labour-employment"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d6d9f8a8260a",
+    "title": "Aon Study:Systemic Barriers Limit Women’s Progress to Senior Leadership Roles",
+    "description": "Based on a survey of 1,500 leaders, including over 400 women across over 30 cities in India, the study provides a comprehensive view at how women and men progress through the leadership pipeline and identifies the structural barriers that limit women’s advancement to senior roles.",
+    "link": "https://www.deccanchronicle.com/business/aon-studysystemic-barriers-limit-womens-progress-to-senior-leadership-roles-1941697",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Gender & Women"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "gender-women"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "cf062e6220fe",
+    "title": "Sunken Iranian Warship Participated In Indian Naval Exercises",
+    "description": "The Indian government has not yet publicly commented on the incident of sinking of Iranian warship",
+    "link": "https://www.deccanchronicle.com/nation/world/irans-warship-which-participated-in-india-hosted-naval-exercises-was-sunk-by-us-1941696",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "811a291557eb",
+    "title": "Southern India at Heart of ESG Test for Food Majors",
+    "description": "Indian companies more than doubled their average score from about 7 per cent in 2023 to 16 per cent in 2025, broadly in line with the Asia average.",
+    "link": "https://www.deccanchronicle.com/lifestyle/environment/southern-india-at-heart-of-esg-test-for-food-majors-1941695",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Social Protection",
+      "Climate & Environment",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "climate-environment",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d3d5cf719908",
+    "title": "LIVE: India vs England – T20 World Cup Semifinal",
+    "description": "The match at Wankhede Stadium, Mumbai, India, starts at 7pm",
+    "link": "https://www.deccanchronicle.com/sports/cricket/live-india-vs-england-t20-world-cup-semifinal-1941694",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "bab00104de40",
+    "title": "Andhra Pradesh Mulls Rs 25,000 Incentive For Second Child : CM Naidu",
+    "description": "state government is considering a birth incentive for couples from their second child onwards to boost the falling birth rate",
+    "link": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/andhra-state-govt-is-considering-incentive-for-second-child-1941693",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Child Rights & Youth"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "child-rights-youth"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5c6b39a107fe",
+    "title": "Naidu Recalls Laying Foundation for Veligonda Project, Vows to Complete It",
+    "description": "Naidu said the project was conceived to address the severe drinking water and irrigation shortages faced by people in the backward western region of the then Prakasam district.",
+    "link": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/naidu-recalls-laying-foundation-for-veligonda-project-vows-to-complete-it-1941692",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Water & Sanitation",
+      "Digital & Technology",
+      "Agriculture"
+    ],
+    "sector_slugs": [
+      "water-sanitation",
+      "digital-technology",
+      "agriculture"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "7fd8f010a42c",
+    "title": "India Condoles Khamenei's Death",
+    "description": "Foreign Secretary Misri visits Iran embassy",
+    "link": "https://www.deccanchronicle.com/nation/politics/india-offers-condolences-over-khameneis-death-1941691",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "3d52a808b063",
+    "title": "War-Hit Qatar Still Plans To Host Argentina-Spain Game With Messi, Yamal For UEFA",
+    "description": "If Doha is too much of a security risk to host the game, it could be moved to Spain or elsewhere in Europe where nearly all the players in the two squads are based",
+    "link": "https://www.deccanchronicle.com/sports/war-hit-qatar-still-plans-to-host-argentina-spain-game-with-messi-yamal-for-uefa-1941690",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c7f04f222ca1",
+    "title": "AP: Draft Population Management Policy Introduced in Assembly",
+    "description": "At present, the Total Fertility Rate in Andhra Pradesh is 1.5 while it was 3.0 in 1993. If the TFR gets reduced, the number of working population drops drastically, Naidu said",
+    "link": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-draft-population-management-policy-introduced-in-assembly-1941689",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "19ac2d156589",
+    "title": "Rupee Rebounds From Lowest Level",
+    "description": "Rupee settled with a gain of 45 paise higher at 91.60 against US dollar.",
+    "link": "https://www.deccanchronicle.com/business/market/the-rupee-rebounded-from-its-lowest-level-today-1941688",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Energy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "energy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0420bd2603ab",
+    "title": "Let Cynics Question My Motives: Sonu Sood",
+    "description": "Actor Sonu Sood has stepped forward to offer free accommodation to Indians stranded in Dubai",
+    "link": "https://www.deccanchronicle.com/entertainment/sonu-sood-offers-free-shelter-to-indians-stranded-in-dubai-1941687",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1e960cd3bbba",
+    "title": "Stock Markets Rebound Tracking Rally in Global Peers; Sensex Rallies 899 Pts",
+    "description": "The 50-share NSE Nifty climbed 285.40 points or 1.17 per cent to end at 24,765.90, ending its three-day falling streak",
+    "link": "https://www.deccanchronicle.com/business/market/stock-markets-rebound-tracking-rally-in-global-peers-sensex-rallies-899-pts-1941686",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0b0ff9b391f3",
+    "title": "Ukraine's F-16 jets Were Starved Of US-Made Missiles For Weeks",
+    "description": "Ukraine's F-16 fleet ran out of missiles to counter Russian attacks.",
+    "link": "https://www.deccanchronicle.com/world/europe/ukraines-f-16-fleet-ran-out-of-missiles-to-counter-russian-attacks-1941685",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Defence & Security"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "defence-security"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "bf53b7652897",
+    "title": "Nara Lokesh, Wife Attend Arjun Tendulkar-Saaniya's Wedding",
+    "description": "Arjun was initially picked up by the Mumbai Indians in the IPL 2021 mini-auction for Rs 20 lakh but did not get an opportunity to play that season. MI bought him again for Rs 30 lakh in the IPL 2022 mega-auction, and he made his long-awaited IPL debut in 2023, taking three wickets in four games",
+    "link": "https://www.deccanchronicle.com/news/current-affairs/nara-lokesh-his-wife-brahmani-attend-arjun-tendulkar-saaniyas-wedding-1941675",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d8a9037f012d",
+    "title": "RRR Custodial Assault: IPS Officer Sunil Naik Appears for Questioning",
+    "description": "Bihar-cadre officer attends inquiry at Guntur CCS police station following High Court directive",
+    "link": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ips-officer-sunil-naik-appears-for-questioning-in-raghurama-krishnam-raju-custodial-assault-case-1941652",
+    "date": "2026-03-05",
+    "source_id": "dc_rss",
+    "source_name": "Deccan Chronicle (RSS)",
+    "source_short": "DC RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "3dce38fece9e",
+    "title": "UPSC Editorial Analysis: India’s National HPV Vaccination Drive",
+    "description": "General Studies-2; Topic: Issues relating to development and management of Social Sector/Services relating to Health, Education, Human Resources.   Introduction The recent launch of the nationwide HPV vaccination programme marks a historic shift in India’s public health policy. Targeted at 14-year-old girls, this initiative aims to eliminate cervical cancer, a disease that remains a premier … Continue reading \"UPSC Editorial Analysis: India’s National HPV Vaccination Drive\" The post U",
+    "link": "https://www.insightsonindia.com/2026/03/05/upsc-editorial-analysis-indias-national-hpv-vaccination-drive/",
+    "date": "2026-03-05",
+    "source_id": "insightsias_rss",
+    "source_name": "Insights on India (RSS)",
+    "source_short": "InsightsIAS RSS",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "scheme",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "088ab56ab99a",
+    "title": "UPSC Current Affairs Quiz : 5 March 2026",
+    "description": "The Current Affairs Quiz is a daily quiz based on the DAILY CURRENT AFFAIRS AND PIB SUMMARY from the previous day, as posted on our website. It covers all relevant news sources and is designed to test your knowledge of current events. Solving these questions will help you retain both concepts and facts relevant … Continue reading \"UPSC Current Affairs Quiz : 5 March 2026\" The post UPSC Current Affairs Quiz : 5 March 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Pre",
+    "link": "https://www.insightsonindia.com/2026/03/05/upsc-current-affairs-quiz-5-march-2026/",
+    "date": "2026-03-05",
+    "source_id": "insightsias_rss",
+    "source_name": "Insights on India (RSS)",
+    "source_short": "InsightsIAS RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "51a30cf3bd02",
+    "title": "UPSC Insights SECURE SYNOPSIS : 5 March 2026",
+    "description": "NOTE: Please remember that following ‘answers’ are NOT ‘model answers’. They are NOT synopsis too if we go by definition of the term. What we are providing is content that both meets demand of the question and at the same time gives you extra points in the form of background information.   General Studies – … Continue reading \"UPSC Insights SECURE SYNOPSIS : 5 March 2026\" The post UPSC Insights SECURE SYNOPSIS : 5 March 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS",
+    "link": "https://www.insightsonindia.com/2026/03/05/upsc-insights-secure-synopsis-5-march-2026/",
+    "date": "2026-03-05",
+    "source_id": "insightsias_rss",
+    "source_name": "Insights on India (RSS)",
+    "source_short": "InsightsIAS RSS",
+    "sectors": [
+      "Social Protection",
+      "Governance & Reform",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "governance-reform",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d56a3229f5e9",
+    "title": "UPSC Insta–DART (Daily Aptitude and Reasoning Test) 5 Mar 2026",
+    "description": "Considering the alarming importance of CSAT in UPSC CSE Prelims exam and with enormous requests we received recently, InsightsIAS has started Daily CSAT Test to ensure students practice CSAT Questions on a daily basis. Regular Practice would help one overcome the fear of CSAT too.We are naming this initiative as Insta– DART – Daily … Continue reading \"UPSC Insta–DART (Daily Aptitude and Reasoning Test) 5 Mar 2026\" The post UPSC Insta–DART (Daily Aptitude and Reasoning Test) 5 Mar 20",
+    "link": "https://www.insightsonindia.com/2026/03/05/upsc-insta-dart-daily-aptitude-and-reasoning-test-5-mar-2026/",
+    "date": "2026-03-05",
+    "source_id": "insightsias_rss",
+    "source_name": "Insights on India (RSS)",
+    "source_short": "InsightsIAS RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0521b97deb9f",
+    "title": "केन्द्रीय ग्रामीण विकास मंत्रालय, MY Bharat के साथ मिलकर, कल से एक राष्ट्रव्यापी डिजिटल अभियान “VB-G RAM G Youth Digital Campaign” की शुरुआत करने जा रहा है",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235614",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Digital & Technology",
+      "Child Rights & Youth"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "child-rights-youth"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "109054425d68",
+    "title": "केन्द्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह 6 मार्च को ओडिशा में इफको का सल्फ्यूरिक एसिड प्लांट (SAP-III) राष्ट्र को समर्पित करेंगे",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235579",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "2963d9eee7cd",
+    "title": "मिजोरम में खाद्यान्न आपूर्ति श्रृंखला में महत्‍वपूर्ण कदम: पंजाब से सैरांग तक 25,900 क्विंटल चावल रेल से पहुंचा, खाद्य आपूर्ति में सुधार हुआ",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235634",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "195abe371cf7",
+    "title": "केंद्रीय मंत्री डॉ. मनसुख मांडविया और राज्य मंत्री श्रीमती रक्षा निखिल खडसे 6 और 7 मार्च को बेंगलुरु में आयोजित मेरा युवा भारत - एनएसएस चिंतन शिविर में शामिल होंगे",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235637",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "aab655ec35b1",
+    "title": "अमृत ​​पीढ़ी ने केंद्रीय बजट पर अपनी प्रतिक्रिया दी: एमवाई भारत बजट क्वेस्ट 2026 के दूसरे चरण में रिकॉर्ड तोड़ लगभग 47,000 निबंध प्रस्तुतियां प्राप्त हुईं",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235638",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8022ee5495d1",
+    "title": "आईआईसीए ने पीजीआईपी के सातवें बैच के लिए जीएसटी और पीएमएलए-आईबीसी के अंतर्संबंध पर \"मीट द लेजेंड\" सत्र आयोजित किया",
+    "description": "",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2235563",
+    "date": "2026-03-05",
+    "source_id": "pib_rss",
+    "source_name": "PIB RSS Feed",
+    "source_short": "PIB RSS",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "451d4e974d66",
+    "title": "Ageing, Health and Social Security",
+    "description": "",
+    "link": "https://www.epw.in/ageing-health-and-social-security",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Health",
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8b350b56e29f",
+    "title": "Interventions",
+    "description": "",
+    "link": "https://www.epw.in/engage/interventions",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "2a81b5d0bc21",
+    "title": "Theory and Practice of Imperialism 3.0",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/9/strategic-affairs/theory-and-practice-imperialism-30.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "802ecaa5ae8e",
+    "title": "Increasing Female Employment in India",
+    "description": "The female workforce participation rate has been steadily increasing in India since 2017–18. Examining the reasons behind this trend, the findings indicate a worsening nature for female employment in India, where most women entered the workforce as unpaid or subsidiary workers. Real earnings for workers have generally been declining or stagnant since 2017–18. Additionally, there has been a decline in real household expenditure from 2017–18 to 2023–24. These findings suggest a distress-driven inc",
+    "link": "https://www.epw.in/journal/2026/8/special-articles/increasing-female-employment-india.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Finance & Economy",
+      "Gender & Women"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "finance-economy",
+      "gender-women"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "137f2c4913b0",
+    "title": "Disseminating Alternative Discourses in Kerala",
+    "description": "Pattabakki(Lease Balance) (1938), written by K Damodaran, was the first political natakam in Kerala that challenged the dominant theatrical, political, and cultural paradigms. It emerged at a historically contingent moment when peasant organisations and communist groups were mobilising against feudal exploitation in society. This theatre genre countered the hegemony of mythological and historical dramas by dramatising systemic agrarian oppression and advocating collective resistance. The natakam",
+    "link": "https://www.epw.in/journal/2026/8/special-articles/disseminating-alternative-discourses-kerala.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "a1be0457fc25",
+    "title": "The Colonial Impact on Chieftainship",
+    "description": "Chieftainship, which has been central to the sociopolitical life of the Zo ethnic tribes in the Indo-Burma borderlands since precolonial times, features in all colonial writings on the Zo tribes, but there has been no major independent study of the institution. Analysing the impact of colonial rule on Zo chieftainship, the paper shows that colonial rule while hollowing out the core attributes of Zo chieftainship, entrenched landownership systems and economic power in favour of the chiefs within",
+    "link": "https://www.epw.in/journal/2026/8/special-articles/colonial-impact-chieftainship.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Energy",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "energy",
+      "social-protection"
+    ],
+    "type": "legislation",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c3034764eabc",
+    "title": "Special Articles",
+    "description": "",
+    "link": "https://www.epw.in/special-articles",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "e0633fa265bc",
+    "title": "Review of Women's Studies",
+    "description": "",
+    "link": "https://www.epw.in/review-womens-studies",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection",
+      "Gender & Women",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "gender-women",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "02c422edaca2",
+    "title": "Poverty of Concepts and Policies",
+    "description": "",
+    "link": "https://www.epw.in/poverty-concepts-and-policies",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "d6ec68195943",
+    "title": "EPW Engage",
+    "description": "In view of the recent attacks on writer Kancha Ilaiah, we are republishing his 1996 article which was published as a Commentary in on 15 Jun, 1996 in Vol. 31, Issue No. 24 of the EPW. On one hand the BJP defines SC, OBC castes as Hindus, and on the other by banning beef denies them their age-old food habits. If beef is banned it will he the beginning of the end of the country's multiculturalism.",
+    "link": "https://www.epw.in/epw-engage",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection",
+      "Digital & Technology",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "digital-technology",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8ce5d2973bd2",
+    "title": "Limits of Mingling",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/49/review-rural-affairs/limits-mingling.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "f3457decd074",
+    "title": "New Collectives, Old Hierarchies?",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/49/review-rural-affairs/new-collectives-old-hierarchies.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0abe1eb4923c",
+    "title": "Caste, Water, and the Political Ecology of Drought",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/49/review-rural-affairs/caste-water-and-political-ecology-drought.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Water & Sanitation"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "water-sanitation"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "b53ba3fe9a76",
+    "title": "Disposing Land in Patna",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/6/review-urban-affairs/disposing-land-patna.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "a89d90853842",
+    "title": "Unified Urban Development Control",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/6/review-urban-affairs/unified-urban-development-control.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Urban Development",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "urban-development",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "dcc33e1951c4",
+    "title": "(Un)Fixing the Social",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/6/review-urban-affairs/unfixing-social.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "8c655715b3a5",
+    "title": "Invisible Work, Visible Malnutrition",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/26-27/review-gender-studies/invisible-work-visible-malnutrition.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Health",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "0285142b1f2d",
+    "title": "Confinements of Conjugality",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/26-27/review-gender-studies/confinements-conjugality.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "63f3e67dba0a",
+    "title": "Unions and Labour NGOs",
+    "description": "",
+    "link": "https://www.epw.in/journal/2025/26-27/review-gender-studies/unions-and-labour-ngos.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Labour & Employment"
+    ],
+    "sector_slugs": [
+      "labour-employment"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "9b5cf0861991",
+    "title": "Domesticating Climate Change",
+    "description": "",
+    "link": "https://www.epw.in/journal/review-environment-and-development/domesticating-climate-change.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Climate & Environment",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "climate-environment",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "71594b7e71a4",
+    "title": "Pathway to a Renewable Energy-centric Energy Transition",
+    "description": "",
+    "link": "https://www.epw.in/journal/review-environment-and-development/pathway-renewable-energy-centric-energy-transition.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Energy",
+      "Climate & Environment",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "energy",
+      "climate-environment",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "823da207f347",
+    "title": "A Road to Coastal Deregulation",
+    "description": "",
+    "link": "https://www.epw.in/journal/review-environment-and-development/road-coastal-deregulation.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection",
+      "Transport & Infrastructure"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "transport-infrastructure"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "5a34d226bba6",
+    "title": "Odia Print Public Sphere and the Making of Nationalism",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/9/book-reviews/odia-print-public-sphere-and-making-nationalism.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "3292266eaa47",
+    "title": "Troubled Ancestry, Fractured Memories",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/9/book-reviews/troubled-ancestry-fractured-memories.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection",
+      "Energy",
+      "Tribal & Indigenous"
+    ],
+    "sector_slugs": [
+      "social-protection",
+      "energy",
+      "tribal-indigenous"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c7883a3b75a5",
+    "title": "The Pandemic’s Impact on Global Innovation Systems",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/6/book-reviews/pandemics-impact-global-innovation-systems.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Health",
+      "Social Protection",
+      "Science & Innovation"
+    ],
+    "sector_slugs": [
+      "health",
+      "social-protection",
+      "science-innovation"
+    ],
+    "type": "legislation",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "1bd105c6fd05",
+    "title": "Lines That Divide, Lives That Endure",
+    "description": "",
+    "link": "https://www.epw.in/journal/book-reviews/lines-divide-lives-endure.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "bbd3c71f68b9",
+    "title": "Tackling India’s Nutrition Puzzles",
+    "description": "",
+    "link": "https://www.epw.in/journal/book-reviews/tackling-indias-nutrition-puzzles.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Health",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "health",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "f0f8998febc7",
+    "title": "A Rain Drop and a Cloud",
+    "description": "So achingly beautiful the momentOf a rain drop on a green leaf’s tipSlid down the vein of the leaf bentHolding back the drop only to let slip.On the drop’s curve in sharp detailIs a minute reflection....",
+    "link": "https://www.epw.in/journal/2025/52/postscript/rain-drop-and-cloud.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Climate & Environment",
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "climate-environment",
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "a972c656e93a",
+    "title": "I am told",
+    "description": "Watch your anger, I am toldnot in hate nor blameWait for it to fully unfoldlet it stake its claim.Claim the hurt, it’s every foldtucked away in childhood’s name.Far into the deep and coldforgotten....",
+    "link": "https://www.epw.in/journal/2025/52/postscript/i-am-told.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection",
+      "Energy"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection",
+      "energy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "c26d969bf09c",
+    "title": "Beyond Grand Narratives of the Sacred",
+    "description": "With an Egyptian accent, long hair, and charismatic eyes, a man calls out to 12 outsiders to follow him, and that changes the course of entire history. This short account is also the premise of The....",
+    "link": "https://www.epw.in/journal/2025/52/postscript/beyond-grand-narratives-sacred.html",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Digital & Technology",
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "85a006ae0fbb",
+    "title": "Stories Cartoons Tell: A Dialogic Analysis of Israel–Palestine Conflict",
+    "description": "",
+    "link": "https://www.epw.in/engage/article/stories-cartoons-tell-dialogic-analysis-israel",
+    "date": "2026-03-05",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "research",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "2b13b9ee44be",
+    "title": "Sixth Annual Day,IBBI",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/131",
+    "date": "2026-03-05",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "32a835c91ba0",
+    "title": "NCLT Colloqium March'22",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/133",
+    "date": "2026-03-05",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "30f9bb1b2523",
+    "title": "Others",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/134",
+    "date": "2026-03-05",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
     ],
     "type": "policy",
     "level": "central",
@@ -28460,6 +31918,25 @@
     "state": ""
   },
   {
+    "id": "6e526f8c35b9",
+    "title": "Vol. 61, Issue No. 9, 28 Feb, 2026",
+    "description": "",
+    "link": "https://www.epw.in/journal/2026/9",
+    "date": "2026-02-28",
+    "source_id": "epw",
+    "source_name": "Economic and Political Weekly",
+    "source_short": "EPW",
+    "sectors": [
+      "Governance & Reform"
+    ],
+    "sector_slugs": [
+      "governance-reform"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
     "id": "6226901d8272",
     "title": "Tollywood actor Koel Mallick, Babul Supriyo, ex-Bengal DGP Rajeev Kumar among TMC nominees for RS polls",
     "description": "Supriyo, who joined the TMC in 2021, is currently a minister in the Mamata Banerjee cabinet. Kumar served as the Director General of Police and earlier as the Commissioner of Kolkata Police. Guruswamy is a Supreme Court advocate, while Mallick is a prominent actor in Tollywood",
@@ -30451,6 +33928,29 @@
     "state": ""
   },
   {
+    "id": "229ba3ddbed1",
+    "title": "DSK Legal, AZB act on India leg of CMA CGM - Stonepeak joint venture",
+    "description": "CMA CGM S.A., the world’s third-largest container shipping group, has entered into a strategic partnership with Stonepeak Partners LP, to form United Ports LLC, a Joint Venture to acquire 10 of the major CMA CGM-operated port terminals worldwide.Under the terms of the agreement, Stonepeak acquired a 25% minority stake in United Ports LLC for $2.4 billion. The deal further includes a commitment for up to $3.6 billion in additional investment.DSK Legal assisted and advised CMA CGM on the",
+    "link": "https://www.barandbench.com/dealstreet/dsk-legal-acts-on-indian-leg-of-cma-cgm-stonepeak-joint-venture",
+    "date": "2026-02-11",
+    "source_id": "barandbench",
+    "source_name": "Bar and Bench",
+    "source_short": "Bar&Bench",
+    "sectors": [
+      "Digital & Technology",
+      "Transport & Infrastructure",
+      "Education"
+    ],
+    "sector_slugs": [
+      "digital-technology",
+      "transport-infrastructure",
+      "education"
+    ],
+    "type": "legislation",
+    "level": "central",
+    "state": ""
+  },
+  {
     "id": "d71ad6e75d87",
     "title": "Appointment of Vice-Chancellor of University of Hyderabad (Monday, 9 February 2026 - 10:51am) - (484.16 KB)",
     "description": "",
@@ -31863,6 +35363,25 @@
     "state": ""
   },
   {
+    "id": "1f775a0873fb",
+    "title": "Revised Deadline Circular FY-2025-26",
+    "description": "",
+    "link": "https://www.odisha.gov.in/sites/default/files/2026-02/Revised%20Deadline%20Circular_1.pdf",
+    "date": "2025-06-01",
+    "source_id": "odisha_govt",
+    "source_name": "Odisha Government",
+    "source_short": "OD Govt",
+    "sectors": [
+      "Energy"
+    ],
+    "sector_slugs": [
+      "energy"
+    ],
+    "type": "notification",
+    "level": "central",
+    "state": ""
+  },
+  {
     "id": "d7a708727f15",
     "title": "अप्रैल, 2025 के माह के लिए मंत्रिमंडल हेतु मासिक सार (उच्चतर शिक्षा विभाग) (Thursday, 15 May 2025 - 6:03pm) - (420.05 KB)",
     "description": "",
@@ -32705,6 +36224,63 @@
     "state": ""
   },
   {
+    "id": "253ee69f7120",
+    "title": "A New Chapter:- Court and Case Management - Organisation Transformation. (Work done during Summer vacation i.e. 18.06.2024 to 29.06.2024)",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/136",
+    "date": "2024-06-01",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Trade & Commerce"
+    ],
+    "sector_slugs": [
+      "trade-commerce"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "ccfbfb6eee53",
+    "title": "Yoga Day celebration 2024 at National Company Law Tribunal",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/135",
+    "date": "2024-06-01",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "9bfd983d5af2",
+    "title": "NCLT Colloqium, Bhubaneswar- March 2024",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/129",
+    "date": "2024-06-01",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Finance & Economy"
+    ],
+    "sector_slugs": [
+      "finance-economy"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
     "id": "71f40480a1d0",
     "title": "Moneycontrol Pro Panorama | India at big club threshold",
     "description": "In today#39;s edition of Pro Panorama: Rupee#39;s resilience, economy on a strong footing, how to have a balance in energy mix and more",
@@ -33232,6 +36808,25 @@
     "state": ""
   },
   {
+    "id": "8243ffa81657",
+    "title": "NCLT Colloqium, Chennai - November 2023",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/130",
+    "date": "2023-06-01",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Digital & Technology"
+    ],
+    "sector_slugs": [
+      "digital-technology"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
     "id": "cbd547a0d43f",
     "title": "Synthesis of the Impacts of Covid-19 on India’s Labor Market : Looking at People, Places and Policies",
     "description": "World Bank: Synthesis of the Impacts of Covid-19 on India’s Labor Market : Looking at People, Places and Policies",
@@ -33433,6 +37028,25 @@
     ],
     "sector_slugs": [
       "digital-technology",
+      "social-protection"
+    ],
+    "type": "policy",
+    "level": "central",
+    "state": ""
+  },
+  {
+    "id": "092067d9fc19",
+    "title": "8th International Day of Yoga (IDY) was observed on 21st June 2022 at NCLT, Principal Bench & New Delhi Benches",
+    "description": "",
+    "link": "https://nclt.gov.in/taxonomy/term/132",
+    "date": "2022-06-01",
+    "source_id": "nclt",
+    "source_name": "National Company Law Tribunal",
+    "source_short": "NCLT",
+    "sectors": [
+      "Social Protection"
+    ],
+    "sector_slugs": [
       "social-protection"
     ],
     "type": "policy",

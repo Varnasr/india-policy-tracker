@@ -1,0 +1,19 @@
+{
+  "id": "8b350b56e29f",
+  "title": "Interventions",
+  "description": "",
+  "link": "https://www.epw.in/engage/interventions",
+  "date": "2026-03-05",
+  "source_id": "epw",
+  "source_name": "Economic and Political Weekly",
+  "source_short": "EPW",
+  "sectors": [
+    "Governance & Reform"
+  ],
+  "sector_slugs": [
+    "governance-reform"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
