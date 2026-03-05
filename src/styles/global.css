@@ -1304,6 +1304,11 @@ body.mobile-nav-open { overflow: hidden; }
   margin-bottom: var(--space-lg);
   scrollbar-width: none;
 }
+.trending-strip::after {
+  content: '';
+  flex-shrink: 0;
+  width: 1px;
+}
 .trending-strip::-webkit-scrollbar { display: none; }
 
 .trending-chip {
