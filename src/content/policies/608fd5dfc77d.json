@@ -1,0 +1,19 @@
+{
+  "id": "608fd5dfc77d",
+  "title": "Talk of the Town",
+  "description": "",
+  "link": "https://www.deccanchronicle.com/tabloid/hyderabad-chronicle/talk-of-the-town-1941859",
+  "date": "2026-03-06",
+  "source_id": "dc_rss",
+  "source_name": "Deccan Chronicle (RSS)",
+  "source_short": "DC RSS",
+  "sectors": [
+    "Governance & Reform"
+  ],
+  "sector_slugs": [
+    "governance-reform"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

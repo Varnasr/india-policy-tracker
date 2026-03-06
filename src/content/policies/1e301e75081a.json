@@ -1,0 +1,23 @@
+{
+  "id": "1e301e75081a",
+  "title": "NDTV Launches Datafy, A Platform For Data-Driven Journalism",
+  "description": "Datafy will operate across NDTV's broadcast and digital platforms, supporting coverage of elections, economics, geopolitics, sports and other major developments.",
+  "link": "https://www.ndtv.com/india-news/ndtv-launches-datafy-a-platform-for-data-driven-journalism-11176087#publisher=newsstand",
+  "date": "2026-03-06",
+  "source_id": "ndtv_rss",
+  "source_name": "NDTV India News (RSS)",
+  "source_short": "NDTV RSS",
+  "sectors": [
+    "Digital & Technology",
+    "Transport & Infrastructure",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "transport-infrastructure",
+    "social-protection"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
