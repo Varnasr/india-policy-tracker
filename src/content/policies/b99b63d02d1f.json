@@ -1,0 +1,21 @@
+{
+  "id": "b99b63d02d1f",
+  "title": "Connected cargo, disconnected buildings",
+  "description": "The era of the passive storage shed is ending; what replaces it is a connected facility where AI works quietly across systems",
+  "link": "https://www.thehindubusinessline.com/economy/agri-business/connected-cargo-disconnected-buildings/article70713430.ece",
+  "date": "2026-03-07",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Digital & Technology",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "social-protection"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
