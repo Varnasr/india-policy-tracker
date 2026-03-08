@@ -1,7 +1,7 @@
 {
   "id": "78055025bcf9",
   "title": "Centre withdraws revised earthquake zoning after backlash from Ministries, infrastructure agencies",
-  "description": "",
+  "description": "The development also has major implications for India’s buildings and construction sector, which had begun expressing concern over a potential spike in project costs",
   "link": "https://www.thehindu.com/business/Economy/centre-withdraws-revised-earthquake-zoning-after-backlash-from-ministries-infrastructure-agencies/article70716748.ece",
   "date": "2026-03-07",
   "source_id": "the_hindu_business",
@@ -9,13 +9,13 @@
   "source_short": "The Hindu Biz",
   "sectors": [
     "Digital & Technology",
-    "Social Protection",
-    "Energy"
+    "Finance & Economy",
+    "Social Protection"
   ],
   "sector_slugs": [
     "digital-technology",
-    "social-protection",
-    "energy"
+    "finance-economy",
+    "social-protection"
   ],
   "type": "policy",
   "level": "central",

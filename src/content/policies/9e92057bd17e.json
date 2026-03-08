@@ -1,0 +1,19 @@
+{
+  "id": "9e92057bd17e",
+  "title": "Alternative Standpoint",
+  "description": "",
+  "link": "https://www.epw.in/alternative-standpoint",
+  "date": "2026-03-08",
+  "source_id": "epw",
+  "source_name": "Economic and Political Weekly",
+  "source_short": "EPW",
+  "sectors": [
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "social-protection"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
