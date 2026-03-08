@@ -1,21 +1,21 @@
 {
   "id": "6feb55075a49",
   "title": "Drivers operating LPG-run autorickshaws fear disruption in supplies; appeal against price hike",
-  "description": "",
+  "description": "A retail fuel outlet owner said that as of now, there was no pressure to ration auto LPG",
   "link": "https://www.thehindu.com/news/cities/chennai/drivers-operating-lpg-run-autorickshaws-fear-disruption-in-supplies-appeal-against-price-hike/article70716704.ece",
   "date": "2026-03-08",
   "source_id": "the_hindu_policy",
   "source_name": "The Hindu - National",
   "source_short": "The Hindu",
   "sectors": [
+    "Social Protection",
     "Digital & Technology",
-    "Finance & Economy",
-    "Social Protection"
+    "Finance & Economy"
   ],
   "sector_slugs": [
+    "social-protection",
     "digital-technology",
-    "finance-economy",
-    "social-protection"
+    "finance-economy"
   ],
   "type": "policy",
   "level": "central",
