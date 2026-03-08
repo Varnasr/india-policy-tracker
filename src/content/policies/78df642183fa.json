@@ -1,0 +1,21 @@
+{
+  "id": "78df642183fa",
+  "title": "Hyderabad Event Guide",
+  "description": "The Pranit More show",
+  "link": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-event-guide-1942410",
+  "date": "2026-03-08",
+  "source_id": "dc_rss",
+  "source_name": "Deccan Chronicle (RSS)",
+  "source_short": "DC RSS",
+  "sectors": [
+    "Digital & Technology",
+    "Energy"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "energy"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
