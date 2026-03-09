@@ -1,0 +1,23 @@
+{
+  "id": "03f02faebbb5",
+  "title": "An export grid that bears fruit",
+  "description": "How a modern farm logistics grid can boost India’s agri exports",
+  "link": "https://www.thehindubusinessline.com/economy/logistics/an-export-grid-that-bears-fruit/article70719199.ece",
+  "date": "2026-03-08",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Transport & Infrastructure",
+    "Agriculture",
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "transport-infrastructure",
+    "agriculture",
+    "digital-technology"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

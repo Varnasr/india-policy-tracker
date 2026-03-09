@@ -1,0 +1,23 @@
+{
+  "id": "4feb7c0e989a",
+  "title": "Schools reopen in Kashmir",
+  "description": "Schools, colleges and universities were closed for a week from last Monday after protests erupted across the Valley following Khamenei’s killing",
+  "link": "https://www.thehindu.com/news/national/jammu-and-kashmir/schools-reopen-in-kashmir/article70721258.ece",
+  "date": "2026-03-09",
+  "source_id": "the_hindu_policy",
+  "source_name": "The Hindu - National",
+  "source_short": "The Hindu",
+  "sectors": [
+    "Education",
+    "Social Protection",
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "education",
+    "social-protection",
+    "digital-technology"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
