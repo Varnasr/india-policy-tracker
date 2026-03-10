@@ -1,0 +1,23 @@
+{
+  "id": "69fe9db917f9",
+  "title": "SPECIAL DRIVE AGAINST DRUG MAFIA",
+  "description": "Government of India press release: SPECIAL DRIVE AGAINST DRUG MAFIA",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2237484",
+  "date": "2026-03-10",
+  "source_id": "state_pib_karnataka",
+  "source_name": "PIB Bengaluru (Karnataka)",
+  "source_short": "PIB KA",
+  "sectors": [
+    "Health",
+    "Digital & Technology",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "health",
+    "digital-technology",
+    "social-protection"
+  ],
+  "type": "announcement",
+  "level": "state",
+  "state": "Karnataka"
+}

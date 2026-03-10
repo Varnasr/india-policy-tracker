@@ -1,0 +1,23 @@
+{
+  "id": "45ab4994192c",
+  "title": "Climate change and health: Urgent action needed for clean air and safe water",
+  "description": "A report from the Climate Crisis Advisory Group highlights the urgent need to integrate climate and health action for maximum impact.",
+  "link": "https://www.thehindubusinessline.com/economy/climate-change-and-health-urgent-action-needed-for-clean-air-and-safe-water/article70725354.ece",
+  "date": "2026-03-10",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Climate & Environment",
+    "Health",
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "climate-environment",
+    "health",
+    "digital-technology"
+  ],
+  "type": "research",
+  "level": "central",
+  "state": ""
+}

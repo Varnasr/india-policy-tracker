@@ -1,0 +1,23 @@
+{
+  "id": "00c32409f991",
+  "title": "Mother, daughter killed in accident near Perumbakkam",
+  "description": "The deceased woman was taking her teenage daughter to drop her off at the school in Medavakkam",
+  "link": "https://www.thehindu.com/news/cities/chennai/mother-daughter-killed-in-accident-near-perumbakkam/article70725369.ece",
+  "date": "2026-03-10",
+  "source_id": "the_hindu_policy",
+  "source_name": "The Hindu - National",
+  "source_short": "The Hindu",
+  "sectors": [
+    "Education",
+    "Social Protection",
+    "Energy"
+  ],
+  "sector_slugs": [
+    "education",
+    "social-protection",
+    "energy"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
