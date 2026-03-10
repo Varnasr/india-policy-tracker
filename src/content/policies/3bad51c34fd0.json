@@ -1,0 +1,23 @@
+{
+  "id": "3bad51c34fd0",
+  "title": "India eases FDI norms to attract more investments from China in key sectors",
+  "description": "Clearer definition of beneficial ownership, faster clearances for select sectors",
+  "link": "https://www.thehindubusinessline.com/economy/india-eases-fdi-norms-to-attract-more-investments-from-china-in-key-sectors/article70727619.ece",
+  "date": "2026-03-10",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Finance & Economy",
+    "Digital & Technology",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "finance-economy",
+    "digital-technology",
+    "social-protection"
+  ],
+  "type": "legislation",
+  "level": "central",
+  "state": ""
+}
