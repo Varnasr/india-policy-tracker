@@ -1,0 +1,23 @@
+{
+  "id": "a5a61d3616fb",
+  "title": "The crisis of unemployment in J&K",
+  "description": "The lack of a diversified industry has limited job creation in the region",
+  "link": "https://www.thehindu.com/opinion/op-ed/the-crisis-of-unemployment-in-jk/article70728225.ece",
+  "date": "2026-03-11",
+  "source_id": "the_hindu_policy",
+  "source_name": "The Hindu - National",
+  "source_short": "The Hindu",
+  "sectors": [
+    "Labour & Employment",
+    "Digital & Technology",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "labour-employment",
+    "digital-technology",
+    "social-protection"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
