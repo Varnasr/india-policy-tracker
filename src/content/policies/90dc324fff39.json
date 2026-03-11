@@ -1,17 +1,19 @@
 {
   "id": "90dc324fff39",
   "title": "'Don't Panic, Don't Hoard': Centre To Ensure 100% Domestic LPG Supply Amid West Asia Crisis",
-  "description": "India has already increased the minimum gap for booking LPG cylinders from 21 to 25 days, so as to prevent hoarding",
+  "description": "The Centre said a committee will review the demands of restaurants and hotels, which warned against closures due to concerns over supply and distribution of commercial LPG",
   "link": "https://www.news18.com/india/domestic-lpg-supply-100-percent-cooking-gas-hoarding-iran-war-west-asia-crisis-ws-l-9955172.html",
   "date": "2026-03-11",
   "source_id": "news18_india",
   "source_name": "News18 - India",
   "source_short": "News18",
   "sectors": [
+    "Digital & Technology",
     "Social Protection",
     "Energy"
   ],
   "sector_slugs": [
+    "digital-technology",
     "social-protection",
     "energy"
   ],

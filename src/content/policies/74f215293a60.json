@@ -1,7 +1,7 @@
 {
   "id": "74f215293a60",
   "title": "90% of India's LPG imports travels through Hormuz Strait, but things in control: Govt",
-  "description": "90% of India's LPG imports travels through Strait of Hormuz, but things in control: Govt",
+  "description": "It is a challenging situation, the ministry of petroleum and natural gas said, urging the public resort to panic-buying over fears of LPG shortage.",
   "link": "https://www.hindustantimes.com/india-news/90-of-indias-lpg-imports-travels-through-hormuz-strait-but-things-in-control-govt-101773229443643.html",
   "date": "2026-03-11",
   "source_id": "hindustan_times",
@@ -9,13 +9,13 @@
   "source_short": "HT",
   "sectors": [
     "Digital & Technology",
-    "Social Protection",
-    "Transport & Infrastructure"
+    "Energy",
+    "Social Protection"
   ],
   "sector_slugs": [
     "digital-technology",
-    "social-protection",
-    "transport-infrastructure"
+    "energy",
+    "social-protection"
   ],
   "type": "policy",
   "level": "central",
