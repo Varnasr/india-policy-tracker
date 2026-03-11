@@ -1,0 +1,23 @@
+{
+  "id": "4f48d82dd3c5",
+  "title": "PARLIAMENT QUESTION: MARINE AND SPACE BIOTECHNOLOGY",
+  "description": "Government of India press release: PARLIAMENT QUESTION: MARINE AND SPACE BIOTECHNOLOGY",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2238338",
+  "date": "2026-03-11",
+  "source_id": "state_pib_karnataka",
+  "source_name": "PIB Bengaluru (Karnataka)",
+  "source_short": "PIB KA",
+  "sectors": [
+    "Science & Innovation",
+    "Digital & Technology",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "science-innovation",
+    "digital-technology",
+    "social-protection"
+  ],
+  "type": "announcement",
+  "level": "state",
+  "state": "Karnataka"
+}

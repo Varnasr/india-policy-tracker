@@ -1,0 +1,23 @@
+{
+  "id": "33192aa09e1b",
+  "title": "Agricultural Training Needs Survey launched",
+  "description": "The survey aims to understand the knowledge of farmers about current farming practices, innovative and climate change-resistant technologies such as IoT, AI, precision farming and drone technology",
+  "link": "https://www.thehindubusinessline.com/economy/agri-business/agricultural-training-needs-survey-launched/article70730691.ece",
+  "date": "2026-03-11",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Agriculture",
+    "Climate & Environment",
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "agriculture",
+    "climate-environment",
+    "digital-technology"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

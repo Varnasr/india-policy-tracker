@@ -1,0 +1,21 @@
+{
+  "id": "6b8702f4e87c",
+  "title": "BSNL Revival Roadmap",
+  "description": "Government of India press release: BSNL Revival Roadmap",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2238369",
+  "date": "2026-03-11",
+  "source_id": "pib",
+  "source_name": "Press Information Bureau",
+  "source_short": "PIB",
+  "sectors": [
+    "Energy",
+    "Transport & Infrastructure"
+  ],
+  "sector_slugs": [
+    "energy",
+    "transport-infrastructure"
+  ],
+  "type": "announcement",
+  "level": "central",
+  "state": ""
+}

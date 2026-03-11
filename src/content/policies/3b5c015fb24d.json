@@ -1,0 +1,23 @@
+{
+  "id": "3b5c015fb24d",
+  "title": "RBI cancels Certificate of Registration of 36 NBFCs",
+  "description": "The Reserve Bank of India, in exercise of powers conferred on it under Section 45-IA (6) of the Reserve Bank of India Act, 1934, has cancelled the Certificate of Registration of the following companies. Sr. No. Name of the Company Registered Office Address CoR No. CoR Issued on Cancellation Order Date 1 Excellence Broking & Finance (P) Ltd. 39 Shakespeare Sarani, 3rd Floor, Kolkata, Kolkata, West Bengal, India, 700017 B.05.02002 November 01, 2006 February 16, 2026 2 Jibralter Traders Ltd 222",
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62364",
+  "date": "2026-03-11",
+  "source_id": "rbi",
+  "source_name": "Reserve Bank of India",
+  "source_short": "RBI",
+  "sectors": [
+    "Finance & Economy",
+    "Social Protection",
+    "Energy"
+  ],
+  "sector_slugs": [
+    "finance-economy",
+    "social-protection",
+    "energy"
+  ],
+  "type": "notification",
+  "level": "central",
+  "state": ""
+}
