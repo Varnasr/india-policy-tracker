@@ -1,23 +1,19 @@
 {
   "id": "49a3580749b9",
   "title": "NCERT trims Class 9 English syllabus, features texts by Sudha Murty, Tagore",
-  "description": "The National Council of Educational Research and Training (NCERT) has slashed the Class 9 English syllabus, reducing the number of textbooks from two to one, and the number of texts from 29 to 16",
+  "description": "The NCERT has slashed the Class 9 English syllabus, reducing the number of textbooks from two to one, and the number of texts from 29 to 16",
   "link": "https://www.hindustantimes.com/india-news/ncert-trims-class-9-english-syllabus-features-texts-by-sudha-murty-tagore-101773169411678.html",
   "date": "2026-03-11",
   "source_id": "hindustan_times",
   "source_name": "Hindustan Times - India",
   "source_short": "HT",
   "sectors": [
-    "Education",
-    "Digital & Technology",
-    "Science & Innovation"
+    "Education"
   ],
   "sector_slugs": [
-    "education",
-    "digital-technology",
-    "science-innovation"
+    "education"
   ],
-  "type": "research",
+  "type": "policy",
   "level": "central",
   "state": ""
 }

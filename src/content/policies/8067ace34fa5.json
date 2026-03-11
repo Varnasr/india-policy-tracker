@@ -1,7 +1,7 @@
 {
   "id": "8067ace34fa5",
   "title": "Guarantee for speedy trials also ensures timely justice: SC",
-  "description": "The Supreme Court stressed the need for speedy trials in Jammu and Kashmir, citing concerns over 351 unresolved cases, emphasizing justice for victims and accused.",
+  "description": "The SC stressed the need for speedy trials in Jammu and Kashmir, citing concerns over 351 unresolved cases, emphasizing justice for victims and accused.",
   "link": "https://www.hindustantimes.com/india-news/guarantee-for-speedy-trials-also-ensures-timely-justice-sc-101773169593622.html",
   "date": "2026-03-11",
   "source_id": "hindustan_times",
@@ -9,13 +9,11 @@
   "source_short": "HT",
   "sectors": [
     "Social Protection",
-    "Digital & Technology",
-    "Governance & Reform"
+    "Digital & Technology"
   ],
   "sector_slugs": [
     "social-protection",
-    "digital-technology",
-    "governance-reform"
+    "digital-technology"
   ],
   "type": "policy",
   "level": "central",
