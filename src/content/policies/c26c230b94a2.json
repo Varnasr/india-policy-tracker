@@ -1,0 +1,23 @@
+{
+  "id": "c26c230b94a2",
+  "title": "DGCA examining Air India request for flight duty relaxations",
+  "description": "Air India has submitted a request seeking variation from the prescribed Flight Duty Time Limitations to operate certain sectors with two pilots due to operational constraints arising from the closure of Iran and Iraq airspace",
+  "link": "https://www.thehindubusinessline.com/economy/logistics/dgca-examining-air-india-request-for-flight-duty-relaxations/article70735751.ece",
+  "date": "2026-03-12",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Social Protection",
+    "Digital & Technology",
+    "Defence & Security"
+  ],
+  "sector_slugs": [
+    "social-protection",
+    "digital-technology",
+    "defence-security"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
