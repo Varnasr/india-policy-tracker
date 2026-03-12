@@ -1,0 +1,23 @@
+{
+  "id": "fc1c87f8ca72",
+  "title": "US launches Section 301 probe into India, 15 others over ‘excess capacity’",
+  "description": "Investigation to examine sectors including textiles, autos, solar modules, petrochemicals and steel",
+  "link": "https://www.thehindubusinessline.com/economy/us-launches-section-301-probe-into-india-15-others-over-excess-capacity/article70733890.ece",
+  "date": "2026-03-12",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Digital & Technology",
+    "Social Protection",
+    "Urban Development"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "social-protection",
+    "urban-development"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

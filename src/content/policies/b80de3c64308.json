@@ -1,0 +1,19 @@
+{
+  "id": "b80de3c64308",
+  "title": "Fund allocation for blue revolution",
+  "description": "Government of India press release: Fund allocation for blue revolution",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2238746",
+  "date": "2026-03-12",
+  "source_id": "pib",
+  "source_name": "Press Information Bureau",
+  "source_short": "PIB",
+  "sectors": [
+    "Energy"
+  ],
+  "sector_slugs": [
+    "energy"
+  ],
+  "type": "announcement",
+  "level": "central",
+  "state": ""
+}
