@@ -1,0 +1,19 @@
+{
+  "id": "32c08ffed90a",
+  "title": "Securities and Exchange Board of India",
+  "description": "Gazette notification: Securities and Exchange Board of India",
+  "link": "",
+  "date": "2026-03-12",
+  "source_id": "egazette",
+  "source_name": "eGazette of India",
+  "source_short": "eGazette",
+  "sectors": [
+    "Digital & Technology"
+  ],
+  "sector_slugs": [
+    "digital-technology"
+  ],
+  "type": "notification",
+  "level": "central",
+  "state": ""
+}

@@ -1,0 +1,23 @@
+{
+  "id": "46b84772c8f5",
+  "title": "Daily Quiz: On Dandi March",
+  "description": "The Dandi March, led by Mahatma Gandhi, started on March 12, 1930. Here is a quiz on the march.",
+  "link": "https://www.thehindu.com/news/national/daily-quiz-on-dandi-march/article70733598.ece",
+  "date": "2026-03-12",
+  "source_id": "the_hindu_policy",
+  "source_name": "The Hindu - National",
+  "source_short": "The Hindu",
+  "sectors": [
+    "Digital & Technology",
+    "Social Protection",
+    "Energy"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "social-protection",
+    "energy"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

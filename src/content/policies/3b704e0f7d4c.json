@@ -1,0 +1,23 @@
+{
+  "id": "3b704e0f7d4c",
+  "title": "Parliamentary panel sounds alarm as urban development budget hits five-year low",
+  "description": "",
+  "link": "https://indianexpress.com/article/india/mohua-budget-parliamentary-panel-urban-development-allocation-10578482/",
+  "date": "2026-03-12",
+  "source_id": "indian_express_policy",
+  "source_name": "Indian Express - India",
+  "source_short": "IE",
+  "sectors": [
+    "Digital & Technology",
+    "Finance & Economy",
+    "Urban Development"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "finance-economy",
+    "urban-development"
+  ],
+  "type": "budget",
+  "level": "central",
+  "state": ""
+}

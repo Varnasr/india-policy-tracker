@@ -1,0 +1,23 @@
+{
+  "id": "0fbd1d08aec6",
+  "title": "Available stock of commercial LPG being supplied to priority sectors in Himachal: Indian Oil",
+  "description": "Available stock of commercial LPG being supplied to priority sectors in Himachal: Indian Oil",
+  "link": "https://www.hindustantimes.com/india-news/available-stock-of-commercial-lpg-being-supplied-to-priority-sectors-in-himachal-indian-oil-101773304973211.html",
+  "date": "2026-03-12",
+  "source_id": "hindustan_times",
+  "source_name": "Hindustan Times - India",
+  "source_short": "HT",
+  "sectors": [
+    "Digital & Technology",
+    "Finance & Economy",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "finance-economy",
+    "social-protection"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

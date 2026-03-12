@@ -1,0 +1,23 @@
+{
+  "id": "1ad1f55e4e69",
+  "title": "Livelihood Issues among Scheduled Tribes",
+  "description": "Government of India press release: Livelihood Issues among Scheduled Tribes",
+  "link": "https://pib.gov.in/PressReleseDetail.aspx?PRID=2238982",
+  "date": "2026-03-12",
+  "source_id": "pib",
+  "source_name": "Press Information Bureau",
+  "source_short": "PIB",
+  "sectors": [
+    "Social Protection",
+    "Energy",
+    "Tribal & Indigenous"
+  ],
+  "sector_slugs": [
+    "social-protection",
+    "energy",
+    "tribal-indigenous"
+  ],
+  "type": "announcement",
+  "level": "central",
+  "state": ""
+}
