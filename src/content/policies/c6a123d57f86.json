@@ -1,18 +1,16 @@
 {
   "id": "c6a123d57f86",
   "title": "Download PDF",
-  "description": "Delhi - Supplementary cause list of Stay Application for 13/03/2026Download PDF93.640 kb",
-  "link": "https://itat.gov.inpublic/files/upload/1773324161-u6U84szP-CMS.pdf",
+  "description": "Pune Cause list 16-18 March 2026Download PDF898.184 kb",
+  "link": "https://itat.gov.inpublic/files/upload/1773400798-F7TqKRAS-CMS.pdf",
   "date": "2026-03-13",
   "source_id": "itat",
   "source_name": "ITAT",
   "source_short": "ITAT",
   "sectors": [
-    "Finance & Economy",
     "Social Protection"
   ],
   "sector_slugs": [
-    "finance-economy",
     "social-protection"
   ],
   "type": "policy",

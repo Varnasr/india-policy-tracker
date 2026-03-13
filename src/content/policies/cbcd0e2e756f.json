@@ -1,0 +1,23 @@
+{
+  "id": "cbcd0e2e756f",
+  "title": "Fitch raises India's GDP growth projection for FY26 to 7.5%",
+  "description": "For next fiscal (2026-27), Fitch has revised upwards its growth estimate to 6.75 from 6.4% projected in December 2025",
+  "link": "https://www.thehindubusinessline.com/economy/fitch-raises-indias-gdp-growth-projection-for-fy26-to-75/article70738953.ece",
+  "date": "2026-03-13",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Digital & Technology",
+    "Finance & Economy",
+    "Social Protection"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "finance-economy",
+    "social-protection"
+  ],
+  "type": "budget",
+  "level": "central",
+  "state": ""
+}
