@@ -1,0 +1,23 @@
+{
+  "id": "c863b8376a81",
+  "title": "Domestic tractor sales jump 34% in Feb; exports rise 7%",
+  "description": "The industry recorded domestic sales of 78,901 units in February 2026, compared with 58,797 units in February 2025",
+  "link": "https://www.thehindubusinessline.com/economy/agri-business/domestic-tractor-sales-jump-34-in-feb-exports-rise-7/article70739590.ece",
+  "date": "2026-03-13",
+  "source_id": "business_line",
+  "source_name": "BusinessLine - Economy",
+  "source_short": "BL",
+  "sectors": [
+    "Digital & Technology",
+    "Social Protection",
+    "Transport & Infrastructure"
+  ],
+  "sector_slugs": [
+    "digital-technology",
+    "social-protection",
+    "transport-infrastructure"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}

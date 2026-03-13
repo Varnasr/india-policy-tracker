@@ -1,21 +1,21 @@
 {
   "id": "f5eb54855b1e",
   "title": "US opens forced-labour trade probe into India, others under Section 301",
-  "description": "Back-to-back investigations raise uncertainty for exports and ongoing India–US BTA negotiations",
+  "description": "US Ambassador Sergio Gor says he expects India to honour the trade deal with the US as it is a “win-win”",
   "link": "https://www.thehindubusinessline.com/economy/us-opens-forced-labour-trade-probe-into-india-others-under-section-301/article70738573.ece",
   "date": "2026-03-13",
   "source_id": "business_line",
   "source_name": "BusinessLine - Economy",
   "source_short": "BL",
   "sectors": [
-    "Trade & Commerce",
-    "Education",
-    "Digital & Technology"
+    "Digital & Technology",
+    "Labour & Employment",
+    "Trade & Commerce"
   ],
   "sector_slugs": [
-    "trade-commerce",
-    "education",
-    "digital-technology"
+    "digital-technology",
+    "labour-employment",
+    "trade-commerce"
   ],
   "type": "policy",
   "level": "central",
