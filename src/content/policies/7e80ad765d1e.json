@@ -1,0 +1,23 @@
+{
+  "id": "7e80ad765d1e",
+  "title": "Hyderabad Traffic Police Give Traffic Advisory",
+  "description": "Police reroute vehicles around Indira Park as bridge reconstruction begins",
+  "link": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-traffic-police-give-traffic-advisory-1943460",
+  "date": "2026-03-12",
+  "source_id": "dc_rss",
+  "source_name": "Deccan Chronicle (RSS)",
+  "source_short": "DC RSS",
+  "sectors": [
+    "Social Protection",
+    "Housing",
+    "Transport & Infrastructure"
+  ],
+  "sector_slugs": [
+    "social-protection",
+    "housing",
+    "transport-infrastructure"
+  ],
+  "type": "policy",
+  "level": "central",
+  "state": ""
+}
