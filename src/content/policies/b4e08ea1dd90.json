@@ -1,7 +1,7 @@
 {
   "id": "b4e08ea1dd90",
   "title": "Telangana man held for ‘injecting’ woman with HIV+ blood after marriage called off",
-  "description": "A 24-year-old man was arrested on Saturday in Telangana’s Medchal-Malkajgiri district for allegedly injecting his HIV-positive blood into a 24-year-old woman after her family called off their marriage upon learning about his HIV status, police said",
+  "description": "A 24-year-old man was arrested on Saturday in Telangana’s Medchal-Malkajgiri",
   "link": "https://www.hindustantimes.com/india-news/telangana-man-held-for-injecting-woman-with-hiv-blood-after-marriage-called-off-101773514788249.html",
   "date": "2026-03-15",
   "source_id": "hindustan_times",
@@ -9,13 +9,13 @@
   "source_short": "HT",
   "sectors": [
     "Digital & Technology",
-    "Education",
-    "Social Protection"
+    "Social Protection",
+    "Energy"
   ],
   "sector_slugs": [
     "digital-technology",
-    "education",
-    "social-protection"
+    "social-protection",
+    "energy"
   ],
   "type": "policy",
   "level": "central",
