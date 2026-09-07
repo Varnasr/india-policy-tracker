@@ -3325,13 +3325,6 @@
       "source_id": "dfs"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
-      "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
-      "source_id": "dfs"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
@@ -3438,6 +3431,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
+      "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
+      "source_id": "dfs"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
       "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
@@ -4582,75 +4582,6 @@
       "old_value": "Digital & Technology, Finance & Economy",
       "new_value": "Finance & Economy, Labour & Employment, Urban Development",
       "source_id": "historical"
-    }
-  ],
-  "f8dbecfc1ebf": [
-    {
-      "date": "2026-07-30",
-      "field": "description",
-      "old_value": "Notice of Demand under Recovery Certificate number 9271 of 2026 dated July 30, 2026, issued to NISHAA ANAND (PAN: AJWPA4527H) [Defaulter] in the matter of ISO at BSE- NISHAA ANAND: under Recovery Certificate No. 9271 of 2026.",
-      "new_value": "Notice of Demand under Recovery Certificate number 9270 of 2026 dated July 30, 2026, issued to Magnesh Bala (PAN: ABKPG9103H) [Defaulter] in the matter of Sadhna Broadcast Limited: under Recovery Certificate No. 9270 of 2026.",
-      "source_id": "sebi"
-    },
-    {
-      "date": "2026-08-19",
-      "field": "description",
-      "old_value": "Notice of Demand under Recovery Certificate number 9271 of 2026 dated July 30, 2026, issued to NISHAA ANAND (PAN: AJWPA4527H) [Defaulter] in the matter of ISO at BSE- NISHAA ANAND: under Recovery Certificate No. 9271 of 2026.",
-      "new_value": "Notice of Attachment of Demat Account and Mutual Fund Folio(s) 15686 of 2026 dated August 17, 2026 against NISHAA ANAND (PAN: AJWPA4527H) [Defaulter] in the matter of ISO at BSE- NISHAA ANAND: under Recovery Certificate No. 9271 of 2026.",
-      "source_id": "sebi"
-    }
-  ],
-  "cb8b1122de7b": [
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Urban Co-operative Banks – Interest Rate on Deposits) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Local Area Banks – Interest Rate on Deposits) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Payments Banks – Interest Rate on Deposits) Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Regional Rural Banks – Interest Rate on Deposits) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Small Finance Banks – Interest Rate on Deposits) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "The Reserve Bank, vide Press Release dated June 05, 2026, had issued the draft \"Reserve Bank of India (Interest Rate on Deposits) Amendment Directions, 2026, seeking comments/feedback from the regulated entities and members of public/other stakeholders on or before June 20, 2026. The draft Amendment Directions proposed to provide greater flexibility to banks for pricing their Rupee bulk deposits, while ensuring uniformity in disclosure of interest rates on deposits. 2. Feedback received on",
-      "new_value": "RBI notification: Reserve Bank of India (Commercial Banks – Interest Rate on Deposits) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    }
-  ],
-  "a441316477bc": [
-    {
-      "date": "2026-07-31",
-      "field": "description",
-      "old_value": "India's organised retail leasing grew 20% year-on-year to 3.9 million sq. ft. in H1 2026, with fashion and apparel brands driving the largest share of space absorption across major cities.",
-      "new_value": "India's organised retail leasing increased 20% year-on-year to 3.9 million sq. ft. in the first half of 2026, driven by strong demand from fashion and apparel retailers and supported by expanding Grade A retail infrastructure.",
-      "source_id": "ibef"
     }
   ],
   "c3d50be382a2": [
@@ -5918,15 +5849,6 @@
       "source_id": "trai"
     }
   ],
-  "afaa407c5f0d": [
-    {
-      "date": "2026-08-05",
-      "field": "description",
-      "old_value": ".Appeal No. 6959 of 2026 filed by Sunil Kumar Singh",
-      "new_value": "Appeal No. 6965 of 2026 filed by Sunil Kumar",
-      "source_id": "sebi"
-    }
-  ],
   "7801e50f218c": [
     {
       "date": "2026-08-06",
@@ -6500,144 +6422,144 @@
   ],
   "443f53a487cb": [
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Monthly Review of Accounts of Union Government of India upto the month of July 2026 (FY 2026-27)",
-      "source_id": "pib_lokpal_of_india"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_urban_development"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Department of Administrative Reforms and Public Grievances (DARPG) releases the 48th Report on Centralized Public Grievance Redress and Monitoring System (CPGRAMS) for States/UTs for July, 2026",
-      "source_id": "pib_lokpal_of_india"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_water_resources_river_development_and_ganga_rejuvenation"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Department of Administrative Reforms and Public Grievances releases 51st Monthly Report on CPGRAMS for Central Ministries/ Departments performance for the month of July, 2026",
-      "source_id": "pib_lokpal_of_india"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_youth_affairs_and_sports"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Monthly Review of Accounts of Union Government of India upto the month of July 2026 (FY 2026-27)",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_tribal_affairs"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_surface_transport"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_women_and_child_development"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_pm_speech"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_office_of_principal_scientific_advisor_to_goi"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_special_service_and_features"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_eac_pm"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_niti_aayog"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_competition_commission_of_india"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_upsc"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
       "source_id": "pib_ifsc_authority"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Department of Administrative Reforms and Public Grievances (DARPG) releases the 48th Report on Centralized Public Grievance Redress and Monitoring System (CPGRAMS) for States/UTs for July, 2026",
-      "source_id": "pib_ifsc_authority"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_national_financial_reporting_authority"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Department of Administrative Reforms and Public Grievances releases 51st Monthly Report on CPGRAMS for Central Ministries/ Departments performance for the month of July, 2026",
-      "source_id": "pib_ifsc_authority"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_lokpal_of_india"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "The values of exports and imports of services during July 2026 are presented in the following table. International Trade in Services (US$ million) Month Receipts (Exports) Payments (Imports) April – 2026 37,021 (12.7) 18,417 (8.9) May – 2026 33,355 (2.8) 17,637 (5.6) June – 2026 36,371 (13.3) 18,477 (16.2) July – 2026 38,253 (13.4) 20,606 (19.1) Note: (i) Data for April-July are provisional. (ii) Figures in parentheses are growth rates over the corresponding month of the",
-      "source_id": "rbi"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_national_human_rights_commission"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Data on sectoral deployment of bank credit for the month of July 2026, collected from 41 select scheduled commercial banks (SCBs) which together account for about 95 per cent of the total non-food credit by all SCBs1, are set out in Statements I and II. On a year-on-year (y-o-y) basis, non-food bank credit2 grew by 19.1 per cent as on the fortnight ended July 31, 2026, compared to 9.9 per cent during the corresponding fortnight of the previous year (i.e., July 25, 2025). Highlights of the sector",
-      "source_id": "rbi"
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, 2026",
+      "source_id": "pib_national_security_council_secretariat"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Monthly Review of Accounts of Union Government of India upto the month of July 2026 (...",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, ...",
       "source_id": "state_pib_karnataka"
     },
     {
-      "date": "2026-08-31",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Large transactions accounted for 68% of July’s investment activity, while infrastructure emerged as the leading sector for PE/VC investments",
-      "source_id": "business_line"
-    },
-    {
-      "date": "2026-08-31",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "The fiscal gap was lower than the ₹4.7 lakh crore recorded during the corresponding period last year, government data showed.",
-      "source_id": "business_line"
-    },
-    {
-      "date": "2026-08-31",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Government of India press release: Monthly Review of Accounts of Union Government of India upto the month of July 2026 (...",
+      "new_value": "Government of India press release: Union Public Service Commission announces Recruitment Results for the month of July, ...",
       "source_id": "state_pib_punjab"
-    },
-    {
-      "date": "2026-08-31",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "The post Journal article:Jaiswal, Himanshu and Ganesh Kumar, A, Import surge and dumping concerns amid trade war and India–US trade deal, Foreign Trade Review, July 2026 appeared first on Indira Gandhi Institute of Development Research.",
-      "source_id": "igidr"
-    },
-    {
-      "date": "2026-08-31",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "TRAI's July 2026 data shows India's total telephone subscribers rising to 1354.28 million, with broadband subscribers reaching 1094.48 million and overall tele-density improving to 94.68%.",
-      "source_id": "ibef"
-    },
-    {
-      "date": "2026-08-31",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "The post Journal article:Jaiswal, Himanshu and Ganesh Kumar, A, Import surge and dumping concerns amid trade war and India–US trade deal, Foreign Trade Review, July 2026 appeared first on Indira Gandhi Institute of Development Research.",
-      "source_id": "igidr"
-    },
-    {
-      "date": "2026-09-01",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Imports grow faster at 19.1% to $20.61 billion; surplus stands at about $17.65 billion",
-      "source_id": "business_line"
-    },
-    {
-      "date": "2026-09-01",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "The post Journal article:Jaiswal, Himanshu and Ganesh Kumar, A, Import surge and dumping concerns amid trade war and India–US trade deal, Foreign Trade Review, July 2026 appeared first on Indira Gandhi Institute of Development Research.",
-      "source_id": "igidr"
-    },
-    {
-      "date": "2026-09-01",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Modi Govt to Move Supreme Court to Quash All FIRs Filed Against July Youth Protestors    TheWire.in",
-      "source_id": "policyradar"
-    },
-    {
-      "date": "2026-09-01",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Modi Govt to Move Supreme Court to Quash All FIRs Filed Against July Youth Protestors    TheWire.in",
-      "source_id": "policyradar"
-    },
-    {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "DOC July 2026 niti_admin Wed, 08/05/2026 - 15:44 Upload Supported Document Doc-PLan-July-2026.pdf (573.32 KB) Choose Document Type Docplan Supported File Link July 2026",
-      "new_value": "Modi Govt to Move Supreme Court to Quash All FIRs Filed Against July Youth Protestors    TheWire.in",
-      "source_id": "policyradar"
     }
   ],
   "7ee41a4ef2b0": [
@@ -6868,15 +6790,6 @@
       "field": "description",
       "old_value": "RBI notification: Reserve Bank of India (Urban Co-operative Banks - Compliance Function) Directions, 2026",
       "new_value": "RBI notification: Reserve Bank of India (Urban Co-operative Banks – Classification, Valuation, and Operation of Investment Portfolio) Second Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    }
-  ],
-  "246fa56848de": [
-    {
-      "date": "2026-08-07",
-      "field": "description",
-      "old_value": "RBI notification: Reserve Bank of India (Rural Co-operative Banks - Statutory Audit) Directions, 2026",
-      "new_value": "RBI notification: Reserve Bank of India (Regional Rural Banks - Responsible Business Conduct) Fourth Amendment Directions, 2026",
       "source_id": "rbi_notifications"
     }
   ],
@@ -7356,13 +7269,6 @@
       "source_id": "vidhi"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
-      "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
-      "source_id": "vidhi"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
@@ -7469,6 +7375,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
+      "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
+      "source_id": "vidhi"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
       "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
@@ -7886,13 +7799,6 @@
       "source_id": "cbga"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
-      "new_value": "Content Awaited....",
-      "source_id": "cbga"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
@@ -7999,6 +7905,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
+      "new_value": "Content Awaited....",
+      "source_id": "cbga"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
       "new_value": "Content Awaited....",
@@ -9216,13 +9129,6 @@
     },
     {
       "date": "2026-09-06",
-      "field": "sectors",
-      "old_value": "Energy, Finance & Economy",
-      "new_value": "Energy, Trade & Commerce",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-06",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
@@ -9236,94 +9142,101 @@
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Selection of Solar Power Developers for Setting up of 700 MW ISTS-connected Solar PV Power Projects in Special Economic Zones (SEZs) or areas designated as Export Oriented Units (EOUs) of India under Tariff-based Competitive Bidding",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Energy, Trade & Commerce",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Selection of Tenant(s) for Renting out the Office space(s) of SECI, along with built-up facilities (Licensed Assets), at the NBCC Complex, East Kidwai Nagar, New Delhi Premises-1: 38,198 sq. ft. ;Premises-2: 15,210 sq. ft. (Super Built-up Area). Both Premises are fully furnished, ready to move for office purposes. SECI reserves the right to sub-let/Rent out the two-office premises together to a single entity or separately to different entities .",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Defence & Security, Housing, Science & Innovation",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Energy, Trade & Commerce",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
       "source_id": "seci"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Energy, Finance & Economy",
       "new_value": "Digital & Technology",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "sectors",
+      "old_value": "Energy, Finance & Economy",
+      "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
@@ -9434,13 +9347,6 @@
       "source_id": "republic_world"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
-      "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
-      "source_id": "republic_world"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
@@ -9547,6 +9453,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
+      "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
       "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
@@ -10925,20 +10838,6 @@
       "source_id": "niti_aayog"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
-      "new_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:08 Weight 0 Links /sites/default/files/2026-08/Reimagining-Skilling-for-Viksit-Bharat-2047.pdf",
-      "source_id": "niti_aayog"
-    },
-    {
-      "date": "2026-09-02",
-      "field": "sectors",
-      "old_value": "Education, Labour & Employment, Science & Innovation",
-      "new_value": "Labour & Employment",
-      "source_id": "niti_aayog"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
@@ -11157,6 +11056,20 @@
     },
     {
       "date": "2026-09-06",
+      "field": "sectors",
+      "old_value": "Education, Labour & Employment, Science & Innovation",
+      "new_value": "Labour & Employment",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
+      "new_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:08 Weight 0 Links /sites/default/files/2026-08/Reimagining-Skilling-for-Viksit-Bharat-2047.pdf",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-07",
       "field": "sectors",
       "old_value": "Education, Labour & Employment, Science & Innovation",
       "new_value": "Labour & Employment",
@@ -12194,13 +12107,6 @@
       "source_id": "vidhi"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Consumer Awareness Program at Tenkasi (Tamil Nadu) by Citizen Consumer & Civic Action Group nitinkumar Fri, 08/21/2026 - 11:53 Date Tue, 09/01/2026 - 12:00 District Tenkasi Division Consumer Affairs Date & Time Tue, 09/01/2026 - 10:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name S Saroja Contact person Email saroja@cag.org.in Event Category COP By TRAI Venue Details Government Arts and Science College, Sankarankovil, Tenkasi Event From Consumer Awareness (",
-      "new_value": "The post So, who is a citizen? appeared first on Vidhi Centre for Legal Policy.",
-      "source_id": "vidhi"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Consumer Awareness Program at Tenkasi (Tamil Nadu) by Citizen Consumer & Civic Action Group nitinkumar Fri, 08/21/2026 - 11:53 Date Tue, 09/01/2026 - 12:00 District Tenkasi Division Consumer Affairs Date & Time Tue, 09/01/2026 - 10:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name S Saroja Contact person Email saroja@cag.org.in Event Category COP By TRAI Venue Details Government Arts and Science College, Sankarankovil, Tenkasi Event From Consumer Awareness (",
@@ -12307,6 +12213,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Consumer Awareness Program at Tenkasi (Tamil Nadu) by Citizen Consumer & Civic Action Group nitinkumar Fri, 08/21/2026 - 11:53 Date Tue, 09/01/2026 - 12:00 District Tenkasi Division Consumer Affairs Date & Time Tue, 09/01/2026 - 10:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name S Saroja Contact person Email saroja@cag.org.in Event Category COP By TRAI Venue Details Government Arts and Science College, Sankarankovil, Tenkasi Event From Consumer Awareness (",
+      "new_value": "The post So, who is a citizen? appeared first on Vidhi Centre for Legal Policy.",
+      "source_id": "vidhi"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Consumer Awareness Program at Tenkasi (Tamil Nadu) by Citizen Consumer & Civic Action Group nitinkumar Fri, 08/21/2026 - 11:53 Date Tue, 09/01/2026 - 12:00 District Tenkasi Division Consumer Affairs Date & Time Tue, 09/01/2026 - 10:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name S Saroja Contact person Email saroja@cag.org.in Event Category COP By TRAI Venue Details Government Arts and Science College, Sankarankovil, Tenkasi Event From Consumer Awareness (",
       "new_value": "The post So, who is a citizen? appeared first on Vidhi Centre for Legal Policy.",
@@ -13018,22 +12931,6 @@
       "source_id": "policyradar"
     }
   ],
-  "f2f8153ed3f9": [
-    {
-      "date": "2026-08-26",
-      "field": "description",
-      "old_value": "RBI notification: Reserve Bank of India (Regional Rural Banks – Fraud Risk Management) Directions, 2026",
-      "new_value": "RBI notification: Reserve Bank of India (Regional Rural Banks – Interest Rate on Deposits) Third Amendment Directions, 2026",
-      "source_id": "rbi_notifications"
-    },
-    {
-      "date": "2026-08-26",
-      "field": "description",
-      "old_value": "RBI notification: Reserve Bank of India (Regional Rural Banks – Fraud Risk Management) Directions, 2026",
-      "new_value": "RBI/2026-27/246 DOR.SOG(SPE).REC.213/13.03.00/2026-27 August 25, 2026 Reserve Bank of India (Regional Rural Banks   Interest Rate on Deposits) Third Amendment Directions...",
-      "source_id": "policyradar"
-    }
-  ],
   "9080b807defc": [
     {
       "date": "2026-08-26",
@@ -13111,13 +13008,6 @@
       "source_id": "niti_aayog"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
-      "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
-      "source_id": "niti_aayog"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
@@ -13224,6 +13114,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
+      "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
       "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
@@ -13620,13 +13517,6 @@
       "source_id": "livemint_policy"
     },
     {
-      "date": "2026-09-02",
-      "field": "description",
-      "old_value": "Raksha Bandhan nitinkumar Thu, 08/27/2026 - 18:37 image Banner Order 59",
-      "new_value": "Gujarat Chief Minister Bhupendra Patel decided to allocate a total of Rs. 28 crore as a special development grant for road and infrastructure development in the constituencies of women legislators as a special Raksha Bandhan gift, an official statement said on thursday.",
-      "source_id": "livemint_policy"
-    },
-    {
       "date": "2026-09-03",
       "field": "description",
       "old_value": "Raksha Bandhan nitinkumar Thu, 08/27/2026 - 18:37 image Banner Order 59",
@@ -13733,6 +13623,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Raksha Bandhan nitinkumar Thu, 08/27/2026 - 18:37 image Banner Order 59",
+      "new_value": "Gujarat Chief Minister Bhupendra Patel decided to allocate a total of Rs. 28 crore as a special development grant for road and infrastructure development in the constituencies of women legislators as a special Raksha Bandhan gift, an official statement said on thursday.",
+      "source_id": "livemint_policy"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Raksha Bandhan nitinkumar Thu, 08/27/2026 - 18:37 image Banner Order 59",
       "new_value": "Gujarat Chief Minister Bhupendra Patel decided to allocate a total of Rs. 28 crore as a special development grant for road and infrastructure development in the constituencies of women legislators as a special Raksha Bandhan gift, an official statement said on thursday.",
@@ -14069,34 +13966,6 @@
   ],
   "10aca068fc02": [
     {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "Maharashtra Freedom of Religion Act 2026 comes into force on August 28, bringing penalties of up to 7 years in jail, Rs 5 lakh fine and new rules for voluntary conversions and interfaith marriages.",
-      "source_id": "republic_world"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
-      "source_id": "republic_world"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "Maharashtra Freedom of Religion Act 2026 comes into force on August 28, bringing penalties of up to 7 years in jail, Rs 5 lakh fine and new rules for voluntary conversions and interfaith marriages.",
-      "source_id": "republic_world"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
-      "source_id": "republic_world"
-    },
-    {
       "date": "2026-09-05",
       "field": "description",
       "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
@@ -14193,6 +14062,34 @@
       "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
       "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
       "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "Maharashtra Freedom of Religion Act 2026 comes into force on August 28, bringing penalties of up to 7 years in jail, Rs 5 lakh fine and new rules for voluntary conversions and interfaith marriages.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "General Studies – 1 General Studies – 2 General Studies – 3 General Studies – 4 The post [COMPILATIONS] – InsightsIAS Secure Synopsis – August 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Preparation.",
+      "source_id": "insights_ias"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "The post Insights Current Affairs Magazine – August 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Preparation.",
+      "source_id": "insights_ias"
     },
     {
       "date": "2026-09-07",
@@ -14286,6 +14183,13 @@
       "old_value": "It is hereby notified for information of the public that in exercise of powers vested in it under sub section (1) of Section 35 A read with Section 56 of the Banking Regulation Act, 1949, the Reserve Bank of India (RBI) vide Directive Ref. No.S4110 /12-22-377 / 2026-27 dated August 28, 2026 has issued certain Directions to Ashok Sahakari Bank Ltd., Ahmednagar, (“the bank”), whereby, as from the close of business on August 28, 2026, the bank shall not, without prior approval of RBI in",
       "new_value": "It is hereby notified for information of the public that in exercise of powers vested in it under sub section (1) of Section 35 A read with Section 56 of the Banking Regulation Act, 1949...",
       "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "It is hereby notified for information of the public that in exercise of powers vested in it under sub section (1) of Section 35 A read with Section 56 of the Banking Regulation Act, 1949, the Reserve Bank of India (RBI) vide Directive Ref. No.S4110 /12-22-377 / 2026-27 dated August 28, 2026 has issued certain Directions to Ashok Sahakari Bank Ltd., Ahmednagar, (“the bank”), whereby, as from the close of business on August 28, 2026, the bank shall not, without prior approval of RBI in",
+      "new_value": "The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to Nasik Jilha Mahila Vikas Sahakari Bank Ltd., Nasik, vide Directive No.CO.DOS.SED.No.S6690/12-22-173/2025-2026 dated December 08, 2025, for a period of six months up to the close of business on June 09, 2026, which were last extended up to the close of business on September 09, 2026 vide Directive No. DOR.MON/D-13/12-22-168/2026-27 dated June 02, 2026. The Reserve Bank of Indi",
+      "source_id": "rbi"
     }
   ],
   "aef19e629205": [
@@ -14655,20 +14559,6 @@
   ],
   "45922fe6ed31": [
     {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
-      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran tensions.",
-      "source_id": "livemint_policy"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
-      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran...",
-      "source_id": "policyradar"
-    },
-    {
       "date": "2026-09-05",
       "field": "description",
       "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
@@ -14775,6 +14665,20 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
+      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
+      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran tensions.",
+      "source_id": "livemint_policy"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
       "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran...",
@@ -14991,6 +14895,13 @@
       "old_value": "Consumer Education Workshop at Mancherial (Telangana) by Vodafone Idea Limited nitinkumar Tue, 09/01/2026 - 12:33 Date Fri, 09/25/2026 - 12:00 District Mancherial Division Consumer Affairs Date & Time Fri, 09/25/2026 - 15:00 Programme Category CEW By TSP's Event Status In progress Contact Person Name Suresh Uppu Contact person Email suresh.uppu2@vodafoneidea.com Event Category COP By TRAI Venue Details Mancherial City Event From Consumer Awareness( TSPs ) Contact person phone number 98850186",
       "new_value": "The Telegraph, Guwahati, May 16, 2012",
       "source_id": "cuts_international"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Consumer Education Workshop at Mancherial (Telangana) by Vodafone Idea Limited nitinkumar Tue, 09/01/2026 - 12:33 Date Fri, 09/25/2026 - 12:00 District Mancherial Division Consumer Affairs Date & Time Fri, 09/25/2026 - 15:00 Programme Category CEW By TSP's Event Status In progress Contact Person Name Suresh Uppu Contact person Email suresh.uppu2@vodafoneidea.com Event Category COP By TRAI Venue Details Mancherial City Event From Consumer Awareness( TSPs ) Contact person phone number 98850186",
+      "new_value": "Consumer Education Workshop at Hazaribagh (Jharkhand) by Vodafone Idea Limited nitinkumar Mon, 09/07/2026 - 11:56 Date Thu, 09/10/2026 - 12:00 District Hazaribagh Division Consumer Affairs Date & Time Thu, 09/10/2026 - 13:30 Programme Category CEW By TSP's Event Status In progress Contact Person Name Chandra Vijay Kumar Contact person Email chandra.kumar1@vodafoneidea.com Event Category COP By TRAI Venue Details Hotel Bhandara Park, Korrah Road, Devangana Chowk,Hazaribagh, Jharkhand 825302 E",
+      "source_id": "trai"
     }
   ],
   "0514f2d1a6f3": [
@@ -15723,6 +15634,13 @@
       "old_value": "Finance Minister Ms. Nirmala Sitharaman held bilateral meetings with key global partners during the G20 meetings to strengthen trade, investment, infrastructure financing and cooperation in emerging technologies.",
       "new_value": "Union Finance Minister and…",
       "source_id": "gst_council"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Finance Minister Ms. Nirmala Sitharaman held bilateral meetings with key global partners during the G20 meetings to strengthen trade, investment, infrastructure financing and cooperation in emerging technologies.",
+      "new_value": "Union Finance Minister and…",
+      "source_id": "gst_council"
     }
   ],
   "0e1c14d935e6": [
@@ -15757,92 +15675,6 @@
       "source_id": "manipur_govt"
     }
   ],
-  "48251a91afd5": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    },
-    {
-      "date": "2026-09-07",
-      "field": "description",
-      "old_value": "The workshop was held at the BJP headquarters in the national capital",
-      "new_value": "The Telegraph, Guwahati, May 16, 2012",
-      "source_id": "cuts_international"
-    }
-  ],
   "8d7c4eca70a0": [
     {
       "date": "2026-09-04",
@@ -15850,22 +15682,6 @@
       "old_value": "Reserve Bank of India announces the auction of Government of India Treasury Bills as per the following details: Sr. No. Treasury Bill Notified Amount (₹ crore) Auction Date Settlement Date 1 91-Day 9,000 September 02, 2026 (Wednesday) September 03, 2026 (Thursday) 2 182-Day 8,000 3 364-Day 7,000   Total 24,000     The sale will be subject to the terms and conditions specified in the General Notification F.No.4(2)-B(W&M)/2018 dated March 26, 2025, issued by Government of",
       "new_value": "Reserve Bank of India announces the auction of Government of India Treasury Bills as per the following details: Sr. No. Treasury Bill Notified Amount (₹ crore) Auction Date Settlement Date 1 91-Day 9,000 September 09, 2026 (Wednesday) September 10, 2026 (Thursday) 2 182-Day 8,000 3 364-Day 7,000   Total 24,000     The sale will be subject to the terms and conditions specified in the General Notification F.No.4(2)-B(W&M)/2018 dated March 26, 2025, issued by Government of",
       "source_id": "rbi"
-    }
-  ],
-  "e9de3a83d0c4": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The EOS-05 is India’s first ever imaging satellite to monitor from Geosynchronous orbit about 36,000 km above the Earth.",
-      "new_value": "GSLV-F17 places 2,367-kg EOS-05, India’s first imaging satellite, into the intended Sub-Geosynchronous Transfer Orbit",
-      "source_id": "the_hindu_policy"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "GSLV-F17 places 2,367-kg EOS-05, India’s first imaging satellite, into the intended Sub-Geosynchronous Transfer Orbit",
-      "new_value": "Delhi Rains Flood IGI Airport; Karnataka Drops Parks Bill; ISRO Launches Earth Observation Satellite",
-      "source_id": "indiatoday_rss"
     }
   ],
   "e6e9e4ea9ac4": [
@@ -15902,31 +15718,6 @@
       "source_id": "rbi"
     }
   ],
-  "3385a2cecda5": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "Forex traders said the rupee is poised to gain strength, supported by strong underlying inflows and aggressive RBI intervention",
-      "new_value": "At the interbank foreign exchange market, the rupee opened at 94.53 and touched an intra-day high of 94.46 and a low of 94.53 during the session.",
-      "source_id": "the_hindu_business"
-    },
-    {
-      "date": "2026-09-07",
-      "field": "description",
-      "old_value": "Forex traders said the rupee is poised to gain strength, supported by strong underlying inflows and aggressive RBI intervention",
-      "new_value": "At the interbank foreign exchange market, the rupee opened at 94.53 and touched an intra-day high of 94.46 and a low of 94.53 during the session.",
-      "source_id": "the_hindu_business"
-    }
-  ],
-  "c15f851833ac": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "CBI raids locations across states in digital arrest cases arrested",
-      "new_value": "The CBI searches targeted cybercrime syndicates behind digital arrest cases, with three people arrested for allegedly receiving and laundering fraud proceeds.",
-      "source_id": "hindustan_times"
-    }
-  ],
   "1bd9931f9865": [
     {
       "date": "2026-09-04",
@@ -15943,89 +15734,8 @@
       "source_id": "sebi"
     }
   ],
-  "5ef130b0aa9c": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The Current Affairs Quiz is a daily quiz based on the DAILY CURRENT AFFAIRS AND PIB SUMMARY from the previous day, as posted on our website. It covers all relevant news sources and is designed to test your knowledge of current events. Solving these questions will help you retain both concepts and facts relevant … Continue reading \"UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz\" The post UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz appeare",
-      "new_value": "The post UPSC CURRENT AFFAIRS – 4 SEPTEMBER 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Preparation.",
-      "source_id": "insights_ias"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The Current Affairs Quiz is a daily quiz based on the DAILY CURRENT AFFAIRS AND PIB SUMMARY from the previous day, as posted on our website. It covers all relevant news sources and is designed to test your knowledge of current events. Solving these questions will help you retain both concepts and facts relevant … Continue reading \"UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz\" The post UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz appeare",
-      "new_value": "Introducing QUED – Questions from Editorials (UPSC Editorials Quiz) , an innovative initiative from InsightsIAS. Considering the significant number of questions in previous UPSC Prelims from editorials, practicing MCQs from this perspective can provide an extra edge. While we cover important editorials separately in our Editorial Section and SECURE Initiative, adding QUED (UPSC Editorials … Continue reading \"UPSC Editorials Quiz : 5 September 2026\" The post UPSC Editorials Quiz : 5",
-      "source_id": "insights_ias"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The Current Affairs Quiz is a daily quiz based on the DAILY CURRENT AFFAIRS AND PIB SUMMARY from the previous day, as posted on our website. It covers all relevant news sources and is designed to test your knowledge of current events. Solving these questions will help you retain both concepts and facts relevant … Continue reading \"UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz\" The post UPSC Current Affairs Quiz – 4 September 2026 | Daily Prelims Quiz appeare",
-      "new_value": "The post UPSC CURRENT AFFAIRS – 5 SEPTEMBER 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Preparation.",
-      "source_id": "insights_ias"
-    }
-  ],
-  "449c99aafc57": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "The fact that we didn’t have an upward revision to India’s FY26 GDP numbers under new methodology shows we are doing a good job covering all sectors, says CEA Anantha Nageswaran",
-      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
-      "source_id": "epod_harvard"
-    }
-  ],
   "9e5a36753fb5": [
     {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
-      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit...",
-      "source_id": "policyradar"
-    },
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
-      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹6,89,600 (Rupees Six lakh eighty nine thousand six hundred only) on CRIF High Mark Credit...",
-      "source_id": "policyradar"
-    },
-    {
       "date": "2026-09-05",
       "field": "description",
       "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
@@ -16132,6 +15842,20 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
+      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹6,89,600 (Rupees Six lakh eighty nine thousand six hundred only) on CRIF High Mark Credit...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
+      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹1,19,400 (Rupees One Lakh Nineteen Thousand Four Hundred only) on Equifax Credit Information Services Private Limited (the company) for non-compliance with certain provisions of directions issued by RBI on ‘Framework for compensation to customers for delayed updation / rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI un",
       "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹6,89,600 (Rupees Six lakh eighty nine thousand six hundred only) on CRIF High Mark Credit...",
@@ -16222,6 +15946,13 @@
       "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹26,82,800 (Rupees Twenty-six lakh eighty two thousand eight hundred only) on TransUnion CIBIL Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Framework for compensation to customers for delayed updation/ rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI under the provi",
       "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹26,82,800 (Rupees Twenty-six lakh eighty two thousand eight hundred only) on TransUnion...",
       "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹26,82,800 (Rupees Twenty-six lakh eighty two thousand eight hundred only) on TransUnion CIBIL Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Framework for compensation to customers for delayed updation/ rectification of credit information’. This penalty has been imposed in exercise of powers conferred on RBI under the provi",
+      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹26,82,800 (Rupees Twenty-six lakh eighty two thousand eight hundred only) on TransUnion...",
+      "source_id": "policyradar"
     }
   ],
   "d5674e7378cb": [
@@ -16283,6 +16014,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "The Reserve Bank of India (RBI) has, by an order dated September 02, 2026, imposed a monetary penalty of ₹6.20 lakh (Rupees Six Lakh Twenty Thousand only) on Hinduja Leyland Finance Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Pricing of Microfinance Loans’ and ‘Securitisation of Standard Assets’. This penalty has been imposed in exercise of powers conferred on RBI under Section 58G(1)(b) read with Section 58B(",
+      "new_value": "The Reserve Bank of India (RBI) has, by an order dated September 02, 2026, imposed a monetary penalty of ₹6.20 lakh (Rupees Six Lakh Twenty Thousand only) on Hinduja Leyland Finance Limited...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "The Reserve Bank of India (RBI) has, by an order dated September 02, 2026, imposed a monetary penalty of ₹6.20 lakh (Rupees Six Lakh Twenty Thousand only) on Hinduja Leyland Finance Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Pricing of Microfinance Loans’ and ‘Securitisation of Standard Assets’. This penalty has been imposed in exercise of powers conferred on RBI under Section 58G(1)(b) read with Section 58B(",
       "new_value": "The Reserve Bank of India (RBI) has, by an order dated September 02, 2026, imposed a monetary penalty of ₹6.20 lakh (Rupees Six Lakh Twenty Thousand only) on Hinduja Leyland Finance Limited...",
@@ -16366,21 +16104,12 @@
       "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹4.20 lakh (Rupees Four Lakh Twenty Thousand only) on Sammaan Finserve Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Early Recognition of Stress and Reporting to Central Repository of Information on Large Credits (CRILC)’. This penalty has been imposed in exercise of powers conferred on RBI under Section 58G(1)(b) read with",
       "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹4.20 lakh (Rupees Four Lakh Twenty Thousand only) on Sammaan Finserve Limited (the...",
       "source_id": "policyradar"
-    }
-  ],
-  "5296981feba5": [
-    {
-      "date": "2026-09-04",
-      "field": "description",
-      "old_value": "Investcorp has acquired 20Cube 3PL Solutions for ~₹500 crore.Anagram Partners advised Investcorp on this acquisition. The transaction team was led by Simone Reis (Partner) and Shwetank Chaubey (Partner) and comprised Anupam Nayak (Senior Associate), Associates Kavya Nagamangala, Rahil Arora, Kanishka Gunjiyal and Kshitij Nair. Rajesh Simhan (Partner) and Sarthak Parnami (Partner) advised on tax aspects of the transaction. W&I advice was offered by Palaq Vora (Partner) along with Mayuri",
-      "new_value": "Anagram Partners, River Law act on Investcorp's ₹500 crore acquisition of 20Cube",
-      "source_id": "policyradar"
     },
     {
-      "date": "2026-09-05",
+      "date": "2026-09-07",
       "field": "description",
-      "old_value": "Investcorp has acquired 20Cube 3PL Solutions for ~₹500 crore.Anagram Partners advised Investcorp on this acquisition. The transaction team was led by Simone Reis (Partner) and Shwetank Chaubey (Partner) and comprised Anupam Nayak (Senior Associate), Associates Kavya Nagamangala, Rahil Arora, Kanishka Gunjiyal and Kshitij Nair. Rajesh Simhan (Partner) and Sarthak Parnami (Partner) advised on tax aspects of the transaction. W&I advice was offered by Palaq Vora (Partner) along with Mayuri",
-      "new_value": "Anagram Partners, River Law act on Investcorp's ₹500 crore acquisition of 20Cube",
+      "old_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹4.20 lakh (Rupees Four Lakh Twenty Thousand only) on Sammaan Finserve Limited (the company) for non-compliance with certain provisions of the directions issued by RBI on ‘Early Recognition of Stress and Reporting to Central Repository of Information on Large Credits (CRILC)’. This penalty has been imposed in exercise of powers conferred on RBI under Section 58G(1)(b) read with",
+      "new_value": "The Reserve Bank of India (RBI) has, by an order dated August 31, 2026, imposed a monetary penalty of ₹4.20 lakh (Rupees Four Lakh Twenty Thousand only) on Sammaan Finserve Limited (the...",
       "source_id": "policyradar"
     }
   ],
@@ -16443,6 +16172,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "SEBI Order for Compliance Notice of Attachment of Demat Account and Mutual Fund Folio(s) for Recovery Certificate No.8511 of 2025 against Add Life Pharma Ltd in the matter of Add Life Pharma Ltd",
+      "new_value": "SEBI Order for Compliance Notice of Attachment Bank/Post Office account for Recovery Certificate No.8511 of 2025 against Add Life Pharma Ltd  in the matter of Add Life Pharma Ltd",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "SEBI Order for Compliance Notice of Attachment of Demat Account and Mutual Fund Folio(s) for Recovery Certificate No.8511 of 2025 against Add Life Pharma Ltd in the matter of Add Life Pharma Ltd",
       "new_value": "SEBI Order for Compliance Notice of Attachment Bank/Post Office account for Recovery Certificate No.8511 of 2025 against Add Life Pharma Ltd  in the matter of Add Life Pharma Ltd",
@@ -16607,33 +16343,6 @@
       "source_id": "the_hindu_policy"
     }
   ],
-  "725a6a42b847": [
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "Aragen Life Sciences Limited has proposed an initial public offering of equity shares, comprising a fresh issue aggregating to ₹800 crore and an offer for sale of up to 27,329,192 equity shares by the selling shareholders.Cyril Amarchand Mangaldas is advising Aragen Life Sciences on this IPO.The transaction team is being led by Yash J. Ashar (Senior Partner) and Tanvi Kini (Partner), with support from Surya Rajkumar (Senior Associate), Associates Tejaswi Sade, Mohammed Khadri, Maria Palamattom a",
-      "new_value": "Atomberg Technologies Limited has proposed an initial public offering of equity shares consisting of a fresh issue aggregating to ₹450 crore and an offer for sale of up to 76,541,851 equity shares by certain existing shareholders.Cyril Amarchand Mangaldas is advising Atomberg on this IPO.The transaction is being led by Oishika Dasgupta (Partner), with support from Akash Joshi (Principal Associate), Adwait Deshmukh (Senior Associate), Associates Devansh Raheja, Subhajit Chowdhury, Chinmay Jumde a",
-      "source_id": "barandbench"
-    }
-  ],
-  "f1f810036cab": [
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "UPSC Static Quiz – Polity : 4 September 2026 We will post 5 questions daily on static topics mentioned in the UPSC civil services preliminary examination syllabus. Each week will focus on a specific topic from the syllabus, such as History of India and Indian National Movement, Indian and World Geography, and more. We … Continue reading \"UPSC Static Quiz – Polity : 4 September 2026\" The post UPSC Static Quiz – Polity : 4 September 2026 appeared first on INSIGHTS IAS - Simplifying UP",
-      "new_value": "UPSC Static Quiz – Geography : 5 September 2026 We will post 5 questions daily on static topics mentioned in the UPSC civil services preliminary examination syllabus. Each week will focus on a specific topic from the syllabus, such as History of India and Indian National Movement, Indian and World Geography, and more. We … Continue reading \"UPSC Static Quiz – Geography : 5 September 2026\" The post UPSC Static Quiz – Geography : 5 September 2026 appeared first on INSIGHTS IAS - Simpl",
-      "source_id": "insights_ias"
-    }
-  ],
-  "aa379938c5b5": [
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "Considering the alarming importance of CSAT in UPSC CSE Prelims exam and with enormous requests we received recently, InsightsIAS has started Daily CSAT Test to ensure students practice CSAT Questions on a daily basis. Regular Practice would help one overcome the fear of CSAT too.We are naming this initiative as Insta– DART – Daily … Continue reading \"UPSC Insta–DART (Daily Aptitude and Reasoning Test) 4 September 2026\" The post UPSC Insta–DART (Daily Aptitude and Reasoning Test) 4",
-      "new_value": "Considering the alarming importance of CSAT in UPSC CSE Prelims exam and with enormous requests we received recently, InsightsIAS has started Daily CSAT Test to ensure students practice CSAT Questions on a daily basis. Regular Practice would help one overcome the fear of CSAT too.We are naming this initiative as Insta– DART – Daily … Continue reading \"UPSC Insta–DART (Daily Aptitude and Reasoning Test) 5 September 2026\" The post UPSC Insta–DART (Daily Aptitude and Reasoning Test) 5",
-      "source_id": "insights_ias"
-    }
-  ],
   "06817ead01b4": [
     {
       "date": "2026-09-05",
@@ -16679,6 +16388,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "RBI notification: Deposits and Accounts – Accounts of Non-resident banks",
+      "new_value": "RBI/2026-27/251 A.P. (DIR Series) Circular No. 20 September 02, 2026 To All Authorised Dealer Category-I banks Madam / Sir Deposits and Accounts   Accounts of Non-resident banks Please refer to Para...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "RBI notification: Deposits and Accounts – Accounts of Non-resident banks",
       "new_value": "RBI/2026-27/251 A.P. (DIR Series) Circular No. 20 September 02, 2026 To All Authorised Dealer Category-I banks Madam / Sir Deposits and Accounts   Accounts of Non-resident banks Please refer to Para...",
@@ -16793,6 +16509,13 @@
       "old_value": "teacher vacancies to be filled in Odisha in years CM Mohan Charan Majhi",
       "new_value": "Chief Minister",
       "source_id": "gst_council"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "teacher vacancies to be filled in Odisha in years CM Mohan Charan Majhi",
+      "new_value": "Chief Minister",
+      "source_id": "gst_council"
     }
   ],
   "0538deadc904": [
@@ -16833,6 +16556,13 @@
     },
     {
       "date": "2026-09-06",
+      "field": "description",
+      "old_value": "Belgian Prime Minister Bart De Wever on Friday (4 September) made a thinly veiled reference to US President Donald Trump's trade measures, criticising nations that raise trade barriers without reason, while holding up the India-EU Free Trade Agreement as a shield against economic disruption and coercion.Addressing the India-Belgium high-level dialogue on the FTA in Mumbai, De Wever said, \"More and more voices today are calling for barriers to go up, for markets to be shut off, for tariffs to be",
+      "new_value": "document.addEventListener('DOMContentLoaded', function() { // Get the table of contents and progress bar const toc = document.getElementById('TOC'); const progressBar = document.getElementById('toc-progress'); if (!toc || !progressBar) return; // Track scroll position and update the active section and progress bar updateTocOnScroll(); function updateTocOnScroll() { // Get all section headings with IDs const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id],",
+      "source_id": "takshashila"
+    },
+    {
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Belgian Prime Minister Bart De Wever on Friday (4 September) made a thinly veiled reference to US President Donald Trump's trade measures, criticising nations that raise trade barriers without reason, while holding up the India-EU Free Trade Agreement as a shield against economic disruption and coercion.Addressing the India-Belgium high-level dialogue on the FTA in Mumbai, De Wever said, \"More and more voices today are calling for barriers to go up, for markets to be shut off, for tariffs to be",
       "new_value": "document.addEventListener('DOMContentLoaded', function() { // Get the table of contents and progress bar const toc = document.getElementById('TOC'); const progressBar = document.getElementById('toc-progress'); if (!toc || !progressBar) return; // Track scroll position and update the active section and progress bar updateTocOnScroll(); function updateTocOnScroll() { // Get all section headings with IDs const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id],",
@@ -16963,6 +16693,13 @@
       "old_value": "The Central government on Saturday cleared the appointment of Justice Sanjay Kumar Agrawal as the Chief Justice of the Rajasthan High Court.Justice Agrawal is currently the Acting Chief Justice of the Chhattisgarh High Court. He was elevated as an additional judge of that Court in September 2013 and made a permanent judge in March 2016.His elevation as Chief Justice comes amid a controversy over the conduct of the present Acting Chief Justice of the Rajasthan High Court, Justice Sanjeev Prakash",
       "new_value": "The Central government on Saturday cleared the appointment of Justice Sanjay Kumar Agrawal as the Chief Justice of the Rajasthan High Court.The appointment comes pursuant to a recommendation made by the Supreme Court Collegium on August 31.Justice Agrawal is currently the Acting Chief Justice of the Chhattisgarh High Court. He was elevated as an additional judge of that Court in September 2013 and made a permanent judge in March 2016.His elevation as Chief Justice comes amid a controversy over t",
       "source_id": "barandbench"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Central government on Saturday cleared the appointment of Justice Sanjay Kumar Agrawal as the Chief Justice of the Rajasthan High Court.The appointment comes pursuant to a recommendation made by the Supreme Court Collegium on August 31.Justice Agrawal is currently the Acting Chief Justice of the Chhattisgarh High Court. He was elevated as an additional judge of that Court in September 2013 and made a permanent judge in March 2016.His elevation as Chief Justice comes amid a controversy over t",
+      "new_value": "The Centre notified Justice Mishra’s appointment on Saturday, about a month after the Supreme Court Collegium had recommended his elevation",
+      "source_id": "hindustan_times"
     }
   ],
   "950ec3ad7f55": [
@@ -17002,33 +16739,6 @@
       "old_value": "PM Modi said the growth was achieved despite the ongoing war in West Asia and several trade-related challenges.",
       "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
       "source_id": "epod_harvard"
-    }
-  ],
-  "ab6960e2e10e": [
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "India Gate but make it chocolate Belgium reveals gift that didnt reach PM Modi",
-      "new_value": "India Gate, but make it chocolate. Belgium reveals gift that didn't reach PM Modi",
-      "source_id": "indiatoday_rss"
-    }
-  ],
-  "5e062a4baf8f": [
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Dimagi Naxal pill made critics come out says PM Modi at SRCC",
-      "new_value": "'Dimagi Naxal' pill made critics come out, says PM Modi at SRCC",
-      "source_id": "indiatoday_rss"
-    }
-  ],
-  "faa7bbfe48cb": [
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Glass always halfempty for naysayers PM hits out at critics over GDP growth",
-      "new_value": "Glass always half-empty for naysayers: PM hits out at critics over 7.8% GDP growth",
-      "source_id": "indiatoday_rss"
     }
   ],
   "925acae3727e": [
@@ -17120,64 +16830,155 @@
       "old_value": "The Prime Minister was addressing a gathering packed with students and spoke for close to 50 minutes.",
       "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
       "source_id": "epod_harvard"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Prime Minister was addressing a gathering packed with students and spoke for close to 50 minutes.",
+      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
+      "source_id": "epod_harvard"
     }
   ],
   "1c327d1fb014": [
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "field": "description",
       "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "pib"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "state_pib_punjab"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "pib"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "state_pib_karnataka"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "state_pib_punjab"
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_tourism"
     },
     {
       "date": "2026-09-07",
       "field": "description",
       "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "pib"
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_urban_development"
     },
     {
       "date": "2026-09-07",
       "field": "description",
       "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "state_pib_karnataka"
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_water_resources_river_development_and_ganga_rejuvenation"
     },
     {
       "date": "2026-09-07",
       "field": "description",
       "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
-      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah addresses a press conf...",
-      "source_id": "state_pib_punjab"
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_youth_affairs_and_sports"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_tribal_affairs"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_surface_transport"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_women_and_child_development"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_pm_speech"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_office_of_principal_scientific_advisor_to_goi"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_special_service_and_features"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_eac_pm"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_niti_aayog"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_competition_commission_of_india"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_upsc"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_ifsc_authority"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_national_financial_reporting_authority"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_lokpal_of_india"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_national_human_rights_commission"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah chairs the 28th meeting of the Western Zonal Council in Panaji, Goa",
+      "source_id": "pib_national_security_council_secretariat"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government of India press release: Union Home Minister and Minister of Cooperation Shri Amit Shah will chair the 28th meeting of the Western Zonal Council in Panaji, the capital of Goa, on Monday, September 7, 2026",
+      "new_value": "Amit Shah chairs 28th Western Zonal Council meeting in Goa",
+      "source_id": "hindustan_times"
     }
   ],
   "962b9c51bd15": [
@@ -17251,6 +17052,13 @@
       "old_value": "C. Kalyan’s Mana Panel swept the Telugu Film Producers Council elections, securing a clear majority and pledging support for producers.",
       "new_value": "A space to explore ideas, inspire and collaborate in an environment of care",
       "source_id": "azim_premji"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "C. Kalyan’s Mana Panel swept the Telugu Film Producers Council elections, securing a clear majority and pledging support for producers.",
+      "new_value": "A space to explore ideas, inspire and collaborate in an environment of care",
+      "source_id": "azim_premji"
     }
   ],
   "952c5ee55c51": [
@@ -17301,6 +17109,13 @@
       "old_value": "Delhi building collapse LIVE: The police said an FIR has been registered against the owner of the multi-storey building of a boys' PG hostel that collapsed in South-West Delhi's Satya Niketan on Sunday afternoon.",
       "new_value": "Get registered as a DigiLocker Issuer or Requester!",
       "source_id": "digilocker"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Delhi building collapse LIVE: The police said an FIR has been registered against the owner of the multi-storey building of a boys' PG hostel that collapsed in South-West Delhi's Satya Niketan on Sunday afternoon.",
+      "new_value": "Get registered as a DigiLocker Issuer or Requester!",
+      "source_id": "digilocker"
     }
   ],
   "0d26f3b9438d": [
@@ -17326,6 +17141,149 @@
       "old_value": "Rahul Gandhi can claim PM post if opposition wins says CPIMs M A Baby",
       "new_value": "Rahul Gandhi can claim PM post if Opposition wins, says CPIM's MA Baby",
       "source_id": "indiatoday_rss"
+    }
+  ],
+  "a967e185c760": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Punjab cabinet on Sunday passed a resolution against the Central government decision to notify the appointment of Justice Ashwani Kumar Mishra as the Chief Justice of the Punjab and Haryana High Court. The Supreme Court Collegium had recommended the Justice Mishra’s elevation on August 6. The Central government cleared the recommendation on Saturday night and notified Justice Mishra’s appointment as Chief Justice.However, the State government has alleged that the decision was taken without i",
+      "new_value": "The Punjab cabinet on Sunday passed a resolution against the Central government decision to notify the appointment of Justice Ashwani Kumar Mishra as the Chief Justice of the Punjab and Haryana High Court. The Supreme Court Collegium had recommended Justice Mishra’s elevation on August 6. The Central government cleared the recommendation on Saturday night and notified Justice Mishra’s appointment as Chief Justice.However, the State government has alleged that the decision was taken without its c",
+      "source_id": "barandbench"
+    }
+  ],
+  "2a16ff1d2db7": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Gujarat Themis Biosyn Limited has raised ₹750 crore from a qualified institutions placement of equity shares made to qualified institutional buyers outside the United States.Trilegal advised Gujarat Themis Biosyn on this QIP.CMS INDUSLAW advised the placement agents, namely Nuvama Wealth Management Limited, 360 ONE WAM Limited and Saffron Capital Advisors Private Limited, on this QIP.The transaction was led by Kaushik Mukherjee (Partner) and Kanika Sachdeva (Partner), with support from Associate",
+      "new_value": "Gujarat Themis Biosyn Limited has raised ₹750 crore from a qualified institutions placement of equity shares made to qualified institutional buyers outside the United States.Trilegal advised Gujarat Themis Biosyn on this QIP.The transaction was led by Richa Choudhary (Partner) and Maitreya Rajurkar (Partner), with support from Avanti Kale (Counsel), Aayush Khandelwal (Senior Associate), Associates Siddhant Mishra, Naman Shah and Adya Singh.Richa Choudhary, Maitreya RajurkarCMS INDUSLAW advised t",
+      "source_id": "barandbench"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "sectors",
+      "old_value": "Governance & Reform",
+      "new_value": "Health",
+      "source_id": "barandbench"
+    }
+  ],
+  "9abaf8986dc1": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "India-Japan economic ties continue to deepen, with bilateral trade reaching US$ 27.5 billion in FY26 and Japan emerging as India’s fifth-largest source of FDI, while Uttar Pradesh offers growing opportunities for Japanese investment.",
+      "new_value": "Government of India press release: Union Minister of Commerce and Industry Shri Piyush Goyal Calls for India to Emerge a...",
+      "source_id": "pib"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "India-Japan economic ties continue to deepen, with bilateral trade reaching US$ 27.5 billion in FY26 and Japan emerging as India’s fifth-largest source of FDI, while Uttar Pradesh offers growing opportunities for Japanese investment.",
+      "new_value": "Government of India press release: Union Minister of Commerce and Industry Shri Piyush Goyal Calls for India to Emerge a...",
+      "source_id": "state_pib_karnataka"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "India-Japan economic ties continue to deepen, with bilateral trade reaching US$ 27.5 billion in FY26 and Japan emerging as India’s fifth-largest source of FDI, while Uttar Pradesh offers growing opportunities for Japanese investment.",
+      "new_value": "Government of India press release: Union Minister of Commerce and Industry Shri Piyush Goyal Calls for India to Emerge a...",
+      "source_id": "state_pib_punjab"
+    }
+  ],
+  "470401a1b798": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Tenor 3-day Notified Amount (in ₹ crore) 1,50,000 Total amount of offers received (in ₹ crore) 60,419 Amount accepted (in ₹ crore) 60,419 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at cut off rate N.A. Ajit Prasad           Deputy General Manager (Communications)     Press Release: 2026-2027/1037",
+      "new_value": "Tenor 1-day Notified Amount (in ₹ crore) 5,00,000 Total amount of offers received (in ₹ crore) 3,53,390 Amount accepted (in ₹ crore) 3,53,390 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at cut off rate N.A. Ajit Prasad           Deputy General Manager (Communications)     Press Release: 2026-2027/1054",
+      "source_id": "rbi"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Tenor 3-day Notified Amount (in ₹ crore) 1,50,000 Total amount of offers received (in ₹ crore) 60,419 Amount accepted (in ₹ crore) 60,419 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at cut off rate N.A. Ajit Prasad           Deputy General Manager (Communications)     Press Release: 2026-2027/1037",
+      "new_value": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Second Variable Rate Reverse Repo (VRRR) auction on Monday, September 07, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timing Date of Reversal 1 5,00,000 1 11:00 AM to 11:30 AM September 08, 2026 (Tuesday) 2. The operational guidelines for the auction as given in the Reserve Bank’s Press Release 2019-2020/1947 dated February 13, 2020 will remain the same.Ajit Prasad",
+      "source_id": "rbi"
+    },
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Tenor 3-day Notified Amount (in ₹ crore) 1,50,000 Total amount of offers received (in ₹ crore) 60,419 Amount accepted (in ₹ crore) 60,419 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at cut off rate N.A. Ajit Prasad           Deputy General Manager (Communications)     Press Release: 2026-2027/1037",
+      "new_value": "Tenor 30-day Notified Amount (in ₹ crore) 7,00,000 Total amount of offers received (in ₹ crore) 2,59,276 Amount accepted (in ₹ crore) 2,59,276 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at cut off rate N.A. Ajit Prasad           Deputy General Manager (Communications)     Press Release: 2026-2027/1052",
+      "source_id": "rbi"
+    }
+  ],
+  "2dc1d484449e": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "An official statement after the meeting of the State cabinet said it had resolved that the appointment and administration of oath should be put on hold until Punjab's views are obtained and duly considered.",
+      "new_value": "Punjab Chief Minister Bhagwant Mann, whose government had opposed Justice Mishra's appointment, was not present at the oath-taking ceremony",
+      "source_id": "the_hindu_policy"
+    }
+  ],
+  "ea8c6da7f461": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Bhardwaj was produced before Duty Magistrate Anjali Singh of the Patiala House Court through video conference by the Delhi Police.",
+      "new_value": "Swatantra Bhardwaj was produced through video-conference before Additional Sessions Judge Saurabh Pratap Laler of Patiala House court on Monday.",
+      "source_id": "hindustan_times"
+    }
+  ],
+  "e23bbc0a315c": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Consumer Awareness Program at Baksa (Assam) by Gram Vikas Parishad nitinkumar Mon, 08/24/2026 - 14:38 Date Thu, 08/27/2026 - 12:00 District Baksa Division Consumer Affairs Date & Time Thu, 08/27/2026 - 11:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name Madhurjya Bora Contact person Email gramvikasparishad@gmail.com Event Category COP By TRAI Venue Details Assam Public Academy”, Bhakuamari, PO: Ananda Bazar, Block Gobardhana Development Block, Dist: Baksa (Assa",
+      "new_value": "Consumer Awareness Program at Majuli (Assam) by Gram Vikas Parishad nitinkumar Mon, 09/07/2026 - 11:59 Date Tue, 09/15/2026 - 12:00 District Majuli Division Consumer Affairs Date & Time Tue, 09/15/2026 - 12:00 Programme Category CAP by CAG's Event Status In progress Contact Person Name Madhurjya Bora Contact person Email gramvikasparishad@gmail.com Event Category COP By TRAI Venue Details Majuli Auniati Hemchandra Higher Secondary School”, Vill. & PO: Kamalabari, Dist: Majuli (Assam), PI",
+      "source_id": "trai"
+    }
+  ],
+  "3186c56336a1": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Consumer Education Workshop at Salem (Tamil Nadu) by Bharat Sanchar Nigam Ltd. nitinkumar Tue, 09/01/2026 - 12:23 Date Thu, 09/03/2026 - 12:00 District Salem Division Consumer Affairs Date & Time Thu, 09/03/2026 - 10:00 Programme Category CEW By TSP's Event Status In progress Contact Person Name SAUMINY C A Contact person Email sauminyca@gmail.com Event Category COP By TRAI Venue Details Conference Hall Shevepet BSNL Telephone Exchange,Salem Event From Consumer Awareness( TSPs ) Contact pers",
+      "new_value": "Consumer Education Workshop at Nuh (Haryana) by Bharat Sanchar Nigam Ltd nitinkumar Mon, 09/07/2026 - 11:56 Date Thu, 09/17/2026 - 12:00 District Nuh Division Consumer Affairs Date & Time Thu, 09/17/2026 - 11:00 Programme Category CEW By TSP's Event Status In progress Contact Person Name Smt. Shalini Aggarwal Contact person Email pg_haryana@bsnl.co.in Event Category COP By TRAI Venue Details City Hotel, Nuh (Mewat), Haryana Event From Consumer Awareness( TSPs ) Contact person phone number 94",
+      "source_id": "trai"
+    }
+  ],
+  "df066d3bc12e": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "A Delhi court on Sunday sent right-wing influencer Swatantra Bhardwaj to judicial custody (JC) for a day in the case related to alleged assault on the father of a Dalit student-activist during the Cockroach Janta Party's (CJP) protests at Jantar Mantar in July.Duty Magistrate Anjali Singh of the Patiala House Court passed the order. According to a lawyer involved in the case, Bhardwaj was produced at the judge's residence through virtual conference (VC). Police asked him to be sent to JC fo",
+      "new_value": "A Delhi court on Monday sent right-wing influencer Swatantra Bhardwaj to judicial custody (JC) for 14 days in the case related to alleged assault on the father of a Dalit student-activist during the Cockroach Janta Party's (CJP) protests at Jantar Mantar in July.Additional Sessions Judge (ASJ) Saurabh Partap Singh Laler passed the order after Bhardwaj was produced before him through video conference.Bhardwaj was arrested from Uttar Pradesh on September 5. He has been booked for offence of assaul",
+      "source_id": "barandbench"
+    }
+  ],
+  "849268a80e9e": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "UPSC Static Quiz – Geography : 5 September 2026 We will post 5 questions daily on static topics mentioned in the UPSC civil services preliminary examination syllabus. Each week will focus on a specific topic from the syllabus, such as History of India and Indian National Movement, Indian and World Geography, and more. We … Continue reading \"UPSC Static Quiz – Geography : 5 September 2026\" The post UPSC Static Quiz – Geography : 5 September 2026 appeared first on INSIGHTS IAS - Simpl",
+      "new_value": "UPSC Static Quiz – Economy : 7 September 2026 We will post 5 questions daily on static topics mentioned in the UPSC civil services preliminary examination syllabus. Each week will focus on a specific topic from the syllabus, such as History of India and Indian National Movement, Indian and World Geography, and more. We … Continue reading \"UPSC Static Quiz – Economy : 7 September 2026\" The post UPSC Static Quiz – Economy : 7 September 2026 appeared first on INSIGHTS IAS - Simplifying",
+      "source_id": "insights_ias"
+    }
+  ],
+  "8f94b400b25e": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Current Affairs Quiz is a daily quiz based on the DAILY CURRENT AFFAIRS AND PIB SUMMARY from the previous day, as posted on our website. It covers all relevant news sources and is designed to test your knowledge of current events. Solving these questions will help you retain both concepts and facts relevant … Continue reading \"UPSC Current Affairs Quiz – 5 September 2026 | Daily Prelims Quiz\" The post UPSC Current Affairs Quiz – 5 September 2026 | Daily Prelims Quiz appeare",
+      "new_value": "The post UPSC CURRENT AFFAIRS – 7 SEPTEMBER 2026 appeared first on INSIGHTS IAS - Simplifying UPSC IAS Exam Preparation.",
+      "source_id": "insights_ias"
+    }
+  ],
+  "8ad2e73b1072": [
+    {
+      "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The decision was taken following an on-site review and a preliminary assessment of the incident, according to the Delhi CMO",
+      "new_value": "Chief Minister, Finance…",
+      "source_id": "gst_council"
     }
   ]
 }
