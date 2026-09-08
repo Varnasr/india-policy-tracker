@@ -3311,13 +3311,6 @@
       "source_id": "historical"
     },
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
-      "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
-      "source_id": "dfs"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
@@ -3424,6 +3417,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
+      "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
+      "source_id": "dfs"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "Raised FDI cap in insurance sector from 26% to 49%, strengthened IRDA's regulatory powers, and allowed Lloyd's of London to operate in India. Aimed to increase insurance penetration and capital inflows.",
       "new_value": "Draft Rules pursuant to the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act,…",
@@ -6747,13 +6747,6 @@
   ],
   "b2f452d6e597": [
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
-      "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
-      "source_id": "vidhi"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
@@ -6860,6 +6853,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
+      "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
+      "source_id": "vidhi"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "The Transgender Persons (Protection of Rights) Amendment Act, 2026, which amends the Transgender Persons (Protection of Rights) Act, 2019, came into force on May 25, 2026. The Amendment Act makes a few major changes to the 2019 Act:  It replaces the definition of ‘transgender person’ under the 2019 Act—which included ‘any person who did not identify with the gender assigned to them at birth’—with a narrow list of four socio-cultural groups (hijras, kinners, jogtas, and aravanis), persons wi",
       "new_value": "The post How can state governments protect transgender rights? appeared first on Vidhi Centre for Legal Policy.",
@@ -7277,13 +7277,6 @@
       "source_id": "historical"
     },
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
-      "new_value": "Content Awaited....",
-      "source_id": "cbga"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
@@ -7390,6 +7383,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
+      "new_value": "Content Awaited....",
+      "source_id": "cbga"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "Budget with significant income tax relief - no tax up to Rs 12 lakh, new simplified regime with 8 slabs. Rs 11.21 lakh crore for infrastructure, support for MSMEs, and Makhana Board for Bihar. Focus on growth, investment, and consumption.",
       "new_value": "Content Awaited....",
@@ -8560,20 +8560,6 @@
       "date": "2026-09-07",
       "field": "description",
       "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
-      "new_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-07",
-      "field": "description",
-      "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
-      "new_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-07",
-      "field": "description",
-      "old_value": "Scope of Supply & Work includes dismantling the existing RTSPV project and design & engineering, procurement & supply of equipment and materials (including PV Modules, Inverters), testing at manufacturers works, multi-level inspections, packing and forwarding, supply, receipt, unloading and storage at site, associated civil works, services, obtaining permits, licenses, installation and incidentals, insurance at all stages, erection, testing and commissioning of 100 kW Rooftop Solar PV Hybrid Pro",
       "new_value": "Selection of Solar Power Developers for Setting up of 700 MW ISTS-connected Solar PV Power Projects in Special Economic Zones (SEZs) or areas designated as Export Oriented Units (EOUs) of India under Tariff-based Competitive Bidding",
       "source_id": "seci"
     },
@@ -8656,6 +8642,41 @@
     },
     {
       "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
+      "new_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
+      "new_value": "Selection of Solar Power Developers for Setting up of 700 MW ISTS-connected Solar PV Power Projects in Special Economic Zones (SEZs) or areas designated as Export Oriented Units (EOUs) of India under Tariff-based Competitive Bidding",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
+      "new_value": "Selection of Tenant(s) for Renting out the Office space(s) of SECI, along with built-up facilities (Licensed Assets), at the NBCC Complex, East Kidwai Nagar, New Delhi Premises-1: 38,198 sq. ft. ;Premises-2: 15,210 sq. ft. (Super Built-up Area). Both Premises are fully furnished, ready to move for office purposes. SECI reserves the right to sub-let/Rent out the two-office premises together to a single entity or separately to different entities .",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "sectors",
+      "old_value": "Digital & Technology",
+      "new_value": "Climate & Environment, Energy",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "sectors",
+      "old_value": "Digital & Technology",
+      "new_value": "Climate & Environment, Energy",
+      "source_id": "seci"
+    },
+    {
+      "date": "2026-09-08",
       "field": "sectors",
       "old_value": "Digital & Technology",
       "new_value": "Climate & Environment, Energy",
@@ -8678,92 +8699,71 @@
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "description",
-      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
+      "old_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
       "new_value": "Selection of Solar Power Developers for Setting up of 700 MW ISTS-connected Solar PV Power Projects in Special Economic Zones (SEZs) or areas designated as Export Oriented Units (EOUs) of India under Tariff-based Competitive Bidding",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
-      "field": "sectors",
-      "old_value": "Digital & Technology",
-      "new_value": "Energy, Trade & Commerce",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-08",
       "field": "description",
-      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
+      "old_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
       "new_value": "Selection of Tenant(s) for Renting out the Office space(s) of SECI, along with built-up facilities (Licensed Assets), at the NBCC Complex, East Kidwai Nagar, New Delhi Premises-1: 38,198 sq. ft. ;Premises-2: 15,210 sq. ft. (Super Built-up Area). Both Premises are fully furnished, ready to move for office purposes. SECI reserves the right to sub-let/Rent out the two-office premises together to a single entity or separately to different entities .",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Defence & Security, Housing, Science & Innovation",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
       "source_id": "seci"
     },
     {
       "date": "2026-09-08",
       "field": "sectors",
-      "old_value": "Digital & Technology",
+      "old_value": "Energy, Trade & Commerce",
       "new_value": "Climate & Environment, Energy",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "Empanelment of experienced CERT-In empaneled Auditors for RE Sector",
-      "new_value": "Selection of Energy Storage System Developers for Utilization of 100 MWh (50 MW x 2 Hrs.) Standalone Energy Storage System on Short-Term Basis for “on Demand” usage under Tariff-Based Competitive Bidding",
-      "source_id": "seci"
-    },
-    {
-      "date": "2026-09-08",
-      "field": "sectors",
-      "old_value": "Digital & Technology",
-      "new_value": "Energy, Trade & Commerce",
       "source_id": "seci"
     },
     {
@@ -8839,13 +8839,6 @@
   ],
   "6bbc658c1e6c": [
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
-      "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
-      "source_id": "republic_world"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
@@ -8952,6 +8945,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
+      "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "Independence day nitinkumar Fri, 08/14/2026 - 00:01 image Banner Order 58",
       "new_value": "The Bench has directed the State Government to examine whether children living in border and remote areas were denied the same educational, cultural and civic opportunities relating to Independence Day that were available to children in other parts of the State.",
@@ -10316,20 +10316,6 @@
   ],
   "669b586224d0": [
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
-      "new_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:08 Weight 0 Links /sites/default/files/2026-08/Reimagining-Skilling-for-Viksit-Bharat-2047.pdf",
-      "source_id": "niti_aayog"
-    },
-    {
-      "date": "2026-09-03",
-      "field": "sectors",
-      "old_value": "Education, Labour & Employment, Science & Innovation",
-      "new_value": "Labour & Employment",
-      "source_id": "niti_aayog"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
@@ -10548,6 +10534,20 @@
     },
     {
       "date": "2026-09-07",
+      "field": "sectors",
+      "old_value": "Education, Labour & Employment, Science & Innovation",
+      "new_value": "Labour & Employment",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:03 Choose Report Type Publications Publication Date Tue, 08/18/2026 - 14:03 Report Upload download (14.87 MB) vertical Skill Development, Labour & Employment PDF Text REIMAGINING SKILLING FOR VIKSIT BHARAT@2047 While due care has been exercised to prepare this report by compiling data from various sources, NITI Aayog does not confirm the authenticity of the data and the accuracy of the methodology used for research a",
+      "new_value": "Reimagining Skilling for Viksit Bharat@2047 niti_admin Tue, 08/18/2026 - 14:08 Weight 0 Links /sites/default/files/2026-08/Reimagining-Skilling-for-Viksit-Bharat-2047.pdf",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-08",
       "field": "sectors",
       "old_value": "Education, Labour & Employment, Science & Innovation",
       "new_value": "Labour & Employment",
@@ -12512,13 +12512,6 @@
   ],
   "2928adeb8640": [
     {
-      "date": "2026-09-03",
-      "field": "description",
-      "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
-      "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
-      "source_id": "niti_aayog"
-    },
-    {
       "date": "2026-09-04",
       "field": "description",
       "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
@@ -12625,6 +12618,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
+      "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
+      "source_id": "niti_aayog"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:32 Publishing Date Tue, 08/25/2026 - 12:00 Release Link https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
       "new_value": "Government reiterates its commitment for reimagining skilling niti_admin Tue, 08/25/2026 - 21:46 Weight 0 Links https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2303206&reg=48&lang=1",
@@ -13498,20 +13498,6 @@
       "source_id": "republic_world"
     },
     {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "Maharashtra Freedom of Religion Act 2026 comes into force on August 28, bringing penalties of up to 7 years in jail, Rs 5 lakh fine and new rules for voluntary conversions and interfaith marriages.",
-      "source_id": "republic_world"
-    },
-    {
-      "date": "2026-09-06",
-      "field": "description",
-      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
-      "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
-      "source_id": "republic_world"
-    },
-    {
       "date": "2026-09-07",
       "field": "description",
       "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
@@ -13576,6 +13562,20 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
+      "new_value": "Maharashtra Freedom of Religion Act 2026 comes into force on August 28, bringing penalties of up to 7 years in jail, Rs 5 lakh fine and new rules for voluntary conversions and interfaith marriages.",
+      "source_id": "republic_world"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "विश्वसंस्कृतदिवसस्य शुभाशयाः।अद्य, श्रावणपूर्णिमादिने, वयं संस्कृतस्य चिरन्तन-समृद्धेः उत्सवम् आचरामः। एषा भाषा भारतस्य ज्ञानस्य, चिन्तनस्य, सर्जनशीलतायाः च निरन्तर-संवाहिका आसीत्। तस्याः सकारात्मकः प्रभावः बहुषु क्षेत्रेषु अद्यापि द्रष्टुं शक्यते।एतस्मिन् विशिष्टे दिने,…",
       "new_value": "J&K local body polls face another delay as the SEC sets August 31 deadline, with elections likely pushed to March–April 2027 if government clearance is not granted. PDP questions NC-BJP over repeated postponements.",
@@ -14087,13 +14087,6 @@
       "date": "2026-09-05",
       "field": "description",
       "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
-      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran tensions.",
-      "source_id": "livemint_policy"
-    },
-    {
-      "date": "2026-09-05",
-      "field": "description",
-      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
       "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran...",
       "source_id": "policyradar"
     },
@@ -14197,6 +14190,13 @@
     },
     {
       "date": "2026-09-07",
+      "field": "description",
+      "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
+      "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran tensions.",
+      "source_id": "livemint_policy"
+    },
+    {
+      "date": "2026-09-08",
       "field": "description",
       "old_value": "As 25 years of the Shanghai Cooperation Organization (SCO) culminate in Bishkek, India waits intently, assessing the SCO's development. With PM Modi representing India from August 31–September 1, 2026, having previously chaired the SCO Council of Heads of Government in 2020, the forthcoming summit should provide an opportunity for the Indian delegation to take stock of the current status of previous initiatives and their advancements. The post SCO summit in Bishkek appeared first on Gateway Hous",
       "new_value": "PM Narendra Modi attends the 26th SCO Summit 2026 in Kyrgyzstan, holding bilateral meetings with Vladimir Putin, Xi Jinping and Masoud Pezeshkian amid India-China-Russia diplomacy and US-Iran tensions.",
@@ -15978,6 +15978,13 @@
       "old_value": "RBI notification: Deposits and Accounts – Accounts of Non-resident banks",
       "new_value": "RBI/2026-27/251 A.P. (DIR Series) Circular No. 20 September 02, 2026 To All Authorised Dealer Category-I banks Madam / Sir Deposits and Accounts   Accounts of Non-resident banks Please refer to Para...",
       "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "RBI notification: Deposits and Accounts – Accounts of Non-resident banks",
+      "new_value": "RBI/2026-27/251 A.P. (DIR Series) Circular No. 20 September 02, 2026 To All Authorised Dealer Category-I banks Madam / Sir Deposits and Accounts   Accounts of Non-resident banks Please refer to Para...",
+      "source_id": "policyradar"
     }
   ],
   "1c327d1fb014": [
@@ -16715,6 +16722,13 @@
       "old_value": "During the meeting, Sitharaman and Clarke discussed India-IMF relations and appreciated India's role in supporting the South Asia Regional Training and Technical Assistance Center (SARTTAC)",
       "new_value": "Union Finance Minister and…",
       "source_id": "gst_council"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "During the meeting, Sitharaman and Clarke discussed India-IMF relations and appreciated India's role in supporting the South Asia Regional Training and Technical Assistance Center (SARTTAC)",
+      "new_value": "Union Finance Minister and…",
+      "source_id": "gst_council"
     }
   ],
   "88bb9037a40a": [
@@ -16731,6 +16745,13 @@
       "old_value": "Whatever the term actually means, it marks a dangerous shift from policing acts to policing thought. The Modi government’s call to “identify” and “isolate” “dimagi naxals” will only strengthen the hands of the saffron forces’ vigilante corps.",
       "new_value": "There Is No Accountability: Rahul Gandhi jabs govt over 'dimagi naxal' jibe",
       "source_id": "indiatoday_rss"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Whatever the term actually means, it marks a dangerous shift from policing acts to policing thought. The Modi government’s call to “identify” and “isolate” “dimagi naxals” will only strengthen the hands of the saffron forces’ vigilante corps.",
+      "new_value": "No accountability, but quick to use 'dimagi Naxal' label: Rahul Gandhi slams PM Modi over Delhi PG collapse    telegraphindia.com",
+      "source_id": "policyradar"
     }
   ],
   "26691ebefb25": [
@@ -16760,6 +16781,20 @@
       "field": "description",
       "old_value": "RBI notification: Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Amendment of 2 Entries",
       "new_value": "RBI/2026-27/253 DOR.AML.REC.219/14.06.001/2026-27 September 07, 2026 The Chairpersons/ CEOs of the Commercial Banks, Small Finance Banks, Payment Banks, Urban Co-operative Banks...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "RBI notification: Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Amendment of 2 Entries",
+      "new_value": "RBI/2026-27/253 DOR.AML.REC.219/14.06.001/2026-27 September 07, 2026 The Chairpersons/ CEOs of the Commercial Banks, Small Finance Banks, Payment Banks, Urban Co-operative Banks...",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "RBI notification: Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Amendment of 2 Entries",
+      "new_value": "RBI directs regulated entities to implement updates to the UNSC 1267/1989 ISIL (Da’esh) and Al-Qaida Sanctions List under Section 51A of UAPA, 1967, following amendments to two individual entries.",
       "source_id": "policyradar"
     },
     {
@@ -16892,6 +16927,13 @@
       "old_value": "The festival signals J&K’s readiness to narrate its own stories: Chief Minister Omar Abdullah",
       "new_value": "Read the latest news and stories of children and their families from across the country.",
       "source_id": "unicef_india"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "The festival signals J&K’s readiness to narrate its own stories: Chief Minister Omar Abdullah",
+      "new_value": "Read the latest news and stories of children and their families from across the country.",
+      "source_id": "unicef_india"
     }
   ],
   "476e6514ef4b": [
@@ -16928,38 +16970,6 @@
       "old_value": "First PM Modi event on BookMyShow sold out in an hour k on waitlist",
       "new_value": "First PM Modi event on BookMyShow sold out in an hour on waitlist",
       "source_id": "india_today"
-    }
-  ],
-  "7b7d071bf775": [
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and ST communities",
-      "new_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and...",
-      "source_id": "policyradar"
-    },
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and ST communities",
-      "new_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and...",
-      "source_id": "policyradar"
-    },
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and ST communities",
-      "new_value": "MP Mallu Ravi said 32 MPs decided in a meeting to finalise a memorandum seeking the President’s intervention; they also decided to constitute a parliamentary forum to take up issues concerning SC and...",
-      "source_id": "policyradar"
-    }
-  ],
-  "cde5955c4d91": [
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "The High Court of Karnataka has issued a series of directions aimed at bringing transparency and preventing financial mismanagement in all temples controlled by the Hindu Religious Institutions and Charitable Endowments Department",
-      "new_value": "The High Court of Karnataka has issued a series of directions aimed at bringing transparency and preventing financial mismanagement in all temples controlled by the Hindu Religious Institutions and...",
-      "source_id": "policyradar"
     }
   ],
   "d86271ef4a6e": [
@@ -17007,24 +17017,6 @@
       "source_id": "igidr"
     }
   ],
-  "925c96e517a3": [
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "The Padma Shri awardee's name was recorded as only 'Hajabba' in the old 2002 voter list, while his name in subsequent official records is 'Harekala Hajabba'.",
-      "new_value": "Election officials issue notice after Hajabba's name differs between the 2002 voter roll and his current identity documents.",
-      "source_id": "deccan_chronicle"
-    }
-  ],
-  "ad48253a61ad": [
-    {
-      "date": "2026-09-08",
-      "field": "description",
-      "old_value": "The court of the Special Judicial Magistrate (CBI) also acquitted Naresh Chandra Dwivedi, a co-accused charged with providing forged documents to Balkrishna.",
-      "new_value": "CBI had initiated an investigation in 2011 following a complaint alleging that Balkrishna was a Nepali national who had obtained an Indian passport using forged documents",
-      "source_id": "deccan_chronicle"
-    }
-  ],
   "429e79b84e4d": [
     {
       "date": "2026-09-08",
@@ -17048,9 +17040,23 @@
       "old_value": "Referring to President Pezeshkian's recent bilateral talks with Prime Minister Narendra Modi on the sidelines of the SCO Summit in Bishkek, Kyrgyzstan, Baghaei reaffirmed that Iran plans to leverage diplomatic engagements in India to expand economic collaboration.",
       "new_value": "Referring to President Pezeshkian's recent bilateral talks with Prime Minister Narendra Modi on the sidelines of the SCO Summit in Bishkek, Kyrgyzstan...",
       "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Referring to President Pezeshkian's recent bilateral talks with Prime Minister Narendra Modi on the sidelines of the SCO Summit in Bishkek, Kyrgyzstan, Baghaei reaffirmed that Iran plans to leverage diplomatic engagements in India to expand economic collaboration.",
+      "new_value": "Referring to President Pezeshkian's recent bilateral talks with Prime Minister Narendra Modi on the sidelines of the SCO Summit in Bishkek, Kyrgyzstan...",
+      "source_id": "policyradar"
     }
   ],
   "953c281467ef": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "RBI notification: Relief Measures in Areas Affected by Natural Calamities - Reporting through Centralised Information Management System (CIMS) Portal - Introduction of Half-Yearly Return",
+      "new_value": "RBI/2026-27/250 CO.FIDD.FSD.No.S544/05-10-001/2026-27 September 02, 2026 The Chief Executive Officer / Managing Director All Scheduled Commercial Banks (including Regional Rural Banks and Small...",
+      "source_id": "policyradar"
+    },
     {
       "date": "2026-09-08",
       "field": "description",
@@ -17465,6 +17471,13 @@
       "old_value": "Naraz fufa ji now has work PM snipes after unveiling Rs crore projects",
       "new_value": "A space to explore ideas, inspire and collaborate in an environment of care",
       "source_id": "azim_premji"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Naraz fufa ji now has work PM snipes after unveiling Rs crore projects",
+      "new_value": "A space to explore ideas, inspire and collaborate in an environment of care",
+      "source_id": "azim_premji"
     }
   ],
   "d7af16f45c05": [
@@ -17499,9 +17512,23 @@
       "old_value": "Delhi building collapse news LIVE updates: CM Rekha Gupta met with the families of the victims and injured persons from the Satya Niketan collapse and said that the NCT government will bear the cost for treatment. She added that an unsafe building next to the PG will be demolished on Wednesday.",
       "new_value": "Chief Minister, Finance…",
       "source_id": "gst_council"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Delhi building collapse news LIVE updates: CM Rekha Gupta met with the families of the victims and injured persons from the Satya Niketan collapse and said that the NCT government will bear the cost for treatment. She added that an unsafe building next to the PG will be demolished on Wednesday.",
+      "new_value": "Chief Minister, Finance…",
+      "source_id": "gst_council"
     }
   ],
   "5dc1635890de": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "India’s economic growth is projected to remain above 7% in FY27, with strong investment activity, rising corporate capital expenditure and export growth expected to increasingly drive the country’s economic expansion.",
+      "new_value": "Conducting innovative research on economic growth and development policies to foster inclusive prosperity.",
+      "source_id": "epod_harvard"
+    },
     {
       "date": "2026-09-08",
       "field": "description",
@@ -17524,9 +17551,30 @@
       "old_value": "Punjab has objected to the Centre’s appointment of Justice Ashwani Kumar Mishra. Here is what the Constitution and the Collegium system provide",
       "new_value": "We are dedicated to advancing the rights of all girls and boys in India, especially the most disadvantaged!",
       "source_id": "unicef_india"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Punjab has objected to the Centre’s appointment of Justice Ashwani Kumar Mishra. Here is what the Constitution and the Collegium system provide",
+      "new_value": "State consent not taken, put High Court Chief Justice appointment on hold: Punjab Government    The Indian Express",
+      "source_id": "policyradar"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Punjab has objected to the Centre’s appointment of Justice Ashwani Kumar Mishra. Here is what the Constitution and the Collegium system provide",
+      "new_value": "We are dedicated to advancing the rights of all girls and boys in India, especially the most disadvantaged!",
+      "source_id": "unicef_india"
     }
   ],
   "82b7561408dd": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to The Amanath Co-operative Bank Ltd., Bangalore vide Directive No. CO.DOS.SED.No.S1931/12-23-001/2024-2025 dated June 12, 2024 for a period of six months up to close of business on December 12, 2024. The Reserve Bank of India is satisfied that in the public interest, it is necessary to further extend the period of operation of the Directive beyond close of business on September",
+      "new_value": "The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to Nasik Jilha Mahila Vikas Sahakari Bank Ltd., Nasik...",
+      "source_id": "policyradar"
+    },
     {
       "date": "2026-09-08",
       "field": "description",
@@ -17542,6 +17590,40 @@
       "old_value": "**Kanishk Goyal and Ayushi Kumari  “Publicity is justly commended as a remedy for social and industrial diseases. Sunlight is said to be the best of disinfectants; electric light the most efficient policeman.” – Louis D. Brandeis Brandeis’s observation matters most when State power itself becomes the subject of public scrutiny. In September 2025, the Supreme […] The post The Constitutional Paradox of Why the State Can Surveil but the Citizen Cannot Record appeared fi",
       "new_value": "The post So, who is a citizen? appeared first on Vidhi Centre for Legal Policy.",
       "source_id": "vidhi"
+    },
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "**Kanishk Goyal and Ayushi Kumari  “Publicity is justly commended as a remedy for social and industrial diseases. Sunlight is said to be the best of disinfectants; electric light the most efficient policeman.” – Louis D. Brandeis Brandeis’s observation matters most when State power itself becomes the subject of public scrutiny. In September 2025, the Supreme […] The post The Constitutional Paradox of Why the State Can Surveil but the Citizen Cannot Record appeared fi",
+      "new_value": "The post So, who is a citizen? appeared first on Vidhi Centre for Legal Policy.",
+      "source_id": "vidhi"
+    }
+  ],
+  "158acef28ea2": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "School Assembly News Headlines (September 8): Stay updated and be ready to share your thoughts in the morning with these News Headlines.",
+      "new_value": "School Assembly News Headlines (September 9): Stay updated and be ready to share your thoughts in the morning with these News Headlines.",
+      "source_id": "ndtv_india"
+    }
+  ],
+  "ad7c6316ea75": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "Keralam delegation expresses deep dissatisfaction over language barriers, irrelevance in workshop topics, and abrupt dismissal of crucial policy questions by NCW leadership",
+      "new_value": "The Telegraph, Guwahati, May 16, 2012",
+      "source_id": "cuts_international"
+    }
+  ],
+  "da99dbef0fc1": [
+    {
+      "date": "2026-09-08",
+      "field": "description",
+      "old_value": "PM Event Security Scare: Man with Fake PMO ID & Armed Aide Held at Mumbai Venue",
+      "new_value": "Mumbai: Man With Fake PMO ID & Armed Guard Held At PM Modi Event Venue",
+      "source_id": "indiatoday_rss"
     }
   ]
 }
